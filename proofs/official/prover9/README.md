@@ -48,6 +48,26 @@ unit deletion, restricted denials, SOS-first input, breadth-first hints,
 | E_CN | C/N | 175 | 88 | 21 | `equational/CN/E_CN.in`, `.out` |
 | E_ON | O/N | 191 | 74 | 4000 | `equational/ON/E_ON.in`, `.out` |
 
+## Wos-pure C/N circle
+
+The following seven replays form a strict circle.  In each file the source
+axiom is the sole positive assumption, the target is derived by condensed
+detachment, and the target becomes the sole source axiom of the next file.
+The final leg returns to Meredith's axiom.  The CD Machine source proofs have
+89, 86, 80, 91, 200, 188, and 66 derived steps, respectively, for a total of
+800.  Prover9 independently replays the same seven links from the harvested
+formula stocks.
+
+| Circle leg | Source to target | Prover9 proof length | Level | Maximum weight | Input/output |
+|---|---|---:|---:|---:|---|
+| 1 | Meredith to cand65 | 94 | 41 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_1.in`, `.out` |
+| 2 | cand65 to cand112 | 81 | 41 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_2.in`, `.out` |
+| 3 | cand112 to cand79 | 85 | 39 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_3.in`, `.out` |
+| 4 | cand79 to cand44 | 93 | 34 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_4.in`, `.out` |
+| 5 | cand44 to cand8 | 199 | 76 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_5.in`, `.out` |
+| 6 | cand8 to cand121 | 191 | 99 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_6.in`, `.out` |
+| 7 | cand121 to Meredith | 70 | 37 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_7.in`, `.out` |
+
 The `E_Cf` output is a 77-step, level-48 conjunctive proof from the displayed
 C/f identity as its sole non-denial assumption.  It reports zero new
 demodulators and zero demodulation rewrites.

@@ -11,8 +11,8 @@ Used to prove that Meredith's 19-symbol single axioms of classical sentential lo
 The repository has three release-critical components:
 
 1. the single-axiom search code and reproducibility tools;
-2. 22 canonical Prover9 input/output pairs verifying every axiom reported in
-   the paper; and
+2. 29 canonical Prover9 input/output pairs: 22 complete-basis verifications
+   for the axioms reported in the paper and seven Wos-pure C/N circle legs; and
 3. William McCune's last official Prover9 release, LADR-2009-11A, preserved as
    the unmodified source archive together with the reference executable.
 
@@ -151,9 +151,11 @@ legacy release, rather than a locally enhanced build or LADR-2026, generated
 the paper-facing outputs.
 
 Canonical inputs and outputs use the paper's labels and live under
-`proofs/official/prover9/`: `A01`--`A18` for the condensed-detachment axioms
-and `E_AN`, `E_Cf`, `E_CN`, and `E_ON` for the equational replays.
-All 22 outputs contain successful proofs and a 2009-11A version banner.  The
+`proofs/official/prover9/`: `A01`--`A18` for the condensed-detachment axioms,
+`E_AN`, `E_Cf`, `E_CN`, and `E_ON` for the equational replays, and
+`wos_pure_circle_CN_1`--`wos_pure_circle_CN_7` for the seven strict links of
+the C/N circle.  All 29 outputs contain successful proofs and a 2009-11A
+version banner.  The
 equational outputs report zero new demodulators and zero demodulation rewrites.
 See `proofs/official/prover9/README.md` for the inventory and proof statistics.
 Large proof-development stocks are intentionally excluded from the release;
@@ -172,7 +174,7 @@ python3 tools/verify_release.py
 python3 tools/verify_release.py --replay --jobs 8
 ```
 
-The second command executes all 22 canonical proofs afresh. It does not
+The second command executes all 29 canonical proofs afresh. It does not
 overwrite the archived outputs.
 
 ## Principal lower-bound runs

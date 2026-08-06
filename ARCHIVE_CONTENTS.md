@@ -13,11 +13,14 @@ the principal condensed-detachment searches.
 
 ## Paper-facing proof certificates
 
-`proofs/official/prover9/` contains 22 canonical input/output pairs:
+`proofs/official/prover9/` contains 29 canonical input/output pairs:
 
 - `A01`--`A18` verify the condensed-detachment axioms reported in the paper;
 - `E_AN`, `E_Cf`, `E_CN`, and `E_ON` verify the four equational axioms by
-  deriving the conjunction of the relevant complete basis.
+  deriving the conjunction of the relevant complete basis;
+- `wos_pure_circle_CN_1`--`wos_pure_circle_CN_7` verify the seven strict links
+  Meredith -> cand65 -> cand112 -> cand79 -> cand44 -> cand8 -> cand121 ->
+  Meredith, with one source axiom per replay.
 
 The directory's `README.md` reports proof statistics and its `SHA256SUMS`
 fixes the exact archived bytes.
@@ -37,4 +40,4 @@ They remain in the authors' working tree and are excluded by `.gitignore`;
 they are not required to check any paper-facing proof.
 
 Run `python3 tools/verify_release.py` for a non-mutating archive audit. Add
-`--replay` to execute all 22 canonical inputs afresh with the vendored binary.
+`--replay` to execute all 29 canonical inputs afresh with the vendored binary.

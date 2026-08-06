@@ -1,0 +1,958 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 22713 was started by fitelson on BEFMBP.local,
+Thu Aug  6 08:37:58 2026
+The command was "manuscript/ajl_submission/publication_repo/vendor/prover9-2009-11A/bin/macos-arm64/prover9 -f manuscript/ajl_submission/publication_repo/proofs/official/prover9/condensed_detachment/CN/wos_pure_circle_CN_5.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file manuscript/ajl_submission/publication_repo/proofs/official/prover9/condensed_detachment/CN/wos_pure_circle_CN_5.in
+
+set(raw).
+    % set(raw) -> clear(auto).
+    % clear(auto) -> clear(auto_inference).
+    % clear(auto) -> clear(auto_setup).
+    % clear(auto_setup) -> clear(predicate_elim).
+    % clear(auto_setup) -> assign(eq_defs, pass).
+    % clear(auto) -> clear(auto_limits).
+    % clear(auto_limits) -> assign(max_weight, "1000000000000.000").
+    % clear(auto_limits) -> assign(sos_limit, -1).
+    % clear(auto) -> clear(auto_denials).
+    % clear(auto) -> clear(auto_process).
+    % set(raw) -> clear(ordered_res).
+    % set(raw) -> clear(ordered_para).
+    % set(raw) -> set(para_into_vars).
+    % set(raw) -> set(para_from_small).
+    % set(raw) -> clear(ordered_para).
+    % set(raw) -> clear(back_demod).
+    % set(raw) -> clear(cac_redundancy).
+    % set(raw) -> assign(backsub_check, 2147483647).
+    % set(raw) -> set(lightest_first).
+    % set(lightest_first) -> assign(weight_part, 1).
+    % set(lightest_first) -> assign(age_part, 0).
+    % set(lightest_first) -> assign(false_part, 0).
+    % set(lightest_first) -> assign(true_part, 0).
+    % set(lightest_first) -> assign(random_part, 0).
+    % set(raw) -> assign(literal_selection, none).
+set(hyper_resolution).
+    % set(hyper_resolution) -> set(pos_hyper_resolution).
+set(prolog_style_variables).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight,0).
+assign(max_proofs,1).
+
+formulas(assumptions).
+-t(X) | -t(i(X,Y)) | t(Y) # label(condensed_detachment).
+t(i(A,i(i(n(B),i(i(n(C),D),i(A,E))),i(i(E,B),i(C,B))))) # label(cand44).
+end_of_list.
+
+formulas(goals).
+t(i(A,i(i(B,i(A,C)),i(i(n(C),i(i(n(D),E),B)),i(D,C))))).
+end_of_list.
+
+formulas(hints).
+t(i(A,i(i(n(B),i(i(n(C),D),i(A,E))),i(i(E,B),i(C,B))))).
+t(i(i(n(A),i(i(n(B),C),i(i(D,i(i(n(E),i(i(n(F),G),i(D,H))),i(i(H,E),i(F,E)))),I))),i(i(I,A),i(B,A)))).
+t(i(i(i(A,i(i(n(B),i(i(n(C),D),i(E,F))),i(i(F,B),i(C,B)))),G),i(i(i(n(B),i(i(n(C),D),i(E,F))),i(i(F,B),i(C,B))),G))).
+t(i(i(n(A),i(i(n(B),C),i(i(i(n(D),i(i(n(E),F),i(i(G,i(i(n(H),i(i(n(I),J),i(G,K))),i(i(K,H),i(I,H)))),L))),i(i(L,D),i(E,D))),M))),i(i(M,A),i(B,A)))).
+t(i(i(i(A,i(i(B,C),i(D,C))),E),i(i(i(B,C),i(D,C)),E))).
+t(i(i(i(n(A),B),i(i(C,i(i(n(D),i(i(n(E),F),i(C,G))),i(i(G,D),i(E,D)))),B)),i(i(B,H),i(A,H)))).
+t(i(i(i(n(A),i(i(n(B),i(i(n(C),D),i(n(A),E))),i(i(E,B),i(C,B)))),i(i(i(C,B),A),i(B,A))),i(i(i(i(i(C,B),A),i(B,A)),F),i(G,F)))).
+t(i(i(i(i(i(A,i(i(B,C),i(D,C))),E),i(i(i(B,C),i(D,C)),E)),F),i(G,F))).
+t(i(i(n(A),i(i(n(B),C),i(i(i(i(i(i(D,i(i(E,F),i(G,F))),H),i(i(i(E,F),i(G,F)),H)),I),i(J,I)),K))),i(i(K,A),i(B,A)))).
+t(i(i(i(A,i(B,C)),D),i(i(B,C),D))).
+t(i(A,i(i(B,C),i(i(i(D,E),i(F,E)),i(B,C))))).
+t(i(i(i(n(A),B),C),i(A,C))).
+t(i(A,i(i(B,A),i(C,A)))).
+t(i(i(n(A),A),i(B,A))).
+t(i(i(n(A),i(i(n(B),C),i(i(i(n(D),D),i(E,D)),F))),i(i(F,A),i(B,A)))).
+t(i(i(A,B),i(C,i(A,B)))).
+t(i(i(n(A),i(i(n(B),C),i(i(i(i(D,i(i(E,F),i(G,F))),H),i(i(i(E,F),i(G,F)),H)),I))),i(i(I,A),i(B,A)))).
+t(i(i(i(A,i(i(i(B,C),i(D,C)),E)),F),i(i(i(i(B,C),i(D,C)),E),F))).
+t(i(i(i(i(A,i(i(B,C),i(D,C))),i(i(n(C),i(i(n(D),E),i(i(A,i(i(B,C),i(D,C))),B))),i(i(B,C),i(D,C)))),F),i(i(F,G),i(H,G)))).
+t(i(i(A,B),i(i(i(A,B),C),i(D,C)))).
+t(i(A,i(i(B,C),i(i(i(B,C),D),i(E,D))))).
+t(i(i(i(A,i(B,C)),D),i(C,D))).
+t(i(i(i(A,i(i(B,C),i(D,C))),E),i(C,E))).
+t(i(A,i(i(A,B),i(C,B)))).
+t(i(i(A,B),i(B,B))).
+t(i(A,i(B,B))).
+t(i(A,A)).
+t(i(i(n(A),i(i(n(B),C),i(i(D,D),E))),i(i(E,A),i(B,A)))).
+t(i(i(i(n(A),B),i(i(C,i(i(n(D),i(i(n(E),F),i(C,G))),i(i(G,D),i(E,D)))),H)),i(i(H,I),i(A,I)))).
+t(i(i(i(i(i(A,B),C),i(B,C)),D),i(E,D))).
+t(i(A,i(B,i(C,i(D,C))))).
+t(i(i(i(A,i(B,A)),C),i(D,C))).
+t(i(A,i(B,i(C,i(D,i(E,C)))))).
+t(i(A,i(B,i(C,i(D,B))))).
+t(i(A,i(B,i(C,A)))).
+t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(F,D))),G))),i(i(G,A),i(B,A)))).
+t(i(i(i(A,B),i(C,B)),i(D,i(E,i(i(A,B),i(C,B)))))).
+t(i(A,i(B,i(i(n(C),C),i(D,C))))).
+t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(i(n(F),F),i(G,F)))),H))),i(i(H,A),i(B,A)))).
+t(i(A,i(B,i(i(n(C),i(i(n(D),E),i(B,F))),i(i(F,C),i(D,C)))))).
+t(i(i(i(i(i(A,B),C),i(D,C)),E),i(B,E))).
+t(i(A,i(B,i(C,B)))).
+t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(F,E))),G))),i(i(G,A),i(B,A)))).
+t(i(i(i(n(A),B),i(i(C,i(D,i(E,D))),F)),i(i(F,G),i(A,G)))).
+t(i(i(i(A,i(B,i(C,B))),D),i(i(D,E),i(F,E)))).
+t(i(A,i(i(i(B,i(C,i(D,C))),E),i(i(E,F),i(G,F))))).
+t(i(i(i(i(i(A,i(B,i(C,B))),D),i(i(D,E),i(F,E))),G),i(H,G))).
+t(i(A,i(B,i(C,i(i(A,D),i(E,D)))))).
+t(i(i(i(i(n(A),B),i(C,B)),A),i(D,A))).
+t(i(i(A,B),i(C,i(D,i(A,B))))).
+t(i(A,i(B,i(C,i(n(A),D))))).
+t(i(A,i(B,i(C,i(n(i(n(A),D)),E))))).
+t(i(A,i(B,i(C,i(n(i(n(i(n(A),D)),E)),F))))).
+t(i(i(i(n(i(n(i(n(n(A)),B)),C)),D),A),i(E,A))).
+t(i(A,i(n(i(n(n(i(B,C))),D)),i(B,C)))).
+t(i(i(i(n(i(n(n(i(A,B))),C)),i(A,B)),D),i(E,D))).
+t(i(A,i(n(n(i(B,C))),i(D,i(B,C))))).
+t(i(n(n(i(A,B))),i(C,i(A,B)))).
+t(i(i(A,n(i(i(B,B),A))),i(C,n(i(i(B,B),A))))).
+t(i(i(n(i(i(A,A),n(B))),C),i(B,C))).
+t(i(i(i(A,A),n(B)),i(B,C))).
+t(i(i(i(i(i(A,A),n(B)),i(B,C)),D),i(E,D))).
+t(i(n(A),i(B,i(C,i(A,D))))).
+t(i(i(i(A,B),A),i(C,A))).
+t(i(A,i(i(n(i(B,C)),C),i(B,C)))).
+t(i(i(A,B),i(i(i(C,i(D,i(E,C))),A),B))).
+t(i(i(A,B),i(A,B))).
+t(i(A,i(i(i(B,C),D),i(C,D)))).
+t(i(i(i(A,B),C),i(B,C))).
+t(i(i(i(A,i(B,i(C,A))),i(i(D,E),F)),i(E,F))).
+t(i(A,i(B,i(i(C,D),i(C,D))))).
+t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(i(F,G),i(F,G)))),H))),i(i(H,A),i(B,A)))).
+t(i(i(i(i(i(n(A),B),C),i(D,C)),E),i(A,E))).
+t(i(A,i(B,i(C,i(n(i(n(i(n(i(D,A)),E)),F)),G))))).
+t(i(i(i(n(i(n(i(n(i(A,n(B))),C)),D)),E),B),i(F,B))).
+t(i(A,i(n(i(n(i(B,n(i(C,D)))),E)),i(C,D)))).
+t(i(i(i(n(i(n(i(A,n(i(B,C)))),D)),i(B,C)),E),i(F,E))).
+t(i(A,i(n(i(B,n(i(C,D)))),i(E,i(C,D))))).
+t(i(n(i(A,n(i(B,C)))),i(D,i(B,C)))).
+t(i(i(A,i(B,n(i(i(C,C),A)))),i(D,i(B,n(i(i(C,C),A)))))).
+t(i(A,i(B,i(C,n(i(i(D,D),n(A))))))).
+t(i(i(n(i(i(A,A),n(n(B)))),B),i(C,B))).
+t(i(i(A,B),i(i(i(C,C),n(n(A))),B))).
+t(i(i(i(A,A),n(n(B))),i(i(B,C),i(D,C)))).
+t(i(n(n(A)),i(i(A,B),i(C,B)))).
+t(i(i(A,n(n(B))),i(B,n(n(B))))).
+t(i(A,n(n(A)))).
+t(i(i(i(A,n(n(A))),B),i(C,B))).
+t(i(A,i(B,i(C,n(n(i(n(A),D))))))).
+t(i(i(n(n(i(n(n(A)),B))),A),i(C,A))).
+t(i(i(A,B),i(n(i(n(n(A)),C)),B))).
+t(i(n(i(n(n(A)),B)),i(C,i(D,A)))).
+t(i(i(A,i(n(n(A)),B)),i(C,i(n(n(A)),B)))).
+t(i(A,n(i(i(B,B),n(A))))).
+t(i(i(i(A,n(i(i(B,B),n(A)))),C),i(D,C))).
+t(i(A,i(B,i(C,n(i(i(D,D),n(i(E,A)))))))).
+t(i(A,i(B,i(C,n(i(i(D,D),n(i(E,i(F,A))))))))).
+t(i(i(n(i(i(A,A),n(i(B,i(C,n(D)))))),D),i(E,D))).
+t(i(i(A,B),i(i(i(C,C),n(i(D,i(E,n(A))))),B))).
+t(i(i(i(A,A),n(i(B,i(C,n(D))))),D)).
+t(i(i(i(i(i(A,A),n(i(B,i(C,n(D))))),D),E),i(F,E))).
+t(i(n(i(A,i(B,n(C)))),i(D,i(E,C)))).
+t(i(i(A,i(B,i(C,n(A)))),i(D,i(B,i(C,n(A)))))).
+t(i(A,i(B,i(C,i(D,n(n(A))))))).
+t(i(A,i(B,i(C,i(D,n(n(i(E,A)))))))).
+t(i(A,i(n(n(B)),i(C,i(D,n(n(i(E,B)))))))).
+t(i(n(n(A)),i(B,i(C,n(n(i(D,A))))))).
+t(i(i(n(n(i(A,B))),n(B)),i(C,n(B)))).
+t(i(i(n(A),B),i(n(i(C,A)),B))).
+t(i(n(i(A,B)),i(C,i(D,i(B,E))))).
+t(i(n(i(A,i(B,C))),i(D,i(E,i(C,F))))).
+t(i(i(i(A,B),i(C,i(D,A))),i(E,i(C,i(D,A))))).
+t(i(A,i(i(n(i(i(B,B),n(A))),C),i(D,C)))).
+t(i(A,i(i(n(i(i(B,B),n(i(C,D)))),C),i(E,C)))).
+t(i(i(A,B),i(i(i(C,C),n(i(A,D))),B))).
+t(i(n(i(A,B)),i(C,i(D,A)))).
+t(i(i(A,i(A,B)),i(C,i(A,B)))).
+t(i(i(A,B),i(i(i(C,C),A),B))).
+t(i(i(i(A,A),i(B,C)),i(i(i(D,D),B),C))).
+t(i(i(n(i(i(A,A),n(i(B,n(C))))),C),i(D,C))).
+t(i(i(A,B),i(i(i(C,C),n(i(D,n(A)))),B))).
+t(i(i(i(A,A),n(i(B,n(C)))),i(D,i(E,C)))).
+t(i(n(i(A,n(B))),i(C,i(D,B)))).
+t(i(i(A,i(B,n(A))),i(C,i(B,n(A))))).
+t(i(A,i(n(A),B))).
+t(i(A,i(n(i(B,A)),C))).
+t(i(A,i(n(i(B,C)),n(C)))).
+t(i(i(i(A,A),n(i(B,C))),n(C))).
+t(i(i(i(i(i(A,A),n(i(B,C))),n(C)),D),i(E,D))).
+t(i(n(i(A,B)),i(C,i(D,n(B))))).
+t(i(i(n(A),i(B,A)),i(C,i(B,A)))).
+t(i(A,i(n(i(B,i(C,A))),D))).
+t(i(i(i(A,A),n(i(B,i(C,n(D))))),i(n(i(E,i(F,D))),G))).
+t(i(n(i(A,i(B,n(C)))),i(n(i(D,i(E,C))),F))).
+t(i(A,i(n(i(B,i(C,D))),i(E,i(F,n(D)))))).
+t(i(n(i(A,i(B,C))),i(D,i(E,n(C))))).
+t(i(i(n(A),i(B,i(C,A))),i(D,i(B,i(C,A))))).
+t(i(A,i(i(n(B),i(C,i(D,B))),i(C,i(D,B))))).
+t(i(i(n(A),i(B,i(C,A))),i(B,i(C,A)))).
+t(i(A,i(i(B,i(B,C)),i(B,C)))).
+t(i(i(A,i(A,B)),i(A,B))).
+t(i(n(i(n(n(A)),B)),i(i(A,C),i(D,C)))).
+t(i(A,i(i(B,C),i(n(n(B)),C)))).
+t(i(i(A,B),i(n(n(A)),B))).
+t(i(n(n(A)),i(B,i(C,n(n(i(n(A),D))))))).
+t(i(i(n(n(i(n(A),B))),n(A)),i(C,n(A)))).
+t(i(i(n(A),B),i(n(i(n(A),C)),B))).
+t(i(n(i(n(A),B)),i(C,i(D,i(A,E))))).
+t(i(i(i(A,B),i(n(A),C)),i(D,i(n(A),C)))).
+t(i(i(i(A,B),i(n(A),C)),i(n(A),C))).
+t(i(n(A),i(B,i(C,n(n(i(A,D))))))).
+t(i(i(n(n(i(A,B))),A),i(C,A))).
+t(i(i(A,B),i(n(i(A,C)),B))).
+t(i(i(i(i(n(A),B),i(C,B)),A),A)).
+t(i(n(i(i(A,B),C)),i(n(i(A,D)),B))).
+t(i(n(i(A,i(i(B,C),D))),i(n(i(B,E)),C))).
+t(i(n(i(A,i(i(A,B),C))),B)).
+t(i(i(i(n(i(A,i(i(A,B),C))),B),D),i(E,D))).
+t(i(A,i(i(A,B),B))).
+t(i(n(i(A,B)),i(i(A,C),C))).
+t(i(n(i(A,i(B,C))),i(i(B,D),D))).
+t(i(i(A,i(B,i(C,i(A,D)))),i(B,i(C,i(A,D))))).
+t(i(i(n(A),i(i(n(B),C),i(B,D))),i(i(D,A),i(B,A)))).
+t(i(i(A,B),i(i(B,C),i(A,C)))).
+t(i(i(i(i(A,B),i(C,B)),D),i(i(C,A),D))).
+t(i(i(A,i(B,C)),i(i(D,B),i(A,i(D,C))))).
+t(i(A,i(B,i(i(B,C),C)))).
+t(i(A,i(B,i(C,i(i(C,D),D))))).
+t(i(i(i(i(A,B),B),C),i(A,C))).
+t(i(i(A,B),i(i(C,A),i(C,B)))).
+t(i(i(A,i(B,C)),i(i(C,D),i(A,i(B,D))))).
+t(i(i(A,i(B,C)),i(B,i(A,C)))).
+t(i(A,i(i(B,i(A,C)),i(B,C)))).
+t(i(i(i(A,B),C),i(D,i(i(A,i(D,B)),C)))).
+t(i(i(i(A,i(B,C)),D),i(i(B,i(A,C)),D))).
+t(i(i(A,i(B,C)),i(i(D,A),i(B,i(D,C))))).
+t(i(i(A,i(B,i(C,i(B,D)))),i(A,i(C,i(B,D))))).
+t(i(i(A,i(B,i(C,i(D,i(C,E))))),i(B,i(A,i(D,i(C,E)))))).
+t(i(i(A,i(B,i(C,D))),i(i(C,A),i(B,i(C,D))))).
+t(i(i(A,i(B,i(C,D))),i(A,i(C,i(B,D))))).
+t(i(i(A,i(B,i(C,i(D,E)))),i(A,i(B,i(D,i(C,E)))))).
+t(i(i(A,i(B,i(C,i(D,E)))),i(B,i(A,i(D,i(C,E)))))).
+t(i(i(A,i(B,C)),i(i(i(A,C),D),i(B,D)))).
+t(i(i(i(A,B),i(C,D)),i(i(A,i(E,B)),i(C,i(E,D))))).
+t(i(i(A,i(i(B,C),i(D,i(E,B)))),i(A,i(F,i(D,i(E,B)))))).
+t(i(i(A,i(B,C)),i(A,i(i(C,D),i(B,D))))).
+t(i(i(i(A,B),i(C,D)),i(E,i(i(D,A),i(C,A))))).
+t(i(i(i(A,B),i(C,D)),i(i(D,A),i(C,A)))).
+t(i(i(i(A,B),i(C,i(D,E))),i(i(E,A),i(C,i(D,A))))).
+t(i(i(A,i(i(B,C),i(A,i(D,E)))),i(i(E,B),i(A,i(D,B))))).
+t(i(i(i(i(i(n(A),B),C),i(A,C)),D),i(E,D))).
+t(i(i(A,i(i(B,C),i(D,E))),i(A,i(i(E,B),i(D,B))))).
+t(i(i(A,B),i(i(i(A,C),D),i(i(B,C),D)))).
+t(i(i(i(A,B),C),i(i(A,D),i(i(D,B),C)))).
+t(i(A,i(B,i(i(A,C),C)))).
+t(i(i(A,B),i(i(n(B),A),B))).
+t(i(i(A,B),i(i(B,C),i(i(n(C),A),C)))).
+t(i(i(A,B),i(i(C,B),i(i(n(C),A),B)))).
+t(i(A,i(i(B,i(C,D)),i(i(n(B),i(i(n(C),E),D)),i(C,D))))).
+t(i(i(A,B),i(i(n(B),i(i(n(C),D),A)),i(C,B)))).
+t(i(A,i(i(B,i(A,C)),i(i(n(C),i(i(n(D),E),B)),i(D,C))))).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 t(i(A,i(i(B,i(A,C)),i(i(n(C),i(i(n(D),E),B)),i(D,C))))) # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+-t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+t(i(A,i(i(n(B),i(i(n(C),D),i(A,E))),i(i(E,B),i(C,B))))) # label(cand44).  [assumption].
+-t(i(c1,i(i(c2,i(c1,c3)),i(i(n(c3),i(i(n(c4),c5),c2)),i(c4,c3))))).  [deny(1)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+% 201 hints input.
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ t ]).
+Function symbol precedence:  function_order([ c1, c2, c3, c4, c5, i, n ]).
+After inverse_order:  (no changes).
+
+kept:      2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+kept:      3 t(i(A,i(i(n(B),i(i(n(C),D),i(A,E))),i(i(E,B),i(C,B))))) # label(cand44).  [assumption].
+kept:      4 -t(i(c1,i(i(c2,i(c1,c3)),i(i(n(c3),i(i(n(c4),c5),c2)),i(c4,c3))))).  [deny(1)].
+
+============================== end of process initial clauses ========
+
+============================== CLAUSES FOR SEARCH ====================
+
+% Clauses after input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+3 t(i(A,i(i(n(B),i(i(n(C),D),i(A,E))),i(i(E,B),i(C,B))))) # label(cand44).  [assumption].
+4 -t(i(c1,i(i(c2,i(c1,c3)),i(i(n(c3),i(i(n(c4),c5),c2)),i(c4,c3))))).  [deny(1)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+% 201 hints (201 processed, 0 redundant).
+
+============================== end of clauses for search =============
+
+============================== SEARCH ================================
+
+% Starting search at 0.00 seconds.
+
+given #1 (I,wt=8): 2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+
+given #2 (I,wt=0): 3 t(i(A,i(i(n(B),i(i(n(C),D),i(A,E))),i(i(E,B),i(C,B))))) # label(cand44).  [assumption].
+
+given #3 (I,wt=22): 4 -t(i(c1,i(i(c2,i(c1,c3)),i(i(n(c3),i(i(n(c4),c5),c2)),i(c4,c3))))).  [deny(1)].
+
+given #4 (H,wt=0): 5 t(i(i(n(A),i(i(n(B),C),i(i(D,i(i(n(E),i(i(n(F),V6),i(D,V7))),i(i(V7,E),i(F,E)))),V8))),i(i(V8,A),i(B,A)))).  [hyper(2,a,3,a,b,3,a)].
+
+given #5 (H,wt=0): 6 t(i(i(i(A,i(i(n(B),i(i(n(C),D),i(E,F))),i(i(F,B),i(C,B)))),V6),i(i(i(n(B),i(i(n(C),D),i(E,F))),i(i(F,B),i(C,B))),V6))).  [hyper(2,a,3,a,b,5,a)].
+
+given #6 (H,wt=0): 7 t(i(i(n(A),i(i(n(B),C),i(i(i(n(D),i(i(n(E),F),i(i(V6,i(i(n(V7),i(i(n(V8),V9),i(V6,V10))),i(i(V10,V7),i(V8,V7)))),V11))),i(i(V11,D),i(E,D))),V12))),i(i(V12,A),i(B,A)))).  [hyper(2,a,5,a,b,3,a)].
+
+given #7 (H,wt=0): 8 t(i(i(i(A,i(i(B,C),i(D,C))),E),i(i(i(B,C),i(D,C)),E))).  [hyper(2,a,3,a,b,7,a)].
+
+given #8 (H,wt=0): 9 t(i(i(i(n(A),B),i(i(C,i(i(n(D),i(i(n(E),F),i(C,V6))),i(i(V6,D),i(E,D)))),B)),i(i(B,V7),i(A,V7)))).  [hyper(2,a,5,a,b,8,a)].
+
+given #9 (H,wt=0): 10 t(i(i(n(A),i(i(n(B),C),i(i(i(i(D,i(i(E,F),i(V6,F))),V7),i(i(i(E,F),i(V6,F)),V7)),V8))),i(i(V8,A),i(B,A)))).  [hyper(2,a,8,a,b,3,a)].
+
+given #10 (H,wt=0): 11 t(i(i(i(n(A),i(i(n(B),i(i(n(C),D),i(n(A),E))),i(i(E,B),i(C,B)))),i(i(i(C,B),A),i(B,A))),i(i(i(i(i(C,B),A),i(B,A)),F),i(V6,F)))).  [hyper(2,a,9,a,b,6,a)].
+
+given #11 (H,wt=0): 12 t(i(i(i(A,i(i(i(B,C),i(D,C)),E)),F),i(i(i(i(B,C),i(D,C)),E),F))).  [hyper(2,a,3,a,b,10,a)].
+
+given #12 (H,wt=0): 13 t(i(i(i(i(i(A,i(i(B,C),i(D,C))),E),i(i(i(B,C),i(D,C)),E)),F),i(V6,F))).  [hyper(2,a,7,a,b,11,a)].
+
+given #13 (H,wt=0): 14 t(i(i(i(i(A,i(i(B,C),i(D,C))),i(i(n(C),i(i(n(D),E),i(i(A,i(i(B,C),i(D,C))),B))),i(i(B,C),i(D,C)))),F),i(i(F,V6),i(V7,V6)))).  [hyper(2,a,9,a,b,12,a)].
+
+given #14 (H,wt=0): 15 t(i(i(n(A),i(i(n(B),C),i(i(i(i(i(i(D,i(i(E,F),i(V6,F))),V7),i(i(i(E,F),i(V6,F)),V7)),V8),i(V9,V8)),V10))),i(i(V10,A),i(B,A)))).  [hyper(2,a,13,a,b,3,a)].
+
+given #15 (H,wt=0): 16 t(i(i(i(A,i(B,C)),D),i(i(B,C),D))).  [hyper(2,a,3,a,b,15,a)].
+
+given #16 (H,wt=0): 18 t(i(i(A,B),i(i(i(A,B),C),i(D,C)))).  [hyper(2,a,14,a,b,16,a)].
+
+given #17 (H,wt=0): 20 t(i(i(i(n(A),B),i(i(C,i(i(n(D),i(i(n(E),F),i(C,V6))),i(i(V6,D),i(E,D)))),V7)),i(i(V7,V8),i(A,V8)))).  [hyper(2,a,5,a,b,16,a)].
+
+given #18 (H,wt=0): 22 t(i(i(i(i(i(A,B),C),i(B,C)),D),i(E,D))).  [hyper(2,a,3,a,b,20,a)].
+
+given #19 (H,wt=0): 23 t(i(A,i(B,i(C,i(D,C))))).  [hyper(2,a,22,a,b,22,a)].
+
+given #20 (H,wt=0): 26 t(i(i(A,B),i(C,i(A,B)))).  [hyper(2,a,22,a,b,16,a)].
+
+given #21 (H,wt=0): 28 t(i(A,i(B,i(C,B)))).  [hyper(2,a,23,a,b,23,a)].
+
+given #22 (H,wt=0): 29 t(i(i(i(A,i(B,A)),C),i(D,C))).  [hyper(2,a,23,a,b,20,a)].
+
+given #23 (H,wt=0): 30 t(i(A,i(i(B,C),i(i(i(B,C),D),i(E,D))))).  [hyper(2,a,18,a,b,26,a)].
+
+given #24 (H,wt=0): 31 t(i(A,i(B,i(i(n(C),i(i(n(D),E),i(B,F))),i(i(F,C),i(D,C)))))).  [hyper(2,a,3,a,b,26,a)].
+
+given #25 (H,wt=0): 32 t(i(i(i(n(A),B),C),i(A,C))).  [hyper(2,a,26,a,b,20,a)].
+
+given #26 (H,wt=0): 33 t(i(i(A,B),i(C,i(D,i(A,B))))).  [hyper(2,a,26,a,b,16,a)].
+
+given #27 (H,wt=0): 35 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(F,E))),V6))),i(i(V6,A),i(B,A)))).  [hyper(2,a,28,a,b,3,a)].
+
+given #28 (H,wt=0): 36 t(i(A,i(B,i(C,i(D,i(E,C)))))).  [hyper(2,a,29,a,b,22,a)].
+
+given #29 (H,wt=0): 37 t(i(i(i(A,i(i(B,C),i(D,C))),E),i(C,E))).  [hyper(2,a,30,a,b,7,a)].
+
+given #30 (H,wt=0): 38 t(i(A,i(i(B,A),i(C,A)))).  [hyper(2,a,7,a,b,32,a)].
+
+given #31 (H,wt=0): 39 t(i(i(i(i(i(n(A),B),C),i(A,C)),D),i(E,D))).  [hyper(2,a,32,a,b,18,a)].
+
+given #32 (H,wt=0): 40 t(i(A,i(B,i(C,i(n(A),D))))).  [hyper(2,a,33,a,b,32,a)].
+
+given #33 (H,wt=0): 41 t(i(i(i(n(A),B),i(i(C,i(D,i(E,D))),F)),i(i(F,V6),i(A,V6)))).  [hyper(2,a,35,a,b,16,a)].
+
+given #34 (H,wt=0): 42 t(i(A,i(B,i(C,i(D,B))))).  [hyper(2,a,36,a,b,36,a)].
+
+given #35 (H,wt=0): 43 t(i(A,i(i(A,B),i(C,B)))).  [hyper(2,a,35,a,b,37,a)].
+
+given #36 (H,wt=0): 44 t(i(i(n(A),A),i(B,A))).  [hyper(2,a,38,a,b,35,a)].
+
+given #37 (H,wt=0): 45 t(i(A,i(B,i(C,i(n(i(n(A),D)),E))))).  [hyper(2,a,40,a,b,32,a)].
+
+given #38 (H,wt=0): 46 t(i(i(i(A,i(B,i(C,B))),D),i(i(D,E),i(F,E)))).  [hyper(2,a,41,a,b,16,a)].
+
+given #39 (H,wt=0): 47 t(i(A,i(B,i(C,A)))).  [hyper(2,a,42,a,b,42,a)].
+
+given #40 (H,wt=0): 48 t(i(i(A,B),i(B,B))).  [hyper(2,a,43,a,b,35,a)].
+
+given #41 (H,wt=0): 49 t(i(i(A,B),i(A,B))).  [hyper(2,a,44,a,b,41,a)].
+
+given #42 (H,wt=0): 50 t(i(i(n(A),i(i(n(B),C),i(i(i(n(D),D),i(E,D)),F))),i(i(F,A),i(B,A)))).  [hyper(2,a,44,a,b,3,a)].
+
+given #43 (H,wt=0): 51 t(i(A,i(B,i(C,i(n(i(n(i(n(A),D)),E)),F))))).  [hyper(2,a,45,a,b,32,a)].
+
+given #44 (H,wt=0): 52 t(i(i(i(i(i(A,i(B,i(C,B))),D),i(i(D,E),i(F,E))),V6),i(V7,V6))).  [hyper(2,a,46,a,b,43,a)].
+
+given #45 (H,wt=0): 53 t(i(A,i(B,i(i(n(C),C),i(D,C))))).  [hyper(2,a,44,a,b,47,a)].
+
+given #46 (H,wt=0): 54 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(F,D))),V6))),i(i(V6,A),i(B,A)))).  [hyper(2,a,47,a,b,3,a)].
+
+given #47 (H,wt=0): 55 t(i(A,i(B,B))).  [hyper(2,a,48,a,b,32,a)].
+
+given #48 (H,wt=0): 56 t(i(A,i(B,i(i(C,D),i(C,D))))).  [hyper(2,a,49,a,b,47,a)].
+
+given #49 (H,wt=0): 57 t(i(A,i(n(A),B))).  [hyper(2,a,49,a,b,32,a)].
+
+given #50 (H,wt=0): 58 t(i(A,i(i(i(B,C),D),i(C,D)))).  [hyper(2,a,49,a,b,22,a)].
+
+given #51 (H,wt=0): 59 t(i(i(i(A,i(B,C)),D),i(C,D))).  [hyper(2,a,30,a,b,50,a)].
+
+given #52 (H,wt=0): 60 t(i(i(i(n(i(n(i(n(n(A)),B)),C)),D),A),i(E,A))).  [hyper(2,a,51,a,b,50,a)].
+
+given #53 (H,wt=0): 61 t(i(A,i(i(i(B,i(C,i(D,C))),E),i(i(E,F),i(V6,F))))).  [hyper(2,a,49,a,b,52,a)].
+
+given #54 (H,wt=0): 62 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(i(n(F),F),i(V6,F)))),V7))),i(i(V7,A),i(B,A)))).  [hyper(2,a,53,a,b,3,a)].
+
+given #55 (H,wt=0): 63 t(i(A,A)).  [hyper(2,a,55,a,b,55,a)].
+
+given #56 (H,wt=0): 64 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(i(F,V6),i(F,V6)))),V7))),i(i(V7,A),i(B,A)))).  [hyper(2,a,56,a,b,3,a)].
+
+given #57 (H,wt=0): 65 t(i(i(i(A,B),C),i(B,C))).  [hyper(2,a,58,a,b,58,a)].
+
+given #58 (H,wt=0): 66 t(i(A,i(n(i(B,i(C,A))),D))).  [hyper(2,a,57,a,b,59,a)].
+
+given #59 (H,wt=0): 67 t(i(i(i(i(i(A,B),C),i(D,C)),E),i(B,E))).  [hyper(2,a,31,a,b,62,a)].
+
+given #60 (H,wt=0): 69 t(i(i(n(A),i(i(n(B),C),i(i(D,D),E))),i(i(E,A),i(B,A)))).  [hyper(2,a,63,a,b,3,a)].
+
+given #61 (H,wt=0): 70 t(i(i(i(i(i(n(A),B),C),i(D,C)),E),i(A,E))).  [hyper(2,a,31,a,b,64,a)].
+
+given #62 (H,wt=0): 71 t(i(A,i(n(i(B,A)),C))).  [hyper(2,a,57,a,b,65,a)].
+
+given #63 (H,wt=0): 72 t(i(A,i(B,i(C,i(n(i(n(i(n(i(D,A)),E)),F)),V6))))).  [hyper(2,a,51,a,b,65,a)].
+
+given #64 (H,wt=0): 75 t(i(A,i(B,i(C,i(i(A,D),i(E,D)))))).  [hyper(2,a,52,a,b,67,a)].
+
+given #65 (H,wt=0): 76 t(i(i(i(n(i(n(i(n(i(A,n(B))),C)),D)),E),B),i(F,B))).  [hyper(2,a,72,a,b,69,a)].
+
+given #66 (H,wt=0): 77 t(i(i(i(i(n(A),B),i(C,B)),A),i(D,A))).  [hyper(2,a,75,a,b,69,a)].
+
+given #67 (H,wt=0): 78 t(i(A,i(n(i(n(i(B,n(i(C,D)))),E)),i(C,D)))).  [hyper(2,a,76,a,b,77,a)].
+
+given #68 (H,wt=0): 79 t(i(A,i(n(i(n(n(i(B,C))),D)),i(B,C)))).  [hyper(2,a,60,a,b,77,a)].
+
+given #69 (H,wt=0): 80 t(i(i(i(n(i(n(i(A,n(i(B,C)))),D)),i(B,C)),E),i(F,E))).  [hyper(2,a,78,a,b,46,a)].
+
+given #70 (H,wt=0): 81 t(i(i(i(n(i(n(n(i(A,B))),C)),i(A,B)),D),i(E,D))).  [hyper(2,a,79,a,b,46,a)].
+
+given #71 (H,wt=0): 82 t(i(A,i(n(i(B,n(i(C,D)))),i(E,i(C,D))))).  [hyper(2,a,80,a,b,77,a)].
+
+given #72 (H,wt=0): 83 t(i(A,i(n(n(i(B,C))),i(D,i(B,C))))).  [hyper(2,a,81,a,b,77,a)].
+
+given #73 (H,wt=0): 84 t(i(n(i(A,n(i(B,C)))),i(D,i(B,C)))).  [hyper(2,a,82,a,b,82,a)].
+
+given #74 (H,wt=0): 85 t(i(n(n(i(A,B))),i(C,i(A,B)))).  [hyper(2,a,83,a,b,83,a)].
+
+given #75 (H,wt=0): 86 t(i(i(A,i(B,n(i(i(C,C),A)))),i(D,i(B,n(i(i(C,C),A)))))).  [hyper(2,a,84,a,b,69,a)].
+
+given #76 (H,wt=0): 87 t(i(i(A,n(i(i(B,B),A))),i(C,n(i(i(B,B),A))))).  [hyper(2,a,85,a,b,69,a)].
+
+given #77 (H,wt=0): 88 t(i(A,i(B,i(C,n(i(i(D,D),n(A))))))).  [hyper(2,a,86,a,b,32,a)].
+
+given #78 (H,wt=0): 89 t(i(i(n(i(i(A,A),n(B))),C),i(B,C))).  [hyper(2,a,87,a,b,41,a)].
+
+given #79 (H,wt=0): 90 t(i(i(n(i(i(A,A),n(n(B)))),B),i(C,B))).  [hyper(2,a,88,a,b,69,a)].
+
+given #80 (H,wt=0): 91 t(i(A,i(B,i(C,n(i(i(D,D),n(i(E,A)))))))).  [hyper(2,a,88,a,b,65,a)].
+
+given #81 (H,wt=0): 92 t(i(A,i(B,i(C,n(i(i(D,D),n(i(E,i(F,A))))))))).  [hyper(2,a,88,a,b,59,a)].
+
+given #82 (H,wt=0): 93 t(i(A,n(i(i(B,B),n(A))))).  [hyper(2,a,63,a,b,89,a)].
+
+given #83 (H,wt=0): 94 t(i(A,i(i(n(i(i(B,B),n(A))),C),i(D,C)))).  [hyper(2,a,43,a,b,89,a)].
+
+given #84 (H,wt=0): 95 t(i(i(i(A,A),n(B)),i(B,C))).  [hyper(2,a,89,a,b,32,a)].
+
+given #85 (H,wt=0): 96 t(i(i(A,B),i(i(i(C,C),n(n(A))),B))).  [hyper(2,a,90,a,b,41,a)].
+
+given #86 (H,wt=0): 97 t(i(i(n(i(i(A,A),n(i(B,n(C))))),C),i(D,C))).  [hyper(2,a,91,a,b,69,a)].
+
+given #87 (H,wt=0): 98 t(i(i(n(i(i(A,A),n(i(B,i(C,n(D)))))),D),i(E,D))).  [hyper(2,a,92,a,b,69,a)].
+
+given #88 (H,wt=0): 99 t(i(i(i(A,n(i(i(B,B),n(A)))),C),i(D,C))).  [hyper(2,a,93,a,b,43,a)].
+
+given #89 (H,wt=0): 100 t(i(i(i(i(i(A,A),n(B)),i(B,C)),D),i(E,D))).  [hyper(2,a,95,a,b,43,a)].
+
+given #90 (H,wt=0): 101 t(i(i(i(A,A),n(n(B))),i(i(B,C),i(D,C)))).  [hyper(2,a,43,a,b,96,a)].
+
+given #91 (H,wt=0): 102 t(i(i(A,B),i(i(i(C,C),n(i(D,n(A)))),B))).  [hyper(2,a,97,a,b,41,a)].
+
+given #92 (H,wt=0): 103 t(i(i(A,B),i(i(i(C,C),n(i(D,i(E,n(A))))),B))).  [hyper(2,a,98,a,b,41,a)].
+
+given #93 (H,wt=0): 104 t(i(n(A),i(B,i(C,i(A,D))))).  [hyper(2,a,100,a,b,67,a)].
+
+given #94 (H,wt=0): 105 t(i(n(n(A)),i(i(A,B),i(C,B)))).  [hyper(2,a,101,a,b,65,a)].
+
+given #95 (H,wt=0): 106 t(i(i(i(A,A),n(i(B,n(C)))),i(D,i(E,C)))).  [hyper(2,a,47,a,b,102,a)].
+
+given #96 (H,wt=0): 107 t(i(i(i(A,A),n(i(B,i(C,n(D))))),i(n(i(E,i(F,D))),V6))).  [hyper(2,a,66,a,b,103,a)].
+
+given #97 (H,wt=0): 108 t(i(i(i(A,A),n(i(B,i(C,n(D))))),D)).  [hyper(2,a,63,a,b,103,a)].
+
+given #98 (H,wt=0): 109 t(i(i(i(A,B),A),i(C,A))).  [hyper(2,a,104,a,b,69,a)].
+
+given #99 (H,wt=0): 110 t(i(i(A,n(n(B))),i(B,n(n(B))))).  [hyper(2,a,105,a,b,69,a)].
+
+given #100 (H,wt=0): 111 t(i(n(i(A,n(B))),i(C,i(D,B)))).  [hyper(2,a,106,a,b,65,a)].
+
+given #101 (H,wt=0): 112 t(i(n(i(A,i(B,n(C)))),i(n(i(D,i(E,C))),F))).  [hyper(2,a,107,a,b,65,a)].
+
+given #102 (H,wt=0): 113 t(i(i(i(i(i(A,A),n(i(B,i(C,n(D))))),D),E),i(F,E))).  [hyper(2,a,108,a,b,43,a)].
+
+given #103 (H,wt=0): 114 t(i(A,i(i(n(i(B,C)),C),i(B,C)))).  [hyper(2,a,77,a,b,109,a)].
+
+given #104 (H,wt=0): 115 t(i(A,n(n(A)))).  [hyper(2,a,108,a,b,110,a)].
+
+given #105 (H,wt=0): 117 t(i(i(A,i(B,n(A))),i(C,i(B,n(A))))).  [hyper(2,a,111,a,b,69,a)].
+
+given #106 (H,wt=0): 118 t(i(n(i(A,i(B,n(C)))),i(D,i(E,C)))).  [hyper(2,a,113,a,b,67,a)].
+
+given #107 (H,wt=0): 119 t(i(i(A,B),i(i(i(C,C),A),B))).  [hyper(2,a,114,a,b,69,a)].
+
+given #108 (H,wt=0): 120 t(i(i(A,B),i(i(i(C,i(D,i(E,C))),A),B))).  [hyper(2,a,114,a,b,54,a)].
+
+given #109 (H,wt=0): 121 t(i(i(i(A,n(n(A))),B),i(C,B))).  [hyper(2,a,115,a,b,43,a)].
+
+given #110 (H,wt=0): 122 t(i(A,i(n(i(B,C)),n(C)))).  [hyper(2,a,71,a,b,117,a)].
+
+given #111 (H,wt=0): 123 t(i(i(A,i(B,i(C,n(A)))),i(D,i(B,i(C,n(A)))))).  [hyper(2,a,118,a,b,69,a)].
+
+given #112 (H,wt=0): 124 t(i(i(i(A,A),i(B,C)),i(i(i(D,D),B),C))).  [hyper(2,a,119,a,b,119,a)].
+
+given #113 (H,wt=0): 125 t(i(i(i(A,i(B,i(C,A))),i(i(D,E),F)),i(E,F))).  [hyper(2,a,65,a,b,120,a)].
+
+given #114 (H,wt=0): 126 t(i(A,i(B,i(C,n(n(i(n(A),D))))))).  [hyper(2,a,121,a,b,70,a)].
+
+given #115 (H,wt=0): 127 t(i(A,i(B,i(C,i(D,n(n(A))))))).  [hyper(2,a,123,a,b,32,a)].
+
+given #116 (H,wt=0): 128 t(i(i(i(A,A),n(i(B,C))),n(C))).  [hyper(2,a,122,a,b,124,a)].
+
+given #117 (H,wt=0): 129 t(i(i(n(n(i(n(n(A)),B))),A),i(C,A))).  [hyper(2,a,126,a,b,69,a)].
+
+given #118 (H,wt=0): 130 t(i(A,i(B,i(C,i(D,n(n(i(E,A)))))))).  [hyper(2,a,127,a,b,65,a)].
+
+given #119 (H,wt=0): 131 t(i(i(i(i(i(A,A),n(i(B,C))),n(C)),D),i(E,D))).  [hyper(2,a,128,a,b,43,a)].
+
+given #120 (H,wt=0): 132 t(i(i(A,B),i(n(i(n(n(A)),C)),B))).  [hyper(2,a,129,a,b,41,a)].
+
+given #121 (H,wt=0): 133 t(i(n(i(A,B)),i(C,i(D,n(B))))).  [hyper(2,a,131,a,b,67,a)].
+
+given #122 (H,wt=0): 134 t(i(n(i(n(n(A)),B)),i(C,i(D,A)))).  [hyper(2,a,47,a,b,132,a)].
+
+given #123 (H,wt=0): 135 t(i(n(i(n(n(A)),B)),i(i(A,C),i(D,C)))).  [hyper(2,a,43,a,b,132,a)].
+
+given #124 (H,wt=0): 136 t(i(i(n(A),i(B,A)),i(C,i(B,A)))).  [hyper(2,a,133,a,b,69,a)].
+
+given #125 (H,wt=0): 137 t(i(i(A,i(n(n(A)),B)),i(C,i(n(n(A)),B)))).  [hyper(2,a,134,a,b,69,a)].
+
+given #126 (H,wt=0): 139 t(i(A,i(i(B,C),i(n(n(B)),C)))).  [hyper(2,a,135,a,b,136,a)].
+
+given #127 (H,wt=0): 140 t(i(A,i(n(i(B,i(C,D))),i(E,i(F,n(D)))))).  [hyper(2,a,112,a,b,136,a)].
+
+given #128 (H,wt=0): 141 t(i(A,i(n(n(B)),i(C,i(D,n(n(i(E,B)))))))).  [hyper(2,a,130,a,b,137,a)].
+
+given #129 (H,wt=0): 142 t(i(i(A,B),i(n(n(A)),B))).  [hyper(2,a,139,a,b,139,a)].
+
+given #130 (H,wt=0): 143 t(i(n(i(A,i(B,C))),i(D,i(E,n(C))))).  [hyper(2,a,140,a,b,140,a)].
+
+given #131 (H,wt=0): 144 t(i(n(n(A)),i(B,i(C,n(n(i(D,A))))))).  [hyper(2,a,141,a,b,141,a)].
+
+given #132 (H,wt=0): 145 t(i(n(n(A)),i(B,i(C,n(n(i(n(A),D))))))).  [hyper(2,a,126,a,b,142,a)].
+
+given #133 (H,wt=0): 146 t(i(i(n(A),i(B,i(C,A))),i(D,i(B,i(C,A))))).  [hyper(2,a,143,a,b,69,a)].
+
+given #134 (H,wt=0): 147 t(i(i(n(n(i(A,B))),n(B)),i(C,n(B)))).  [hyper(2,a,144,a,b,69,a)].
+
+given #135 (H,wt=0): 148 t(i(i(n(n(i(n(A),B))),n(A)),i(C,n(A)))).  [hyper(2,a,145,a,b,69,a)].
+
+given #136 (H,wt=0): 150 t(i(i(n(A),B),i(n(i(C,A)),B))).  [hyper(2,a,147,a,b,41,a)].
+
+given #137 (H,wt=0): 151 t(i(i(n(A),B),i(n(i(n(A),C)),B))).  [hyper(2,a,148,a,b,41,a)].
+
+given #138 (H,wt=0): 152 t(i(n(i(A,B)),i(C,i(D,i(B,E))))).  [hyper(2,a,104,a,b,150,a)].
+
+given #139 (H,wt=0): 153 t(i(n(i(n(A),B)),i(C,i(D,i(A,E))))).  [hyper(2,a,104,a,b,151,a)].
+
+given #140 (H,wt=0): 154 t(i(n(i(A,i(B,C))),i(D,i(E,i(C,F))))).  [hyper(2,a,152,a,b,150,a)].
+
+given #141 (H,wt=0): 155 t(i(i(i(A,B),i(n(A),C)),i(D,i(n(A),C)))).  [hyper(2,a,153,a,b,69,a)].
+
+given #142 (H,wt=0): 156 t(i(i(i(A,B),i(C,i(D,A))),i(E,i(C,i(D,A))))).  [hyper(2,a,154,a,b,69,a)].
+
+given #143 (H,wt=0): 157 t(i(A,i(i(n(i(i(B,B),n(i(C,D)))),C),i(E,C)))).  [hyper(2,a,94,a,b,156,a)].
+
+given #144 (H,wt=0): 158 t(i(i(A,B),i(i(i(C,C),n(i(A,D))),B))).  [hyper(2,a,157,a,b,69,a)].
+
+given #145 (H,wt=0): 159 t(i(n(i(A,B)),i(C,i(D,A)))).  [hyper(2,a,158,a,b,125,a)].
+
+given #146 (H,wt=0): 160 t(i(i(A,i(A,B)),i(C,i(A,B)))).  [hyper(2,a,159,a,b,69,a)].
+
+given #147 (H,wt=0): 161 t(i(A,i(i(B,i(B,C)),i(B,C)))).  [hyper(2,a,160,a,b,160,a)].
+
+given #148 (H,wt=0): 162 t(i(A,i(i(n(B),i(C,i(D,B))),i(C,i(D,B))))).  [hyper(2,a,146,a,b,160,a)].
+
+given #149 (H,wt=0): 163 t(i(i(A,i(A,B)),i(A,B))).  [hyper(2,a,161,a,b,161,a)].
+
+given #150 (H,wt=0): 164 t(i(i(n(A),i(B,i(C,A))),i(B,i(C,A)))).  [hyper(2,a,162,a,b,162,a)].
+
+given #151 (H,wt=0): 165 t(i(i(i(A,B),i(n(A),C)),i(n(A),C))).  [hyper(2,a,155,a,b,163,a)].
+
+given #152 (H,wt=0): 167 t(i(i(i(i(n(A),B),i(C,B)),A),A)).  [hyper(2,a,77,a,b,163,a)].
+
+given #153 (H,wt=0): 169 t(i(n(A),i(B,i(C,n(n(i(A,D))))))).  [hyper(2,a,127,a,b,165,a)].
+
+given #154 (H,wt=0): 170 t(i(i(n(n(i(A,B))),A),i(C,A))).  [hyper(2,a,169,a,b,69,a)].
+
+given #155 (H,wt=0): 171 t(i(i(A,B),i(n(i(A,C)),B))).  [hyper(2,a,170,a,b,41,a)].
+
+given #156 (H,wt=0): 172 t(i(n(i(i(A,B),C)),i(n(i(A,D)),B))).  [hyper(2,a,171,a,b,171,a)].
+
+given #157 (H,wt=0): 173 t(i(n(i(A,i(i(B,C),D))),i(n(i(B,E)),C))).  [hyper(2,a,172,a,b,150,a)].
+
+given #158 (H,wt=0): 174 t(i(n(i(A,i(i(A,B),C))),B)).  [hyper(2,a,173,a,b,163,a)].
+
+given #159 (H,wt=0): 175 t(i(i(i(n(i(A,i(i(A,B),C))),B),D),i(E,D))).  [hyper(2,a,174,a,b,43,a)].
+
+given #160 (H,wt=0): 176 t(i(A,i(i(A,B),B))).  [hyper(2,a,175,a,b,167,a)].
+
+given #161 (H,wt=0): 177 t(i(A,i(B,i(i(B,C),C)))).  [hyper(2,a,175,a,b,77,a)].
+
+given #162 (H,wt=0): 178 t(i(n(i(A,B)),i(i(A,C),C))).  [hyper(2,a,176,a,b,171,a)].
+
+given #163 (H,wt=0): 179 t(i(A,i(B,i(C,i(i(C,D),D))))).  [hyper(2,a,176,a,b,47,a)].
+
+given #164 (H,wt=0): 180 t(i(n(i(A,i(B,C))),i(i(B,D),D))).  [hyper(2,a,178,a,b,150,a)].
+
+given #165 (H,wt=0): 181 t(i(i(A,i(B,i(C,i(A,D)))),i(B,i(C,i(A,D))))).  [hyper(2,a,180,a,b,164,a)].
+
+given #166 (H,wt=0): 182 t(i(i(n(A),i(i(n(B),C),i(B,D))),i(i(D,A),i(B,A)))).  [hyper(2,a,3,a,b,181,a)].
+
+given #167 (H,wt=0): 183 t(i(i(i(i(A,B),B),C),i(A,C))).  [hyper(2,a,179,a,b,182,a)].
+
+given #168 (H,wt=0): 184 t(i(i(A,B),i(i(B,C),i(A,C)))).  [hyper(2,a,182,a,b,59,a)].
+
+given #169 (H,wt=0): 185 t(i(i(i(i(A,B),i(C,B)),D),i(i(C,A),D))).  [hyper(2,a,184,a,b,184,a)].
+
+given #170 (H,wt=0): 186 t(i(i(A,i(B,C)),i(i(D,B),i(A,i(D,C))))).  [hyper(2,a,185,a,b,185,a)].
+
+given #171 (H,wt=0): 187 t(i(i(A,B),i(i(i(A,C),D),i(i(B,C),D)))).  [hyper(2,a,184,a,b,185,a)].
+
+given #172 (H,wt=0): 188 t(i(i(A,i(B,C)),i(B,i(A,C)))).  [hyper(2,a,183,a,b,185,a)].
+
+given #173 (H,wt=0): 189 t(i(i(A,B),i(i(C,A),i(C,B)))).  [hyper(2,a,185,a,b,183,a)].
+
+given #174 (H,wt=0): 190 t(i(A,i(i(B,i(A,C)),i(B,C)))).  [hyper(2,a,188,a,b,188,a)].
+
+given #175 (H,wt=0): 191 t(i(i(i(A,B),C),i(i(A,D),i(i(D,B),C)))).  [hyper(2,a,187,a,b,188,a)].
+
+given #176 (H,wt=0): 192 t(i(A,i(B,i(i(A,C),C)))).  [hyper(2,a,177,a,b,188,a)].
+
+given #177 (H,wt=0): 193 t(i(i(i(A,i(B,C)),D),i(i(B,i(A,C)),D))).  [hyper(2,a,188,a,b,184,a)].
+
+given #178 (H,wt=0): 194 t(i(i(A,i(B,i(C,D))),i(A,i(C,i(B,D))))).  [hyper(2,a,188,a,b,189,a)].
+
+given #179 (H,wt=0): 195 t(i(i(A,i(B,C)),i(A,i(i(C,D),i(B,D))))).  [hyper(2,a,184,a,b,189,a)].
+
+given #180 (H,wt=0): 196 t(i(i(A,i(i(B,C),i(D,i(E,B)))),i(A,i(F,i(D,i(E,B)))))).  [hyper(2,a,156,a,b,189,a)].
+
+given #181 (H,wt=0): 197 t(i(i(A,i(B,C)),i(i(C,D),i(A,i(B,D))))).  [hyper(2,a,189,a,b,186,a)].
+
+given #182 (H,wt=0): 198 t(i(i(A,B),i(i(n(B),A),B))).  [hyper(2,a,192,a,b,182,a)].
+
+given #183 (H,wt=0): 199 t(i(i(A,i(B,C)),i(i(D,A),i(B,i(D,C))))).  [hyper(2,a,186,a,b,193,a)].
+
+given #184 (H,wt=0): 200 t(i(i(A,i(B,C)),i(i(i(A,C),D),i(B,D)))).  [hyper(2,a,184,a,b,193,a)].
+
+given #185 (H,wt=0): 201 t(i(i(A,i(B,i(C,i(B,D)))),i(A,i(C,i(B,D))))).  [hyper(2,a,181,a,b,193,a)].
+
+given #186 (H,wt=0): 202 t(i(i(A,i(B,i(C,i(D,E)))),i(A,i(B,i(D,i(C,E)))))).  [hyper(2,a,194,a,b,189,a)].
+
+given #187 (H,wt=0): 203 t(i(i(i(A,B),i(C,D)),i(E,i(i(D,A),i(C,A))))).  [hyper(2,a,195,a,b,196,a)].
+
+given #188 (H,wt=0): 204 t(i(i(i(A,B),C),i(D,i(i(A,i(D,B)),C)))).  [hyper(2,a,190,a,b,197,a)].
+
+given #189 (H,wt=0): 205 t(i(i(A,B),i(i(B,C),i(i(n(C),A),C)))).  [hyper(2,a,198,a,b,191,a)].
+
+given #190 (H,wt=0): 206 t(i(i(A,i(B,i(C,i(D,E)))),i(B,i(A,i(D,i(C,E)))))).  [hyper(2,a,194,a,b,199,a)].
+
+given #191 (H,wt=0): 208 t(i(i(A,i(B,i(C,i(D,i(C,E))))),i(B,i(A,i(D,i(C,E)))))).  [hyper(2,a,201,a,b,199,a)].
+
+given #192 (H,wt=0): 209 t(i(i(i(A,B),i(C,D)),i(i(D,A),i(C,A)))).  [hyper(2,a,203,a,b,201,a)].
+
+given #193 (H,wt=0): 210 t(i(i(i(A,B),i(C,D)),i(i(A,i(E,B)),i(C,i(E,D))))).  [hyper(2,a,200,a,b,206,a)].
+
+given #194 (H,wt=0): 211 t(i(i(A,i(B,i(C,D))),i(i(C,A),i(B,i(C,D))))).  [hyper(2,a,184,a,b,208,a)].
+
+given #195 (H,wt=0): 212 t(i(i(A,i(i(B,C),i(D,E))),i(A,i(i(E,B),i(D,B))))).  [hyper(2,a,209,a,b,189,a)].
+
+given #196 (H,wt=0): 213 t(i(i(i(A,B),i(C,i(D,E))),i(i(E,A),i(C,i(D,A))))).  [hyper(2,a,209,a,b,210,a)].
+
+given #197 (H,wt=0): 214 t(i(i(A,B),i(i(C,B),i(i(n(C),A),B)))).  [hyper(2,a,205,a,b,212,a)].
+
+given #198 (H,wt=0): 215 t(i(i(A,i(i(B,C),i(A,i(D,E)))),i(i(E,B),i(A,i(D,B))))).  [hyper(2,a,213,a,b,211,a)].
+
+given #199 (H,wt=0): 216 t(i(A,i(i(B,i(C,D)),i(i(n(B),i(i(n(C),E),D)),i(C,D))))).  [hyper(2,a,214,a,b,39,a)].
+
+given #200 (H,wt=0): 217 t(i(i(A,B),i(i(n(B),i(i(n(C),D),A)),i(C,B)))).  [hyper(2,a,216,a,b,215,a)].
+-------- Proof 1 -------- 
+
+============================== PROOF =================================
+
+% Proof 1 at 0.04 (+ 0.01) seconds.
+% Length of proof is 199.
+% Level of proof is 76.
+% Maximum clause weight is 22.000.
+% Given clauses 200.
+
+1 t(i(A,i(i(B,i(A,C)),i(i(n(C),i(i(n(D),E),B)),i(D,C))))) # label(non_clause) # label(goal).  [goal].
+2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+3 t(i(A,i(i(n(B),i(i(n(C),D),i(A,E))),i(i(E,B),i(C,B))))) # label(cand44).  [assumption].
+4 -t(i(c1,i(i(c2,i(c1,c3)),i(i(n(c3),i(i(n(c4),c5),c2)),i(c4,c3))))).  [deny(1)].
+5 t(i(i(n(A),i(i(n(B),C),i(i(D,i(i(n(E),i(i(n(F),V6),i(D,V7))),i(i(V7,E),i(F,E)))),V8))),i(i(V8,A),i(B,A)))).  [hyper(2,a,3,a,b,3,a)].
+6 t(i(i(i(A,i(i(n(B),i(i(n(C),D),i(E,F))),i(i(F,B),i(C,B)))),V6),i(i(i(n(B),i(i(n(C),D),i(E,F))),i(i(F,B),i(C,B))),V6))).  [hyper(2,a,3,a,b,5,a)].
+7 t(i(i(n(A),i(i(n(B),C),i(i(i(n(D),i(i(n(E),F),i(i(V6,i(i(n(V7),i(i(n(V8),V9),i(V6,V10))),i(i(V10,V7),i(V8,V7)))),V11))),i(i(V11,D),i(E,D))),V12))),i(i(V12,A),i(B,A)))).  [hyper(2,a,5,a,b,3,a)].
+8 t(i(i(i(A,i(i(B,C),i(D,C))),E),i(i(i(B,C),i(D,C)),E))).  [hyper(2,a,3,a,b,7,a)].
+9 t(i(i(i(n(A),B),i(i(C,i(i(n(D),i(i(n(E),F),i(C,V6))),i(i(V6,D),i(E,D)))),B)),i(i(B,V7),i(A,V7)))).  [hyper(2,a,5,a,b,8,a)].
+10 t(i(i(n(A),i(i(n(B),C),i(i(i(i(D,i(i(E,F),i(V6,F))),V7),i(i(i(E,F),i(V6,F)),V7)),V8))),i(i(V8,A),i(B,A)))).  [hyper(2,a,8,a,b,3,a)].
+11 t(i(i(i(n(A),i(i(n(B),i(i(n(C),D),i(n(A),E))),i(i(E,B),i(C,B)))),i(i(i(C,B),A),i(B,A))),i(i(i(i(i(C,B),A),i(B,A)),F),i(V6,F)))).  [hyper(2,a,9,a,b,6,a)].
+12 t(i(i(i(A,i(i(i(B,C),i(D,C)),E)),F),i(i(i(i(B,C),i(D,C)),E),F))).  [hyper(2,a,3,a,b,10,a)].
+13 t(i(i(i(i(i(A,i(i(B,C),i(D,C))),E),i(i(i(B,C),i(D,C)),E)),F),i(V6,F))).  [hyper(2,a,7,a,b,11,a)].
+14 t(i(i(i(i(A,i(i(B,C),i(D,C))),i(i(n(C),i(i(n(D),E),i(i(A,i(i(B,C),i(D,C))),B))),i(i(B,C),i(D,C)))),F),i(i(F,V6),i(V7,V6)))).  [hyper(2,a,9,a,b,12,a)].
+15 t(i(i(n(A),i(i(n(B),C),i(i(i(i(i(i(D,i(i(E,F),i(V6,F))),V7),i(i(i(E,F),i(V6,F)),V7)),V8),i(V9,V8)),V10))),i(i(V10,A),i(B,A)))).  [hyper(2,a,13,a,b,3,a)].
+16 t(i(i(i(A,i(B,C)),D),i(i(B,C),D))).  [hyper(2,a,3,a,b,15,a)].
+18 t(i(i(A,B),i(i(i(A,B),C),i(D,C)))).  [hyper(2,a,14,a,b,16,a)].
+20 t(i(i(i(n(A),B),i(i(C,i(i(n(D),i(i(n(E),F),i(C,V6))),i(i(V6,D),i(E,D)))),V7)),i(i(V7,V8),i(A,V8)))).  [hyper(2,a,5,a,b,16,a)].
+22 t(i(i(i(i(i(A,B),C),i(B,C)),D),i(E,D))).  [hyper(2,a,3,a,b,20,a)].
+23 t(i(A,i(B,i(C,i(D,C))))).  [hyper(2,a,22,a,b,22,a)].
+26 t(i(i(A,B),i(C,i(A,B)))).  [hyper(2,a,22,a,b,16,a)].
+28 t(i(A,i(B,i(C,B)))).  [hyper(2,a,23,a,b,23,a)].
+29 t(i(i(i(A,i(B,A)),C),i(D,C))).  [hyper(2,a,23,a,b,20,a)].
+30 t(i(A,i(i(B,C),i(i(i(B,C),D),i(E,D))))).  [hyper(2,a,18,a,b,26,a)].
+31 t(i(A,i(B,i(i(n(C),i(i(n(D),E),i(B,F))),i(i(F,C),i(D,C)))))).  [hyper(2,a,3,a,b,26,a)].
+32 t(i(i(i(n(A),B),C),i(A,C))).  [hyper(2,a,26,a,b,20,a)].
+33 t(i(i(A,B),i(C,i(D,i(A,B))))).  [hyper(2,a,26,a,b,16,a)].
+35 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(F,E))),V6))),i(i(V6,A),i(B,A)))).  [hyper(2,a,28,a,b,3,a)].
+36 t(i(A,i(B,i(C,i(D,i(E,C)))))).  [hyper(2,a,29,a,b,22,a)].
+37 t(i(i(i(A,i(i(B,C),i(D,C))),E),i(C,E))).  [hyper(2,a,30,a,b,7,a)].
+38 t(i(A,i(i(B,A),i(C,A)))).  [hyper(2,a,7,a,b,32,a)].
+39 t(i(i(i(i(i(n(A),B),C),i(A,C)),D),i(E,D))).  [hyper(2,a,32,a,b,18,a)].
+40 t(i(A,i(B,i(C,i(n(A),D))))).  [hyper(2,a,33,a,b,32,a)].
+41 t(i(i(i(n(A),B),i(i(C,i(D,i(E,D))),F)),i(i(F,V6),i(A,V6)))).  [hyper(2,a,35,a,b,16,a)].
+42 t(i(A,i(B,i(C,i(D,B))))).  [hyper(2,a,36,a,b,36,a)].
+43 t(i(A,i(i(A,B),i(C,B)))).  [hyper(2,a,35,a,b,37,a)].
+44 t(i(i(n(A),A),i(B,A))).  [hyper(2,a,38,a,b,35,a)].
+45 t(i(A,i(B,i(C,i(n(i(n(A),D)),E))))).  [hyper(2,a,40,a,b,32,a)].
+46 t(i(i(i(A,i(B,i(C,B))),D),i(i(D,E),i(F,E)))).  [hyper(2,a,41,a,b,16,a)].
+47 t(i(A,i(B,i(C,A)))).  [hyper(2,a,42,a,b,42,a)].
+48 t(i(i(A,B),i(B,B))).  [hyper(2,a,43,a,b,35,a)].
+49 t(i(i(A,B),i(A,B))).  [hyper(2,a,44,a,b,41,a)].
+50 t(i(i(n(A),i(i(n(B),C),i(i(i(n(D),D),i(E,D)),F))),i(i(F,A),i(B,A)))).  [hyper(2,a,44,a,b,3,a)].
+51 t(i(A,i(B,i(C,i(n(i(n(i(n(A),D)),E)),F))))).  [hyper(2,a,45,a,b,32,a)].
+52 t(i(i(i(i(i(A,i(B,i(C,B))),D),i(i(D,E),i(F,E))),V6),i(V7,V6))).  [hyper(2,a,46,a,b,43,a)].
+53 t(i(A,i(B,i(i(n(C),C),i(D,C))))).  [hyper(2,a,44,a,b,47,a)].
+54 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(F,D))),V6))),i(i(V6,A),i(B,A)))).  [hyper(2,a,47,a,b,3,a)].
+55 t(i(A,i(B,B))).  [hyper(2,a,48,a,b,32,a)].
+56 t(i(A,i(B,i(i(C,D),i(C,D))))).  [hyper(2,a,49,a,b,47,a)].
+57 t(i(A,i(n(A),B))).  [hyper(2,a,49,a,b,32,a)].
+58 t(i(A,i(i(i(B,C),D),i(C,D)))).  [hyper(2,a,49,a,b,22,a)].
+59 t(i(i(i(A,i(B,C)),D),i(C,D))).  [hyper(2,a,30,a,b,50,a)].
+60 t(i(i(i(n(i(n(i(n(n(A)),B)),C)),D),A),i(E,A))).  [hyper(2,a,51,a,b,50,a)].
+62 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(i(n(F),F),i(V6,F)))),V7))),i(i(V7,A),i(B,A)))).  [hyper(2,a,53,a,b,3,a)].
+63 t(i(A,A)).  [hyper(2,a,55,a,b,55,a)].
+64 t(i(i(n(A),i(i(n(B),C),i(i(D,i(E,i(i(F,V6),i(F,V6)))),V7))),i(i(V7,A),i(B,A)))).  [hyper(2,a,56,a,b,3,a)].
+65 t(i(i(i(A,B),C),i(B,C))).  [hyper(2,a,58,a,b,58,a)].
+66 t(i(A,i(n(i(B,i(C,A))),D))).  [hyper(2,a,57,a,b,59,a)].
+67 t(i(i(i(i(i(A,B),C),i(D,C)),E),i(B,E))).  [hyper(2,a,31,a,b,62,a)].
+69 t(i(i(n(A),i(i(n(B),C),i(i(D,D),E))),i(i(E,A),i(B,A)))).  [hyper(2,a,63,a,b,3,a)].
+70 t(i(i(i(i(i(n(A),B),C),i(D,C)),E),i(A,E))).  [hyper(2,a,31,a,b,64,a)].
+71 t(i(A,i(n(i(B,A)),C))).  [hyper(2,a,57,a,b,65,a)].
+72 t(i(A,i(B,i(C,i(n(i(n(i(n(i(D,A)),E)),F)),V6))))).  [hyper(2,a,51,a,b,65,a)].
+75 t(i(A,i(B,i(C,i(i(A,D),i(E,D)))))).  [hyper(2,a,52,a,b,67,a)].
+76 t(i(i(i(n(i(n(i(n(i(A,n(B))),C)),D)),E),B),i(F,B))).  [hyper(2,a,72,a,b,69,a)].
+77 t(i(i(i(i(n(A),B),i(C,B)),A),i(D,A))).  [hyper(2,a,75,a,b,69,a)].
+78 t(i(A,i(n(i(n(i(B,n(i(C,D)))),E)),i(C,D)))).  [hyper(2,a,76,a,b,77,a)].
+79 t(i(A,i(n(i(n(n(i(B,C))),D)),i(B,C)))).  [hyper(2,a,60,a,b,77,a)].
+80 t(i(i(i(n(i(n(i(A,n(i(B,C)))),D)),i(B,C)),E),i(F,E))).  [hyper(2,a,78,a,b,46,a)].
+81 t(i(i(i(n(i(n(n(i(A,B))),C)),i(A,B)),D),i(E,D))).  [hyper(2,a,79,a,b,46,a)].
+82 t(i(A,i(n(i(B,n(i(C,D)))),i(E,i(C,D))))).  [hyper(2,a,80,a,b,77,a)].
+83 t(i(A,i(n(n(i(B,C))),i(D,i(B,C))))).  [hyper(2,a,81,a,b,77,a)].
+84 t(i(n(i(A,n(i(B,C)))),i(D,i(B,C)))).  [hyper(2,a,82,a,b,82,a)].
+85 t(i(n(n(i(A,B))),i(C,i(A,B)))).  [hyper(2,a,83,a,b,83,a)].
+86 t(i(i(A,i(B,n(i(i(C,C),A)))),i(D,i(B,n(i(i(C,C),A)))))).  [hyper(2,a,84,a,b,69,a)].
+87 t(i(i(A,n(i(i(B,B),A))),i(C,n(i(i(B,B),A))))).  [hyper(2,a,85,a,b,69,a)].
+88 t(i(A,i(B,i(C,n(i(i(D,D),n(A))))))).  [hyper(2,a,86,a,b,32,a)].
+89 t(i(i(n(i(i(A,A),n(B))),C),i(B,C))).  [hyper(2,a,87,a,b,41,a)].
+90 t(i(i(n(i(i(A,A),n(n(B)))),B),i(C,B))).  [hyper(2,a,88,a,b,69,a)].
+91 t(i(A,i(B,i(C,n(i(i(D,D),n(i(E,A)))))))).  [hyper(2,a,88,a,b,65,a)].
+92 t(i(A,i(B,i(C,n(i(i(D,D),n(i(E,i(F,A))))))))).  [hyper(2,a,88,a,b,59,a)].
+94 t(i(A,i(i(n(i(i(B,B),n(A))),C),i(D,C)))).  [hyper(2,a,43,a,b,89,a)].
+95 t(i(i(i(A,A),n(B)),i(B,C))).  [hyper(2,a,89,a,b,32,a)].
+96 t(i(i(A,B),i(i(i(C,C),n(n(A))),B))).  [hyper(2,a,90,a,b,41,a)].
+97 t(i(i(n(i(i(A,A),n(i(B,n(C))))),C),i(D,C))).  [hyper(2,a,91,a,b,69,a)].
+98 t(i(i(n(i(i(A,A),n(i(B,i(C,n(D)))))),D),i(E,D))).  [hyper(2,a,92,a,b,69,a)].
+100 t(i(i(i(i(i(A,A),n(B)),i(B,C)),D),i(E,D))).  [hyper(2,a,95,a,b,43,a)].
+101 t(i(i(i(A,A),n(n(B))),i(i(B,C),i(D,C)))).  [hyper(2,a,43,a,b,96,a)].
+102 t(i(i(A,B),i(i(i(C,C),n(i(D,n(A)))),B))).  [hyper(2,a,97,a,b,41,a)].
+103 t(i(i(A,B),i(i(i(C,C),n(i(D,i(E,n(A))))),B))).  [hyper(2,a,98,a,b,41,a)].
+104 t(i(n(A),i(B,i(C,i(A,D))))).  [hyper(2,a,100,a,b,67,a)].
+105 t(i(n(n(A)),i(i(A,B),i(C,B)))).  [hyper(2,a,101,a,b,65,a)].
+106 t(i(i(i(A,A),n(i(B,n(C)))),i(D,i(E,C)))).  [hyper(2,a,47,a,b,102,a)].
+107 t(i(i(i(A,A),n(i(B,i(C,n(D))))),i(n(i(E,i(F,D))),V6))).  [hyper(2,a,66,a,b,103,a)].
+108 t(i(i(i(A,A),n(i(B,i(C,n(D))))),D)).  [hyper(2,a,63,a,b,103,a)].
+109 t(i(i(i(A,B),A),i(C,A))).  [hyper(2,a,104,a,b,69,a)].
+110 t(i(i(A,n(n(B))),i(B,n(n(B))))).  [hyper(2,a,105,a,b,69,a)].
+111 t(i(n(i(A,n(B))),i(C,i(D,B)))).  [hyper(2,a,106,a,b,65,a)].
+112 t(i(n(i(A,i(B,n(C)))),i(n(i(D,i(E,C))),F))).  [hyper(2,a,107,a,b,65,a)].
+113 t(i(i(i(i(i(A,A),n(i(B,i(C,n(D))))),D),E),i(F,E))).  [hyper(2,a,108,a,b,43,a)].
+114 t(i(A,i(i(n(i(B,C)),C),i(B,C)))).  [hyper(2,a,77,a,b,109,a)].
+115 t(i(A,n(n(A)))).  [hyper(2,a,108,a,b,110,a)].
+117 t(i(i(A,i(B,n(A))),i(C,i(B,n(A))))).  [hyper(2,a,111,a,b,69,a)].
+118 t(i(n(i(A,i(B,n(C)))),i(D,i(E,C)))).  [hyper(2,a,113,a,b,67,a)].
+119 t(i(i(A,B),i(i(i(C,C),A),B))).  [hyper(2,a,114,a,b,69,a)].
+120 t(i(i(A,B),i(i(i(C,i(D,i(E,C))),A),B))).  [hyper(2,a,114,a,b,54,a)].
+121 t(i(i(i(A,n(n(A))),B),i(C,B))).  [hyper(2,a,115,a,b,43,a)].
+122 t(i(A,i(n(i(B,C)),n(C)))).  [hyper(2,a,71,a,b,117,a)].
+123 t(i(i(A,i(B,i(C,n(A)))),i(D,i(B,i(C,n(A)))))).  [hyper(2,a,118,a,b,69,a)].
+124 t(i(i(i(A,A),i(B,C)),i(i(i(D,D),B),C))).  [hyper(2,a,119,a,b,119,a)].
+125 t(i(i(i(A,i(B,i(C,A))),i(i(D,E),F)),i(E,F))).  [hyper(2,a,65,a,b,120,a)].
+126 t(i(A,i(B,i(C,n(n(i(n(A),D))))))).  [hyper(2,a,121,a,b,70,a)].
+127 t(i(A,i(B,i(C,i(D,n(n(A))))))).  [hyper(2,a,123,a,b,32,a)].
+128 t(i(i(i(A,A),n(i(B,C))),n(C))).  [hyper(2,a,122,a,b,124,a)].
+129 t(i(i(n(n(i(n(n(A)),B))),A),i(C,A))).  [hyper(2,a,126,a,b,69,a)].
+130 t(i(A,i(B,i(C,i(D,n(n(i(E,A)))))))).  [hyper(2,a,127,a,b,65,a)].
+131 t(i(i(i(i(i(A,A),n(i(B,C))),n(C)),D),i(E,D))).  [hyper(2,a,128,a,b,43,a)].
+132 t(i(i(A,B),i(n(i(n(n(A)),C)),B))).  [hyper(2,a,129,a,b,41,a)].
+133 t(i(n(i(A,B)),i(C,i(D,n(B))))).  [hyper(2,a,131,a,b,67,a)].
+134 t(i(n(i(n(n(A)),B)),i(C,i(D,A)))).  [hyper(2,a,47,a,b,132,a)].
+135 t(i(n(i(n(n(A)),B)),i(i(A,C),i(D,C)))).  [hyper(2,a,43,a,b,132,a)].
+136 t(i(i(n(A),i(B,A)),i(C,i(B,A)))).  [hyper(2,a,133,a,b,69,a)].
+137 t(i(i(A,i(n(n(A)),B)),i(C,i(n(n(A)),B)))).  [hyper(2,a,134,a,b,69,a)].
+139 t(i(A,i(i(B,C),i(n(n(B)),C)))).  [hyper(2,a,135,a,b,136,a)].
+140 t(i(A,i(n(i(B,i(C,D))),i(E,i(F,n(D)))))).  [hyper(2,a,112,a,b,136,a)].
+141 t(i(A,i(n(n(B)),i(C,i(D,n(n(i(E,B)))))))).  [hyper(2,a,130,a,b,137,a)].
+142 t(i(i(A,B),i(n(n(A)),B))).  [hyper(2,a,139,a,b,139,a)].
+143 t(i(n(i(A,i(B,C))),i(D,i(E,n(C))))).  [hyper(2,a,140,a,b,140,a)].
+144 t(i(n(n(A)),i(B,i(C,n(n(i(D,A))))))).  [hyper(2,a,141,a,b,141,a)].
+145 t(i(n(n(A)),i(B,i(C,n(n(i(n(A),D))))))).  [hyper(2,a,126,a,b,142,a)].
+146 t(i(i(n(A),i(B,i(C,A))),i(D,i(B,i(C,A))))).  [hyper(2,a,143,a,b,69,a)].
+147 t(i(i(n(n(i(A,B))),n(B)),i(C,n(B)))).  [hyper(2,a,144,a,b,69,a)].
+148 t(i(i(n(n(i(n(A),B))),n(A)),i(C,n(A)))).  [hyper(2,a,145,a,b,69,a)].
+150 t(i(i(n(A),B),i(n(i(C,A)),B))).  [hyper(2,a,147,a,b,41,a)].
+151 t(i(i(n(A),B),i(n(i(n(A),C)),B))).  [hyper(2,a,148,a,b,41,a)].
+152 t(i(n(i(A,B)),i(C,i(D,i(B,E))))).  [hyper(2,a,104,a,b,150,a)].
+153 t(i(n(i(n(A),B)),i(C,i(D,i(A,E))))).  [hyper(2,a,104,a,b,151,a)].
+154 t(i(n(i(A,i(B,C))),i(D,i(E,i(C,F))))).  [hyper(2,a,152,a,b,150,a)].
+155 t(i(i(i(A,B),i(n(A),C)),i(D,i(n(A),C)))).  [hyper(2,a,153,a,b,69,a)].
+156 t(i(i(i(A,B),i(C,i(D,A))),i(E,i(C,i(D,A))))).  [hyper(2,a,154,a,b,69,a)].
+157 t(i(A,i(i(n(i(i(B,B),n(i(C,D)))),C),i(E,C)))).  [hyper(2,a,94,a,b,156,a)].
+158 t(i(i(A,B),i(i(i(C,C),n(i(A,D))),B))).  [hyper(2,a,157,a,b,69,a)].
+159 t(i(n(i(A,B)),i(C,i(D,A)))).  [hyper(2,a,158,a,b,125,a)].
+160 t(i(i(A,i(A,B)),i(C,i(A,B)))).  [hyper(2,a,159,a,b,69,a)].
+161 t(i(A,i(i(B,i(B,C)),i(B,C)))).  [hyper(2,a,160,a,b,160,a)].
+162 t(i(A,i(i(n(B),i(C,i(D,B))),i(C,i(D,B))))).  [hyper(2,a,146,a,b,160,a)].
+163 t(i(i(A,i(A,B)),i(A,B))).  [hyper(2,a,161,a,b,161,a)].
+164 t(i(i(n(A),i(B,i(C,A))),i(B,i(C,A)))).  [hyper(2,a,162,a,b,162,a)].
+165 t(i(i(i(A,B),i(n(A),C)),i(n(A),C))).  [hyper(2,a,155,a,b,163,a)].
+167 t(i(i(i(i(n(A),B),i(C,B)),A),A)).  [hyper(2,a,77,a,b,163,a)].
+169 t(i(n(A),i(B,i(C,n(n(i(A,D))))))).  [hyper(2,a,127,a,b,165,a)].
+170 t(i(i(n(n(i(A,B))),A),i(C,A))).  [hyper(2,a,169,a,b,69,a)].
+171 t(i(i(A,B),i(n(i(A,C)),B))).  [hyper(2,a,170,a,b,41,a)].
+172 t(i(n(i(i(A,B),C)),i(n(i(A,D)),B))).  [hyper(2,a,171,a,b,171,a)].
+173 t(i(n(i(A,i(i(B,C),D))),i(n(i(B,E)),C))).  [hyper(2,a,172,a,b,150,a)].
+174 t(i(n(i(A,i(i(A,B),C))),B)).  [hyper(2,a,173,a,b,163,a)].
+175 t(i(i(i(n(i(A,i(i(A,B),C))),B),D),i(E,D))).  [hyper(2,a,174,a,b,43,a)].
+176 t(i(A,i(i(A,B),B))).  [hyper(2,a,175,a,b,167,a)].
+177 t(i(A,i(B,i(i(B,C),C)))).  [hyper(2,a,175,a,b,77,a)].
+178 t(i(n(i(A,B)),i(i(A,C),C))).  [hyper(2,a,176,a,b,171,a)].
+179 t(i(A,i(B,i(C,i(i(C,D),D))))).  [hyper(2,a,176,a,b,47,a)].
+180 t(i(n(i(A,i(B,C))),i(i(B,D),D))).  [hyper(2,a,178,a,b,150,a)].
+181 t(i(i(A,i(B,i(C,i(A,D)))),i(B,i(C,i(A,D))))).  [hyper(2,a,180,a,b,164,a)].
+182 t(i(i(n(A),i(i(n(B),C),i(B,D))),i(i(D,A),i(B,A)))).  [hyper(2,a,3,a,b,181,a)].
+183 t(i(i(i(i(A,B),B),C),i(A,C))).  [hyper(2,a,179,a,b,182,a)].
+184 t(i(i(A,B),i(i(B,C),i(A,C)))).  [hyper(2,a,182,a,b,59,a)].
+185 t(i(i(i(i(A,B),i(C,B)),D),i(i(C,A),D))).  [hyper(2,a,184,a,b,184,a)].
+186 t(i(i(A,i(B,C)),i(i(D,B),i(A,i(D,C))))).  [hyper(2,a,185,a,b,185,a)].
+187 t(i(i(A,B),i(i(i(A,C),D),i(i(B,C),D)))).  [hyper(2,a,184,a,b,185,a)].
+188 t(i(i(A,i(B,C)),i(B,i(A,C)))).  [hyper(2,a,183,a,b,185,a)].
+189 t(i(i(A,B),i(i(C,A),i(C,B)))).  [hyper(2,a,185,a,b,183,a)].
+190 t(i(A,i(i(B,i(A,C)),i(B,C)))).  [hyper(2,a,188,a,b,188,a)].
+191 t(i(i(i(A,B),C),i(i(A,D),i(i(D,B),C)))).  [hyper(2,a,187,a,b,188,a)].
+192 t(i(A,i(B,i(i(A,C),C)))).  [hyper(2,a,177,a,b,188,a)].
+193 t(i(i(i(A,i(B,C)),D),i(i(B,i(A,C)),D))).  [hyper(2,a,188,a,b,184,a)].
+194 t(i(i(A,i(B,i(C,D))),i(A,i(C,i(B,D))))).  [hyper(2,a,188,a,b,189,a)].
+195 t(i(i(A,i(B,C)),i(A,i(i(C,D),i(B,D))))).  [hyper(2,a,184,a,b,189,a)].
+196 t(i(i(A,i(i(B,C),i(D,i(E,B)))),i(A,i(F,i(D,i(E,B)))))).  [hyper(2,a,156,a,b,189,a)].
+197 t(i(i(A,i(B,C)),i(i(C,D),i(A,i(B,D))))).  [hyper(2,a,189,a,b,186,a)].
+198 t(i(i(A,B),i(i(n(B),A),B))).  [hyper(2,a,192,a,b,182,a)].
+199 t(i(i(A,i(B,C)),i(i(D,A),i(B,i(D,C))))).  [hyper(2,a,186,a,b,193,a)].
+200 t(i(i(A,i(B,C)),i(i(i(A,C),D),i(B,D)))).  [hyper(2,a,184,a,b,193,a)].
+201 t(i(i(A,i(B,i(C,i(B,D)))),i(A,i(C,i(B,D))))).  [hyper(2,a,181,a,b,193,a)].
+203 t(i(i(i(A,B),i(C,D)),i(E,i(i(D,A),i(C,A))))).  [hyper(2,a,195,a,b,196,a)].
+204 t(i(i(i(A,B),C),i(D,i(i(A,i(D,B)),C)))).  [hyper(2,a,190,a,b,197,a)].
+205 t(i(i(A,B),i(i(B,C),i(i(n(C),A),C)))).  [hyper(2,a,198,a,b,191,a)].
+206 t(i(i(A,i(B,i(C,i(D,E)))),i(B,i(A,i(D,i(C,E)))))).  [hyper(2,a,194,a,b,199,a)].
+208 t(i(i(A,i(B,i(C,i(D,i(C,E))))),i(B,i(A,i(D,i(C,E)))))).  [hyper(2,a,201,a,b,199,a)].
+209 t(i(i(i(A,B),i(C,D)),i(i(D,A),i(C,A)))).  [hyper(2,a,203,a,b,201,a)].
+210 t(i(i(i(A,B),i(C,D)),i(i(A,i(E,B)),i(C,i(E,D))))).  [hyper(2,a,200,a,b,206,a)].
+211 t(i(i(A,i(B,i(C,D))),i(i(C,A),i(B,i(C,D))))).  [hyper(2,a,184,a,b,208,a)].
+212 t(i(i(A,i(i(B,C),i(D,E))),i(A,i(i(E,B),i(D,B))))).  [hyper(2,a,209,a,b,189,a)].
+213 t(i(i(i(A,B),i(C,i(D,E))),i(i(E,A),i(C,i(D,A))))).  [hyper(2,a,209,a,b,210,a)].
+214 t(i(i(A,B),i(i(C,B),i(i(n(C),A),B)))).  [hyper(2,a,205,a,b,212,a)].
+215 t(i(i(A,i(i(B,C),i(A,i(D,E)))),i(i(E,B),i(A,i(D,B))))).  [hyper(2,a,213,a,b,211,a)].
+216 t(i(A,i(i(B,i(C,D)),i(i(n(B),i(i(n(C),E),D)),i(C,D))))).  [hyper(2,a,214,a,b,39,a)].
+217 t(i(i(A,B),i(i(n(B),i(i(n(C),D),A)),i(C,B)))).  [hyper(2,a,216,a,b,215,a)].
+218 t(i(A,i(i(B,i(A,C)),i(i(n(C),i(i(n(D),E),B)),i(D,C))))).  [hyper(2,a,217,a,b,204,a)].
+219 $F.  [resolve(218,a,4,a)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=200. Generated=19364. Kept=217. proofs=1.
+Usable=173. Sos=13. Demods=0. Limbo=0, Disabled=33. Hints=201.
+Kept_by_rule=0, Deleted_by_rule=14269.
+Forward_subsumed=4878. Back_subsumed=30.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=0.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=0. Nonunit_bsub_feature_tests=1.
+Megabytes=0.76.
+User_CPU=0.04, System_CPU=0.01, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+------ process 22713 exit (max_proofs) ------
+
+Process 22713 exit (max_proofs) Thu Aug  6 08:37:58 2026

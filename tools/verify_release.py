@@ -56,8 +56,8 @@ def proof_pairs() -> list[tuple[Path, Path]]:
         pairs.append((input_path, output_path))
     if output_by_stem:
         fail("outputs without inputs: " + ", ".join(map(str, output_by_stem.values())))
-    if len(pairs) != 22:
-        fail(f"expected 22 canonical proof pairs, found {len(pairs)}")
+    if len(pairs) != 29:
+        fail(f"expected 29 canonical proof pairs, found {len(pairs)}")
     return pairs
 
 

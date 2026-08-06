@@ -1,0 +1,112 @@
+% Wos-pure C/N circle proof 1: Meredith -> cand65
+% CD Machine proof: 89 derived steps; max formula weight 33; max 7 variables
+
+set(raw).
+set(hyper_resolution).
+set(prolog_style_variables).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight, 0).
+assign(max_proofs, 1).
+
+formulas(assumptions).
+-t(X) | -t(i(X,Y)) | t(Y) # label(condensed_detachment).
+t(i(i(i(i(i(A,B),i(n(C),n(D))),C),E),i(i(E,A),i(D,A)))) # label(meredith_CN).
+end_of_list.
+
+formulas(goals).
+t(i(i(A,i(i(n(A),B),C)),i(D,i(i(n(E),i(C,E)),i(A,E))))).
+end_of_list.
+
+formulas(hints).
+t(i(i(i(i(i(A,B),i(n(C),n(D))),C),E),i(i(E,A),i(D,A)))). % CD proof line 1
+t(i(i(i(i(A,B),i(C,B)),i(B,D)),i(E,i(B,D)))). % CD proof line 2
+t(i(i(i(A,i(n(B),C)),D),i(B,D))). % CD proof line 3
+t(i(i(i(A,A),B),i(C,B))). % CD proof line 4
+t(i(A,i(B,i(C,C)))). % CD proof line 5
+t(i(i(i(A,i(B,B)),C),i(D,C))). % CD proof line 6
+t(i(i(i(A,B),C),i(B,C))). % CD proof line 7
+t(i(A,i(i(A,B),i(C,B)))). % CD proof line 8
+t(i(A,i(i(i(B,A),C),i(D,C)))). % CD proof line 9
+t(i(i(i(i(i(A,i(i(i(B,C),i(n(D),n(E))),D)),F),i(G,F)),B),i(E,B))). % CD proof line 10
+t(i(i(i(A,B),i(C,i(i(i(B,D),i(n(E),n(A))),E))),i(F,i(C,i(i(i(B,D),i(n(E),n(A))),E))))). % CD proof line 11
+t(i(A,i(i(i(B,C),D),i(i(i(C,E),i(n(D),n(B))),D)))). % CD proof line 12
+t(i(i(i(A,B),C),i(i(i(B,D),i(n(C),n(A))),C))). % CD proof line 13
+t(i(i(i(A,B),i(n(i(i(A,C),i(D,C))),n(i(i(i(C,E),i(n(F),n(D))),F)))),i(i(A,C),i(D,C)))). % CD proof line 14
+t(i(A,i(i(i(i(i(B,C),i(n(D),n(E))),D),B),i(E,B)))). % CD proof line 15
+t(i(i(i(i(i(A,B),i(n(C),n(D))),C),A),i(D,A))). % CD proof line 16
+t(i(i(i(A,B),i(B,C)),i(D,i(B,C)))). % CD proof line 17
+t(i(A,i(B,i(n(A),C)))). % CD proof line 18
+t(i(A,i(B,i(n(i(C,B)),D)))). % CD proof line 19
+t(i(A,i(n(i(B,A)),C))). % CD proof line 20
+t(i(A,i(n(i(B,i(C,A))),D))). % CD proof line 21
+t(i(i(A,i(A,B)),i(C,i(A,B)))). % CD proof line 22
+t(i(A,i(i(B,i(B,C)),i(B,C)))). % CD proof line 23
+t(i(i(A,i(A,B)),i(A,B))). % CD proof line 24
+t(i(A,i(n(i(B,i(C,i(D,A)))),E))). % CD proof line 25
+t(i(A,i(n(i(B,i(C,i(D,i(E,A))))),F))). % CD proof line 26
+t(i(i(A,i(B,i(C,i(A,D)))),i(E,i(B,i(C,i(A,D)))))). % CD proof line 27
+t(i(i(A,i(B,i(C,i(A,D)))),i(B,i(C,i(A,D))))). % CD proof line 28
+t(i(i(i(i(n(A),n(B)),A),C),i(B,C))). % CD proof line 29
+t(i(i(i(A,B),n(B)),i(C,n(B)))). % CD proof line 30
+t(i(A,i(B,n(n(A))))). % CD proof line 31
+t(i(A,i(B,n(n(i(C,B)))))). % CD proof line 32
+t(i(i(i(A,i(B,n(n(i(C,B))))),D),i(E,D))). % CD proof line 33
+t(i(i(i(A,B),C),i(n(i(D,n(B))),C))). % CD proof line 34
+t(i(n(i(A,n(B))),i(i(B,C),i(D,C)))). % CD proof line 35
+t(i(i(A,i(n(i(B,n(A))),C)),i(D,i(n(i(B,n(A))),C)))). % CD proof line 36
+t(i(A,i(n(A),B))). % CD proof line 37
+t(i(A,i(n(i(B,i(n(A),C))),D))). % CD proof line 38
+t(i(i(A,B),i(n(i(A,C)),B))). % CD proof line 39
+t(i(A,i(n(i(B,n(i(B,C)))),C))). % CD proof line 40
+t(i(i(i(A,i(n(i(B,n(i(B,C)))),C)),D),i(E,D))). % CD proof line 41
+t(i(i(i(A,i(n(i(B,n(i(B,C)))),C)),D),D)). % CD proof line 42
+t(i(i(i(A,n(i(A,n(B)))),C),i(B,C))). % CD proof line 43
+t(i(i(i(i(i(A,B),C),i(B,C)),D),i(E,D))). % CD proof line 44
+t(i(i(i(A,B),i(C,n(B))),i(D,i(C,n(B))))). % CD proof line 45
+t(i(A,i(n(i(B,C)),n(C)))). % CD proof line 46
+t(i(i(i(A,i(n(i(B,C)),n(C))),D),i(E,D))). % CD proof line 47
+t(i(i(i(A,i(B,C)),D),i(C,D))). % CD proof line 48
+t(i(A,i(B,n(i(i(C,i(D,B)),n(A)))))). % CD proof line 49
+t(i(i(i(A,i(B,n(i(i(C,i(D,B)),n(A))))),E),i(F,E))). % CD proof line 50
+t(i(i(i(A,i(B,n(i(i(C,i(D,B)),n(A))))),E),E)). % CD proof line 51
+t(i(i(A,B),i(i(i(C,i(D,n(A))),n(i(B,E))),B))). % CD proof line 52
+t(i(A,i(i(i(B,i(C,C)),D),D))). % CD proof line 53
+t(i(i(i(A,i(B,B)),C),C)). % CD proof line 54
+t(i(i(i(A,i(B,n(i(i(C,i(D,D)),E)))),n(i(E,F))),E)). % CD proof line 55
+t(i(i(A,B),i(i(i(C,i(D,D)),A),B))). % CD proof line 56
+t(i(i(i(A,i(B,B)),i(C,D)),i(i(i(E,i(F,F)),C),D))). % CD proof line 57
+t(i(i(i(i(i(A,i(B,B)),C),D),E),i(i(C,D),E))). % CD proof line 58
+t(i(i(A,B),i(i(B,C),i(A,C)))). % CD proof line 59
+t(i(i(i(i(A,B),i(C,B)),D),i(A,D))). % CD proof line 60
+t(i(A,i(i(A,B),B))). % CD proof line 61
+t(i(i(i(i(A,B),B),C),i(A,C))). % CD proof line 62
+t(i(i(i(i(A,B),i(C,B)),D),i(i(C,A),D))). % CD proof line 63
+t(i(i(A,B),i(i(C,A),i(C,B)))). % CD proof line 64
+t(i(i(A,i(B,i(A,C))),i(D,i(B,i(A,C))))). % CD proof line 65
+t(i(i(A,i(B,i(C,i(B,D)))),i(A,i(E,i(C,i(B,D)))))). % CD proof line 66
+t(i(i(A,i(B,C)),i(i(D,B),i(A,i(D,C))))). % CD proof line 67
+t(i(i(A,i(B,C)),i(i(C,D),i(A,i(B,D))))). % CD proof line 68
+t(i(A,i(i(B,C),i(i(A,B),C)))). % CD proof line 69
+t(i(i(A,i(B,C)),i(i(B,A),i(B,C)))). % CD proof line 70
+t(i(i(i(n(A),B),C),i(A,C))). % CD proof line 71
+t(i(i(A,i(i(n(A),B),C)),i(A,C))). % CD proof line 72
+t(i(i(A,B),i(i(C,i(i(n(C),D),A)),i(C,B)))). % CD proof line 73
+t(i(i(A,i(B,C)),i(B,i(A,i(D,C))))). % CD proof line 74
+t(i(i(i(A,B),n(i(n(B),n(C)))),i(C,n(i(n(B),n(C)))))). % CD proof line 75
+t(i(i(i(i(i(A,B),n(i(n(B),n(C)))),i(C,n(i(n(B),n(C))))),D),i(E,D))). % CD proof line 76
+t(i(i(i(A,B),i(C,D)),i(i(n(D),n(n(B))),i(C,D)))). % CD proof line 77
+t(i(A,i(i(n(B),n(n(B))),i(C,B)))). % CD proof line 78
+t(i(i(i(i(n(A),n(n(A))),i(B,A)),C),i(D,C))). % CD proof line 79
+t(i(i(i(A,B),n(n(C))),i(C,n(n(C))))). % CD proof line 80
+t(i(A,i(B,n(n(B))))). % CD proof line 81
+t(i(i(i(A,i(B,n(n(B)))),C),i(D,C))). % CD proof line 82
+t(i(i(i(A,B),C),i(n(n(B)),C))). % CD proof line 83
+t(i(i(i(i(i(A,B),C),i(n(n(B)),C)),D),i(E,D))). % CD proof line 84
+t(i(i(i(i(i(A,B),C),i(n(n(B)),C)),D),D)). % CD proof line 85
+t(i(i(n(A),i(B,A)),i(C,i(B,A)))). % CD proof line 86
+t(i(i(n(A),i(B,A)),i(B,A))). % CD proof line 87
+t(i(A,i(i(n(B),i(A,B)),i(C,B)))). % CD proof line 88
+t(i(i(A,i(i(n(A),B),C)),i(A,i(i(n(D),i(C,D)),i(E,D))))). % CD proof line 89
+t(i(i(A,i(i(n(A),B),C)),i(D,i(i(n(E),i(C,E)),i(A,E))))). % CD proof line 90
+end_of_list.
