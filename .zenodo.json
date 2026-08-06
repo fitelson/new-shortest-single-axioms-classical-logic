@@ -1,6 +1,6 @@
 {
   "title": "New Short(est) Single Axioms for Classical Logic: search code and proof archive",
-  "description": "Search code, exact equational lower-bound results, reproducibility tools, and machine-checkable Prover9 certificates accompanying the paper New Short(est) Single Axioms for Classical Logic. The archive includes the official LADR-2009-11A Prover9 and Vampire 5.0.1 source releases together with the reference executables used for the archived computations.",
+  "description": "Search code, exact equational lower-bound results, reproducibility tools, and machine-checkable Prover9 certificates accompanying the paper New Short(est) Single Axioms for Classical Logic. The archive includes the official LADR-2009-11A Prover9 and Vampire 5.0.1 source releases together with the reference executables used for the archived computations. Licensing varies by component and is documented in THIRD_PARTY_NOTICES.md.",
   "creators": [
     {
       "name": "Fitelson, Branden",
@@ -10,7 +10,7 @@
       "name": "Walsh, Matthew"
     }
   ],
-  "license": "MIT",
+  "license": "other-open",
   "access_right": "open",
   "keywords": [
     "automated theorem proving",
