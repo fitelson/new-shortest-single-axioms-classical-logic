@@ -1,0 +1,8 @@
+{"candidate_number": 0, "formula": "n(a(n(a(n(a(A,B)),C)),n(a(a(A,C),A))))=C", "outcome": "unresolved"}
+{"candidate_number": 1, "formula": "n(a(n(a(n(a(A,B)),C)),n(a(a(A,C),B))))=C", "outcome": "unresolved"}
+{"candidate_number": 2, "formula": "n(a(n(a(n(a(A,B)),C)),n(a(a(B,C),A))))=C", "outcome": "unresolved"}
+{"candidate_number": 3, "formula": "n(a(n(a(n(a(A,B)),C)),n(a(a(B,C),B))))=C", "outcome": "unresolved"}
+{"candidate_number": 4, "formula": "n(a(n(a(A,a(B,A))),n(a(B,n(a(A,C))))))=B", "outcome": "unresolved"}
+{"candidate_number": 5, "formula": "n(a(n(a(A,a(B,A))),n(a(B,n(a(C,A))))))=B", "outcome": "unresolved"}
+{"candidate_number": 6, "formula": "n(a(n(a(A,a(B,C))),n(a(B,n(a(A,C))))))=B", "outcome": "unresolved"}
+{"candidate_number": 7, "formula": "n(a(n(a(A,a(B,C))),n(a(B,n(a(C,A))))))=B", "outcome": "unresolved"}

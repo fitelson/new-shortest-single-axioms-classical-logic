@@ -1,7 +1,7 @@
 # Third-party software
 
 The repository's search and archive-support code is distributed under the MIT
-License in `LICENSE`. The vendored Prover9 release is separate third-party
+License in `LICENSE`. The vendored theorem provers are separate third-party
 software:
 
 - **LADR-2009-11A / Prover9**, by William McCune, is distributed under the GNU
@@ -9,6 +9,9 @@ software:
   checksums, and a source-built macOS ARM64 executable are in
   `vendor/prover9-2009-11A/`.
 
-Vampire is not redistributed in this repository. The setup helper downloads
-the official Vampire 5.0.1 executable for the detected supported platform.
-Vampire remains subject to its own license.
+- **Vampire 5.0.1**, by the Vampire team, is distributed under the modified
+  BSD license reproduced in `vendor/vampire-5.0.1/LICENCE`. The official
+  tagged source archive, authors file, checksums, and the official macOS ARM64
+  reference executable are in `vendor/vampire-5.0.1/`.
+
+Neither vendored prover is covered by the repository's MIT license.

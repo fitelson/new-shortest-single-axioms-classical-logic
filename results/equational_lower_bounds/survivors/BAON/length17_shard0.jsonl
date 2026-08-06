@@ -1,0 +1,4 @@
+{"candidate_number": 0, "formula": "n(o(n(o(n(o(A,B)),C)),n(o(A,o(C,A)))))=C", "outcome": "unresolved"}
+{"candidate_number": 1, "formula": "n(o(n(o(n(o(A,B)),C)),n(o(B,o(C,B)))))=C", "outcome": "unresolved"}
+{"candidate_number": 2, "formula": "n(o(n(o(o(A,B),A)),n(o(B,n(o(A,C))))))=B", "outcome": "unresolved"}
+{"candidate_number": 3, "formula": "n(o(n(o(o(A,B),A)),n(o(B,n(o(C,A))))))=B", "outcome": "unresolved"}

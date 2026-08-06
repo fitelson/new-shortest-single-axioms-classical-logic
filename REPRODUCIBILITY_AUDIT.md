@@ -1,12 +1,18 @@
 # Reproducibility audit
 
-Status: in progress.  This file distinguishes completed checks from planned or
-running headline searches.
+Status: the paper-facing proof archive and the complete all-smaller-length
+equational snapshot are assembled and checked. The long legacy
+condensed-detachment enumerations were audited from their archived results and
+were not rerun for this release.
 
 ## Reference environment
 
 - Search code: this repository, based on upstream commit `3bc483d`.
 - Reference prover: Vampire 5.0.1, release commit `1b13eaf`.
+- Archived prover sources: the official `vampire.tar.gz` and
+  `vampire-z3.tar.gz` release assets, preserved under
+  `vendor/vampire-5.0.1/source/`, together with the automatic tagged-source
+  snapshot.
 - Candidate prover invocation:
   `--mode portfolio --schedule casc_sat --input_syntax tptp`.
 - Default per-candidate limits: 10 seconds, 4096 MiB, one core.
@@ -120,9 +126,19 @@ The manuscript now uses the generator's uniform convention: the displayed
 equations have lengths 17, 20, 20, and 17 when equality counts once.  The
 17-symbol $C/f$ equation has been verified as a shortest single axiom.  The
 17-symbol $C/N$ equation is the shortest currently known in that signature;
-the completed weight-16 screen leaves 16 unresolved candidates, so its
-shortestness remains conjectural.  The weight-19 screens for $A/N$ and $O/N$
-likewise leave 294 and 295 unresolved candidates, respectively.
+the completed screens leave 7 unresolved candidates at weight 15 and 16 at
+weight 16, so its shortestness remains conjectural. The $A/N$ screens leave
+12, 44, and 294 unresolved candidates at weights 17, 18, and 19; the $O/N$
+screens leave 12, 44, and 295. All other smaller lengths in the archived
+search ranges have no survivors.
+
+The exact per-shard statistics, survivor ledgers, aggregate manifest, and
+checksums are under `results/equational_lower_bounds/`. The manifest covers
+all 45 completed length runs: `C/f` at 5, 7, 9, 11, 13, and 15; `C/N` at
+6--16; and `A/N` and `O/N` at 6--19. Every archived run has
+`counters_reconcile=true` and full structural-form and candidate-instance
+coverage. The snapshot contains 85 shard reports and 724 unresolved survivor
+rows.
 
 ## Legacy baselines for comparison
 
@@ -147,15 +163,17 @@ stock for BACF, BAAN, BAON, or BACN.
 
 ## Lower-bound reproduction status
 
-The earlier same-length diagnostic runs were stopped and preserved after the
-reproduction target was narrowed to the immediately preceding lower-bound
-frontier.  The seven lower-bound searches run under the reference Vampire
-5.0.1 configuration as two disjoint structural-form shards per search.  The
-CN, CF, and CT shards reuse the verified imported model stocks above; the four
-equational searches reuse only models found and verified in current diagnostic
-runs.  Each worker has a separate survivor ledger and statistics report.  No
-run is recorded as complete until `tools/merge_shards.py` validates its full
-pair.
+The equational all-smaller-length runs are complete and archived. The five
+smallest `C/f` lengths ran as single shards; the other 40 length runs used two
+disjoint structural-form shards. Every run's global structural-form and
+candidate-instance totals agree with the sum of its completed shards. The
+absence of unresolved `C/f` survivors at every admissible smaller length gives
+the complete lower bound in that signature. The nonempty survivor sets in the
+other three signatures prevent stronger shortestness claims.
+
+The condensed-detachment CN, CF, and CT lower-bound claims rely on the
+previously completed archived searches and their verified model stocks. Those
+very long enumerations were not rerun during the publication-archive audit.
 
 The full matrix is machine-readable in
 `runs/headline_reproduction_manifest.json`; `tools/run_headline_shards.py`
@@ -169,6 +187,7 @@ survivor-only pass with a 10-second wall-clock limit, 6 cores, 32,000 MiB,
 separate from the initial screen: it stores every raw Vampire result and writes
 a resumable second-pass ledger without modifying the initial survivor file.
 
-The large structural and instance counts above are important: the small
-compatibility runs establish correctness of the repaired workflow, but they do
-not constitute reproduction of the headline searches.
+The large structural and instance counts above remain important: compatibility
+tests alone do not constitute reproduction of a headline search. The archived
+equational statistics now supply the corresponding complete run-level evidence
+for all smaller lengths in those four signatures.

@@ -1,0 +1,5 @@
+{"candidate_number": 0, "formula": "i(i(i(i(A,B),C),n(B)),n(i(C,B)))=C", "outcome": "unresolved"}
+{"candidate_number": 1, "formula": "i(i(i(A,B),i(C,n(B))),n(i(C,B)))=C", "outcome": "unresolved"}
+{"candidate_number": 2, "formula": "i(i(A,i(B,n(i(C,A)))),n(i(B,A)))=B", "outcome": "unresolved"}
+{"candidate_number": 3, "formula": "i(i(A,n(i(i(B,A),C))),n(i(C,A)))=C", "outcome": "unresolved"}
+{"candidate_number": 4, "formula": "i(i(A,n(B)),n(i(i(A,C),i(B,A))))=B", "outcome": "unresolved"}

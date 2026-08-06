@@ -8,13 +8,16 @@ Used to prove that Meredith's 21-symbol single axiom of classical sentential log
 
 Used to prove that Meredith's 19-symbol single axioms of classical sentential logic with the falsum constant are the shortest possible, in addition to finding other axioms of length 19.
 
-The repository has three release-critical components:
+The repository has four release-critical components:
 
 1. the single-axiom search code and reproducibility tools;
 2. 29 canonical Prover9 input/output pairs: 22 complete-basis verifications
    for the axioms reported in the paper and seven Wos-pure C/N circle legs; and
 3. William McCune's last official Prover9 release, LADR-2009-11A, preserved as
-   the unmodified source archive together with the reference executable.
+   the unmodified source archive together with the reference executable; and
+4. Vampire 5.0.1, preserved as the official tagged source archive together
+   with its license and the macOS ARM64 reference executable used for the
+   archived searches.
 
 See `ARCHIVE_CONTENTS.md` for the precise inventory.
 
@@ -34,10 +37,11 @@ python3 setup.py
 
 Use `python3 setup.py --include_libraries` if you have a fresh Python install without NumPy and SciPy.
 
-The setup helper installs only the search engine's reference Vampire release.
-The paper's official Prover9 source and macOS ARM64 executable are already
-vendored under `vendor/prover9-2009-11A/`; no unrelated Prover9 fork is
-downloaded during setup.
+The paper's official Prover9 and Vampire sources are already vendored under
+`vendor/`. On macOS ARM64 the setup helper installs the archived Vampire
+reference executable without network access. On another supported platform it
+downloads the matching official 5.0.1 executable; the complete source archive
+remains available locally for a source build.
 
 The reference prover is [Vampire 5.0.1](https://github.com/vprover/vampire/releases/tag/v5.0.1). The setup script installs that exact release and rejects a different installed version. Candidate elimination uses Vampire's supported portfolio interface with `--mode portfolio --schedule casc_sat`. A finite model, `SZS status CounterSatisfiable` or `Satisfiable`, or a completed saturation with all non-redundant clauses discarded rules out a candidate. A timeout, resource limit, `GaveUp`, or incomplete saturation leaves the candidate unresolved.
 
@@ -117,13 +121,14 @@ occur in the generator at BACF 17, BAAN 20, BAON 20, and BACN 17.  Run
 `python3 tools/audit_lengths.py` to verify these values from the displayed
 formulas and the current run definitions.
 
-The exhaustive reproduction does not enumerate the already known axiom length.
-It enumerates only the immediately preceding lower-bound frontier.  For
-condensed-detachment CN the archived 20-symbol elimination is already
-available, so the needed frontier is 19.  The new equational BACN candidate
-has weight 17, so its active lower-bound frontier is weight 16.  For
-signatures whose grammar has no formulas at the numerical predecessor, the
-immediately preceding admissible size is used.
+The archive also preserves the completed all-smaller-length equational screens
+under `results/equational_lower_bounds/`. Their 45 reconciled shard pairs show
+no unresolved `C/f` candidate at any admissible smaller length. They leave 7
+and 16 unresolved `C/N` candidates at lengths 15 and 16; 12, 44, and 294
+unresolved `A/N` candidates at lengths 17, 18, and 19; and 12, 44, and 295
+unresolved `O/N` candidates at those lengths. Thus the `C/f` lower bound is
+complete, while the other three reported equations remain shortest known.
+An unresolved survivor has not been proved to be a single axiom.
 
 ## Standard equational verification
 
@@ -176,6 +181,10 @@ python3 tools/verify_release.py --replay --jobs 8
 
 The second command executes all 29 canonical proofs afresh. It does not
 overwrite the archived outputs.
+
+The non-replay audit also authenticates both vendored theorem-prover releases
+and checks every archived equational lower-bound shard, reconciliation flag,
+and survivor count.
 
 ## Principal lower-bound runs
 

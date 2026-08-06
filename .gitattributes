@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.gz binary
+*.zip binary
+vendor/*/bin/*/* binary

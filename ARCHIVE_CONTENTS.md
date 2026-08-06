@@ -32,12 +32,28 @@ LADR-2009-11A source archive, its GPLv2 license, SHA-256 checksums, and the
 macOS ARM64 executable used for the archived paper-facing outputs. The source
 archive permits rebuilding Prover9 on other supported systems.
 
+## Reference Vampire release
+
+`vendor/vampire-5.0.1/` contains the official tagged Vampire 5.0.1 source
+archive (release commit `1b13eaf`), its modified BSD license and authors file,
+SHA-256 checksums, and the official macOS ARM64 executable used for the
+archived searches. The source archive permits rebuilding Vampire on another
+supported system.
+
+## Equational lower-bound results
+
+`results/equational_lower_bounds/` contains the exact per-shard statistics and
+survivor ledgers for all completed smaller-length `C/f`, `C/N`, `A/N`, and
+`O/N` screens. Its generated manifest aggregates 45 reconciled length runs;
+its checksum file authenticates every archived record.
+
 ## Deliberately excluded working material
 
 Large proof-development stocks, transient theorem-prover inputs, raw run logs,
-checkpoints, and local executable installations are not part of the release.
+checkpoints, and other local executable installations are not part of the release.
 They remain in the authors' working tree and are excluded by `.gitignore`;
 they are not required to check any paper-facing proof.
 
 Run `python3 tools/verify_release.py` for a non-mutating archive audit. Add
 `--replay` to execute all 29 canonical inputs afresh with the vendored binary.
+The root `SHA256SUMS` authenticates every release file except itself.

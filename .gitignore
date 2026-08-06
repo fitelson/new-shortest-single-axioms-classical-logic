@@ -19,6 +19,7 @@ testingTracker.py
 /proofs/condensed_detachment
 /proofs/equational
 /tools/build_*.py
+!/tools/build_equational_lower_bound_snapshot.py
 /tools/generate_cd_replays.py
 /tools/make_bacn*.py
 /tools/make_equational_survivor_menus.py
