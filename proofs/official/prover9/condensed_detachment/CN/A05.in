@@ -1,0 +1,61 @@
+% Complete-basis Prover9 proof replay for axiom A5
+
+set(raw).
+set(hyper_resolution).
+set(prolog_style_variables).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight, 0).
+assign(max_proofs, 1).
+
+formulas(assumptions).
+-t(X) | -t(i(X,Y)) | t(Y) # label(condensed_detachment).
+t(i(i(P,Q),i(i(i(R,i(S,T)),i(Q,i(n(S),n(P)))),i(P,S)))) # label(A05_CN).
+end_of_list.
+
+formulas(goals).
+    (t(i(i(P,Q),i(i(Q,R),i(P,R)))) &
+        t(i(i(n(P),P),P)) &
+        t(i(P,i(n(P),Q)))).
+end_of_list.
+
+formulas(hints).
+t(i(i(A,B),i(i(i(C,i(D,E)),i(B,i(n(D),n(A)))),i(A,D)))). % CD proof line 1
+t(i(i(i(A,i(B,C)),i(i(i(i(D,i(E,F)),i(G,i(n(E),n(H)))),i(H,E)),i(n(B),n(i(H,G))))),i(i(H,G),B))). % CD proof line 2
+t(i(i(A,B),i(i(i(C,i(D,E)),i(i(A,F),i(n(D),n(i(i(G,i(F,H)),i(B,i(n(F),n(A)))))))),i(i(i(G,i(F,H)),i(B,i(n(F),n(A)))),D)))). % CD proof line 3
+t(i(i(i(A,i(B,C)),i(i(i(i(D,i(E,F)),i(i(G,H),i(n(E),n(i(i(I,i(H,J)),i(K,i(n(H),n(G)))))))),i(i(i(I,i(H,J)),i(K,i(n(H),n(G)))),E)),i(n(B),n(i(G,K))))),i(i(G,K),B))). % CD proof line 4
+t(i(i(i(A,i(B,C)),i(i(i(D,E),F),i(n(B),n(i(i(G,i(F,H)),i(i(i(i(I,i(J,K)),i(E,i(n(J),n(D)))),i(D,J)),i(n(F),n(i(D,E))))))))),i(i(i(G,i(F,H)),i(i(i(i(I,i(J,K)),i(E,i(n(J),n(D)))),i(D,J)),i(n(F),n(i(D,E))))),B))). % CD proof line 5
+t(i(i(A,B),i(i(B,C),i(A,C)))). % CD proof line 6
+t(i(i(i(i(i(A,i(B,C)),i(D,i(n(B),n(E)))),i(E,B)),F),i(i(E,D),F))). % CD proof line 7
+t(i(i(i(i(i(A,i(B,C)),i(i(D,E),i(n(B),n(i(i(F,i(E,G)),i(H,i(n(E),n(D)))))))),i(i(i(F,i(E,G)),i(H,i(n(E),n(D)))),B)),I),i(i(D,H),I))). % CD proof line 8
+t(i(i(A,i(i(B,i(C,D)),i(E,i(n(C),n(F))))),i(i(F,E),i(A,i(F,C))))). % CD proof line 9
+t(i(i(i(i(A,B),i(C,B)),D),i(i(C,A),D))). % CD proof line 10
+t(i(i(A,i(B,C)),i(i(D,B),i(A,i(D,C))))). % CD proof line 11
+t(i(i(A,B),i(i(i(A,C),D),i(i(B,C),D)))). % CD proof line 12
+t(i(i(A,i(i(B,C),D)),i(i(B,E),i(A,i(i(E,C),D))))). % CD proof line 13
+t(i(i(A,B),i(i(C,A),i(i(B,D),i(C,D))))). % CD proof line 14
+t(i(i(A,i(B,n(A))),i(i(i(C,D),B),i(A,C)))). % CD proof line 15
+t(i(i(i(A,B),C),i(i(D,i(E,n(D))),i(i(C,E),i(D,A))))). % CD proof line 16
+t(i(i(A,i(B,C)),i(i(i(n(A),D),B),i(A,C)))). % CD proof line 17
+t(i(i(i(n(i(A,B)),C),i(B,D)),i(i(A,B),i(A,D)))). % CD proof line 18
+t(i(i(A,i(i(B,C),D)),i(i(E,i(D,n(E))),i(A,i(E,B))))). % CD proof line 19
+t(i(i(A,B),i(i(B,i(i(n(A),C),D)),i(A,D)))). % CD proof line 20
+t(i(i(A,B),i(i(B,C),i(A,i(n(B),D))))). % CD proof line 21
+t(i(i(A,i(B,C)),i(i(D,B),i(A,i(D,i(n(B),E)))))). % CD proof line 22
+t(i(i(A,B),i(i(C,D),i(i(B,C),i(i(D,E),i(A,E)))))). % CD proof line 23
+t(i(i(A,i(B,C)),i(i(D,E),i(A,i(n(i(B,C)),F))))). % CD proof line 24
+t(i(i(A,B),i(i(C,D),i(n(i(i(D,E),i(C,E))),F)))). % CD proof line 25
+t(i(i(A,i(B,C)),i(A,i(n(i(i(C,D),i(B,D))),E)))). % CD proof line 26
+t(i(i(A,B),i(i(B,C),i(n(i(i(C,D),i(A,D))),E)))). % CD proof line 27
+t(i(i(A,B),i(i(i(A,C),D),i(C,D)))). % CD proof line 28
+t(i(i(i(i(A,B),C),D),i(C,D))). % CD proof line 29
+t(i(A,i(i(B,i(C,n(B))),i(i(A,C),i(B,D))))). % CD proof line 30
+t(i(i(A,i(B,C)),i(B,i(A,C)))). % CD proof line 31
+t(i(i(i(A,i(B,C)),i(i(i(D,E),i(F,E)),i(n(B),n(i(F,D))))),i(i(F,D),B))). % CD proof line 32
+t(i(i(i(n(n(A)),B),A),A)). % CD proof line 33
+t(i(A,A)). % CD proof line 34
+t(i(A,i(i(A,B),B))). % CD proof line 35
+t(i(i(n(A),A),A)). % CD proof line 36
+t(i(i(A,B),i(A,i(n(A),C)))). % CD proof line 37
+t(i(A,i(n(A),B))). % CD proof line 38
+end_of_list.

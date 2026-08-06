@@ -158,8 +158,14 @@ def array_dimensional_resizer(target_size: int, current: tuple[int, ...]) -> tup
 class VampireOutputTools:
     """Tools to process a tptp finite models
     """    
-    _variable_regex: re.Pattern = re.compile(r"tff\('declare_\$i(\d+)',type,(\w|'\bfmb_\$i_\d+\b'):\$i\)")
-    """Regex to pull out variables"""
+    _domain_element_regex: re.Pattern = re.compile(
+        r"tff\('declare_\$i(\d+)',type,'fmb_\$i_(\d+)':\$i\)"
+    )
+    """Regex for Vampire 5.0.1 finite-domain elements."""
+    _constant_definition_regex: re.Pattern = re.compile(
+        r"tff\([^,]+_definition,axiom,(\w+)\s*=\s*'fmb_\$i_(\d+)'\)"
+    )
+    """Regex for Vampire 5.0.1 interpretations of input constants."""
     _function_def_regex: re.Pattern = re.compile(r"tff\(declare_(\w),type,\1: \((\$i(?: \* \$i)*)\) > \$i\)")
     """Regex to get the arity of functions"""
     _function_val_regex: re.Pattern = re.compile(r"(\w)\(([^)\s]+)\)\s*=\s*'fmb_\$i_(\d+)'")
@@ -186,13 +192,16 @@ class VampireOutputTools:
             Constants dict
         """        
         result = copy.copy(result)
-        matches = re.findall(VampireOutputTools._variable_regex, result)
-
-        order: int = max([int(m[0]) for m in matches])
-        constants: dict[str, int] = {c: i for i, (_, c) in enumerate(matches) if len(c)==1}
-
-        for symbol, value in constants.items():
-            result = re.sub(r'\b'+re.escape(symbol)+r'\b', "'fmb_$i_"+str(value + 1)+"'", result)
+        domain_elements = re.findall(VampireOutputTools._domain_element_regex, result)
+        if not domain_elements:
+            raise ValueError("No Vampire 5.0.1 finite-domain declarations found.")
+        order = max(int(domain_index) for _, domain_index in domain_elements)
+        constants = {
+            symbol: int(domain_index) - 1
+            for symbol, domain_index in re.findall(
+                VampireOutputTools._constant_definition_regex, result
+            )
+        }
 
         return result, order, constants
 
@@ -678,7 +687,6 @@ class ModelTable():
             Iterable across Models equal to or above the size
         """        
         return [cm for cm in self.counter_models if cm.order < size], [cm for cm in self.counter_models if cm.order >= size]
-
 
 
 

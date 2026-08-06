@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "archive_format": "deterministic tar.gz (mtime=0, uid=gid=0)",
+  "stocks": [
+    {
+      "namespace": "REPRO_CN_V501",
+      "archive": "REPRO_CN_V501.tar.gz",
+      "files": 1011,
+      "bytes": 46214,
+      "sha256": "2ea9d46c4c4eeeb2e6d13a9067169fe15a2af3406b7d97655c733fc26e1fd0ea"
+    },
+    {
+      "namespace": "REPRO_CF_V501",
+      "archive": "REPRO_CF_V501.tar.gz",
+      "files": 304,
+      "bytes": 13105,
+      "sha256": "e10c68a75623dafa771179a584362f76e2935ab52641e9ae6f8d470a938907cd"
+    },
+    {
+      "namespace": "REPRO_CT_V501",
+      "archive": "REPRO_CT_V501.tar.gz",
+      "files": 297,
+      "bytes": 13414,
+      "sha256": "0de0e962060206e4b6db409d0399c4cd909ac4e725871f57646d2edd211774f5"
+    }
+  ]
+}

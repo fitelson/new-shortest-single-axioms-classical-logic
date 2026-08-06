@@ -1,0 +1,346 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 91800 was started by fitelson on BEFMBP.local,
+Wed Aug  5 00:01:39 2026
+The command was "/Users/fitelson/Library/CloudStorage/Dropbox/non-MUSIC/todo/walsh_meredith/manuscript/ajl_submission/publication_repo/vendor/prover9-2009-11A/bin/macos-arm64/prover9 -f /Users/fitelson/Library/CloudStorage/Dropbox/non-MUSIC/todo/walsh_meredith/manuscript/ajl_submission/publication_repo/proofs/official/prover9/condensed_detachment/Cf/A09.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file /Users/fitelson/Library/CloudStorage/Dropbox/non-MUSIC/todo/walsh_meredith/manuscript/ajl_submission/publication_repo/proofs/official/prover9/condensed_detachment/Cf/A09.in
+
+set(raw).
+    % set(raw) -> clear(auto).
+    % clear(auto) -> clear(auto_inference).
+    % clear(auto) -> clear(auto_setup).
+    % clear(auto_setup) -> clear(predicate_elim).
+    % clear(auto_setup) -> assign(eq_defs, pass).
+    % clear(auto) -> clear(auto_limits).
+    % clear(auto_limits) -> assign(max_weight, "1000000000000.000").
+    % clear(auto_limits) -> assign(sos_limit, -1).
+    % clear(auto) -> clear(auto_denials).
+    % clear(auto) -> clear(auto_process).
+    % set(raw) -> clear(ordered_res).
+    % set(raw) -> clear(ordered_para).
+    % set(raw) -> set(para_into_vars).
+    % set(raw) -> set(para_from_small).
+    % set(raw) -> clear(ordered_para).
+    % set(raw) -> clear(back_demod).
+    % set(raw) -> clear(cac_redundancy).
+    % set(raw) -> assign(backsub_check, 2147483647).
+    % set(raw) -> set(lightest_first).
+    % set(lightest_first) -> assign(weight_part, 1).
+    % set(lightest_first) -> assign(age_part, 0).
+    % set(lightest_first) -> assign(false_part, 0).
+    % set(lightest_first) -> assign(true_part, 0).
+    % set(lightest_first) -> assign(random_part, 0).
+    % set(raw) -> assign(literal_selection, none).
+set(hyper_resolution).
+    % set(hyper_resolution) -> set(pos_hyper_resolution).
+set(prolog_style_variables).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight,0).
+assign(max_proofs,1).
+
+formulas(assumptions).
+-t(X) | -t(i(X,Y)) | t(Y) # label(condensed_detachment).
+t(i(i(i(P,Q),i(R,S)),i(i(S,i(i(f,T),P)),i(R,P)))) # label(A09_Cf).
+end_of_list.
+
+formulas(goals).
+t(i(i(P,Q),i(i(Q,R),i(P,R)))) & t(i(P,i(Q,P))) & t(i(i(i(P,Q),P),P)) & t(i(f,P)).
+end_of_list.
+
+formulas(hints).
+t(i(i(i(A,B),i(C,D)),i(i(D,i(i(f,E),A)),i(C,A)))).
+t(i(i(i(A,B),i(i(f,C),i(B,D))),i(i(E,i(i(f,F),B)),i(B,D)))).
+t(i(i(i(A,B),i(i(f,C),i(D,A))),i(i(E,i(i(f,F),A)),i(D,A)))).
+t(i(i(A,i(i(f,B),i(C,D))),i(D,i(C,D)))).
+t(i(A,i(B,A))).
+t(i(i(i(A,B),i(i(f,C),D)),i(B,D))).
+t(i(i(A,f),i(A,B))).
+t(i(A,i(i(B,f),i(B,C)))).
+t(i(i(i(A,B),i(i(f,C),D)),i(i(A,f),D))).
+t(i(i(i(A,B),i(i(f,C),A)),i(D,A))).
+t(i(i(i(A,B),f),A)).
+t(i(i(A,i(i(f,B),i(i(C,A),D))),i(C,i(i(C,A),D)))).
+t(i(i(i(A,B),f),i(B,C))).
+t(i(A,i(i(i(B,C),f),i(C,D)))).
+t(i(i(i(A,B),i(i(f,C),D)),i(i(i(E,A),f),D))).
+t(i(i(i(A,i(B,C)),f),i(C,D))).
+t(i(i(A,i(i(f,B),i(C,i(D,E)))),i(E,i(C,i(D,E))))).
+t(i(A,i(B,i(C,A)))).
+t(i(A,i(i(A,B),B))).
+t(i(i(A,i(i(f,B),C)),i(i(i(C,D),A),C))).
+t(i(i(A,i(i(f,B),C)),i(i(i(A,D),C),C))).
+t(i(i(i(A,i(B,C)),i(i(f,D),E)),i(C,E))).
+t(i(A,i(B,i(C,i(D,A))))).
+t(i(i(i(A,B),i(C,i(D,A))),i(C,i(D,A)))).
+t(i(i(i(A,i(B,C)),f),i(D,B))).
+t(i(i(A,i(i(f,B),i(C,i(A,D)))),i(E,i(C,i(A,D))))).
+t(i(i(i(A,i(B,C)),f),B)).
+t(i(i(A,i(i(f,B),i(C,i(i(D,A),E)))),i(D,i(C,i(i(D,A),E))))).
+t(i(A,i(B,i(C,i(D,i(E,A)))))).
+t(i(A,i(B,i(C,i(D,i(E,i(F,A))))))).
+t(i(A,i(B,i(i(A,C),i(D,i(E,C)))))).
+t(i(A,i(i(B,C),i(B,i(D,C))))).
+t(i(i(A,B),i(A,i(C,B)))).
+t(i(A,i(B,i(i(A,C),i(D,C))))).
+t(i(A,i(B,i(C,i(i(A,D),i(E,D)))))).
+t(i(A,i(i(A,B),i(i(B,C),i(D,C))))).
+t(i(i(i(i(A,B),C),D),i(i(D,B),i(A,B)))).
+t(i(i(i(A,B),f),i(C,A))).
+t(i(i(i(i(i(A,B),f),C),A),A)).
+t(i(i(A,B),i(i(i(A,C),f),B))).
+t(i(i(i(i(A,B),C),f),i(i(i(A,D),f),B))).
+t(i(i(i(i(i(A,B),f),C),D),i(i(A,C),D))).
+t(i(i(A,B),i(i(B,C),i(A,C)))).
+t(i(i(i(A,B),A),A)).
+t(i(f,A)).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 t(i(i(P,Q),i(i(Q,R),i(P,R)))) & t(i(P,i(Q,P))) & t(i(i(i(P,Q),P),P)) & t(i(f,P)) # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+-t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+t(i(i(i(A,B),i(C,D)),i(i(D,i(i(f,E),A)),i(C,A)))) # label(A09_Cf).  [assumption].
+-t(i(i(c1,c2),i(i(c2,c3),i(c1,c3)))) | -t(i(c1,i(c2,c1))) | -t(i(i(i(c1,c2),c1),c1)) | -t(i(f,c1)).  [deny(1)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+% 45 hints input.
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ t ]).
+Function symbol precedence:  function_order([ f, c1, c2, c3, i ]).
+After inverse_order:  (no changes).
+
+kept:      2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+kept:      3 t(i(i(i(A,B),i(C,D)),i(i(D,i(i(f,E),A)),i(C,A)))) # label(A09_Cf).  [assumption].
+kept:      4 -t(i(i(c1,c2),i(i(c2,c3),i(c1,c3)))) | -t(i(c1,i(c2,c1))) | -t(i(i(i(c1,c2),c1),c1)) | -t(i(f,c1)).  [deny(1)].
+
+============================== end of process initial clauses ========
+
+============================== CLAUSES FOR SEARCH ====================
+
+% Clauses after input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+3 t(i(i(i(A,B),i(C,D)),i(i(D,i(i(f,E),A)),i(C,A)))) # label(A09_Cf).  [assumption].
+4 -t(i(i(c1,c2),i(i(c2,c3),i(c1,c3)))) | -t(i(c1,i(c2,c1))) | -t(i(i(i(c1,c2),c1),c1)) | -t(i(f,c1)).  [deny(1)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+% 45 hints (45 processed, 0 redundant).
+
+============================== end of clauses for search =============
+
+============================== SEARCH ================================
+
+% Starting search at 0.00 seconds.
+
+given #1 (I,wt=8): 2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+
+given #2 (I,wt=0): 3 t(i(i(i(A,B),i(C,D)),i(i(D,i(i(f,E),A)),i(C,A)))) # label(A09_Cf).  [assumption].
+
+given #3 (I,wt=30): 4 -t(i(i(c1,c2),i(i(c2,c3),i(c1,c3)))) | -t(i(c1,i(c2,c1))) | -t(i(i(i(c1,c2),c1),c1)) | -t(i(f,c1)).  [deny(1)].
+
+given #4 (H,wt=0): 5 t(i(i(i(A,B),i(i(f,C),i(B,D))),i(i(E,i(i(f,F),B)),i(B,D)))).  [hyper(2,a,3,a,b,3,a)].
+
+given #5 (H,wt=0): 6 t(i(i(i(A,B),i(i(f,C),i(D,A))),i(i(E,i(i(f,F),A)),i(D,A)))).  [hyper(2,a,5,a,b,3,a)].
+
+given #6 (H,wt=0): 7 t(i(i(A,i(i(f,B),i(C,D))),i(D,i(C,D)))).  [hyper(2,a,5,a,b,6,a)].
+
+given #7 (H,wt=0): 8 t(i(A,i(B,A))).  [hyper(2,a,6,a,b,7,a)].
+
+given #8 (H,wt=0): 9 t(i(i(i(A,B),i(i(f,C),D)),i(B,D))).  [hyper(2,a,7,a,b,3,a)].
+
+given #9 (H,wt=0): 11 t(i(i(i(A,B),i(i(f,C),A)),i(D,A))).  [hyper(2,a,8,a,b,3,a)].
+
+given #10 (H,wt=0): 12 t(i(i(A,f),i(A,B))).  [hyper(2,a,3,a,b,9,a)].
+
+given #11 (H,wt=0): 13 t(i(f,A)).  [hyper(2,a,12,a,b,9,a)].
+
+given #12 (H,wt=0): 14 t(i(A,i(i(B,f),i(B,C)))).  [hyper(2,a,12,a,b,8,a)].
+
+given #13 (H,wt=0): 15 t(i(i(i(A,B),i(i(f,C),D)),i(i(A,f),D))).  [hyper(2,a,14,a,b,3,a)].
+
+given #14 (H,wt=0): 16 t(i(i(i(A,B),f),A)).  [hyper(2,a,11,a,b,15,a)].
+
+given #15 (H,wt=0): 17 t(i(i(i(A,B),f),i(C,A))).  [hyper(2,a,6,a,b,15,a)].
+
+given #16 (H,wt=0): 18 t(i(i(i(A,B),f),i(B,C))).  [hyper(2,a,5,a,b,15,a)].
+
+given #17 (H,wt=0): 19 t(i(i(A,i(i(f,B),i(i(C,A),D))),i(C,i(i(C,A),D)))).  [hyper(2,a,16,a,b,3,a)].
+
+given #18 (H,wt=0): 20 t(i(A,i(i(i(B,C),f),i(C,D)))).  [hyper(2,a,18,a,b,8,a)].
+
+given #19 (H,wt=0): 21 t(i(i(i(A,B),i(i(f,C),D)),i(i(i(E,A),f),D))).  [hyper(2,a,20,a,b,3,a)].
+
+given #20 (H,wt=0): 22 t(i(i(i(A,i(B,C)),f),B)).  [hyper(2,a,17,a,b,21,a)].
+
+given #21 (H,wt=0): 23 t(i(i(i(A,i(B,C)),f),i(D,B))).  [hyper(2,a,6,a,b,21,a)].
+
+given #22 (H,wt=0): 24 t(i(i(i(A,i(B,C)),f),i(C,D))).  [hyper(2,a,5,a,b,21,a)].
+
+given #23 (H,wt=0): 25 t(i(i(A,i(i(f,B),i(C,i(i(D,A),E)))),i(D,i(C,i(i(D,A),E))))).  [hyper(2,a,22,a,b,3,a)].
+
+given #24 (H,wt=0): 26 t(i(i(A,i(i(f,B),i(C,i(A,D)))),i(E,i(C,i(A,D))))).  [hyper(2,a,23,a,b,3,a)].
+
+given #25 (H,wt=0): 27 t(i(i(A,i(i(f,B),i(C,i(D,E)))),i(E,i(C,i(D,E))))).  [hyper(2,a,24,a,b,3,a)].
+
+given #26 (H,wt=0): 28 t(i(A,i(B,i(C,A)))).  [hyper(2,a,26,a,b,27,a)].
+
+given #27 (H,wt=0): 29 t(i(i(i(A,i(B,C)),i(i(f,D),E)),i(C,E))).  [hyper(2,a,27,a,b,3,a)].
+
+given #28 (H,wt=0): 30 t(i(A,i(i(A,B),B))).  [hyper(2,a,28,a,b,19,a)].
+
+given #29 (H,wt=0): 32 t(i(A,i(B,i(C,i(D,A))))).  [hyper(2,a,28,a,b,29,a)].
+
+given #30 (H,wt=0): 33 t(i(i(A,i(i(f,B),C)),i(i(i(C,D),A),C))).  [hyper(2,a,30,a,b,3,a)].
+
+given #31 (H,wt=0): 34 t(i(A,i(B,i(C,i(D,i(E,A)))))).  [hyper(2,a,32,a,b,29,a)].
+
+given #32 (H,wt=0): 35 t(i(i(i(A,B),A),A)).  [hyper(2,a,8,a,b,33,a)].
+
+given #33 (H,wt=0): 36 t(i(i(A,i(i(f,B),C)),i(i(i(A,D),C),C))).  [hyper(2,a,33,a,b,3,a)].
+
+given #34 (H,wt=0): 37 t(i(A,i(B,i(C,i(D,i(E,i(F,A))))))).  [hyper(2,a,34,a,b,29,a)].
+
+given #35 (H,wt=0): 38 t(i(A,i(B,i(i(A,C),i(D,C))))).  [hyper(2,a,34,a,b,25,a)].
+
+given #36 (H,wt=0): 39 t(i(i(i(A,B),i(C,i(D,A))),i(C,i(D,A)))).  [hyper(2,a,32,a,b,36,a)].
+
+given #37 (H,wt=0): 40 t(i(i(i(i(i(A,B),f),C),A),A)).  [hyper(2,a,17,a,b,36,a)].
+
+given #38 (H,wt=0): 41 t(i(A,i(B,i(i(A,C),i(D,i(E,C)))))).  [hyper(2,a,37,a,b,25,a)].
+
+given #39 (H,wt=0): 43 t(i(A,i(i(B,C),i(B,i(D,C))))).  [hyper(2,a,41,a,b,26,a)].
+
+given #40 (H,wt=0): 44 t(i(i(A,B),i(A,i(C,B)))).  [hyper(2,a,43,a,b,43,a)].
+
+given #41 (H,wt=0): 45 t(i(A,i(B,i(C,i(i(A,D),i(E,D)))))).  [hyper(2,a,38,a,b,44,a)].
+
+given #42 (H,wt=0): 46 t(i(A,i(i(A,B),i(i(B,C),i(D,C))))).  [hyper(2,a,45,a,b,19,a)].
+
+given #43 (H,wt=0): 47 t(i(i(i(i(A,B),C),D),i(i(D,B),i(A,B)))).  [hyper(2,a,46,a,b,39,a)].
+
+given #44 (H,wt=0): 48 t(i(i(A,B),i(i(i(A,C),f),B))).  [hyper(2,a,40,a,b,47,a)].
+
+given #45 (H,wt=0): 49 t(i(i(i(i(A,B),C),f),i(i(i(A,D),f),B))).  [hyper(2,a,48,a,b,48,a)].
+
+given #46 (H,wt=0): 50 t(i(i(i(i(i(A,B),f),C),D),i(i(A,C),D))).  [hyper(2,a,49,a,b,47,a)].
+
+given #47 (H,wt=0): 51 t(i(i(A,B),i(i(B,C),i(A,C)))).  [hyper(2,a,47,a,b,50,a)].
+-------- Proof 1 -------- 
+
+============================== PROOF =================================
+
+% Proof 1 at 0.00 (+ 0.00) seconds.
+% Length of proof is 49.
+% Level of proof is 27.
+% Maximum clause weight is 30.000.
+% Given clauses 47.
+
+1 t(i(i(P,Q),i(i(Q,R),i(P,R)))) & t(i(P,i(Q,P))) & t(i(i(i(P,Q),P),P)) & t(i(f,P)) # label(non_clause) # label(goal).  [goal].
+2 -t(A) | -t(i(A,B)) | t(B) # label(condensed_detachment).  [assumption].
+3 t(i(i(i(A,B),i(C,D)),i(i(D,i(i(f,E),A)),i(C,A)))) # label(A09_Cf).  [assumption].
+4 -t(i(i(c1,c2),i(i(c2,c3),i(c1,c3)))) | -t(i(c1,i(c2,c1))) | -t(i(i(i(c1,c2),c1),c1)) | -t(i(f,c1)).  [deny(1)].
+5 t(i(i(i(A,B),i(i(f,C),i(B,D))),i(i(E,i(i(f,F),B)),i(B,D)))).  [hyper(2,a,3,a,b,3,a)].
+6 t(i(i(i(A,B),i(i(f,C),i(D,A))),i(i(E,i(i(f,F),A)),i(D,A)))).  [hyper(2,a,5,a,b,3,a)].
+7 t(i(i(A,i(i(f,B),i(C,D))),i(D,i(C,D)))).  [hyper(2,a,5,a,b,6,a)].
+8 t(i(A,i(B,A))).  [hyper(2,a,6,a,b,7,a)].
+9 t(i(i(i(A,B),i(i(f,C),D)),i(B,D))).  [hyper(2,a,7,a,b,3,a)].
+11 t(i(i(i(A,B),i(i(f,C),A)),i(D,A))).  [hyper(2,a,8,a,b,3,a)].
+12 t(i(i(A,f),i(A,B))).  [hyper(2,a,3,a,b,9,a)].
+13 t(i(f,A)).  [hyper(2,a,12,a,b,9,a)].
+14 t(i(A,i(i(B,f),i(B,C)))).  [hyper(2,a,12,a,b,8,a)].
+15 t(i(i(i(A,B),i(i(f,C),D)),i(i(A,f),D))).  [hyper(2,a,14,a,b,3,a)].
+16 t(i(i(i(A,B),f),A)).  [hyper(2,a,11,a,b,15,a)].
+17 t(i(i(i(A,B),f),i(C,A))).  [hyper(2,a,6,a,b,15,a)].
+18 t(i(i(i(A,B),f),i(B,C))).  [hyper(2,a,5,a,b,15,a)].
+19 t(i(i(A,i(i(f,B),i(i(C,A),D))),i(C,i(i(C,A),D)))).  [hyper(2,a,16,a,b,3,a)].
+20 t(i(A,i(i(i(B,C),f),i(C,D)))).  [hyper(2,a,18,a,b,8,a)].
+21 t(i(i(i(A,B),i(i(f,C),D)),i(i(i(E,A),f),D))).  [hyper(2,a,20,a,b,3,a)].
+22 t(i(i(i(A,i(B,C)),f),B)).  [hyper(2,a,17,a,b,21,a)].
+23 t(i(i(i(A,i(B,C)),f),i(D,B))).  [hyper(2,a,6,a,b,21,a)].
+24 t(i(i(i(A,i(B,C)),f),i(C,D))).  [hyper(2,a,5,a,b,21,a)].
+25 t(i(i(A,i(i(f,B),i(C,i(i(D,A),E)))),i(D,i(C,i(i(D,A),E))))).  [hyper(2,a,22,a,b,3,a)].
+26 t(i(i(A,i(i(f,B),i(C,i(A,D)))),i(E,i(C,i(A,D))))).  [hyper(2,a,23,a,b,3,a)].
+27 t(i(i(A,i(i(f,B),i(C,i(D,E)))),i(E,i(C,i(D,E))))).  [hyper(2,a,24,a,b,3,a)].
+28 t(i(A,i(B,i(C,A)))).  [hyper(2,a,26,a,b,27,a)].
+29 t(i(i(i(A,i(B,C)),i(i(f,D),E)),i(C,E))).  [hyper(2,a,27,a,b,3,a)].
+30 t(i(A,i(i(A,B),B))).  [hyper(2,a,28,a,b,19,a)].
+32 t(i(A,i(B,i(C,i(D,A))))).  [hyper(2,a,28,a,b,29,a)].
+33 t(i(i(A,i(i(f,B),C)),i(i(i(C,D),A),C))).  [hyper(2,a,30,a,b,3,a)].
+34 t(i(A,i(B,i(C,i(D,i(E,A)))))).  [hyper(2,a,32,a,b,29,a)].
+35 t(i(i(i(A,B),A),A)).  [hyper(2,a,8,a,b,33,a)].
+36 t(i(i(A,i(i(f,B),C)),i(i(i(A,D),C),C))).  [hyper(2,a,33,a,b,3,a)].
+37 t(i(A,i(B,i(C,i(D,i(E,i(F,A))))))).  [hyper(2,a,34,a,b,29,a)].
+38 t(i(A,i(B,i(i(A,C),i(D,C))))).  [hyper(2,a,34,a,b,25,a)].
+39 t(i(i(i(A,B),i(C,i(D,A))),i(C,i(D,A)))).  [hyper(2,a,32,a,b,36,a)].
+40 t(i(i(i(i(i(A,B),f),C),A),A)).  [hyper(2,a,17,a,b,36,a)].
+41 t(i(A,i(B,i(i(A,C),i(D,i(E,C)))))).  [hyper(2,a,37,a,b,25,a)].
+43 t(i(A,i(i(B,C),i(B,i(D,C))))).  [hyper(2,a,41,a,b,26,a)].
+44 t(i(i(A,B),i(A,i(C,B)))).  [hyper(2,a,43,a,b,43,a)].
+45 t(i(A,i(B,i(C,i(i(A,D),i(E,D)))))).  [hyper(2,a,38,a,b,44,a)].
+46 t(i(A,i(i(A,B),i(i(B,C),i(D,C))))).  [hyper(2,a,45,a,b,19,a)].
+47 t(i(i(i(i(A,B),C),D),i(i(D,B),i(A,B)))).  [hyper(2,a,46,a,b,39,a)].
+48 t(i(i(A,B),i(i(i(A,C),f),B))).  [hyper(2,a,40,a,b,47,a)].
+49 t(i(i(i(i(A,B),C),f),i(i(i(A,D),f),B))).  [hyper(2,a,48,a,b,48,a)].
+50 t(i(i(i(i(i(A,B),f),C),D),i(i(A,C),D))).  [hyper(2,a,49,a,b,47,a)].
+51 t(i(i(A,B),i(i(B,C),i(A,C)))).  [hyper(2,a,47,a,b,50,a)].
+52 $F.  [hyper(4,a,51,a,b,8,a,c,35,a,d,13,a)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=47. Generated=1146. Kept=50. proofs=1.
+Usable=44. Sos=3. Demods=0. Limbo=0, Disabled=6. Hints=45.
+Kept_by_rule=0, Deleted_by_rule=871.
+Forward_subsumed=224. Back_subsumed=3.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=0.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=0. Nonunit_bsub_feature_tests=2.
+Megabytes=0.17.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+------ process 91800 exit (max_proofs) ------
+
+Process 91800 exit (max_proofs) Wed Aug  5 00:01:39 2026

@@ -1,0 +1,17 @@
+{
+  "signature": "CF",
+  "namespace": "REPRO_CF_V501",
+  "source": "/Users/fitelson/Library/CloudStorage/Dropbox/non-MUSIC/todo/walsh_meredith/code/legacy_walsh_search/Results/C019Results/C0_19_CounterModels.txt",
+  "source_lines": 5622862,
+  "unique_models": 304,
+  "written": 304,
+  "verified": 304,
+  "orders": {
+    "2": 5,
+    "3": 76,
+    "4": 115,
+    "5": 75,
+    "6": 33
+  },
+  "target_refuted": "t(i(i(i(i(i(X,Y),i(Z,f)),U),V),i(i(V,X),i(Z,X))))"
+}

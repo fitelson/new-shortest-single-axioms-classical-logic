@@ -1,0 +1,23 @@
+{
+  "title": "New Short(est) Single Axioms for Classical Logic: search code and proof archive",
+  "description": "Search code, reproducibility tools, and machine-checkable Prover9 certificates accompanying the paper New Short(est) Single Axioms for Classical Logic. The archive includes the unmodified official LADR-2009-11A Prover9 source release and the reference executable used to generate the archived outputs.",
+  "creators": [
+    {
+      "name": "Fitelson, Branden",
+      "affiliation": "Northeastern University"
+    },
+    {
+      "name": "Walsh, Matthew"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "automated theorem proving",
+    "classical logic",
+    "single axioms",
+    "condensed detachment",
+    "equational logic",
+    "Prover9"
+  ]
+}

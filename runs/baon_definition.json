@@ -1,10 +1,11 @@
 {
     "name": "BAON",
     "counter_modeling_formulas": [
-        "n(o(n(o(n(o(X,Y)),Z)),n(o(n(o(n(Z),n(o(U,Z)))),Y))))=Z"
+        "o(n(o(n(X),Y)),X)=X",
+        "o(n(o(n(X),Y)),o(Z,Y))=o(Y,o(Z,X))"
     ],
     "vampire_template": [
-        "fof(known,conjecture,![X,Y,Z,U]: n(o(n(o(n(o(X,Y)),Z)),n(o(n(o(n(Z),n(o(U,Z)))),Y))))=Z)."
+        "fof(meredith_on_basis,conjecture,![X,Y,Z]: ((o(n(o(n(X),Y)),X)=X) & (o(n(o(n(X),Y)),o(Z,Y))=o(Y,o(Z,X)))))."
     ],
     "prover9_template": [
 

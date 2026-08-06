@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reference_prover": "Vampire 5.0.1",
+  "prover_mode": "portfolio",
+  "prover_schedule": "casc_sat",
+  "run_prefix": "LOWER1",
+  "second_pass": {
+    "time_limit_seconds": 10,
+    "memory_limit_mib": 32000,
+    "cores": 6,
+    "fmb_start_size": 1
+  },
+  "shard_count": 2,
+  "runs": [
+    {"label": "CN", "length": 19, "reported_axiom_weight": 21, "config": "runs/cn_definition.json", "model_namespace": "REPRO_CN_V501"},
+    {"label": "CF", "length": 17, "reported_axiom_weight": 19, "config": "runs/cf_definition.json", "model_namespace": "REPRO_CF_V501"},
+    {"label": "CT", "length": 17, "reported_axiom_weight": 19, "config": "runs/ct_definition.json", "model_namespace": "REPRO_CT_V501"},
+    {"label": "BACF", "length": 15, "reported_axiom_weight": 17, "config": "runs/bacf_definition.json", "model_namespace": "BACF"},
+    {"label": "BAAN", "length": 19, "reported_axiom_weight": 20, "config": "runs/baan_definition.json", "model_namespace": "BAAN"},
+    {"label": "BAON", "length": 19, "reported_axiom_weight": 20, "config": "runs/baon_definition.json", "model_namespace": "BAON"},
+    {"label": "BACN", "length": 16, "reported_axiom_weight": 17, "config": "runs/bacn_definition.json", "model_namespace": "BACN"}
+  ]
+}

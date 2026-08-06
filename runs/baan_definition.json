@@ -7,7 +7,7 @@
         "a(P,n(P))=a(Q,n(Q))"
     ],
     "vampire_template": [
-        "fof(known,conjecture,![P,Q,R]: (a(P,a(Q,R))=a(Q,a(R,P))) & (a(P,P)=P) & (a(P,n(a(P,n(Q))))=a(P,Q)) & (a(P,n(P))=a(Q,n(Q))))."
+        "fof(known,conjecture,![P,Q,R]: ((a(P,a(Q,R))=a(Q,a(R,P))) & (a(P,P)=P) & (a(P,n(a(P,n(Q))))=a(P,Q)) & (a(P,n(P))=a(Q,n(Q)))))."
     ],
     "prover9_template": [
 

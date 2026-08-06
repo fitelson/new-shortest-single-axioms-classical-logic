@@ -5,7 +5,7 @@
         "i(i(P,Q),P)=P"
     ],
     "vampire_template": [
-        "fof(known,conjecture,![P,Q,R]: (i(i(P,f),i(Q,R))=i(i(R,P),i(Q,P))) & (i(i(P,Q),P)=P))."
+        "fof(known,conjecture,![P,Q,R]: ((i(i(P,f),i(Q,R))=i(i(R,P),i(Q,P))) & (i(i(P,Q),P)=P)))."
     ],
     "prover9_template": [
 

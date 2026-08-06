@@ -19,6 +19,7 @@ from typing import Any
 import warnings
 import argparse
 import json
+from dataclasses import asdict, dataclass, fields
 #import psutil
 
 #kernprof fix
@@ -124,5 +125,4 @@ def numpy_read_only_array(*args, dtype: type = np.int8) -> np.ndarray:
     arr = np.array(*args, dtype=dtype)
     arr.setflags(write=False)
     return arr
-
 

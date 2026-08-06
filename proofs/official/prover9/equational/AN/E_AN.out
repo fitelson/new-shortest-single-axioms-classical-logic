@@ -1,0 +1,356 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 61594 was started by fitelson on MacBook-Pro.local,
+Thu Aug  6 06:58:46 2026
+The command was "vendor/prover9-2009-11A/bin/macos-arm64/prover9 -f proofs/official/prover9/equational/AN/E_AN.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file proofs/official/prover9/equational/AN/E_AN.in
+
+set(raw).
+    % set(raw) -> clear(auto).
+    % clear(auto) -> clear(auto_inference).
+    % clear(auto) -> clear(auto_setup).
+    % clear(auto_setup) -> clear(predicate_elim).
+    % clear(auto_setup) -> assign(eq_defs, pass).
+    % clear(auto) -> clear(auto_limits).
+    % clear(auto_limits) -> assign(max_weight, "1000000000000.000").
+    % clear(auto_limits) -> assign(sos_limit, -1).
+    % clear(auto) -> clear(auto_denials).
+    % clear(auto) -> clear(auto_process).
+    % set(raw) -> clear(ordered_res).
+    % set(raw) -> clear(ordered_para).
+    % set(raw) -> set(para_into_vars).
+    % set(raw) -> set(para_from_small).
+    % set(raw) -> clear(ordered_para).
+    % set(raw) -> clear(back_demod).
+    % set(raw) -> clear(cac_redundancy).
+    % set(raw) -> assign(backsub_check, 2147483647).
+    % set(raw) -> set(lightest_first).
+    % set(lightest_first) -> assign(weight_part, 1).
+    % set(lightest_first) -> assign(age_part, 0).
+    % set(lightest_first) -> assign(false_part, 0).
+    % set(lightest_first) -> assign(true_part, 0).
+    % set(lightest_first) -> assign(random_part, 0).
+    % set(raw) -> assign(literal_selection, none).
+set(prolog_style_variables).
+set(paramodulation).
+set(para_units_only).
+    % set(para_units_only) -> assign(para_lit_limit, 1).
+set(para_from_small).
+set(unit_deletion).
+set(restrict_denials).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight,0).
+assign(max_proofs,1).
+clear(print_given).
+
+formulas(sos).
+a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(a(C,D),A))))) = B.
+end_of_list.
+
+formulas(hints).
+a(n(a(A,B)),n(a(n(a(n(A),n(a(a(C,D),E)))),n(a(a(B,F),n(a(a(E,n(A)),C))))))) = a(n(A),n(a(a(C,D),E))).
+a(n(a(a(A,n(B)),n(a(a(C,n(D)),E)))),n(a(n(B),n(a(D,A))))) = B.
+a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(a(E,F),V6)))),n(a(C,n(a(a(V6,n(A)),E))))))) = a(n(A),n(a(a(E,F),V6))).
+a(n(a(a(n(a(n(A),n(a(a(B,C),D)))),n(E)),n(a(a(F,n(n(a(a(D,n(A)),B)))),V6)))),n(a(n(E),n(A)))) = E.
+a(n(a(a(n(a(a(A,B),C)),n(a(a(C,n(D)),A))),n(a(a(E,n(n(D))),F)))),n(D)) = a(a(C,n(D)),A).
+a(n(a(a(n(a(a(A,B),n(a(a(C,n(D)),E)))),n(a(D,A))),n(a(a(F,n(n(a(n(D),n(a(a(E,V6),C)))))),V7)))),n(a(n(D),n(a(a(E,V6),C))))) = a(D,A).
+a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(E,F)))),n(a(C,n(a(a(F,n(A)),n(a(a(V6,n(E)),V7))))))))) = a(n(A),n(a(E,F))).
+a(n(a(a(A,n(B)),n(a(C,D)))),n(a(n(B),n(a(a(n(C),n(E)),A))))) = B.
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(B),n(a(a(D,E),n(a(a(n(a(a(C,F),A)),n(a(a(A,n(B)),C))),n(a(a(V6,n(n(B))),V7))))))))) = B.
+a(n(a(a(A,n(B)),n(a(a(a(C,n(D)),E),F)))),n(a(n(B),n(a(D,A))))) = B.
+a(n(a(A,n(a(B,C)))),n(a(n(a(n(A),n(a(D,E)))),n(a(a(n(B),n(F)),n(a(a(E,n(A)),n(a(a(V6,n(D)),V7))))))))) = a(n(A),n(a(D,E))).
+a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(E,F)))),n(a(C,n(a(a(F,n(A)),n(a(a(a(V6,n(E)),V7),V8))))))))) = a(n(A),n(a(E,F))).
+a(n(a(A,n(a(B,C)))),n(a(n(a(n(A),n(D))),n(a(a(n(B),n(E)),n(a(a(n(a(n(D),n(a(a(F,V6),V7)))),n(A)),n(a(a(V8,n(n(a(a(V7,n(D)),F)))),V9))))))))) = a(n(A),n(D)).
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(a(C,a(D,n(E)))))))),F)))),n(a(n(n(A)),n(a(C,a(D,n(E))))))) = a(n(A),n(a(E,n(E)))).
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(n(A),n(n(A))))).
+a(n(a(A,n(a(a(B,n(n(n(n(A))))),C)))),n(a(n(n(A)),n(a(n(n(A)),n(n(n(A)))))))) = a(n(A),n(a(a(D,n(n(a(n(n(n(A))),n(a(a(E,n(A)),D)))))),E))).
+a(n(a(A,n(a(a(a(B,n(n(a(n(n(A)),n(C))))),D),E)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(n(A),n(n(A))))).
+a(n(A),n(a(n(A),n(n(A))))) = a(n(A),n(a(B,n(B)))).
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(a(B,n(a(a(E,n(n(n(n(B))))),F)))),n(a(n(n(B)),n(a(n(n(B)),n(n(n(B)))))))))) = B.
+a(n(A),n(a(a(B,n(n(a(n(n(n(A))),n(a(a(C,n(A)),B)))))),C))) = a(n(A),n(a(n(A),n(n(A))))).
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(E,n(E)))).
+a(n(a(A,n(a(a(a(B,n(n(a(n(n(A)),n(C))))),D),E)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(F,n(F)))).
+a(n(A),n(a(B,n(B)))) = a(n(A),n(a(C,n(C)))).
+a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(n(B),n(n(B))))))) = B.
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(B),n(a(E,n(E)))))) = B.
+a(n(a(a(n(a(n(n(A)),n(a(a(B,C),D)))),n(A)),n(a(a(E,n(n(a(a(D,n(n(A))),B)))),F)))),n(a(V6,n(V6)))) = A.
+a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(D,n(D)))))) = B.
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(a(B,n(a(a(E,n(n(a(n(n(B)),n(F))))),V6)))),n(a(n(n(B)),n(F)))))) = B.
+a(n(a(A,B)),n(a(n(a(n(A),n(C))),n(a(D,n(D)))))) = a(n(A),n(C)).
+a(n(a(A,B)),n(a(n(a(C,n(C))),n(a(D,n(D)))))) = a(C,n(C)).
+a(A,n(a(a(B,n(n(a(n(n(A)),n(n(n(A))))))),C))) = A.
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(a(n(a(E,n(A))),F),E))).
+a(a(A,n(a(n(a(B,n(B))),n(a(C,n(C)))))),D) = a(B,n(B)).
+a(n(a(a(A,n(B)),C)),n(n(B))) = B.
+a(n(a(A,n(B))),n(a(n(B),n(a(C,A))))) = B.
+n(a(a(n(a(n(n(A)),n(a(a(B,C),D)))),n(A)),n(a(a(E,n(n(a(a(D,n(n(A))),B)))),F)))) = A.
+a(n(A),n(a(a(n(a(B,n(A))),C),B))) = a(n(A),n(a(D,n(D)))).
+a(a(a(A,n(A)),B),C) = a(A,n(A)).
+a(n(a(a(A,n(B)),n(a(C,n(C))))),n(a(n(B),n(a(D,A))))) = B.
+a(A,n(a(n(a(B,n(B))),n(a(C,n(C)))))) = a(B,n(B)).
+a(n(a(A,B)),n(a(n(n(A)),n(a(a(B,C),n(a(a(D,n(A)),E))))))) = n(A).
+a(n(a(A,n(B))),n(n(B))) = B.
+a(A,n(a(B,n(B)))) = A.
+a(A,n(n(A))) = A.
+a(n(A),n(a(a(n(a(B,n(A))),C),B))) = n(A).
+a(n(a(A,n(A))),n(a(n(B),n(a(C,n(C)))))) = B.
+a(A,n(A)) = a(B,n(B)).
+a(c1,c1) != c1 | a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2).
+a(n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))),n(a(n(B),n(D)))) = B.
+a(n(a(n(a(A,n(A))),n(B))),n(a(C,n(C)))) = B.
+a(n(A),n(a(A,B))) = n(A).
+a(n(A),n(a(B,A))) = n(A).
+a(n(a(a(A,n(a(B,n(B)))),C)),n(a(n(a(D,n(D))),n(a(a(C,E),A))))) = a(D,n(D)).
+a(n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))),n(a(n(B),D))) = B.
+n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))) = B.
+n(a(n(a(A,n(A))),n(B))) = B.
+a(n(A),n(A)) = n(A).
+a(n(a(n(A),B)),n(a(n(a(C,A)),n(a(a(B,D),n(A)))))) = a(C,A).
+a(n(a(a(A,n(a(B,n(B)))),C)),n(a(n(a(D,n(D))),n(a(a(C,E),A))))) = a(F,n(F)).
+a(A,n(a(n(A),B))) = A.
+a(n(a(n(A),n(B))),n(a(n(B),A))) = B.
+a(n(a(n(A),B)),n(n(A))) = A.
+a(n(n(A)),n(n(A))) = A.
+a(n(a(a(A,n(a(B,n(B)))),C)),a(a(C,D),A)) = a(E,n(E)).
+n(n(A)) = A.
+a(n(a(A,B)),a(a(B,C),A)) = a(D,n(D)).
+a(n(a(A,B)),n(a(A,n(a(a(B,C),n(a(a(D,n(A)),E))))))) = n(A).
+a(n(a(A,n(B))),B) = B.
+a(A,A) = A.
+n(a(n(A),n(a(B,A)))) = A.
+a(n(a(n(A),B)),A) = A.
+a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2).
+a(n(a(A,B)),a(B,A)) = a(C,n(C)).
+a(n(a(A,B)),n(a(A,n(a(B,C))))) = n(A).
+a(A,a(B,A)) = a(B,A).
+a(A,n(a(n(a(B,C)),a(C,B)))) = A.
+a(n(a(A,B)),n(a(A,n(B)))) = n(A).
+n(a(n(a(A,B)),n(a(B,A)))) = a(B,A).
+a(a(A,B),C) = a(n(a(n(C),A)),n(n(a(A,B)))).
+a(n(a(A,B)),n(a(a(A,A),n(B)))) = n(A).
+a(a(A,B),a(B,A)) = a(A,B).
+a(a(A,B),a(B,A)) = a(B,A).
+a(a(A,B),C) = a(n(a(n(C),A)),a(A,B)).
+a(n(a(n(A),B)),n(n(B))) = a(B,A).
+a(A,B) = a(B,A).
+a(a(A,B),n(C)) = a(n(a(C,A)),a(A,B)).
+a(n(a(n(A),B)),B) = a(B,A).
+a(A,n(a(n(B),A))) = a(A,B).
+a(A,n(a(A,n(B)))) = a(A,B).
+a(a(A,B),n(a(a(A,B),n(C)))) = a(a(A,B),a(C,A)).
+a(c2,a(c3,c1)) != a(c1,a(c2,c3)).
+a(a(A,B),a(C,A)) = a(a(A,B),C).
+a(a(A,a(B,A)),C) = a(a(B,A),a(C,A)).
+a(a(A,B),a(B,C)) = a(a(B,C),A).
+a(a(A,B),a(C,B)) = a(a(A,B),C).
+a(a(A,B),a(B,C)) = a(A,a(B,C)).
+a(a(A,B),a(C,B)) = a(A,a(B,C)).
+a(a(A,B),C) = a(A,a(B,C)).
+a(A,a(B,C)) = a(C,a(A,B)).
+end_of_list.
+
+formulas(goals).
+a(P,P) = P & a(P,a(Q,R)) = a(Q,a(R,P)) & a(P,n(a(P,n(Q)))) = a(P,Q) & a(P,n(P)) = a(Q,n(Q)).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 a(P,P) = P & a(P,a(Q,R)) = a(Q,a(R,P)) & a(P,n(a(P,n(Q)))) = a(P,Q) & a(P,n(P)) = a(Q,n(Q)) # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(a(C,D),A))))) = B.  [assumption].
+a(c1,c1) != c1 | a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2) | a(c2,n(c2)) != a(c1,n(c1)).  [deny(1)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+% 99 hints input.
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ = ]).
+Function symbol precedence:  function_order([ c1, c2, c3, a, n ]).
+After inverse_order:  (no changes).
+
+kept:      2 a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(a(C,D),A))))) = B.  [assumption].
+kept:      3 a(c1,c1) != c1 | a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2) | a(c2,n(c2)) != a(c1,n(c1)).  [deny(1)].
+
+============================== end of process initial clauses ========
+
+============================== CLAUSES FOR SEARCH ====================
+
+% Clauses after input processing:
+
+formulas(usable).
+3 a(c1,c1) != c1 | a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2) | a(c2,n(c2)) != a(c1,n(c1)).  [deny(1)].
+end_of_list.
+
+formulas(sos).
+2 a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(a(C,D),A))))) = B.  [assumption].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+% 99 hints (99 processed, 0 redundant).
+
+============================== end of clauses for search =============
+
+============================== SEARCH ================================
+
+% Starting search at 0.00 seconds.
+
+============================== PROOF =================================
+
+% Proof 1 at 0.34 (+ 0.06) seconds.
+% Length of proof is 103.
+% Level of proof is 32.
+% Maximum clause weight is 36.000.
+% Given clauses 96.
+
+1 a(P,P) = P & a(P,a(Q,R)) = a(Q,a(R,P)) & a(P,n(a(P,n(Q)))) = a(P,Q) & a(P,n(P)) = a(Q,n(Q)) # label(non_clause) # label(goal).  [goal].
+2 a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(a(C,D),A))))) = B.  [assumption].
+3 a(c1,c1) != c1 | a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2) | a(c2,n(c2)) != a(c1,n(c1)).  [deny(1)].
+4 a(n(a(A,B)),n(a(n(a(n(A),n(a(a(C,D),E)))),n(a(a(B,F),n(a(a(E,n(A)),C))))))) = a(n(A),n(a(a(C,D),E))).  [para(2(a,1),2(a,1,1,1,1))].
+5 a(n(a(a(A,n(B)),n(a(a(C,n(D)),E)))),n(a(n(B),n(a(D,A))))) = B.  [para(2(a,1),2(a,1,2,1,2,1,1))].
+6 a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(a(E,F),V6)))),n(a(C,n(a(a(V6,n(A)),E))))))) = a(n(A),n(a(a(E,F),V6))).  [para(2(a,1),4(a,1,2,1,2,1,1))].
+7 a(n(a(a(n(a(n(A),n(a(a(B,C),D)))),n(E)),n(a(a(F,n(n(a(a(D,n(A)),B)))),V6)))),n(a(n(E),n(A)))) = E.  [para(2(a,1),5(a,1,2,1,2,1))].
+8 a(n(a(a(n(a(a(A,B),C)),n(a(a(C,n(D)),A))),n(a(a(E,n(n(D))),F)))),n(D)) = a(a(C,n(D)),A).  [para(2(a,1),5(a,1,2,1))].
+9 a(n(a(a(n(a(a(A,B),n(a(a(C,n(D)),E)))),n(a(D,A))),n(a(a(F,n(n(a(n(D),n(a(a(E,V6),C)))))),V7)))),n(a(n(D),n(a(a(E,V6),C))))) = a(D,A).  [para(4(a,1),5(a,1,2,1))].
+10 a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(E,F)))),n(a(C,n(a(a(F,n(A)),n(a(a(V6,n(E)),V7))))))))) = a(n(A),n(a(E,F))).  [para(5(a,1),5(a,1,1,1,1))].
+11 a(n(a(a(A,n(B)),n(a(C,D)))),n(a(n(B),n(a(a(n(C),n(E)),A))))) = B.  [para(7(a,1),5(a,1,1,1,2,1,1))].
+12 a(n(a(a(a(A,n(B)),C),D)),n(a(n(B),n(a(a(D,E),n(a(a(n(a(a(C,F),A)),n(a(a(A,n(B)),C))),n(a(a(V6,n(n(B))),V7))))))))) = B.  [para(8(a,1),2(a,1,1,1,1))].
+13 a(n(a(a(A,n(B)),n(a(a(a(C,n(D)),E),F)))),n(a(n(B),n(a(D,A))))) = B.  [para(8(a,1),5(a,1,1,1,2,1,1))].
+14 a(n(a(A,n(a(B,C)))),n(a(n(a(n(A),n(a(D,E)))),n(a(a(n(B),n(F)),n(a(a(E,n(A)),n(a(a(V6,n(D)),V7))))))))) = a(n(A),n(a(D,E))).  [para(7(a,1),10(a,1,1,1,2,1,1))].
+15 a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(E,F)))),n(a(C,n(a(a(F,n(A)),n(a(a(a(V6,n(E)),V7),V8))))))))) = a(n(A),n(a(E,F))).  [para(8(a,1),10(a,1,2,1,2,1,2,1,2,1,1))].
+16 a(n(a(A,n(a(B,C)))),n(a(n(a(n(A),n(D))),n(a(a(n(B),n(E)),n(a(a(n(a(n(D),n(a(a(F,V6),V7)))),n(A)),n(a(a(V8,n(n(a(a(V7,n(D)),F)))),V9))))))))) = a(n(A),n(D)).  [para(7(a,1),11(a,1,1,1,1))].
+17 a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(a(C,a(D,n(E)))))))),F)))),n(a(n(n(A)),n(a(C,a(D,n(E))))))) = a(n(A),n(a(E,n(E)))).  [para(14(a,1),15(a,1,2,1))].
+18 a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(n(A),n(n(A))))).  [para(16(a,1),10(a,1,2,1))].
+19 a(n(a(A,n(a(a(B,n(n(n(n(A))))),C)))),n(a(n(n(A)),n(a(n(n(A)),n(n(n(A)))))))) = a(n(A),n(a(a(D,n(n(a(n(n(n(A))),n(a(a(E,n(A)),D)))))),E))).  [para(18(a,1),6(a,1,2,1))].
+20 a(n(a(A,n(a(a(a(B,n(n(a(n(n(A)),n(C))))),D),E)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(n(A),n(n(A))))).  [para(8(a,1),18(a,1,1,1,2,1,1))].
+21 a(n(A),n(a(n(A),n(n(A))))) = a(n(A),n(a(B,n(B)))).  [para(18(a,1),17(a,1))].
+22 a(n(a(a(a(A,n(B)),C),D)),n(a(n(a(B,n(a(a(E,n(n(n(n(B))))),F)))),n(a(n(n(B)),n(a(n(n(B)),n(n(n(B)))))))))) = B.  [para(19(a,2),12(a,1,2,1))].
+23 a(n(A),n(a(a(B,n(n(a(n(n(n(A))),n(a(a(C,n(A)),B)))))),C))) = a(n(A),n(a(n(A),n(n(A))))).  [para(20(a,1),19(a,1)),flip(a)].
+24 a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(E,n(E)))).  [para(21(a,1),18(a,2))].
+26 a(n(a(A,n(a(a(a(B,n(n(a(n(n(A)),n(C))))),D),E)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(F,n(F)))).  [para(21(a,1),20(a,2))].
+27 a(n(A),n(a(B,n(B)))) = a(n(A),n(a(C,n(C)))).  [para(21(a,1),21(a,1))].
+28 a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(n(B),n(n(B))))))) = B.  [para(23(a,1),2(a,1,2,1))].
+29 a(n(a(a(a(A,n(B)),C),D)),n(a(n(B),n(a(E,n(E)))))) = B.  [para(26(a,1),22(a,1,2,1))].
+30 a(n(a(a(n(a(n(n(A)),n(a(a(B,C),D)))),n(A)),n(a(a(E,n(n(a(a(D,n(n(A))),B)))),F)))),n(a(V6,n(V6)))) = A.  [para(27(a,1),7(a,1))].
+33 a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(D,n(D)))))) = B.  [para(27(a,1),28(a,1,2,1))].
+34 a(n(a(a(a(A,n(B)),C),D)),n(a(n(a(B,n(a(a(E,n(n(a(n(n(B)),n(F))))),V6)))),n(a(n(n(B)),n(F)))))) = B.  [para(24(a,2),29(a,1,2,1))].
+35 a(n(a(A,B)),n(a(n(a(n(A),n(C))),n(a(D,n(D)))))) = a(n(A),n(C)).  [para(7(a,1),33(a,1,1,1,1))].
+36 a(n(a(A,B)),n(a(n(a(C,n(C))),n(a(D,n(D)))))) = a(C,n(C)).  [para(30(a,1),33(a,1,1,1,1))].
+37 a(A,n(a(a(B,n(n(a(n(n(A)),n(n(n(A))))))),C))) = A.  [para(34(a,1),33(a,1)),flip(a)].
+38 a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(a(n(a(E,n(A))),F),E))).  [para(35(a,1),6(a,1,2,1))].
+40 a(a(A,n(a(n(a(B,n(B))),n(a(C,n(C)))))),D) = a(B,n(B)).  [para(36(a,1),8(a,1)),flip(a)].
+41 a(n(a(a(A,n(B)),C)),n(n(B))) = B.  [para(37(a,1),2(a,1,2,1))].
+42 a(n(a(A,n(B))),n(a(n(B),n(a(C,A))))) = B.  [para(37(a,1),13(a,1,1,1))].
+43 n(a(a(n(a(n(n(A)),n(a(a(B,C),D)))),n(A)),n(a(a(E,n(n(a(a(D,n(n(A))),B)))),F)))) = A.  [para(37(a,1),30(a,1))].
+44 a(n(A),n(a(a(n(a(B,n(A))),C),B))) = a(n(A),n(a(D,n(D)))).  [para(38(a,1),24(a,1))].
+45 a(a(a(A,n(A)),B),C) = a(A,n(A)).  [para(9(a,1),40(a,1,1))].
+46 a(n(a(a(A,n(B)),n(a(C,n(C))))),n(a(n(B),n(a(D,A))))) = B.  [para(40(a,1),13(a,1,1,1,2,1))].
+47 a(n(a(A,n(A))),n(a(n(B),n(a(C,n(C)))))) = B.  [para(40(a,1),29(a,1,1,1))].
+48 a(A,n(a(n(a(B,n(B))),n(a(C,n(C)))))) = a(B,n(B)).  [para(40(a,1),37(a,1)),flip(a)].
+49 a(n(a(A,B)),n(a(n(n(A)),n(a(a(B,C),n(a(a(D,n(A)),E))))))) = n(A).  [para(41(a,1),2(a,1,1,1,1))].
+50 a(n(a(A,n(B))),n(n(B))) = B.  [para(37(a,1),41(a,1,1,1))].
+54 a(A,n(a(B,n(B)))) = A.  [para(43(a,1),30(a,1,1))].
+55 a(A,n(n(A))) = A.  [para(43(a,1),41(a,1,1))].
+56 a(n(A),n(a(a(n(a(B,n(A))),C),B))) = n(A).  [para(44(a,2),37(a,1))].
+57 a(A,n(A)) = a(B,n(B)).  [para(45(a,1),40(a,1))].
+58 a(c1,c1) != c1 | a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2).  [back_unit_del(3),unit_del(d,57)].
+59 a(n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))),n(a(n(B),n(D)))) = B.  [para(30(a,1),46(a,1,2,1,2,1))].
+60 a(n(a(n(a(A,n(A))),n(B))),n(a(C,n(C)))) = B.  [para(48(a,1),42(a,1,2,1))].
+62 a(n(A),n(a(A,B))) = n(A).  [para(42(a,1),56(a,1,2,1,1))].
+63 a(n(A),n(a(B,A))) = n(A).  [para(47(a,1),56(a,1,2,1,1))].
+64 a(n(a(a(A,n(a(B,n(B)))),C)),n(a(n(a(D,n(D))),n(a(a(C,E),A))))) = a(D,n(D)).  [para(57(a,1),2(a,1,1,1,1,2,1))].
+69 a(n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))),n(a(n(B),D))) = B.  [para(43(a,1),59(a,1,2,1,2))].
+70 n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))) = B.  [para(59(a,1),54(a,1)),flip(a)].
+71 n(a(n(a(A,n(A))),n(B))) = B.  [para(60(a,1),54(a,1)),flip(a)].
+72 a(n(A),n(A)) = n(A).  [para(54(a,1),62(a,1,2,1))].
+73 a(n(a(n(A),B)),n(a(n(a(C,A)),n(a(a(B,D),n(A)))))) = a(C,A).  [para(63(a,1),2(a,1,1,1,1))].
+74 a(n(a(a(A,n(a(B,n(B)))),C)),n(a(n(a(D,n(D))),n(a(a(C,E),A))))) = a(F,n(F)).  [para(64(a,2),57(a,1))].
+76 a(A,n(a(n(A),B))) = A.  [para(70(a,1),69(a,1,1))].
+77 a(n(a(n(A),n(B))),n(a(n(B),A))) = B.  [para(71(a,1),42(a,1,2,1,2))].
+78 a(n(a(n(A),B)),n(n(A))) = A.  [para(72(a,1),41(a,1,1,1,1))].
+79 a(n(n(A)),n(n(A))) = A.  [para(72(a,1),50(a,1,1,1))].
+80 a(n(a(a(A,n(a(B,n(B)))),C)),a(a(C,D),A)) = a(E,n(E)).  [para(71(a,1),74(a,1,2))].
+81 n(n(A)) = A.  [para(79(a,1),72(a,1)),flip(a)].
+82 a(n(a(A,B)),a(a(B,C),A)) = a(D,n(D)).  [para(54(a,1),80(a,1,1,1,1))].
+83 a(n(a(A,B)),n(a(A,n(a(a(B,C),n(a(a(D,n(A)),E))))))) = n(A).  [para(81(a,1),49(a,1,2,1,1))].
+84 a(n(a(A,n(B))),B) = B.  [para(81(a,1),50(a,1,2))].
+85 a(A,A) = A.  [para(81(a,1),55(a,1,2))].
+86 n(a(n(A),n(a(B,A)))) = A.  [para(63(a,2),81(a,1,1))].
+87 a(n(a(n(A),B)),A) = A.  [para(81(a,1),78(a,1,2))].
+88 a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2).  [back_unit_del(58),unit_del(a,85)].
+89 a(n(a(A,B)),a(B,A)) = a(C,n(C)).  [para(54(a,1),82(a,1,2,1))].
+90 a(n(a(A,B)),n(a(A,n(a(B,C))))) = n(A).  [para(54(a,1),83(a,1,2,1,2,1))].
+91 a(A,a(B,A)) = a(B,A).  [para(86(a,1),84(a,1,1))].
+92 a(A,n(a(n(a(B,C)),a(C,B)))) = A.  [para(89(a,2),54(a,1,2,1))].
+93 a(n(a(A,B)),n(a(A,n(B)))) = n(A).  [para(54(a,1),90(a,1,2,1,2,1))].
+94 n(a(n(a(A,B)),n(a(B,A)))) = a(B,A).  [para(92(a,1),77(a,1))].
+95 a(a(A,B),C) = a(n(a(n(C),A)),n(n(a(A,B)))).  [para(93(a,1),73(a,1,2,1)),flip(a)].
+96 a(n(a(A,B)),n(a(a(A,A),n(B)))) = n(A).  [para(85(a,2),93(a,1,2,1,1))].
+97 a(a(A,B),a(B,A)) = a(A,B).  [para(94(a,1),76(a,1,2))].
+98 a(a(A,B),a(B,A)) = a(B,A).  [para(94(a,1),87(a,1,1))].
+99 a(a(A,B),C) = a(n(a(n(C),A)),a(A,B)).  [para(81(a,1),95(a,2,2))].
+100 a(n(a(n(A),B)),n(n(B))) = a(B,A).  [para(96(a,1),73(a,1,2,1))].
+101 a(A,B) = a(B,A).  [para(98(a,1),97(a,1))].
+102 a(a(A,B),n(C)) = a(n(a(C,A)),a(A,B)).  [para(81(a,1),99(a,2,1,1,1))].
+103 a(n(a(n(A),B)),B) = a(B,A).  [para(81(a,1),100(a,1,2))].
+104 a(A,n(a(n(B),A))) = a(A,B).  [para(103(a,1),101(a,1)),flip(a)].
+105 a(A,n(a(A,n(B)))) = a(A,B).  [para(101(a,1),104(a,1,2,1))].
+106 a(a(A,B),n(a(a(A,B),n(C)))) = a(a(A,B),a(C,A)).  [para(102(a,2),104(a,1,2,1))].
+107 a(c2,a(c3,c1)) != a(c1,a(c2,c3)).  [back_unit_del(88),unit_del(b,105)].
+108 a(a(A,B),a(C,A)) = a(a(A,B),C).  [para(106(a,1),105(a,1))].
+109 a(a(A,a(B,A)),C) = a(a(B,A),a(C,A)).  [para(91(a,1),108(a,1,1)),flip(a)].
+110 a(a(A,B),a(B,C)) = a(a(B,C),A).  [para(108(a,1),101(a,1)),flip(a)].
+111 a(a(A,B),a(C,B)) = a(a(A,B),C).  [para(91(a,1),109(a,1,1)),flip(a)].
+112 a(a(A,B),a(B,C)) = a(A,a(B,C)).  [para(110(a,2),101(a,1))].
+113 a(a(A,B),a(C,B)) = a(A,a(B,C)).  [para(101(a,1),112(a,1,2))].
+114 a(a(A,B),C) = a(A,a(B,C)).  [para(113(a,1),111(a,1)),flip(a)].
+116 a(A,a(B,C)) = a(C,a(A,B)).  [para(114(a,1),101(a,1))].
+117 $F.  [resolve(116,a,107,a)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=96. Generated=167732. Kept=115. proofs=1.
+Usable=76. Sos=12. Demods=0. Limbo=1, Disabled=27. Hints=99.
+Kept_by_rule=0, Deleted_by_rule=163300.
+Forward_subsumed=4317. Back_subsumed=22.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=3.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=0. Nonunit_bsub_feature_tests=3.
+Megabytes=0.48.
+User_CPU=0.34, System_CPU=0.06, Wall_clock=1.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+Process 61594 exit (max_proofs) Thu Aug  6 06:58:47 2026

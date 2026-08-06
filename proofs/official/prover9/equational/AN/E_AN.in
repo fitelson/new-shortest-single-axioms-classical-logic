@@ -1,0 +1,132 @@
+% Pure-paramodulation Prover9 replay for the 20-symbol A/N axiom
+
+set(raw).
+set(prolog_style_variables).
+set(paramodulation).
+set(para_units_only).
+set(para_from_small).
+set(unit_deletion).
+set(restrict_denials).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight, 0).
+assign(max_proofs, 1).
+clear(print_given).
+
+formulas(sos).
+a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(a(C,D),A))))) = B.
+end_of_list.
+
+formulas(hints).
+a(n(a(A,B)),n(a(n(a(n(A),n(a(a(C,D),E)))),n(a(a(B,F),n(a(a(E,n(A)),C))))))) = a(n(A),n(a(a(C,D),E))).
+a(n(a(a(A,n(B)),n(a(a(C,n(D)),E)))),n(a(n(B),n(a(D,A))))) = B.
+a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(a(E,F),V6)))),n(a(C,n(a(a(V6,n(A)),E))))))) = a(n(A),n(a(a(E,F),V6))).
+a(n(a(a(n(a(n(A),n(a(a(B,C),D)))),n(E)),n(a(a(F,n(n(a(a(D,n(A)),B)))),V6)))),n(a(n(E),n(A)))) = E.
+a(n(a(a(n(a(a(A,B),C)),n(a(a(C,n(D)),A))),n(a(a(E,n(n(D))),F)))),n(D)) = a(a(C,n(D)),A).
+a(n(a(a(n(a(a(A,B),n(a(a(C,n(D)),E)))),n(a(D,A))),n(a(a(F,n(n(a(n(D),n(a(a(E,V6),C)))))),V7)))),n(a(n(D),n(a(a(E,V6),C))))) = a(D,A).
+a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(E,F)))),n(a(C,n(a(a(F,n(A)),n(a(a(V6,n(E)),V7))))))))) = a(n(A),n(a(E,F))).
+a(n(a(a(A,n(B)),n(a(C,D)))),n(a(n(B),n(a(a(n(C),n(E)),A))))) = B.
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(B),n(a(a(D,E),n(a(a(n(a(a(C,F),A)),n(a(a(A,n(B)),C))),n(a(a(V6,n(n(B))),V7))))))))) = B.
+a(n(a(a(A,n(B)),n(a(a(a(C,n(D)),E),F)))),n(a(n(B),n(a(D,A))))) = B.
+a(n(a(A,n(a(B,C)))),n(a(n(a(n(A),n(a(D,E)))),n(a(a(n(B),n(F)),n(a(a(E,n(A)),n(a(a(V6,n(D)),V7))))))))) = a(n(A),n(a(D,E))).
+a(n(a(A,n(a(a(B,n(C)),D)))),n(a(n(a(n(A),n(a(E,F)))),n(a(C,n(a(a(F,n(A)),n(a(a(a(V6,n(E)),V7),V8))))))))) = a(n(A),n(a(E,F))).
+a(n(a(A,n(a(B,C)))),n(a(n(a(n(A),n(D))),n(a(a(n(B),n(E)),n(a(a(n(a(n(D),n(a(a(F,V6),V7)))),n(A)),n(a(a(V8,n(n(a(a(V7,n(D)),F)))),V9))))))))) = a(n(A),n(D)).
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(a(C,a(D,n(E)))))))),F)))),n(a(n(n(A)),n(a(C,a(D,n(E))))))) = a(n(A),n(a(E,n(E)))).
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(n(A),n(n(A))))).
+a(n(a(A,n(a(a(B,n(n(n(n(A))))),C)))),n(a(n(n(A)),n(a(n(n(A)),n(n(n(A)))))))) = a(n(A),n(a(a(D,n(n(a(n(n(n(A))),n(a(a(E,n(A)),D)))))),E))).
+a(n(a(A,n(a(a(a(B,n(n(a(n(n(A)),n(C))))),D),E)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(n(A),n(n(A))))).
+a(n(A),n(a(n(A),n(n(A))))) = a(n(A),n(a(B,n(B)))).
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(a(B,n(a(a(E,n(n(n(n(B))))),F)))),n(a(n(n(B)),n(a(n(n(B)),n(n(n(B)))))))))) = B.
+a(n(A),n(a(a(B,n(n(a(n(n(n(A))),n(a(a(C,n(A)),B)))))),C))) = a(n(A),n(a(n(A),n(n(A))))).
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(E,n(E)))).
+a(n(a(A,n(a(a(a(B,n(n(a(n(n(A)),n(C))))),D),E)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(F,n(F)))).
+a(n(A),n(a(B,n(B)))) = a(n(A),n(a(C,n(C)))).
+a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(n(B),n(n(B))))))) = B.
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(B),n(a(E,n(E)))))) = B.
+a(n(a(a(n(a(n(n(A)),n(a(a(B,C),D)))),n(A)),n(a(a(E,n(n(a(a(D,n(n(A))),B)))),F)))),n(a(V6,n(V6)))) = A.
+a(n(a(a(A,n(B)),C)),n(a(n(B),n(a(D,n(D)))))) = B.
+a(n(a(a(a(A,n(B)),C),D)),n(a(n(a(B,n(a(a(E,n(n(a(n(n(B)),n(F))))),V6)))),n(a(n(n(B)),n(F)))))) = B.
+a(n(a(A,B)),n(a(n(a(n(A),n(C))),n(a(D,n(D)))))) = a(n(A),n(C)).
+a(n(a(A,B)),n(a(n(a(C,n(C))),n(a(D,n(D)))))) = a(C,n(C)).
+a(A,n(a(a(B,n(n(a(n(n(A)),n(n(n(A))))))),C))) = A.
+a(n(a(A,n(a(a(B,n(n(a(n(n(A)),n(C))))),D)))),n(a(n(n(A)),n(C)))) = a(n(A),n(a(a(n(a(E,n(A))),F),E))).
+a(a(A,n(a(n(a(B,n(B))),n(a(C,n(C)))))),D) = a(B,n(B)).
+a(n(a(a(A,n(B)),C)),n(n(B))) = B.
+a(n(a(A,n(B))),n(a(n(B),n(a(C,A))))) = B.
+n(a(a(n(a(n(n(A)),n(a(a(B,C),D)))),n(A)),n(a(a(E,n(n(a(a(D,n(n(A))),B)))),F)))) = A.
+a(n(A),n(a(a(n(a(B,n(A))),C),B))) = a(n(A),n(a(D,n(D)))).
+a(a(a(A,n(A)),B),C) = a(A,n(A)).
+a(n(a(a(A,n(B)),n(a(C,n(C))))),n(a(n(B),n(a(D,A))))) = B.
+a(A,n(a(n(a(B,n(B))),n(a(C,n(C)))))) = a(B,n(B)).
+a(n(a(A,B)),n(a(n(n(A)),n(a(a(B,C),n(a(a(D,n(A)),E))))))) = n(A).
+a(n(a(A,n(B))),n(n(B))) = B.
+a(A,n(a(B,n(B)))) = A.
+a(A,n(n(A))) = A.
+a(n(A),n(a(a(n(a(B,n(A))),C),B))) = n(A).
+a(n(a(A,n(A))),n(a(n(B),n(a(C,n(C)))))) = B.
+a(A,n(A)) = a(B,n(B)).
+a(c1,c1) != c1 | a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2).
+a(n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))),n(a(n(B),n(D)))) = B.
+a(n(a(n(a(A,n(A))),n(B))),n(a(C,n(C)))) = B.
+a(n(A),n(a(A,B))) = n(A).
+a(n(A),n(a(B,A))) = n(A).
+a(n(a(a(A,n(a(B,n(B)))),C)),n(a(n(a(D,n(D))),n(a(a(C,E),A))))) = a(D,n(D)).
+a(n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))),n(a(n(B),D))) = B.
+n(a(a(n(a(A,n(A))),n(B)),n(a(C,n(C))))) = B.
+n(a(n(a(A,n(A))),n(B))) = B.
+a(n(A),n(A)) = n(A).
+a(n(a(n(A),B)),n(a(n(a(C,A)),n(a(a(B,D),n(A)))))) = a(C,A).
+a(n(a(a(A,n(a(B,n(B)))),C)),n(a(n(a(D,n(D))),n(a(a(C,E),A))))) = a(F,n(F)).
+a(A,n(a(n(A),B))) = A.
+a(n(a(n(A),n(B))),n(a(n(B),A))) = B.
+a(n(a(n(A),B)),n(n(A))) = A.
+a(n(n(A)),n(n(A))) = A.
+a(n(a(a(A,n(a(B,n(B)))),C)),a(a(C,D),A)) = a(E,n(E)).
+n(n(A)) = A.
+a(n(a(A,B)),a(a(B,C),A)) = a(D,n(D)).
+a(n(a(A,B)),n(a(A,n(a(a(B,C),n(a(a(D,n(A)),E))))))) = n(A).
+a(n(a(A,n(B))),B) = B.
+a(A,A) = A.
+n(a(n(A),n(a(B,A)))) = A.
+a(n(a(n(A),B)),A) = A.
+a(c2,a(c3,c1)) != a(c1,a(c2,c3)) | a(c1,n(a(c1,n(c2)))) != a(c1,c2).
+a(n(a(A,B)),a(B,A)) = a(C,n(C)).
+a(n(a(A,B)),n(a(A,n(a(B,C))))) = n(A).
+a(A,a(B,A)) = a(B,A).
+a(A,n(a(n(a(B,C)),a(C,B)))) = A.
+a(n(a(A,B)),n(a(A,n(B)))) = n(A).
+n(a(n(a(A,B)),n(a(B,A)))) = a(B,A).
+a(a(A,B),C) = a(n(a(n(C),A)),n(n(a(A,B)))).
+a(n(a(A,B)),n(a(a(A,A),n(B)))) = n(A).
+a(a(A,B),a(B,A)) = a(A,B).
+a(a(A,B),a(B,A)) = a(B,A).
+a(a(A,B),C) = a(n(a(n(C),A)),a(A,B)).
+a(n(a(n(A),B)),n(n(B))) = a(B,A).
+a(A,B) = a(B,A).
+a(a(A,B),n(C)) = a(n(a(C,A)),a(A,B)).
+a(n(a(n(A),B)),B) = a(B,A).
+a(A,n(a(n(B),A))) = a(A,B).
+a(A,n(a(A,n(B)))) = a(A,B).
+a(a(A,B),n(a(a(A,B),n(C)))) = a(a(A,B),a(C,A)).
+a(c2,a(c3,c1)) != a(c1,a(c2,c3)).
+a(a(A,B),a(C,A)) = a(a(A,B),C).
+a(a(A,a(B,A)),C) = a(a(B,A),a(C,A)).
+a(a(A,B),a(B,C)) = a(a(B,C),A).
+a(a(A,B),a(C,B)) = a(a(A,B),C).
+a(a(A,B),a(B,C)) = a(A,a(B,C)).
+a(a(A,B),a(C,B)) = a(A,a(B,C)).
+a(a(A,B),C) = a(A,a(B,C)).
+a(A,a(B,C)) = a(C,a(A,B)).
+end_of_list.
+
+formulas(goals).
+(
+  a(P,P) = P
+  &
+  a(P,a(Q,R)) = a(Q,a(R,P))
+  &
+  a(P,n(a(P,n(Q)))) = a(P,Q)
+  &
+  a(P,n(P)) = a(Q,n(Q))
+).
+end_of_list.

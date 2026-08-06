@@ -8,7 +8,7 @@
     ],
     "vampire_template": [
         "fof(ds,axiom,![X,Y]: ((t(X) & t(o(n(X),Y))) => t(Y))).",
-        "fof(known,conjecture,![X,Y,Z]: t(o(n(o(X,X)),X)) & t(o(n(X),o(X,Y))) & t(o(n(o(X,Y)),o(Y,X))) & t(o(n(o(n(X),Y)),o(n(o(Z,X)),o(Z,Y)))))."
+        "fof(known,conjecture,![X,Y,Z]: (t(o(n(o(X,X)),X)) & t(o(n(X),o(X,Y))) & t(o(n(o(X,Y)),o(Y,X))) & t(o(n(o(n(X),Y)),o(n(o(Z,X)),o(Z,Y))))))."
     ],
     "prover9_template": [
 

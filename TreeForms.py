@@ -4,10 +4,130 @@ from Globals import *
 from MathUtilities import degenerate_constant_combinations, nondegenerate_constant_combinations
 from ModelTools import *
 from TheoremProverUtils import *
+
+
+@dataclass
+class ProcessStatistics:
+    """Auditable counters for one candidate-enumeration run.
+
+    The elimination counters are disjoint.  Consequently a completed run must
+    satisfy ``candidate_instances_generated == accounted_candidates``.
+    Prover calls that return a finite model are counted separately because one
+    newly found model can cleave several candidate instances at once.
+    """
+
+    schema_version: int = 1
+    run_name: str = ""
+    target_length: int = 0
+    config_file: str = ""
+    length_convention: str = ""
+    vampire_command: list[str] | None = None
+    expected_structural_forms: int = 0
+    expected_candidate_instances: int = 0
+    global_expected_structural_forms: int = 0
+    global_expected_candidate_instances: int = 0
+    shard_index: int = 0
+    shard_count: int = 1
+    structural_forms_completed: int = 0
+    candidate_instances_generated: int = 0
+    eliminated_by_target_truth_table: int = 0
+    target_tautologies: int = 0
+    eliminated_by_cached_countermodels: int = 0
+    candidates_reaching_vampire_stage: int = 0
+    vampire_calls: int = 0
+    vampire_proofs: int = 0
+    vampire_finite_models: int = 0
+    vampire_saturations: int = 0
+    vampire_unresolved: int = 0
+    eliminated_by_new_countermodels: int = 0
+    eliminated_by_saturation: int = 0
+    survivors_written: int = 0
+    countermodels_loaded_at_start: int = 0
+    countermodels_at_end: int = 0
+    started_at: str = ""
+    finished_at: str = ""
+    elapsed_seconds: float = 0.0
+    partial_history: bool = False
+
+    COUNTER_FIELDS = (
+        "structural_forms_completed",
+        "candidate_instances_generated",
+        "eliminated_by_target_truth_table",
+        "target_tautologies",
+        "eliminated_by_cached_countermodels",
+        "candidates_reaching_vampire_stage",
+        "vampire_calls",
+        "vampire_proofs",
+        "vampire_finite_models",
+        "vampire_saturations",
+        "vampire_unresolved",
+        "eliminated_by_new_countermodels",
+        "eliminated_by_saturation",
+        "survivors_written",
+    )
+
+    @property
+    def accounted_candidates(self) -> int:
+        return (
+            self.eliminated_by_target_truth_table
+            + self.eliminated_by_cached_countermodels
+            + self.eliminated_by_new_countermodels
+            + self.eliminated_by_saturation
+            + self.survivors_written
+        )
+
+    @property
+    def counters_reconcile(self) -> bool:
+        return self.candidate_instances_generated == self.accounted_candidates
+
+    def to_dict(self) -> dict[str, Any]:
+        result = asdict(self)
+        result["accounted_candidates"] = self.accounted_candidates
+        result["counters_reconcile"] = self.counters_reconcile
+
+        def json_safe(value: Any) -> Any:
+            if isinstance(value, np.generic):
+                return value.item()
+            if isinstance(value, dict):
+                return {key: json_safe(item) for key, item in value.items()}
+            if isinstance(value, (list, tuple)):
+                return [json_safe(item) for item in value]
+            return value
+
+        return json_safe(result)
+
+    def write_json(self, filename: str) -> None:
+        path = Path(filename)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temporary = path.with_suffix(path.suffix + ".tmp")
+        temporary.write_text(json.dumps(self.to_dict(), indent=2) + "\n", encoding="utf-8")
+        os.replace(temporary, path)
+
+    def accumulate(self, completed_form: "ProcessStatistics") -> None:
+        """Merge one fully completed structural form transactionally."""
+        for field_name in self.COUNTER_FIELDS:
+            setattr(
+                self,
+                field_name,
+                getattr(self, field_name) + getattr(completed_form, field_name),
+            )
+
+    @classmethod
+    def read_json(cls, filename: str) -> "ProcessStatistics":
+        raw = json.loads(Path(filename).read_text(encoding="utf-8"))
+        allowed = {field.name for field in fields(cls)}
+        return cls(**{key: value for key, value in raw.items() if key in allowed})
 from FillTools import *
 from ProgressUtils import *
 
 CountArray = np.ndarray[Any, np.dtype[np.int8]]
+
+
+def shard_item_count(total: int, shard_index: int, shard_count: int) -> int:
+    """Return the number of round-robin items assigned to one shard."""
+    if shard_count < 1 or not 0 <= shard_index < shard_count:
+        raise ValueError("require shard_count >= 1 and 0 <= shard_index < shard_count")
+    return (max(0, total - shard_index) + shard_count - 1) // shard_count
 
 class TreeForm:
     """Class for making forms via a tree layout.
@@ -808,7 +928,10 @@ class TreeForm:
                 yield self
         
         @profile # type: ignore
-        def process(self, model_table: ModelTable, tptp_wrapper: TheoremProverWrapper, remaining_file_handler: Callable[[str], None], progress_tracker: ProgressTracker, full_verification: bool = False) -> tuple[int, int]:
+        def process(self, model_table: ModelTable, tptp_wrapper: TheoremProverWrapper,
+                    remaining_file_handler: Callable[[str, str], None],
+                    progress_tracker: ProgressTracker, full_verification: bool = False,
+                    statistics: ProcessStatistics | None = None) -> tuple[int, int]:
             """Fully processes this Node in its current state (without iterating it), creating new countermodels using tptp as needed.
             Indeterminate expressions will be placed into the remaining file
 
@@ -836,13 +959,27 @@ class TreeForm:
             var_count: int = self.var_count
             cleaver = CleavingMatrix(var_count, len(self.tree.constants))
 
+            generated_count = sum(c.shape[0] for c in cleaver.cleaves.values())
+
             self._process_cleaver_helper(cleaver, model_table.target_model, "Downward")
+            after_truth_table = sum(c.sum() for c in cleaver.cleaves.values())
+            if statistics is not None:
+                statistics.candidate_instances_generated += generated_count
+                statistics.eliminated_by_target_truth_table += generated_count - after_truth_table
+                statistics.target_tautologies += after_truth_table
 
             progress_tracker.process = "Upward Cleaving"
             for cm in model_table.counter_models:
                 if cleaver.empty:
                     break
                 self._process_cleaver_helper(cleaver, cm, "Upward")
+
+            after_cached_models = sum(c.sum() for c in cleaver.cleaves.values())
+            if statistics is not None:
+                statistics.eliminated_by_cached_countermodels += after_truth_table - after_cached_models
+                statistics.candidates_reaching_vampire_stage += after_cached_models
+
+            pending_survivors: list[tuple[tuple[int, ...], int, str, str]] = []
 
             for k in cleaver.cleaves.keys():
                 for i, fill in enumerate(fill_iterator(k.count(0))):
@@ -865,12 +1002,34 @@ class TreeForm:
                         progress_tracker.process = "Countermodeling with Vampire"
                         progress_tracker.formula = vamp
                         tptp_result: bool | Model = tptp_wrapper(vamp)
-                        if tptp_result==False:
-                            remaining_file_handler(self.tptp(fillin))
+                        outcome = tptp_wrapper.last_outcome or "unresolved"
+                        if statistics is not None:
+                            statistics.vampire_calls += 1
+                        if tptp_result is False:
+                            pending_survivors.append((k, i, self.tptp(fillin), outcome))
+                            if statistics is not None:
+                                if outcome == "proof":
+                                    statistics.vampire_proofs += 1
+                                else:
+                                    statistics.vampire_unresolved += 1
+                        elif tptp_result is True:
+                            # Vampire saturated the candidate plus the negated
+                            # target without a refutation.  This rules out the
+                            # candidate, but supplies no model that can cleave
+                            # other candidates.
+                            cleaver.cleaves[k][i] = False
+                            if statistics is not None:
+                                statistics.vampire_saturations += 1
+                                statistics.eliminated_by_saturation += 1
                         else:
-                            assert isinstance(tptp_result, Model), "Vampire wrapper shouldn't return True, only models or false."
+                            assert isinstance(tptp_result, Model)
+                            before_new_model = sum(c.sum() for c in cleaver.cleaves.values())
                             model_table += tptp_result
                             self._process_cleaver_helper(cleaver, tptp_result, "Upward")
+                            if statistics is not None:
+                                after_new_model = sum(c.sum() for c in cleaver.cleaves.values())
+                                statistics.vampire_finite_models += 1
+                                statistics.eliminated_by_new_countermodels += before_new_model - after_new_model
                             if full_verification:
                                 assert not cleaver.cleaves[k][i]
                     elif full_verification:
@@ -879,6 +1038,21 @@ class TreeForm:
                         fillin: list[Any] = [fill_dims[(j := j + 1)] if k[i]==0 else -k[i] for i in range(var_count)]
                         vamp: str = self.tptp(fillin)
                         assert not model_table.target_model(vamp) or any(cm(vamp) for cm in model_table.counter_models), vamp+"\n"+str(i)+"\n"+str(fillin)
+
+            # A model found later in this structural form can eliminate a
+            # candidate for which an earlier Vampire slice was unresolved.
+            # Delay writing survivors until all such models have cleaved the
+            # form, so the ledger contains only candidates that remain alive.
+            for key, index, candidate, outcome in pending_survivors:
+                if cleaver.cleaves[key][index]:
+                    remaining_file_handler(candidate, outcome)
+                    if statistics is not None:
+                        statistics.survivors_written += 1
+                elif outcome == "proof":
+                    raise AssertionError(
+                        "A candidate proved to entail the target was later "
+                        "eliminated by a purported countermodel: " + candidate
+                    )
 
             progress_tracker.process = "Wrapping up"
             progress_tracker.formula = self.tptp()
@@ -923,8 +1097,12 @@ class TreeForm:
                 cleaver *= fill_result_disassembly_application(full_model_evaluation, [model.constant_definitions[cons] for cons in self.tree.constants], cleave_direction)
     
 
-    def process_tree(self, size: int, model_table: ModelTable, tptp_wrapper: TheoremProverWrapper, remaining_filename: str, 
-                     progress_tracker: ProgressTracker, skip: int | str = 0, reset_skip: bool = False, full_verification: bool = False) -> tuple[int, int]:
+    def process_tree(self, size: int, model_table: ModelTable, tptp_wrapper: TheoremProverWrapper, remaining_filename: str,
+                     progress_tracker: ProgressTracker, skip: int | str = 0, reset_skip: bool = False,
+                     full_verification: bool = False, statistics: ProcessStatistics | None = None,
+                     statistics_filename: str | None = None,
+                     survivor_details_filename: str | None = None,
+                     shard_index: int = 0, shard_count: int = 1) -> tuple[int, int]:
         """Processes this entire Tree species at a particular size into a file
 
         Parameters
@@ -964,13 +1142,34 @@ class TreeForm:
                 with open(skip_path, 'w') as skip_file:
                     skip_file.write("0")
             with open(skip_path, 'r+') as skip_file:
-                unsolved_count, total_processed = self._process_tree_internal_loop(size, model_table, tptp_wrapper, remaining_filename, default_degeneracy, progress_tracker, skip_file, full_verification)
+                unsolved_count, total_processed = self._process_tree_internal_loop(
+                    size, model_table, tptp_wrapper, remaining_filename,
+                    default_degeneracy, progress_tracker, skip_file,
+                    full_verification, statistics, statistics_filename,
+                    survivor_details_filename, shard_index, shard_count,
+                )
         else:
-            unsolved_count, total_processed = self._process_tree_internal_loop(size, model_table, tptp_wrapper, remaining_filename, default_degeneracy, progress_tracker, skip, full_verification)
+            unsolved_count, total_processed = self._process_tree_internal_loop(
+                size, model_table, tptp_wrapper, remaining_filename,
+                default_degeneracy, progress_tracker, skip, full_verification,
+                statistics, statistics_filename, survivor_details_filename,
+                shard_index, shard_count,
+            )
         
         return unsolved_count, total_processed
 
-    def _process_tree_internal_loop(self, size: int, model_table: ModelTable, tptp_wrapper: TheoremProverWrapper, remaining_filename: str, default_degeneracy: CountArray, progress_tracker: ProgressTracker, skip_value: TextIOWrapper | int = 0, full_verification: bool = False) -> tuple[int, int]:
+    def _process_tree_internal_loop(self, size: int, model_table: ModelTable,
+                                    tptp_wrapper: TheoremProverWrapper,
+                                    remaining_filename: str,
+                                    default_degeneracy: CountArray,
+                                    progress_tracker: ProgressTracker,
+                                    skip_value: TextIOWrapper | int = 0,
+                                    full_verification: bool = False,
+                                    statistics: ProcessStatistics | None = None,
+                                    statistics_filename: str | None = None,
+                                    survivor_details_filename: str | None = None,
+                                    shard_index: int = 0,
+                                    shard_count: int = 1) -> tuple[int, int]:
         """Internal helper for process_tree, see above. Forced due to "open" syntax and crash safety.
         """
         unsolved_count: int = 0
@@ -986,16 +1185,35 @@ class TreeForm:
                     cand_count = sum(1 for _ in remaining_file)
             else:
                 cand_count = 0
-            with open(remaining_filename, 'a') as remaining_file:
-                def remaining_file_handler(candidate: str) -> None:
+            if survivor_details_filename is None:
+                survivor_details_filename = remaining_filename + ".jsonl"
+            Path(survivor_details_filename).parent.mkdir(parents=True, exist_ok=True)
+            last_statistics_write = time.time()
+            with open(remaining_filename, 'a') as remaining_file, open(survivor_details_filename, 'a') as survivor_details_file:
+                def remaining_file_handler(candidate: str, outcome: str) -> None:
                     nonlocal cand_count
                     remaining_file.write(tptp_wrapper.encapsulate_candidate(candidate, cand_count))
+                    remaining_file.flush()
+                    survivor_details_file.write(json.dumps({
+                        "candidate_number": cand_count,
+                        "outcome": outcome,
+                        "formula": candidate,
+                    }, sort_keys=True) + "\n")
+                    survivor_details_file.flush()
                     cand_count += 1
                 for state in self.TopNode(self, size, default_degeneracy).get_iterator(default_degeneracy):
-                    if i >= skip:
-                        new_unsolved, new_processed = state.process(model_table, tptp_wrapper, remaining_file_handler, progress_tracker, full_verification)
+                    if i >= skip and i % shard_count == shard_index:
+                        form_statistics = ProcessStatistics() if statistics is not None else None
+                        new_unsolved, new_processed = state.process(
+                            model_table, tptp_wrapper, remaining_file_handler,
+                            progress_tracker, full_verification, form_statistics,
+                        )
                         unsolved_count += new_unsolved
                         total_processed += new_processed
+                        if statistics is not None:
+                            assert form_statistics is not None
+                            form_statistics.structural_forms_completed = 1
+                            statistics.accumulate(form_statistics)
                     i += 1
                     skip = max(skip, i)
                     progress_tracker.formula = state.tptp()
@@ -1005,11 +1223,24 @@ class TreeForm:
                         skip_value.write(str(skip))
                         skip_value.flush()
                         skip_value.truncate()
+                    if (
+                        statistics is not None
+                        and statistics_filename is not None
+                        and time.time() - last_statistics_write >= 30
+                    ):
+                        statistics.countermodels_at_end = len(model_table.counter_models)
+                        statistics.write_json(statistics_filename)
+                        last_statistics_write = time.time()
         except KeyboardInterrupt as e:
             print("Interrupted after completing "+str(i)+" iterations.")
         except Exception as e:
             print("Exception after completing "+str(i)+" iterations.")
             raise e
+
+        if statistics is not None:
+            statistics.countermodels_at_end = len(model_table.counter_models)
+            if statistics_filename is not None:
+                statistics.write_json(statistics_filename)
 
         return unsolved_count, total_processed
     
@@ -1191,8 +1422,3 @@ class TreeForm:
         for state in self.TopNode(self, size, default_degeneracy).get_iterator(default_degeneracy):
             print(state.tptp())
         
-
-
-
-
-

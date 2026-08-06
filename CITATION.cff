@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or proof archive, please cite it and the accompanying paper."
+title: "New Short(est) Single Axioms for Classical Logic: search code and proof archive"
+type: software
+authors:
+  - family-names: Fitelson
+    given-names: Branden
+    affiliation: Northeastern University
+  - family-names: Walsh
+    given-names: Matthew
+version: 1.0.0
+date-released: 2026-08-06
+license: MIT
+keywords:
+  - automated theorem proving
+  - classical logic
+  - single axioms
+  - condensed detachment
+  - equational logic

@@ -1,0 +1,213 @@
+% Official pure-paramodulation Prover9 replay input for the 20-symbol O/N candidate 408.
+
+set(raw).
+set(prolog_style_variables).
+set(paramodulation).
+set(para_units_only).
+set(para_from_small).
+set(unit_deletion).
+set(restrict_denials).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight, 0).
+assign(max_proofs, 1).
+clear(print_given).
+
+formulas(sos).
+o(n(o(A,o(n(B),C))),n(o(n(B),n(o(o(C,A),D))))) = B.
+end_of_list.
+
+formulas(hints).
+o(n(o(A,B)),n(o(n(o(C,o(n(B),D))),n(o(o(n(o(n(B),n(o(o(D,C),E)))),A),F))))) = o(C,o(n(B),D)).
+o(n(o(n(o(n(A),n(o(o(B,C),D)))),o(n(E),n(o(C,o(n(A),B)))))),n(o(n(E),n(o(A,F))))) = E.
+o(n(o(n(o(n(n(o(A,o(n(B),C)))),n(o(o(D,E),F)))),o(n(V6),n(o(E,o(n(n(o(A,o(n(B),C)))),D)))))),n(o(n(V6),n(B)))) = V6.
+o(n(o(n(o(n(n(A)),n(o(o(B,C),D)))),o(n(o(E,o(n(A),F))),n(o(C,o(n(n(A)),B)))))),n(A)) = o(E,o(n(A),F)).
+o(n(o(A,o(B,o(n(C),D)))),n(o(n(o(E,C)),n(o(o(n(o(n(o(B,o(n(C),D))),n(o(o(n(o(n(C),n(o(o(D,B),F)))),E),V6)))),A),V7))))) = o(E,C).
+o(n(o(n(o(n(n(o(A,o(n(B),C)))),n(o(o(D,E),F)))),o(n(o(V6,B)),n(o(E,o(n(n(o(A,o(n(B),C)))),D)))))),n(o(A,o(n(B),C)))) = o(V6,B).
+o(n(o(A,B)),n(o(n(o(n(o(n(n(o(C,o(n(D),E)))),n(o(o(F,V6),V7)))),o(n(B),n(o(V6,o(n(n(o(C,o(n(D),E)))),F)))))),n(o(o(n(o(n(B),n(D))),A),V8))))) = o(n(o(n(n(o(C,o(n(D),E)))),n(o(o(F,V6),V7)))),o(n(B),n(o(V6,o(n(n(o(C,o(n(D),E)))),F))))).
+o(n(A),n(o(n(o(B,o(n(n(o(n(A),n(C)))),D))),n(o(o(n(o(n(n(o(n(A),n(C)))),n(o(o(D,B),E)))),n(o(n(o(n(n(o(F,o(n(C),V6)))),n(o(o(V7,V8),V9)))),o(n(A),n(o(V8,o(n(n(o(F,o(n(C),V6)))),V7))))))),V10))))) = o(B,o(n(n(o(n(A),n(C)))),D)).
+o(n(o(A,o(B,C))),n(o(n(o(D,o(E,o(n(C),F)))),n(o(o(n(o(n(o(B,C)),n(o(o(n(o(n(o(E,o(n(C),F))),n(o(o(n(o(n(C),n(o(o(F,E),V6)))),B),V7)))),D),V8)))),A),V9))))) = o(D,o(E,o(n(C),F))).
+o(n(o(n(o(n(n(o(A,o(B,o(n(C),D))))),n(o(o(E,F),V6)))),o(n(V7),n(o(F,o(n(n(o(A,o(B,o(n(C),D))))),E)))))),n(o(n(V7),n(o(V8,C))))) = V7.
+o(n(o(n(n(o(o(n(o(n(o(A,B)),n(B))),C),o(n(B),D)))),n(o(o(E,F),V6)))),o(n(o(A,B)),n(o(F,o(n(n(o(o(n(o(n(o(A,B)),n(B))),C),o(n(B),D)))),E))))) = o(n(o(C,o(A,B))),n(o(A,B))).
+o(n(o(n(o(A,o(B,C))),n(o(B,C)))),n(o(n(o(B,C)),n(o(D,E))))) = o(B,C).
+o(n(o(n(o(A,o(B,C))),n(o(B,C)))),n(o(n(o(B,C)),n(D)))) = o(B,C).
+o(n(o(n(o(A,o(B,C))),n(o(B,C)))),n(o(D,o(n(C),E)))) = o(B,C).
+o(n(A),n(o(B,o(n(n(o(C,o(n(C),D)))),E)))) = o(n(A),n(o(C,o(n(C),D)))).
+o(n(o(A,o(B,o(n(n(o(C,D))),E)))),n(o(C,D))) = o(n(o(F,o(C,D))),n(o(C,D))).
+o(n(o(n(o(A,B)),n(o(n(o(C,o(n(B),D))),n(o(n(B),n(o(o(D,C),E)))))))),n(o(n(o(n(o(C,o(n(B),D))),n(o(n(B),n(o(o(D,C),E)))))),n(F)))) = o(n(o(C,o(n(B),D))),n(o(n(B),n(o(o(D,C),E))))).
+o(n(A),n(o(n(o(n(A),n(o(B,o(n(B),C))))),n(D)))) = o(n(A),n(o(B,o(n(B),C)))).
+o(n(o(A,o(n(B),C))),n(o(n(B),n(o(D,o(n(D),E)))))) = B.
+o(n(o(A,o(B,C))),n(o(n(o(D,o(E,o(n(C),F)))),n(o(V6,o(n(V6),V7)))))) = o(D,o(E,o(n(C),F))).
+o(n(o(A,o(B,C))),n(o(n(o(D,o(E,o(n(n(o(C,o(n(C),F)))),V6)))),n(o(C,o(n(C),F)))))) = o(V7,o(C,o(n(C),F))).
+o(A,o(B,o(n(n(o(C,o(n(C),D)))),E))) = o(F,o(C,o(n(C),D))).
+o(n(o(A,o(B,o(n(B),C)))),n(o(n(D),n(o(E,o(n(E),F)))))) = D.
+o(A,o(B,o(n(B),C))) = o(D,o(E,o(F,o(n(F),V6)))).
+o(A,o(B,o(n(B),C))) = o(D,o(E,o(n(E),F))).
+o(n(o(n(o(A,o(B,o(C,o(n(C),D))))),n(o(B,o(C,o(n(C),D)))))),n(E)) = o(B,o(C,o(n(C),D))).
+o(A,o(n(n(o(B,o(C,o(n(C),D))))),E)) = o(B,o(C,o(n(C),D))).
+o(n(o(n(o(A,o(B,o(C,o(n(C),D))))),n(o(E,o(F,o(n(F),V6)))))),n(V7)) = o(E,o(F,o(n(F),V6))).
+o(A,o(n(n(o(B,o(C,o(n(C),D))))),E)) = o(F,o(V6,o(n(V6),V7))).
+o(n(o(n(o(A,o(B,o(C,o(n(C),D))))),n(o(E,o(F,o(n(F),V6)))))),n(V7)) = o(V8,o(V9,o(n(V9),V10))).
+o(n(o(n(o(A,B)),n(B))),n(o(n(o(n(o(C,o(n(B),D))),n(o(n(B),n(o(o(D,C),E)))))),n(F)))) = o(n(o(C,o(n(B),D))),n(o(n(B),n(o(o(D,C),E))))).
+o(n(o(n(o(A,B)),n(B))),n(o(n(B),n(C)))) = o(n(o(D,o(n(B),E))),n(o(n(B),n(o(o(E,D),F))))).
+o(n(o(n(o(A,B)),n(B))),n(o(n(B),n(C)))) = B.
+o(n(o(n(o(A,B)),n(B))),n(o(C,o(n(n(o(n(B),n(D)))),E)))) = B.
+o(n(o(A,o(n(o(n(o(B,C)),n(C))),D))),n(C)) = o(n(o(B,C)),n(C)).
+o(n(o(A,o(B,o(n(n(C)),D)))),n(C)) = o(n(o(E,C)),n(C)).
+o(n(o(A,o(n(o(B,C)),n(C)))),n(o(n(o(D,o(E,o(n(n(C)),F)))),n(o(o(n(C),A),V6))))) = o(D,o(E,o(n(n(C)),F))).
+o(n(o(n(o(A,B)),n(B))),n(o(C,o(D,o(E,o(n(E),F)))))) = B.
+o(n(o(n(o(A,B)),n(B))),n(o(C,o(D,o(n(D),E))))) = B.
+o(n(o(A,o(B,o(n(B),C)))),n(D)) = o(n(o(E,D)),n(D)).
+o(n(o(n(o(A,B)),n(B))),n(o(C,o(n(C),D)))) = B.
+o(n(A),n(o(B,o(n(B),C)))) = o(n(A),n(o(D,o(n(D),E)))).
+o(n(o(n(o(A,B)),n(B))),n(o(o(C,D),o(E,o(n(D),F))))) = B.
+o(n(o(n(o(A,o(n(B),C))),n(n(B)))),n(o(D,o(n(D),E)))) = n(B).
+o(n(o(A,o(B,o(C,o(n(C),D))))),n(E)) = o(n(o(F,E)),n(E)).
+o(n(o(n(o(A,o(B,o(n(B),C)))),n(D))),n(o(E,o(F,o(n(F),V6))))) = D.
+o(n(o(A,B)),n(B)) = o(n(o(C,B)),n(B)).
+o(n(o(n(o(n(n(o(A,B))),n(o(o(C,D),E)))),o(n(F),n(o(D,o(n(n(o(A,B))),C)))))),n(o(n(F),n(o(n(o(V6,B)),n(B)))))) = F.
+o(n(o(A,o(B,o(n(n(n(o(C,o(D,o(n(D),E)))))),F)))),n(n(o(C,o(D,o(n(D),E)))))) = o(n(V6),n(n(o(C,o(D,o(n(D),E)))))).
+o(n(o(n(o(A,o(B,o(n(n(C)),D)))),n(C))),n(o(E,o(n(E),F)))) = C.
+o(n(A),n(o(B,o(n(n(o(C,o(n(C),D)))),E)))) = o(n(A),n(o(F,o(n(F),V6)))).
+o(n(A),n(o(n(o(n(A),n(o(B,o(n(B),C))))),n(D)))) = o(n(A),n(o(E,o(n(E),F)))).
+o(n(o(A,o(B,o(n(B),C)))),n(o(D,o(E,o(F,o(n(F),V6)))))) = n(o(V7,o(V8,o(n(V8),V9)))).
+o(n(o(n(o(A,o(B,o(n(B),C)))),n(D))),n(o(E,o(F,o(V6,o(n(V6),V7)))))) = D.
+o(n(o(A,o(n(o(n(o(B,C)),n(C))),D))),n(C)) = o(n(o(E,C)),n(C)).
+o(n(o(A,o(n(o(B,n(C))),n(n(C))))),n(C)) = o(n(o(D,C)),n(C)).
+o(n(o(n(o(A,o(n(o(B,n(C))),n(n(C))))),n(C))),n(o(D,o(n(D),E)))) = C.
+o(n(o(n(o(n(A),n(o(o(B,A),C)))),D)),n(o(n(o(n(o(E,o(n(o(F,n(D))),n(n(D))))),n(D))),n(o(A,V6))))) = o(n(o(E,o(n(o(F,n(D))),n(n(D))))),n(D)).
+o(n(o(n(o(A,o(B,o(n(B),C)))),n(o(D,o(n(D),E))))),n(o(F,o(V6,o(V7,o(n(V7),V8)))))) = o(V9,o(n(n(o(V10,o(n(V10),V11)))),V12)).
+o(n(o(n(o(A,o(B,o(n(B),C)))),n(o(D,o(n(D),E))))),n(o(F,o(V6,o(n(V6),V7))))) = o(n(o(n(o(A,o(B,o(n(B),C)))),n(o(V8,o(n(V8),V9))))),n(V10)).
+o(n(o(A,o(n(o(B,C)),n(C)))),n(o(n(o(D,o(o(n(C),A),E))),n(o(o(n(C),A),E))))) = o(F,o(V6,o(n(n(C)),o(n(n(n(C))),V7)))).
+o(n(o(n(o(n(n(o(A,o(B,o(C,o(n(C),D)))))),n(o(o(E,F),V6)))),o(n(V7),n(o(F,o(n(n(o(V8,o(V9,o(n(V9),V10))))),E)))))),n(o(n(V7),n(o(n(o(V11,o(V9,o(n(V9),V10)))),n(o(V9,o(n(V9),V10)))))))) = V7.
+o(n(A),n(n(o(B,o(C,o(n(C),D)))))) = o(n(E),n(n(o(B,o(C,o(n(C),D)))))).
+o(n(A),n(n(o(B,o(C,o(n(C),D)))))) = o(E,o(F,o(n(F),V6))).
+o(A,o(n(n(o(B,o(n(B),C)))),D)) = o(E,o(n(E),F)).
+o(A,o(n(A),B)) = o(C,o(D,o(E,o(F,o(n(F),V6))))) # label(flip_matches_hint).
+o(n(o(A,o(n(o(B,C)),n(C)))),n(o(n(o(D,o(o(n(C),A),E))),n(o(o(n(C),A),E))))) = o(F,o(n(F),V6)).
+o(n(o(n(o(A,o(B,o(n(B),C)))),n(o(D,o(n(D),E))))),n(F)) = o(V6,o(n(V6),V7)).
+o(n(n(o(A,o(B,o(n(B),C))))),n(D)) = o(E,o(n(E),F)).
+o(n(o(n(o(n(A),n(o(o(B,A),C)))),D)),n(o(n(o(n(o(E,o(n(o(F,n(D))),n(n(D))))),n(D))),n(o(A,V6))))) = o(n(o(E,o(n(o(V7,n(D))),n(n(D))))),n(D)).
+o(n(o(n(o(n(n(o(A,o(B,o(C,o(n(C),D)))))),n(o(o(E,F),V6)))),o(n(V7),n(o(F,o(n(n(o(V8,o(V9,o(n(V9),V10))))),E)))))),n(o(n(V7),n(o(n(o(V11,o(V12,o(n(V12),V13)))),n(o(V9,o(n(V9),V10)))))))) = V7.
+o(n(o(n(o(n(n(o(A,o(B,o(C,o(n(C),D)))))),n(o(o(E,F),V6)))),o(n(V7),n(o(V8,o(V9,o(n(V9),V10))))))),n(o(n(V7),n(o(n(o(V11,o(V12,o(n(V12),V13)))),n(o(V14,o(n(V14),V15)))))))) = V7.
+o(n(o(n(o(n(n(o(A,o(B,o(C,o(n(C),D)))))),n(o(E,F)))),o(n(V6),n(o(V7,o(V8,o(n(V8),V9))))))),n(o(n(V6),n(o(n(o(V10,o(V11,o(n(V11),V12)))),n(o(V13,o(n(V13),V14)))))))) = V6.
+o(n(o(n(o(n(n(o(A,o(B,o(C,o(n(C),D)))))),n(o(E,F)))),o(n(V6),n(o(V7,o(V8,o(n(V8),V9))))))),n(o(n(V6),n(n(o(V10,o(V11,o(n(V11),V12)))))))) = V6.
+o(n(o(n(o(n(n(o(A,o(B,o(C,o(n(C),D)))))),n(o(E,F)))),o(n(V6),n(o(V7,o(V8,o(n(V8),V9))))))),n(o(V10,o(V11,o(n(V11),V12))))) = V6.
+o(n(o(n(o(A,o(n(A),B))),o(n(C),n(o(D,o(E,o(n(E),F))))))),n(o(V6,o(V7,o(n(V7),V8))))) = C.
+o(n(o(n(o(A,o(n(A),B))),o(n(C),n(o(D,o(n(D),E)))))),n(o(F,o(V6,o(n(V6),V7))))) = C.
+o(n(o(n(o(A,o(n(A),B))),o(n(C),n(o(D,o(n(D),E)))))),n(o(F,o(n(F),V6)))) = C.
+o(n(o(n(o(A,o(n(A),B))),n(C))),n(o(D,o(n(D),E)))) = o(n(o(F,o(n(C),V6))),n(n(C))).
+o(n(o(A,o(n(B),C))),n(n(B))) = B.
+o(n(o(A,n(B))),n(n(B))) = B.
+o(n(A),n(o(B,o(n(B),C)))) = n(A).
+o(n(o(A,o(n(A),B))),n(n(C))) = C.
+n(o(n(o(A,B)),n(B))) = B.
+n(o(n(o(A,o(B,o(n(n(C)),D)))),n(C))) = C.
+n(o(n(o(A,o(B,o(n(B),C)))),n(D))) = D.
+o(n(o(A,o(n(o(B,C)),n(C)))),n(o(n(o(D,o(o(n(C),A),E))),n(o(o(n(C),A),E))))) = o(F,n(F)).
+o(n(o(n(n(A)),B)),n(o(n(o(n(o(C,o(n(o(D,n(B))),n(n(B))))),n(B))),n(o(A,E))))) = o(n(o(C,o(n(o(F,n(B))),n(n(B))))),n(B)).
+o(A,n(o(B,o(n(B),C)))) = A.
+o(A,n(o(o(B,C),o(D,o(n(C),E))))) = A.
+n(o(A,n(n(A)))) = n(A).
+n(o(n(o(A,o(n(A),B))),n(C))) = C.
+n(o(n(o(A,o(B,n(B)))),n(C))) = C.
+o(n(A),n(o(o(B,A),C))) = n(A).
+n(o(n(o(o(A,n(B)),B)),n(C))) = C.
+o(n(A),n(o(B,A))) = n(A).
+o(n(n(A)),n(n(o(B,A)))) = o(B,A).
+o(n(n(A)),A) = n(n(A)).
+n(o(n(n(n(A))),n(A))) = A.
+n(o(A,o(n(n(A)),A))) = n(A).
+n(n(n(n(A)))) = A.
+o(n(o(A,o(n(A),B))),C) = n(n(C)).
+n(o(n(o(n(A),o(B,A))),n(C))) = C.
+n(o(n(o(n(n(n(A))),A)),n(B))) = B.
+o(n(o(A,o(B,C))),n(n(n(C)))) = n(C).
+n(o(n(o(n(n(o(A,o(n(A),B)))),C)),n(D))) = D.
+o(A,n(o(n(B),B))) = A.
+n(o(n(o(A,o(n(B),B))),n(C))) = C.
+o(n(A),n(o(o(A,B),C))) = n(A).
+o(n(A),n(o(A,B))) = n(A).
+o(n(A),n(A)) = n(A).
+o(n(n(A)),n(n(A))) = A.
+n(n(A)) = A.
+o(n(o(A,o(n(B),C))),B) = B.
+o(n(o(A,B)),n(B)) = n(B).
+o(n(o(n(A),B)),A) = A.
+o(n(o(n(c1),c2)),o(c3,c2)) != o(c2,o(c3,c1)).
+o(A,o(B,A)) = o(B,A).
+n(n(o(A,B))) = o(B,o(A,B)).
+o(A,o(B,A)) = o(B,n(n(A))).
+o(n(o(A,o(n(o(B,C)),n(C)))),o(o(n(C),A),D)) = o(E,n(E)).
+o(n(o(A,o(n(o(B,o(n(o(C,D)),n(D)))),n(o(n(o(E,o(F,o(n(n(D)),V6)))),n(D)))))),o(o(n(o(n(o(E,o(F,o(n(n(D)),V6)))),n(D))),A),V7)) = o(V8,n(V8)).
+o(n(o(n(n(A)),B)),n(o(n(o(n(o(C,B)),n(B))),n(o(A,D))))) = o(n(o(E,o(n(o(F,n(B))),n(n(B))))),n(B)).
+o(n(o(n(n(A)),B)),n(o(B,n(o(A,C))))) = o(n(o(D,o(n(o(E,n(B))),n(n(B))))),n(B)).
+o(n(o(n(n(A)),B)),n(o(B,n(o(A,C))))) = o(n(o(D,B)),n(B)).
+o(n(o(n(n(A)),B)),n(o(B,n(o(A,C))))) = n(B).
+o(n(o(A,B)),n(o(B,n(o(A,C))))) = n(B).
+o(n(o(n(n(A)),B)),n(o(B,n(A)))) = o(n(o(C,B)),n(B)).
+o(o(A,n(B)),n(o(B,C))) = n(o(n(o(D,o(A,n(B)))),n(o(A,n(B))))).
+o(n(o(A,B)),n(o(B,n(n(n(A)))))) = o(n(o(C,B)),n(B)).
+o(n(o(n(A),B)),n(o(B,A))) = o(n(o(C,B)),n(B)).
+o(n(o(o(n(o(n(n(n(A))),A)),n(B)),C)),n(o(C,n(n(B))))) = o(n(o(D,C)),n(C)).
+n(o(n(o(n(A),B)),n(o(B,A)))) = B.
+o(n(o(n(o(A,B)),n(B))),n(o(n(o(B,n(n(n(C))))),o(C,B)))) = o(n(o(D,n(o(B,n(n(n(C))))))),n(n(o(B,n(n(n(C))))))).
+o(o(A,n(B)),n(o(B,C))) = o(A,n(B)).
+o(o(A,B),n(o(o(n(o(n(n(n(C))),C)),n(B)),D))) = o(A,n(o(n(o(n(n(n(C))),C)),n(B)))).
+o(n(o(n(n(o(A,n(n(B))))),n(o(o(n(o(n(n(n(C))),C)),n(B)),A)))),n(o(n(o(D,A)),n(A)))) = o(n(o(E,n(o(o(n(o(n(n(n(C))),C)),n(B)),A)))),n(n(o(o(n(o(n(n(n(C))),C)),n(B)),A)))).
+o(o(A,B),n(o(o(n(o(n(n(n(C))),C)),n(B)),D))) = o(A,B).
+o(n(o(A,n(o(B,n(n(n(C))))))),n(n(o(B,n(n(n(C))))))) = o(B,n(o(n(o(B,n(n(n(C))))),o(C,B)))).
+o(A,n(o(n(o(A,n(n(n(B))))),o(B,A)))) = o(A,n(n(n(B)))).
+o(n(o(A,n(o(n(o(B,n(n(n(C))))),o(C,B))))),n(n(o(n(o(B,n(n(n(C))))),o(C,B))))) = o(n(o(B,n(n(n(C))))),n(o(n(o(n(o(B,n(n(n(C))))),o(C,B))),n(n(n(B)))))).
+o(n(o(A,o(n(o(B,o(n(o(C,D)),n(D)))),D))),o(o(n(o(n(o(E,o(F,o(n(n(D)),V6)))),n(D))),A),V7)) = o(V8,n(V8)).
+o(n(o(A,o(n(o(B,o(n(o(C,D)),n(D)))),D))),o(o(D,A),E)) = o(F,n(F)).
+o(n(o(A,o(n(o(B,o(n(o(C,D)),n(D)))),D))),o(D,A)) = o(E,n(E)).
+o(n(o(A,n(n(B)))),o(B,A)) = o(C,n(C)).
+n(o(n(o(A,n(A))),n(o(o(B,C),o(C,n(n(B))))))) = o(B,C).
+o(o(A,B),o(B,n(n(A)))) = o(A,B).
+o(o(A,B),o(B,A)) = o(A,B).
+o(o(A,B),o(B,A)) = o(o(B,A),o(A,B)).
+o(o(A,B),o(B,A)) = o(B,A).
+o(A,B) = o(B,A).
+o(n(o(A,n(o(n(o(B,n(n(n(C))))),o(C,B))))),n(n(o(n(o(B,n(n(n(C))))),o(C,B))))) = o(n(o(B,n(n(n(C))))),n(n(B))).
+o(n(o(o(n(n(A)),o(B,n(n(A)))),n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))),n(o(n(o(D,B)),n(B)))) = o(n(o(E,n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))),n(n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))).
+o(n(o(o(n(n(A)),o(B,n(n(A)))),n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))),B) = o(n(o(D,n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))),n(n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))).
+o(n(o(o(n(n(A)),o(B,n(n(A)))),n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))),B) = o(o(n(o(n(n(n(C))),C)),n(A)),B).
+o(n(o(o(A,o(B,n(n(A)))),n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))),B) = o(o(n(o(n(n(n(C))),C)),n(A)),B).
+o(n(o(o(A,o(B,A)),n(o(o(n(o(n(n(n(C))),C)),n(A)),B)))),B) = o(o(n(o(n(n(n(C))),C)),n(A)),B).
+o(n(o(o(A,B),n(o(o(n(o(n(n(n(C))),C)),n(B)),A)))),A) = o(o(n(o(n(n(n(C))),C)),n(B)),A).
+o(o(n(o(n(n(n(A))),A)),n(B)),C) = o(n(o(C,B)),C).
+o(n(o(A,B)),A) = o(n(B),A).
+o(n(o(A,B)),n(n(A))) = o(A,o(n(B),A)).
+o(n(n(o(A,n(o(B,C))))),n(o(B,A))) = o(n(n(A)),n(o(B,A))).
+o(n(o(A,n(o(n(o(B,n(n(n(C))))),o(C,B))))),n(n(o(n(o(B,n(n(n(C))))),o(C,B))))) = o(B,o(n(n(n(n(C)))),B)).
+o(n(n(o(A,n(o(B,C))))),n(o(B,A))) = o(A,n(o(B,A))).
+o(o(A,n(o(B,C))),n(o(B,A))) = o(A,n(o(B,A))).
+o(n(o(A,n(o(n(o(B,n(n(n(C))))),o(C,B))))),n(n(o(n(o(B,n(n(n(C))))),o(C,B))))) = o(B,o(C,B)).
+o(n(o(A,n(n(n(B))))),o(B,A)) = o(A,o(B,A)).
+o(A,n(o(A,o(B,A)))) = o(A,n(n(n(B)))).
+o(A,n(o(B,A))) = o(A,n(n(n(B)))).
+o(A,n(o(B,A))) = o(A,n(B)).
+o(o(A,n(o(B,C))),n(o(B,A))) = o(A,n(B)).
+o(o(A,n(B)),n(o(B,o(A,n(o(B,C)))))) = o(o(A,n(o(B,C))),n(B)).
+o(o(A,n(o(B,C))),n(B)) = o(A,n(B)).
+o(n(A),o(B,n(o(A,C)))) = o(B,n(A)).
+o(n(n(o(A,B))),o(C,n(n(B)))) = o(C,n(n(o(A,B)))).
+o(o(A,B),o(C,n(n(B)))) = o(C,n(n(o(A,B)))).
+o(o(A,B),o(C,B)) = o(C,n(n(o(A,B)))).
+o(o(A,B),o(C,B)) = o(C,o(A,B)).
+o(o(A,B),o(C,B)) = o(A,o(C,B)).
+o(A,o(B,C)) = o(B,o(A,C)).
+o(A,o(B,n(n(C)))) = o(B,o(A,C)).
+o(A,o(B,C)) = o(C,o(A,B)).
+o(A,o(B,n(o(n(C),B)))) = o(B,o(A,C)).
+o(n(o(n(A),B)),o(C,B)) = o(B,o(C,A)).
+end_of_list.
+
+formulas(goals).
+(
+  o(n(o(n(X),Y)),X) = X
+  &
+  o(n(o(n(X),Y)),o(Z,Y)) = o(Y,o(Z,X))
+).
+end_of_list.

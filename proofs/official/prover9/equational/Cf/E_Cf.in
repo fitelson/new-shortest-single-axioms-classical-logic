@@ -1,0 +1,102 @@
+% Complete-basis Prover9 proof replay construction for equational axiom E_Cf
+
+set(raw).
+set(prolog_style_variables).
+set(paramodulation).
+set(para_units_only).
+set(para_from_small).
+set(unit_deletion).
+set(restrict_denials).
+set(input_sos_first).
+set(breadth_first_hints).
+assign(max_weight, 0).
+assign(max_proofs, 1).
+clear(print_given).
+
+formulas(sos).
+i(i(i(i(A,B),C),i(i(i(C,f),B),f)),f) = C.
+end_of_list.
+
+formulas(hints).
+i(i(i(A,B),i(i(i(B,f),f),f)),f) = B.
+i(i(A,i(i(i(f,f),i(i(i(A,f),B),f)),f)),f) = f.
+i(i(i(i(A,i(i(i(f,f),f),f)),B),f),f) = B.
+i(i(i(i(A,i(i(i(f,f),i(i(i(i(B,f),f),C),f)),f)),B),f),f) = B.
+i(i(f,f),f) = f.
+i(i(i(i(A,B),i(f,f)),i(i(f,B),f)),f) = i(f,f).
+i(i(i(i(A,i(f,f)),B),f),f) = B.
+i(i(f,f),f) = i(i(f,A),f).
+i(i(i(i(A,i(i(i(f,B),f),f)),C),f),f) = C.
+i(i(f,A),f) = f.
+i(i(i(A,i(f,B)),i(i(f,f),f)),f) = i(f,B).
+i(i(i(A,i(f,B)),f),f) = i(f,B).
+i(f,f) = i(f,A).
+i(i(i(i(A,i(i(i(f,B),i(i(i(i(C,f),f),D),f)),f)),C),f),f) = C.
+i(f,A) = i(f,B).
+i(i(i(f,A),i(i(i(B,f),f),f)),f) = B.
+i(i(i(i(f,A),B),f),f) = B.
+i(i(i(A,f),f),f) = i(A,f).
+i(i(i(i(A,B),C),i(i(i(C,f),B),f)),f) = i(i(C,f),f).
+i(i(i(f,A),i(B,f)),f) = B.
+i(i(A,f),f) = A.
+i(i(A,i(i(i(f,B),f),f)),C) = C.
+i(i(f,A),B) = B.
+i(i(i(A,B),i(i(i(B,f),A),f)),f) = B.
+i(i(A,i(i(i(A,f),B),f)),f) = A.
+i(i(A,B),i(i(i(B,f),A),f)) = i(B,f).
+i(A,i(i(i(A,f),B),f)) = i(A,f).
+i(i(A,f),i(i(i(i(i(i(A,f),B),f),f),i(B,A)),f)) = i(i(i(i(A,f),B),f),f).
+i(i(A,f),i(i(A,B),f)) = i(i(A,f),f).
+i(i(A,f),i(i(i(i(i(i(A,f),B),f),f),i(B,A)),f)) = i(i(A,f),B).
+i(i(A,f),i(i(A,B),f)) = A.
+i(i(i(i(A,i(i(i(B,f),f),C)),B),f),f) = B.
+i(i(A,i(i(i(B,f),f),C)),B) = B.
+i(i(A,i(B,C)),B) = B.
+i(i(A,B),A) = A.
+i(i(A,B),A) = A.
+i(i(c3,c1),i(c2,c1)) != i(i(c1,f),i(c2,c3)).
+i(i(i(A,B),f),i(A,f)) = i(A,B).
+i(i(A,B),i(B,C)) = i(B,C).
+i(i(i(i(A,f),B),f),A) = i(i(A,f),B).
+i(i(A,B),i(C,A)) = i(C,A).
+i(i(i(i(A,B),f),C),A) = A.
+i(i(i(i(A,B),f),C),i(B,D)) = i(B,D).
+i(i(A,f),i(i(B,A),f)) = i(i(A,f),B).
+i(i(i(A,f),f),B) = i(A,i(i(B,i(A,f)),f)).
+i(i(i(A,f),B),i(i(i(i(i(B,A),f),f),i(A,f)),f)) = i(i(i(B,A),f),f).
+i(A,i(i(B,i(A,f)),f)) = i(A,B).
+i(i(i(A,f),B),i(i(i(i(i(B,A),f),f),i(A,f)),f)) = i(B,A).
+i(i(i(A,f),B),i(i(C,B),A)) = i(i(i(A,f),B),A).
+i(i(i(A,f),B),i(i(A,f),f)) = i(B,A).
+i(i(i(A,f),B),A) = i(B,A).
+i(i(i(A,f),B),i(i(C,B),A)) = i(B,A).
+i(i(i(i(i(A,B),C),f),B),i(B,C)) = i(B,i(i(A,B),C)).
+i(A,i(i(B,A),C)) = i(A,C).
+i(i(A,f),i(i(A,B),C)) = i(i(A,f),C).
+i(i(i(A,f),B),A) = i(i(i(A,C),B),A).
+i(i(i(A,B),C),A) = i(C,A).
+i(i(A,B),i(A,C)) = i(B,i(A,C)).
+i(i(i(A,B),C),i(D,A)) = i(C,i(D,A)).
+i(i(i(A,B),i(A,C)),B) = B.
+i(i(i(A,f),B),i(C,A)) = i(i(i(B,A),f),i(C,A)).
+i(i(i(A,B),f),i(C,B)) = i(A,i(C,B)).
+i(f,i(i(A,B),B)) = i(A,i(i(A,B),B)).
+i(i(A,i(i(A,B),B)),C) = C.
+i(i(A,B),i(i(A,C),C)) = i(i(A,C),C).
+i(i(A,f),B) = i(i(A,B),B).
+i(i(i(i(A,f),B),A),A) = i(i(A,f),B).
+i(i(A,f),B) = i(i(B,A),A).
+i(i(A,f),B) = i(i(B,f),A).
+i(i(i(A,B),f),i(C,B)) = i(C,i(A,B)).
+i(A,i(B,C)) = i(B,i(A,C)).
+i(i(A,f),i(B,C)) = i(B,i(i(C,A),A)).
+i(i(A,f),i(B,C)) = i(i(C,A),i(B,A)).
+end_of_list.
+
+formulas(goals).
+(
+  i(i(P,f),i(Q,R)) = i(i(R,P),i(Q,P))
+  &
+  i(i(P,Q),P) = P
+).
+end_of_list.

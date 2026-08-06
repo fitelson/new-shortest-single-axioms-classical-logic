@@ -5,7 +5,7 @@
         "i(i(X,Y),X)=X"
     ],
     "vampire_template": [
-        "fof(known,conjecture,![X,Y,Z]: (i(n(X),i(Y,Z))=i(i(Z,X),i(Y,X))) & (i(i(X,Y),X)=X))."
+        "fof(known,conjecture,![X,Y,Z]: ((i(n(X),i(Y,Z))=i(i(Z,X),i(Y,X))) & (i(i(X,Y),X)=X)))."
     ],
     "prover9_template": [
 

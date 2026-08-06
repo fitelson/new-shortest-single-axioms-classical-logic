@@ -1,5 +1,7 @@
 
 /__pycache__
+*.py[cod]
+.DS_Store
 oldcode.py
 testingTracker.py
 /CounterModels
@@ -11,3 +13,16 @@ testingTracker.py
 /Remaining
 /theorem_provers
 /tmp
+/build
+/run_logs
+/second_pass_outputs
+/proofs/condensed_detachment
+/proofs/equational
+/tools/build_*.py
+/tools/generate_cd_replays.py
+/tools/make_bacn*.py
+/tools/make_equational_survivor_menus.py
+/tools/prover9_hints_from_cd_joint_proof.py
+/tools/reharvest_prover9_replays.py
+/tools/run_cd_until_joint_proof.py
+/tools/screen_*.py

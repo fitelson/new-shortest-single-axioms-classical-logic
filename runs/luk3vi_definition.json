@@ -9,7 +9,7 @@
     ],
     "vampire_template": [
         "fof(mp,axiom,![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).",
-        "fof(known,conjecture,![X,Y,Z]: t(i(X,i(Y,X))) & t(i(i(X,Y),i(i(Y,Z),i(X,Z)))) & t(i(i(X,i(Y,Z)),i(Y,i(X,Z)))) & t(i(i(i(X,Y),Y),i(i(Y,X),X))) & t(i(i(i(i(i(X,Y),X),X),i(Y,Z)),i(Y,Z))))."
+        "fof(known,conjecture,![X,Y,Z]: (t(i(X,i(Y,X))) & t(i(i(X,Y),i(i(Y,Z),i(X,Z)))) & t(i(i(X,i(Y,Z)),i(Y,i(X,Z)))) & t(i(i(i(X,Y),Y),i(i(Y,X),X))) & t(i(i(i(i(i(X,Y),X),X),i(Y,Z)),i(Y,Z)))))."
     ],
     "prover9_template": [
 

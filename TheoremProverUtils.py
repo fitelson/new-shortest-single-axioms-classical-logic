@@ -1,5 +1,6 @@
 from Globals import *
 from ModelTools import *
+import tempfile
 
 #MODUS_PONENS_REASONING_RULE = "((t(X) & t(i(X,Y))) => t(Y))"
 #DISJUNCTIVE_SYLLOGISM_REASONING_RULE = "((t(X) & t(i(X,Y))) => t(Y))"
@@ -20,6 +21,8 @@ class TheoremProverWrapper:
         self.model_spec = model_spec
         self.template = template
         self.remove_temp_files = remove_temp_files
+        self.last_outcome: Literal["proof", "finite_model", "saturated", "unresolved"] | None = None
+        self.last_output: str | None = None
         
     def _fof_formula_to_fof_line(self, formula: str, name: str, type: Literal["axiom"] | Literal["conjecture"]) -> str:
         """Takes a formula and makes the appropriate single line
@@ -38,8 +41,13 @@ class TheoremProverWrapper:
         str
             _description_
         """        
-        vars: set[str] = {c for c in formula if c in VAMPIRE_VARIABLE_SYMBOLS}
-        return 'fof('+name+", "+type+", "+("!["+','.join(vars)+"]: " if len(vars)>0 else "")+formula+").\n"
+        variables = sorted({c for c in formula if c in VAMPIRE_VARIABLE_SYMBOLS})
+        quantified_formula = (
+            "![" + ",".join(variables) + "]: (" + formula + ")"
+            if variables
+            else formula
+        )
+        return f"fof({name}, {type}, {quantified_formula}).\n"
 
     def __call__(self, tptp_form: str) -> bool | Model:
         """Runs the theorem prover on the given formula
@@ -136,7 +144,8 @@ class VampireWrapper(TheoremProverWrapper):
 
         baseline_args = {
             "--time_limit": "10",
-            "--saturation_algorithm": "fmb",
+            "--mode": "portfolio",
+            "--schedule": "casc_sat",
             "--memory_limit": "4096",
             "--cores": "1",
         }
@@ -158,9 +167,29 @@ class VampireWrapper(TheoremProverWrapper):
             self.command.append(arg)
             self.command.append(val)
 
-        assert not "--fmb_start_size" in self.command, "--fmb_start_size is iterated on, don't give as input please"
-
         self.verification = verify_models
+
+    @staticmethod
+    def classify_output(result: str) -> Literal["proof", "finite_model", "saturated", "unresolved"]:
+        """Classify a Vampire 5.0.1 result for an entailment test.
+
+        The input consists of a candidate axiom and a conjectured known basis.
+        A theorem/unsatisfiable result means that the candidate survives.  A
+        counter-satisfiable result, or a completed saturation with no
+        refutation, rules the candidate out.  Timeouts and incomplete
+        saturations remain unresolved.
+        """
+        if re.search(r"SZS status (Theorem|Unsatisfiable|ContradictoryAxioms)\b", result):
+            return "proof"
+        if "Finite Model Found!" in result:
+            return "finite_model"
+        if re.search(r"SZS status (CounterSatisfiable|Satisfiable)\b", result):
+            return "saturated"
+        if "Termination reason: Satisfiable" in result:
+            return "saturated"
+        if "Refutation not found, non-redundant clauses discarded" in result:
+            return "saturated"
+        return "unresolved"
 
     def _generate_tptp_input_file(self, tptp_form: str) -> str:
         """Generates an input file for vampire given a candidate
@@ -178,19 +207,22 @@ class VampireWrapper(TheoremProverWrapper):
         if not os.path.exists("input_tmp"):
             os.makedirs("input_tmp")
 
-        file_name: str = os.path.join("input_tmp", "tptp_run_"+str(datetime.now()))
-        for i in ['-', ' ', ':', '.']: 
-            file_name = file_name.replace(i, '')
-        file_name += '.p'
-
         contents: str = self.template
         contents += self._fof_formula_to_fof_line(tptp_form, "cand", "axiom")
         #if not self.equational:
         #    contents += ''.join(self._fof_formula_to_fof_line(("" if cons.predicate_orientation else "~")+self.model_spec.prefix.tptp_symbol+"("+cons.tptp_symbol+")", "constant"+str(i), "axiom") 
         #                        for i, cons in enumerate(self.model_spec.constants) if not cons.predicate_orientation is None)
 
-        with open(file_name, 'w') as input_file:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            prefix="tptp_run_",
+            suffix=".in",
+            dir="input_tmp",
+            encoding="utf-8",
+            delete=False,
+        ) as input_file:
             input_file.write(contents)
+            file_name = input_file.name
 
         return file_name
 
@@ -219,11 +251,12 @@ class VampireWrapper(TheoremProverWrapper):
             c: int = 0
             while True:
                 file_name: str = os.path.join(self.counter_model_folder, base_file_name + str(c))
-                if not os.path.exists(file_name):
-                    with open(file_name, 'w') as counter_model_file:
+                try:
+                    with open(file_name, 'x') as counter_model_file:
                         counter_model_file.write(result)
                         return file_name
-                c += 1
+                except FileExistsError:
+                    c += 1
         except:
             print(result)
             raise RuntimeError
@@ -243,25 +276,54 @@ class VampireWrapper(TheoremProverWrapper):
             True if unmodeled but should be removed (raises errors if used outside hammering)
             Model if countermodeled
         """
+        self.last_outcome = None
+        self.last_output = None
         input_file_name: str = self._generate_tptp_input_file(tptp_form)
-        for fmb_start_size in [2]:#, 6, 7, 8]:
-            result: str = subprocess.run(self.command + ["--fmb_start_size", str(fmb_start_size)] + [input_file_name], capture_output=True, text=True).stdout
+        completed = subprocess.run(
+            self.command + ["--input_syntax", "tptp", input_file_name],
+            capture_output=True,
+            text=True,
+        )
+        result = completed.stdout + completed.stderr
+        self.last_output = result
 
-            if not "Finite Model Found!" in result:
-                if "Failed with" in result:
-                    raise ValueError(result)
-                if self.remove_temp_files:
-                    os.remove(input_file_name)
-                continue
-            else:
-                model: Model = Model(self.model_spec, model_filename = self.save_countermodel(result))
-                if self.verification:
-                    assert model(tptp_form), str(model)+"\n"+tptp_form
+        if "User error:" in result or "Parsing Error" in result:
+            raise RuntimeError(
+                "Vampire rejected generated TPTP input " + input_file_name + ":\n" + result
+            )
+        expected_incomplete_termination = bool(
+            re.search(
+                r"SZS status (Timeout|ResourceOut|MemoryOut|GaveUp|Unknown)\b",
+                result,
+            )
+            or "Time limit reached!" in result
+            or "Memory limit exceeded" in result
+        )
+        if completed.returncode != 0 and not expected_incomplete_termination:
+            raise RuntimeError(
+                "Vampire failed while processing "
+                + input_file_name
+                + f" (exit status {completed.returncode}):\n"
+                + result
+            )
+        if "Failed with" in result:
+            raise RuntimeError(result)
 
-                if self.remove_temp_files:
-                    os.remove(input_file_name)
-                return model
-                
+        outcome = self.classify_output(result)
+        self.last_outcome = outcome
+        if outcome == "finite_model":
+            model: Model = Model(self.model_spec, model_filename=self.save_countermodel(result))
+            if self.verification:
+                assert model(tptp_form), str(model) + "\n" + tptp_form
+            if self.remove_temp_files:
+                os.remove(input_file_name)
+            return model
+
+        if self.remove_temp_files:
+            os.remove(input_file_name)
+
+        if outcome == "saturated":
+            return True
         return False
         
 class Prover9Wrapper(TheoremProverWrapper):
@@ -286,18 +348,21 @@ class Prover9Wrapper(TheoremProverWrapper):
         if not os.path.exists("input_tmp"):
             os.makedirs("input_tmp")
 
-        file_name: str = os.path.join("input_tmp", "prover9_run_"+str(datetime.now()))
-        for i in ['-', ' ', ':', '.']: 
-            file_name = file_name.replace(i, '')
-        file_name += '.in'
-
         contents: str = self.template+"\n\n"
         contents += "formulas(sos).\n"
         contents += tptp_form+".\n"
         contents += "end_of_list."
 
-        with open(file_name, 'w') as input_file:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            prefix="prover9_run_",
+            suffix=".in",
+            dir="input_tmp",
+            encoding="utf-8",
+            delete=False,
+        ) as input_file:
             input_file.write(contents)
+            file_name = input_file.name
 
         return file_name
 
@@ -331,4 +396,3 @@ class BlankTheoremProverWrapper(TheoremProverWrapper):
 
     def __call__(self, tptp_form: str) -> bool | Model:
         return False
-

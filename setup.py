@@ -5,56 +5,76 @@ import subprocess
 import urllib.request
 import shutil
 import argparse
-from setuptools import setup
-from setuptools.command.install import install
+import platform
+import zipfile
 
 parser = argparse.ArgumentParser(description="Setup for Short Axiom Searching")
 
 parser.add_argument("--skip_vampire", action='store_true', help="Skip installing vampire")
-parser.add_argument("--skip_prover9", action='store_true', help="Skip installing prover9")
 parser.add_argument("--include_libraries", action='store_true', help="Including installing and updating numpy and scipy")
 
 args = parser.parse_args()
 
-VAMPIRE_BINARY_URL = "https://github.com/vprover/vampire/releases/download/v4.9casc2024/vampire"
+VAMPIRE_VERSION = "5.0.1"
 VAMPIRE_TARGET_PATH = "theorem_provers/vampire"
-PROVER9_REPO_URL = "https://github.com/ai4reason/Prover9"
-PROVER9_CLONE_PATH = "build/Prover9"
-PROVER9_TARGET_PATH = "theorem_provers/prover9"
 
 if not args.skip_vampire and not os.path.exists(VAMPIRE_TARGET_PATH):
     vampire_dir = os.path.dirname(VAMPIRE_TARGET_PATH)
     if not os.path.exists(vampire_dir):
         os.makedirs(vampire_dir)
 
-    print(f"Downloading vampire binary from {VAMPIRE_BINARY_URL}")
-    urllib.request.urlretrieve(VAMPIRE_BINARY_URL, VAMPIRE_TARGET_PATH)
+    system = platform.system()
+    machine = platform.machine().lower()
+    architecture = "ARM64" if machine in {"arm64", "aarch64"} else "X64"
+    if system not in {"Darwin", "Linux"}:
+        raise RuntimeError(
+            "Automatic Vampire installation supports macOS and Linux; "
+            "install Vampire 5.0.1 manually on this platform."
+        )
+    platform_name = "macOS" if system == "Darwin" else "Linux"
+    archive_name = f"vampire-{platform_name}-{architecture}.zip"
+    vampire_binary_url = (
+        "https://github.com/vprover/vampire/releases/download/"
+        f"v{VAMPIRE_VERSION}/{archive_name}"
+    )
+    archive_path = os.path.join("build", archive_name)
+    extract_path = os.path.join("build", f"vampire-{VAMPIRE_VERSION}")
+    os.makedirs("build", exist_ok=True)
+
+    print(f"Downloading Vampire {VAMPIRE_VERSION} from {vampire_binary_url}")
+    urllib.request.urlretrieve(vampire_binary_url, archive_path)
+    with zipfile.ZipFile(archive_path) as archive:
+        archive.extractall(extract_path)
+    extracted_candidates = [
+        os.path.join(root, filename)
+        for root, _, filenames in os.walk(extract_path)
+        for filename in filenames
+        if filename in {"vampire", "vampire.exe"}
+    ]
+    if len(extracted_candidates) != 1:
+        raise RuntimeError(
+            f"Expected one Vampire executable in {archive_path}; "
+            f"found {len(extracted_candidates)}."
+        )
+    shutil.copy2(extracted_candidates[0], VAMPIRE_TARGET_PATH)
 
     print(f"Setting executable permissions for {VAMPIRE_TARGET_PATH}")
     os.chmod(VAMPIRE_TARGET_PATH, stat.S_IXUSR | stat.S_IRUSR | stat.S_IWUSR)
 
     print("Vampire fully setup.")
 
-if not args.skip_prover9 and not os.path.exists(PROVER9_TARGET_PATH):
-    print(f"Cloning Prover9 to {PROVER9_CLONE_PATH}")
-    if not os.path.exists(PROVER9_CLONE_PATH):
-        subprocess.check_call(["git", "clone", PROVER9_REPO_URL, PROVER9_CLONE_PATH])
-
-    print("Building Prover9")
-    subprocess.check_call(["make", "all"], cwd=PROVER9_CLONE_PATH)
-
-    compiled_prover9_path = os.path.join(PROVER9_CLONE_PATH, "bin", "prover9")
-    assert os.path.exists(compiled_prover9_path), "Prover9 build failure"
-    print(f"Moving Prover9 binary to {PROVER9_TARGET_PATH}")
-    shutil.move(compiled_prover9_path, PROVER9_TARGET_PATH)
-
-    print(f"Setting executable permissions for {PROVER9_TARGET_PATH}")
-    os.chmod(PROVER9_TARGET_PATH, stat.S_IXUSR | stat.S_IRUSR | stat.S_IWUSR)
-
-    #print(f"Removing Prover9 clone {PROVER9_CLONE_PATH}")
-    #shutil.rmtree(PROVER9_CLONE_PATH)
-
-    print("Prover9 fully setup.")
+if not args.skip_vampire:
+    vampire_version = subprocess.run(
+        [VAMPIRE_TARGET_PATH, "--version"],
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout.splitlines()[0]
+    if not vampire_version.startswith(f"Vampire {VAMPIRE_VERSION}"):
+        raise RuntimeError(
+            f"Expected Vampire {VAMPIRE_VERSION}, found: {vampire_version}"
+        )
+    print(vampire_version)
 
 if args.include_libraries:
     print("Installing scipy and numpy.")
@@ -64,4 +84,7 @@ if args.include_libraries:
 
     print("Setup complete.")
 
-
+print(
+    "The paper's reference Prover9 release is already bundled under "
+    "vendor/prover9-2009-11A/."
+)
