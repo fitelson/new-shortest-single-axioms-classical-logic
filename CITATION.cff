@@ -7,7 +7,8 @@ authors:
     given-names: Branden
     affiliation: Northeastern University
   - family-names: Walsh
-    given-names: Matthew
+    given-names: Matthew J.
+  - name: OpenAI Codex
 version: 1.0.0
 date-released: 2026-08-06
 license: MIT

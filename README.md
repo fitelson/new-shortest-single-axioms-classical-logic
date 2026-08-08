@@ -1,8 +1,10 @@
 # New Short(est) Single Axioms for Classical Logic
 
-Search code and machine-checkable proof archive by Branden Fitelson and
-Matthew Walsh. This repository extends Walsh's original
+Search code and machine-checkable proof archive by Branden Fitelson,
+Matthew J. Walsh, and OpenAI Codex. This repository extends Walsh's original
 `Short-Axiom-Searching` code and accompanies the paper of the same title.
+
+See `AUTHORS.md` for authorship information.
 
 Used to prove that Meredith's 21-symbol single axiom of classical sentential logic is the shortest possible, in addition to finding other axioms of length 21.
 
