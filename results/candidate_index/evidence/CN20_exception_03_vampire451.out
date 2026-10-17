@@ -1,0 +1,167 @@
+% ott+10_128_av=off:bs=on:gsp=input_only:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_4 on CCC012CC2CN3NCN24C13
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 21875
+% Time elapsed: 0.800 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:nm=6_1461 on CCC012CC2CN3NCN24C13
+TRYING [9]
+Finite Model Found!
+% SZS status CounterSatisfiable for CCC012CC2CN3NCN24C13
+% SZS output start FiniteModel for CCC012CC2CN3NCN24C13
+tff(declare_$i,type,$i:$tType).
+tff(declare_$i1,type,fmb_$i_1:$i).
+tff(declare_$i2,type,fmb_$i_2:$i).
+tff(declare_$i3,type,fmb_$i_3:$i).
+tff(declare_$i4,type,fmb_$i_4:$i).
+tff(declare_$i5,type,fmb_$i_5:$i).
+tff(declare_$i6,type,fmb_$i_6:$i).
+tff(declare_$i7,type,fmb_$i_7:$i).
+tff(declare_$i8,type,fmb_$i_8:$i).
+tff(declare_$i9,type,fmb_$i_9:$i).
+tff(finite_domain,axiom,
+      ! [X:$i] : (
+         X = fmb_$i_1 | X = fmb_$i_2 | X = fmb_$i_3 | X = fmb_$i_4 | X = fmb_$i_5 | 
+         X = fmb_$i_6 | X = fmb_$i_7 | X = fmb_$i_8 | X = fmb_$i_9
+      ) ).
+
+tff(distinct_domain,axiom,
+         fmb_$i_1 != fmb_$i_2 & fmb_$i_1 != fmb_$i_3 & fmb_$i_1 != fmb_$i_4 & fmb_$i_1 != fmb_$i_5 & fmb_$i_1 != fmb_$i_6 & 
+         fmb_$i_1 != fmb_$i_7 & fmb_$i_1 != fmb_$i_8 & fmb_$i_1 != fmb_$i_9 & fmb_$i_2 != fmb_$i_3 & fmb_$i_2 != fmb_$i_4 & 
+         fmb_$i_2 != fmb_$i_5 & fmb_$i_2 != fmb_$i_6 & fmb_$i_2 != fmb_$i_7 & fmb_$i_2 != fmb_$i_8 & fmb_$i_2 != fmb_$i_9 & 
+         fmb_$i_3 != fmb_$i_4 & fmb_$i_3 != fmb_$i_5 & fmb_$i_3 != fmb_$i_6 & fmb_$i_3 != fmb_$i_7 & fmb_$i_3 != fmb_$i_8 & 
+         fmb_$i_3 != fmb_$i_9 & fmb_$i_4 != fmb_$i_5 & fmb_$i_4 != fmb_$i_6 & fmb_$i_4 != fmb_$i_7 & fmb_$i_4 != fmb_$i_8 & 
+         fmb_$i_4 != fmb_$i_9 & fmb_$i_5 != fmb_$i_6 & fmb_$i_5 != fmb_$i_7 & fmb_$i_5 != fmb_$i_8 & fmb_$i_5 != fmb_$i_9 & 
+         fmb_$i_6 != fmb_$i_7 & fmb_$i_6 != fmb_$i_8 & fmb_$i_6 != fmb_$i_9 & fmb_$i_7 != fmb_$i_8 & fmb_$i_7 != fmb_$i_9 & 
+         fmb_$i_8 != fmb_$i_9
+).
+
+tff(declare_i,type,i: $i * $i > $i).
+tff(function_i,axiom,
+           i(fmb_$i_1,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_1,fmb_$i_2) = fmb_$i_8
+         & i(fmb_$i_1,fmb_$i_3) = fmb_$i_8
+         & i(fmb_$i_1,fmb_$i_4) = fmb_$i_5
+         & i(fmb_$i_1,fmb_$i_5) = fmb_$i_6
+         & i(fmb_$i_1,fmb_$i_6) = fmb_$i_8
+         & i(fmb_$i_1,fmb_$i_7) = fmb_$i_5
+         & i(fmb_$i_1,fmb_$i_8) = fmb_$i_4
+         & i(fmb_$i_1,fmb_$i_9) = fmb_$i_5
+         & i(fmb_$i_2,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_2,fmb_$i_2) = fmb_$i_4
+         & i(fmb_$i_2,fmb_$i_3) = fmb_$i_4
+         & i(fmb_$i_2,fmb_$i_4) = fmb_$i_8
+         & i(fmb_$i_2,fmb_$i_5) = fmb_$i_1
+         & i(fmb_$i_2,fmb_$i_6) = fmb_$i_1
+         & i(fmb_$i_2,fmb_$i_7) = fmb_$i_6
+         & i(fmb_$i_2,fmb_$i_8) = fmb_$i_1
+         & i(fmb_$i_2,fmb_$i_9) = fmb_$i_6
+         & i(fmb_$i_3,fmb_$i_1) = fmb_$i_5
+         & i(fmb_$i_3,fmb_$i_2) = fmb_$i_9
+         & i(fmb_$i_3,fmb_$i_3) = fmb_$i_9
+         & i(fmb_$i_3,fmb_$i_4) = fmb_$i_2
+         & i(fmb_$i_3,fmb_$i_5) = fmb_$i_5
+         & i(fmb_$i_3,fmb_$i_6) = fmb_$i_2
+         & i(fmb_$i_3,fmb_$i_7) = fmb_$i_5
+         & i(fmb_$i_3,fmb_$i_8) = fmb_$i_2
+         & i(fmb_$i_3,fmb_$i_9) = fmb_$i_5
+         & i(fmb_$i_4,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_4,fmb_$i_2) = fmb_$i_9
+         & i(fmb_$i_4,fmb_$i_3) = fmb_$i_9
+         & i(fmb_$i_4,fmb_$i_4) = fmb_$i_1
+         & i(fmb_$i_4,fmb_$i_5) = fmb_$i_5
+         & i(fmb_$i_4,fmb_$i_6) = fmb_$i_8
+         & i(fmb_$i_4,fmb_$i_7) = fmb_$i_5
+         & i(fmb_$i_4,fmb_$i_8) = fmb_$i_1
+         & i(fmb_$i_4,fmb_$i_9) = fmb_$i_5
+         & i(fmb_$i_5,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_5,fmb_$i_2) = fmb_$i_1
+         & i(fmb_$i_5,fmb_$i_3) = fmb_$i_4
+         & i(fmb_$i_5,fmb_$i_4) = fmb_$i_1
+         & i(fmb_$i_5,fmb_$i_5) = fmb_$i_5
+         & i(fmb_$i_5,fmb_$i_6) = fmb_$i_8
+         & i(fmb_$i_5,fmb_$i_7) = fmb_$i_6
+         & i(fmb_$i_5,fmb_$i_8) = fmb_$i_1
+         & i(fmb_$i_5,fmb_$i_9) = fmb_$i_1
+         & i(fmb_$i_6,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_6,fmb_$i_2) = fmb_$i_1
+         & i(fmb_$i_6,fmb_$i_3) = fmb_$i_4
+         & i(fmb_$i_6,fmb_$i_4) = fmb_$i_1
+         & i(fmb_$i_6,fmb_$i_5) = fmb_$i_5
+         & i(fmb_$i_6,fmb_$i_6) = fmb_$i_8
+         & i(fmb_$i_6,fmb_$i_7) = fmb_$i_5
+         & i(fmb_$i_6,fmb_$i_8) = fmb_$i_1
+         & i(fmb_$i_6,fmb_$i_9) = fmb_$i_1
+         & i(fmb_$i_7,fmb_$i_1) = fmb_$i_5
+         & i(fmb_$i_7,fmb_$i_2) = fmb_$i_9
+         & i(fmb_$i_7,fmb_$i_3) = fmb_$i_9
+         & i(fmb_$i_7,fmb_$i_4) = fmb_$i_5
+         & i(fmb_$i_7,fmb_$i_5) = fmb_$i_5
+         & i(fmb_$i_7,fmb_$i_6) = fmb_$i_2
+         & i(fmb_$i_7,fmb_$i_7) = fmb_$i_5
+         & i(fmb_$i_7,fmb_$i_8) = fmb_$i_2
+         & i(fmb_$i_7,fmb_$i_9) = fmb_$i_5
+         & i(fmb_$i_8,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_8,fmb_$i_2) = fmb_$i_1
+         & i(fmb_$i_8,fmb_$i_3) = fmb_$i_9
+         & i(fmb_$i_8,fmb_$i_4) = fmb_$i_8
+         & i(fmb_$i_8,fmb_$i_5) = fmb_$i_1
+         & i(fmb_$i_8,fmb_$i_6) = fmb_$i_1
+         & i(fmb_$i_8,fmb_$i_7) = fmb_$i_5
+         & i(fmb_$i_8,fmb_$i_8) = fmb_$i_1
+         & i(fmb_$i_8,fmb_$i_9) = fmb_$i_6
+         & i(fmb_$i_9,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_9,fmb_$i_2) = fmb_$i_4
+         & i(fmb_$i_9,fmb_$i_3) = fmb_$i_4
+         & i(fmb_$i_9,fmb_$i_4) = fmb_$i_1
+         & i(fmb_$i_9,fmb_$i_5) = fmb_$i_6
+         & i(fmb_$i_9,fmb_$i_6) = fmb_$i_8
+         & i(fmb_$i_9,fmb_$i_7) = fmb_$i_6
+         & i(fmb_$i_9,fmb_$i_8) = fmb_$i_4
+         & i(fmb_$i_9,fmb_$i_9) = fmb_$i_6
+
+).
+
+tff(declare_n,type,n: $i > $i).
+tff(function_n,axiom,
+           n(fmb_$i_1) = fmb_$i_9
+         & n(fmb_$i_2) = fmb_$i_3
+         & n(fmb_$i_3) = fmb_$i_4
+         & n(fmb_$i_4) = fmb_$i_9
+         & n(fmb_$i_5) = fmb_$i_2
+         & n(fmb_$i_6) = fmb_$i_9
+         & n(fmb_$i_7) = fmb_$i_9
+         & n(fmb_$i_8) = fmb_$i_7
+         & n(fmb_$i_9) = fmb_$i_2
+
+).
+
+tff(declare_t,type,t: $i > $o ).
+tff(predicate_t,axiom,
+           t(fmb_$i_1)
+         & ~t(fmb_$i_2)
+         & ~t(fmb_$i_3)
+         & ~t(fmb_$i_4)
+         & ~t(fmb_$i_5)
+         & ~t(fmb_$i_6)
+         & ~t(fmb_$i_7)
+         & ~t(fmb_$i_8)
+         & ~t(fmb_$i_9)
+
+).
+
+% SZS output end FiniteModel for CCC012CC2CN3NCN24C13
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 256115
+% Time elapsed: 61.337 s
+% ------------------------------
+% ------------------------------
+% Success in time 62.556 s

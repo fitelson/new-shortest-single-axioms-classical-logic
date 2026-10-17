@@ -1,0 +1,2 @@
+{"candidate_number": 0, "formula": "t(i(i(i(A,B),i(o,C)),i(D,i(i(C,A),i(D,A)))))", "outcome": "unresolved"}
+{"candidate_number": 1, "formula": "t(i(i(i(A,B),i(o,C)),i(D,i(i(C,A),i(E,A)))))", "outcome": "unresolved"}

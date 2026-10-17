@@ -1,0 +1,78 @@
+id	padded	stripped_legacy_polish	method	named_candidate	evidence	vampire_versions
+CN19_padding_0592	C0CCN1CCN23C24CC41C21	CCN0CCN12C13CC30C10	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1CCN23C24CC41C21.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0593	C0CCN1CCN23C41CC24C21	CCN0CCN12C30CC13C10	see named candidate	CD_CN19_c191	results/candidate_index/evidence/CD_CN19_c191_countermodel.out	
+CN19_padding_0595	C0CCN1CCN234CC2C41C21	CCN0CCN123CC1C30C10	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1CCN234CC2C41C21.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0597	C0CCN1CCN234CC4C41C21	CCN0CCN123CC3C30C10	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1CCN234CC4C41C21.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0600	C0CCN1CC123CC3C3N4C41	CCN0CC012CC2C2N3C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1CC123CC3C3N4C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0602	C0CCN1CC123CC3C4N4C41	CCN0CC012CC2C3N3C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1CC123CC3C4N4C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0607	C0CCN1CC234CC4C3N3C31	CCN0CC123CC3C2N2C20	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1CC234CC4C3N3C31.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0608	C0CCN1CC234CC4C3N4C31	CCN0CC123CC3C2N3C20	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1CC234CC4C3N4C31.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0610	C0CCN1C2CCN234CC41C21	CCN0C1CCN123CC30C10	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN1C2CCN234CC41C21.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0613	C0CCN1C23CC3CCN241C21	CCN0C12CC2CCN130C10	see named candidate	CD_CN19_c199	results/candidate_index/evidence/CD_CN19_c199_countermodel.out	
+CN19_padding_0615	C0CCN12CCCN3C45C21C31	CCN01CCCN2C34C10C20	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCCN3C45C21C31.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0619	C0CCN12CCCN34C2C21C31	CCN01CCCN23C1C10C20	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCCN34C2C21C31.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0620	C0CCN12CCC3CN45C21C41	CCN01CCC2CN34C10C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCC3CN45C21C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0628	C0CCN12CCC13C2C2N4C41	CCN01CCC02C1C1N3C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCC13C2C2N4C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0630	C0CCN12CCC13C2C4N4C41	CCN01CCC02C1C3N3C30	see named candidate	CD_CN19_c1916	results/candidate_index/evidence/CD_CN19_c1916_countermodel.out	
+CN19_padding_0631	C0CCN12CCC13C4C2N4C41	CCN01CCC02C3C1N3C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCC13C4C2N4C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0639	C0CCN12CCC34C2C2N4C41	CCN01CCC23C1C1N3C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C2C2N4C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0641	C0CCN12CCC34C2C4N2C41	CCN01CCC23C1C3N1C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C2C4N2C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0642	C0CCN12CCC34C2C4N4C41	CCN01CCC23C1C3N3C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C2C4N4C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0643	C0CCN12CCC34C4C2N4C41	CCN01CCC23C3C1N3C30	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C4C2N4C41.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0646	C0CCN12CC2CCN34C21C31	CCN01CC1CCN23C10C20	see named candidate	CD_CN19_c196	results/candidate_index/evidence/CD_CN19_c196_countermodel.out	
+CN19_padding_0647	C0CCN12CC3CCN34C21C31	CCN01CC2CCN23C10C20	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12CC3CCN34C21C31.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0650	C0CCN12C3CCCN45C21C41	CCN01C2CCCN34C10C30	see named candidate	CD_CN19_c1917	results/candidate_index/evidence/CD_CN19_c1917_countermodel.out	
+CN19_padding_0651	C0CCN12C3CCC14C2N5C51	CCN01C2CCC03C1N4C40	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCN12C3CCC14C2N5C51.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0654	C0CCCN12C34CCN4C13C14	CCCN01C23CCN3C02C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCCN12C34CCN4C13C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0655	C0CCCN12C34CCN43C5C14	CCCN01C23CCN32C4C03	see named candidate	CD_CN19_c194	results/candidate_index/evidence/CD_CN19_c194_countermodel.out	
+CN19_padding_0656	C0CCCN12C34C5CCN43C14	CCCN01C23C4CCN32C03	see named candidate	CD_CN19_c1918	results/candidate_index/evidence/CD_CN19_c1918_countermodel.out	
+CN19_padding_0658	C0CCCN123CCN4C1C34C14	CCCN012CCN3C0C23C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCCN123CCN4C1C34C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0660	C0CCCCC1N2N345CC52C32	CCCCC0N1N234CC41C21	see named candidate	CD_CN19_c197	results/candidate_index/evidence/CD_CN19_c197_vampire501.out	
+CN19_padding_0661	C0CCC1N23CCCC3N452C42	CCC0N12CCCC2N341C31	finite model		results/candidate_index/evidence/CN19_padding/C0CCC1N23CCCC3N452C42.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0662	C0CCC1N23CCC45C3N5C52	CCC0N12CCC34C2N4C41	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC1N23CCC45C3N5C52.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0663	C0CCC1CN23C45CCN54C25	CCC0CN12C34CCN43C14	see named candidate	CD_CN19_c192	results/candidate_index/evidence/CD_CN19_c192_countermodel.out	
+CN19_padding_0664	C0CCC1C2N34CC4C4N5C53	CCC0C1N23CC3C3N4C42	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC1C2N34CC4C4N5C53.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0679	C0CCC12C2C3N2CCN43C24	CCC01C1C2N1CCN32C13	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC12C2C3N2CCN43C24.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0680	C0CCC12C2C3N3CCN43C24	CCC01C1C2N2CCN32C13	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC12C2C3N3CCN43C24.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0685	C0CCC12C3C3N2CCN43C24	CCC01C2C2N1CCN32C13	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC12C3C3N2CCN43C24.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0687	C0CCC12C3C4N3CCN14C31	CCC01C2C3N2CCN03C20	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC12C3C4N3CCN14C31.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0698	C0CCC123CC3CN4C2N2C24	CCC012CC2CN3C1N1C13	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC123CC3CN4C2N2C24.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0699	C0CCC123CC3CC4N1N5C51	CCC012CC2CC3N0N4C40	finite model		results/candidate_index/evidence/CN19_padding/C0CCC123CC3CC4N1N5C51.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0700	C0CCC123CC3CC4N5N2C25	CCC012CC2CC3N4N1C14	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC123CC3CC4N5N2C25.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0709	C0CCC123CC3C2CN4N2C24	CCC012CC2C1CN3N1C13	completed saturation		results/candidate_index/evidence/CN19_padding/C0CCC123CC3C2CN4N2C24.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0712	C0CCC123C4CC3CN1N5C51	CCC012C3CC2CN0N4C40	see named candidate	CD_CN19_c1914	results/candidate_index/evidence/CD_CN19_c1914_constrained_vampire501.out	
+CN19_padding_0713	C0CCC123C4CC3CN5N2C25	CCC012C3CC2CN4N1C14	finite model		results/candidate_index/evidence/CN19_padding/C0CCC123C4CC3CN5N2C25.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0715	C0CC1CCN23C14CCN41C24	CC0CCN12C03CCN30C13	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CCN23C14CCN41C24.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0716	C0CC1CCN123CCN4C34C14	CC0CCN012CCN3C23C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CCN123CCN4C34C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0717	C0CC1CCN123CC3CN44C14	CC0CCN012CC2CN33C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CCN123CC3CN44C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0720	C0CC1CC23CN2N1CC41C42	CC0CC12CN1N0CC30C31	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CC23CN2N1CC41C42.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0721	C0CC1CC23CN2N4CC41C42	CC0CC12CN1N3CC30C31	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CC23CN2N4CC41C42.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0722	C0CC1CC23CN4N1CC31C34	CC0CC12CN3N0CC20C23	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CC23CN4N1CC31C34.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0723	C0CC1CC23CN4N3CC31C34	CC0CC12CN3N2CC20C23	see named candidate	CD_CN19_c1913	results/candidate_index/evidence/CN19_chain_verification.py	
+CN19_padding_0728	C0CC1CC23C1N3CCN41C34	CC0CC12C0N2CCN30C23	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CC23C1N3CCN41C34.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0729	C0CC1CC23C3N1CCN41C34	CC0CC12C2N0CCN30C23	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CC23C3N1CCN41C34.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0730	C0CC1CC23C3N3CCN41C34	CC0CC12C2N2CCN30C23	finite model		results/candidate_index/evidence/CN19_padding/C0CC1CC23C3N3CCN41C34.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0731	C0CC1CC23C4N4CCN21C42	CC0CC12C3N3CCN10C31	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CC23C4N4CCN21C42.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0738	C0CC1CC213CC3CN4N1C14	CC0CC102CC2CN3N0C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1CC213CC3CN4N1C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0740	C0CC1CC234CC4CN2N1C12	CC0CC123CC3CN1N0C01	see named candidate	CD_CN19_c1910	results/candidate_index/evidence/CD_CN19_c1910_countermodel.out	
+CN19_padding_0743	C0CC1C1CN2N3CCC431C32	CC0C0CN1N2CCC320C21	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1C1CN2N3CCC431C32.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0745	C0CC1C2CN3N1CCC412C13	CC0C1CN2N0CCC301C02	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1C2CN3N1CCC412C13.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0746	C0CC1C2CN3N2CCC421C23	CC0C1CN2N1CCC310C12	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1C2CN3N2CCC421C23.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0749	C0CC1C23CCN3CCN142C13	CC0C12CCN2CCN031C02	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC1C23CCN3CCN142C13.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0751	C0CC12CCN3CCN14C23C13	CC01CCN2CCN03C12C02	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CCN3CCN14C23C13.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0752	C0CC12CCN3C2CCN143C13	CC01CCN2C1CCN032C02	see named candidate	CD_CN19_c195	results/candidate_index/evidence/CD_CN19_c195_countermodel.out	
+CN19_padding_0753	C0CC12CCCCC3N2N451C42	CC01CCCCC2N1N340C31	see named candidate	CD_CN19_c1918b	results/candidate_index/evidence/CD_CN19_c1918b_vampire501.out	
+CN19_padding_0754	C0CC12CCC3C4N5C2N1C15	CC01CCC2C3N4C1N0C04	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CCC3C4N5C2N1C15.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0756	C0CC12CCC34CN3C2N1C13	CC01CCC23CN2C1N0C02	see named candidate	CD_CN19_c193	results/candidate_index/evidence/CD_CN19_c193_countermodel.out	
+CN19_padding_0765	C0CC12CCC31C2CN4N1C14	CC01CCC20C1CN3N0C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CCC31C2CN4N1C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0766	C0CC12CCC31C2CN4N2C14	CC01CCC20C1CN3N1C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CCC31C2CN4N2C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0768	C0CC12CCC34C2CN3N1C13	CC01CCC23C1CN2N0C02	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CCC34C2CN3N1C13.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0769	C0CC12CCC34C2CN3N2C13	CC01CCC23C1CN2N1C02	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CCC34C2CN3N2C13.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0771	C0CC12CC2CCN13CN44C14	CC01CC1CCN02CN33C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CC2CCN13CN44C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0775	C0CC12CC2CC31CN4N1C14	CC01CC1CC20CN3N0C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CC2CC31CN4N1C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0776	C0CC12CC2CC31CN4N2C14	CC01CC1CC20CN3N1C03	completed saturation		results/candidate_index/evidence/CN19_padding/C0CC12CC2CC31CN4N2C14.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0778	C0CC12CC2CC34CN3N1C13	CC01CC1CC23CN2N0C02	see named candidate	CD_CN19_c198	results/candidate_index/evidence/CD_CN19_c198_countermodel.out	
+CN19_padding_0779	C0CC12CC2CC34CN3N2C13	CC01CC1CC23CN2N1C02	see named candidate	CD_CN19_c1912	results/candidate_index/evidence/CD_CN19_c1912_countermodel.out	
+CN19_padding_0780	C0C1CCN23CCCN45C32C42	C0CCN12CCCN34C21C31	see named candidate	CD_CN19_c1911	results/candidate_index/evidence/CD_CN19_c1911_vampire501.out	
+CN19_padding_0781	C0C1CCN23CCC24C3N5C52	C0CCN12CCC13C2N4C41	completed saturation		results/candidate_index/evidence/CN19_padding/C0C1CCN23CCC24C3N5C52.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+CN19_padding_0782	C0C1CCC234CC4CN5N3C35	C0CCC123CC3CN4N2C24	completed saturation		results/candidate_index/evidence/CN19_padding/C0C1CCC234CC4CN5N3C35.out	Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)

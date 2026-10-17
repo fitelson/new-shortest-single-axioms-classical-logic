@@ -1,0 +1,9 @@
+Paradox, version 4.0, 2010-06-29.
++++ PROBLEM: /Users/fitelson/Dropbox/non-MUSIC/todo/walsh_meredith/manuscript/ajl_submission/publication_repo/results/candidate_index/evidence/CD_CF17_legacy_exception.in
+Reading '/Users/fitelson/Dropbox/non-MUSIC/todo/walsh_meredith/manuscript/ajl_submission/publication_repo/results/candidate_index/evidence/CD_CF17_legacy_exception.in' ... OK
++++ SOLVING: /Users/fitelson/Dropbox/non-MUSIC/todo/walsh_meredith/manuscript/ajl_submission/publication_repo/results/candidate_index/evidence/CD_CF17_legacy_exception.in
+domain size 1
+domain size 2
+domain size 3
+Satsuma-iter+AE-Kissat-MAB: UNSATISFIABLE
++++ RESULT: GaveUp

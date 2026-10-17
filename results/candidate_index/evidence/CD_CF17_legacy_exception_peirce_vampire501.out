@@ -1,0 +1,332 @@
+% (14565)Running in auto input_syntax mode. Trying TPTP
+% (14565)Will run a generic schedule for satisfiability detection.
+% (14570)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14571)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14570)fmb+10_1_sas=cadical:bce=on:rp=on:random_seed=339702942_300 on CD_CF17_legacy_exception_peirce for (300ds)
+% (14571)% WARNING: option sil not known.
+% (14571)% WARNING: option i not known.
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% (14571)dis+10_1_sp=arity:random_seed=4237777308:fgj=on_1 on CD_CF17_legacy_exception_peirce for (1ds)
+% TRYING [4]
+% TRYING [5]
+% (14571)Time limit reached! 
+% (14571)------------------------------
+% (14571)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14571)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14571)CaDiCaL version: 2.1.3
+% (14571)Termination reason: Time limit
+% (14571)Termination phase: Saturation
+% (14571)Time elapsed: 0.101 s
+% (14571)Peak memory usage: 19 MB
+% (14579)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14579)% WARNING: option sil not known.
+% (14579)% WARNING: option i not known.
+% (14579)ott+31_1_lcm=predicate:bce=on:newcnf=on:random_seed=3778053417_1 on CD_CF17_legacy_exception_peirce for (1ds)
+% (14579)Time limit reached! 
+% (14579)------------------------------
+% (14579)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14579)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14579)CaDiCaL version: 2.1.3
+% (14579)Termination reason: Time limit
+% (14579)Termination phase: Saturation
+% (14579)Time elapsed: 0.101 s
+% (14579)Peak memory usage: 10 MB
+% (14583)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14583)% WARNING: option sil not known.
+% (14583)% WARNING: option i not known.
+% (14583)ott+1_1_to=lpo:sp=reverse_arity:erd=off:random_seed=1078959864_1 on CD_CF17_legacy_exception_peirce for (1ds)
+% (14583)Time limit reached! 
+% (14583)------------------------------
+% (14583)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14583)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14583)CaDiCaL version: 2.1.3
+% (14583)Termination reason: Time limit
+% (14583)Termination phase: Saturation
+% (14583)Time elapsed: 0.100 s
+% (14583)Peak memory usage: 18 MB
+% (14587)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14587)% WARNING: option sil not known.
+% (14587)% WARNING: option i not known.
+% (14587)ott-3_16_to=lpo:sp=arity:fd=off:rp=on:random_seed=781723590:nicw=on:bs=unit_only:fsr=off:amm=off_1 on CD_CF17_legacy_exception_peirce for (1ds)
+% (14587)Time limit reached! 
+% (14587)------------------------------
+% (14587)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14587)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14587)CaDiCaL version: 2.1.3
+% (14587)Termination reason: Time limit
+% (14587)Termination phase: Saturation
+% (14587)Time elapsed: 0.100 s
+% (14587)Peak memory usage: 13 MB
+% (14591)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14591)% WARNING: option sil not known.
+% (14591)% WARNING: option i not known.
+% (14591)fmb+10_1_fmbas=predicate:sas=cadical:random_seed=3062628588:nm=2_4 on CD_CF17_legacy_exception_peirce for (4ds)
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% TRYING [4]
+% TRYING [5]
+% (14591)Time limit reached! 
+% (14591)------------------------------
+% (14591)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14591)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14591)CaDiCaL version: 2.1.3
+% (14591)Termination reason: Time limit
+% (14591)Termination phase: Finite model building SAT solving
+% (14591)Time elapsed: 0.400 s
+% (14591)Peak memory usage: 14 MB
+% (14593)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14593)% WARNING: option sil not known.
+% (14593)% WARNING: option i not known.
+% (14593)ott+32_1_bsd=on:sp=const_max:bce=on:random_seed=4186331695:bd=preordered:fsd=on_1 on CD_CF17_legacy_exception_peirce for (1ds)
+% (14593)Time limit reached! 
+% (14593)------------------------------
+% (14593)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14593)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14593)CaDiCaL version: 2.1.3
+% (14593)Termination reason: Time limit
+% (14593)Termination phase: Saturation
+% (14593)Time elapsed: 0.100 s
+% (14593)Peak memory usage: 9 MB
+% (14599)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14599)% WARNING: option sil not known.
+% (14599)% WARNING: option i not known.
+% (14599)dis+11_32_anc=none:slsqr=2,1:sas=cadical:lma=off:lsd=50:s2agt=8:slsqc=1:kmz=on:newcnf=on:slsq=on:random_seed=545982188:slsql=off:nicw=on:bs=unit_only:rawr=on_4 on CD_CF17_legacy_exception_peirce for (4ds)
+% TRYING [6]
+% (14599)Time limit reached! 
+% (14599)------------------------------
+% (14599)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14599)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14599)CaDiCaL version: 2.1.3
+% (14599)Termination reason: Time limit
+% (14599)Termination phase: Saturation
+% (14599)Time elapsed: 0.400 s
+% (14599)Peak memory usage: 55 MB
+% (14603)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14603)% WARNING: option sil not known.
+% (14603)% WARNING: option i not known.
+% (14603)ott-21_1_fs=off:random_seed=1291510874:av=off:fsr=off_1 on CD_CF17_legacy_exception_peirce for (1ds)
+% (14603)Time limit reached! 
+% (14603)------------------------------
+% (14603)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14603)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14603)CaDiCaL version: 2.1.3
+% (14603)Termination reason: Time limit
+% (14603)Termination phase: Saturation
+% (14603)Time elapsed: 0.100 s
+% (14603)Peak memory usage: 19 MB
+% (14611)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14611)% WARNING: option sil not known.
+% (14611)% WARNING: option i not known.
+% (14611)dis+10_4_sp=reverse_arity:bsr=on:sac=on:cn=on:random_seed=3398623456:bd=all_3 on CD_CF17_legacy_exception_peirce for (3ds)
+% (14611)Time limit reached! 
+% (14611)------------------------------
+% (14611)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14611)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14611)CaDiCaL version: 2.1.3
+% (14611)Termination reason: Time limit
+% (14611)Termination phase: Saturation
+% (14611)Time elapsed: 0.301 s
+% (14611)Peak memory usage: 32 MB
+% (14622)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14622)% WARNING: option sil not known.
+% (14622)% WARNING: option i not known.
+% (14622)fmb+10_1_erd=off:updr=off:random_seed=313922814:fmbsr=1.3:ins=25_5 on CD_CF17_legacy_exception_peirce for (5ds)
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% TRYING [4]
+% TRYING [5]
+% (14622)Time limit reached! 
+% (14622)------------------------------
+% (14622)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14622)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14622)CaDiCaL version: 2.1.3
+% (14622)Termination reason: Time limit
+% (14622)Termination phase: Finite model building SAT solving
+% (14622)Time elapsed: 0.501 s
+% (14622)Peak memory usage: 9 MB
+% (14627)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14627)% WARNING: option sil not known.
+% (14627)% WARNING: option i not known.
+% (14627)ott+10_1_to=lpo:tgt=full:sp=arity:spb=goal_then_units:random_seed=3596118590_6 on CD_CF17_legacy_exception_peirce for (6ds)
+% (14627)Time limit reached! 
+% (14627)------------------------------
+% (14627)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14627)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14627)CaDiCaL version: 2.1.3
+% (14627)Termination reason: Time limit
+% (14627)Termination phase: Saturation
+% (14627)Time elapsed: 0.600 s
+% (14627)Peak memory usage: 68 MB
+% (14631)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14631)% WARNING: option sil not known.
+% (14631)% WARNING: option i not known.
+% (14631)fmb+10_1_erd=off:fmbss=14:random_seed=3609622675:ins=1_5 on CD_CF17_legacy_exception_peirce for (5ds)
+% TRYING [14]
+% (14631)Time limit reached! 
+% (14631)------------------------------
+% (14631)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14631)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14631)CaDiCaL version: 2.1.3
+% (14631)Termination reason: Time limit
+% (14631)Termination phase: Finite model building SAT solving
+% (14631)Time elapsed: 0.500 s
+% (14631)Peak memory usage: 48 MB
+% (14633)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14633)% WARNING: option sil not known.
+% (14633)% WARNING: option i not known.
+% (14633)ott+1_16_plsq=on:plsqc=2:sas=cadical:avsql=on:plsqr=128,1:sp=reverse_frequency:bsr=unit_only:rp=on:newcnf=on:random_seed=3266688788:avsq=on:s2a=on:avsqr=8,1:kws=arity_squared:bs=unit_only:nm=2:rawr=on_4 on CD_CF17_legacy_exception_peirce for (4ds)
+% (14633)Time limit reached! 
+% (14633)------------------------------
+% (14633)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14633)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14633)CaDiCaL version: 2.1.3
+% (14633)Termination reason: Time limit
+% (14633)Termination phase: Saturation
+% (14633)Time elapsed: 0.401 s
+% (14633)Peak memory usage: 17 MB
+% (14640)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14640)% WARNING: option sil not known.
+% (14640)% WARNING: option i not known.
+% (14640)dis-10_1_anc=none:spb=goal:newcnf=on:cn=on:random_seed=2325722355:kws=inv_precedence:fsr=off_5 on CD_CF17_legacy_exception_peirce for (5ds)
+% (14640)Time limit reached! 
+% (14640)------------------------------
+% (14640)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14640)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14640)CaDiCaL version: 2.1.3
+% (14640)Termination reason: Time limit
+% (14640)Termination phase: Saturation
+% (14640)Time elapsed: 0.500 s
+% (14640)Peak memory usage: 47 MB
+% (14643)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14643)% WARNING: option sil not known.
+% (14643)% WARNING: option i not known.
+% (14643)fmb+10_1_random_seed=503802269:nm=2:gsp=on_111 on CD_CF17_legacy_exception_peirce for (111ds)
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% TRYING [4]
+% TRYING [5]
+% TRYING [6]
+% (14643)Time limit reached! 
+% (14643)------------------------------
+% (14643)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14643)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14643)CaDiCaL version: 2.1.3
+% (14643)Termination reason: Time limit
+% (14643)Termination phase: Finite model building SAT solving
+% (14643)Time elapsed: 11.100 s
+% (14643)Peak memory usage: 24 MB
+% (14675)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14675)% WARNING: option sil not known.
+% (14675)% WARNING: option i not known.
+% (14675)fmb+10_1_sas=cadical:fmbss=20:random_seed=4230066931:nm=5_48 on CD_CF17_legacy_exception_peirce for (48ds)
+% TRYING [20]
+% (14675)Time limit reached! 
+% (14675)------------------------------
+% (14675)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14675)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14675)CaDiCaL version: 2.1.3
+% (14675)Termination reason: Time limit
+% (14675)Termination phase: Finite model building SAT solving
+% (14675)Time elapsed: 4.800 s
+% (14675)Peak memory usage: 693 MB
+% (14686)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14686)% WARNING: option sil not known.
+% (14686)% WARNING: option i not known.
+% (14686)fmb+10_1_sas=cadical:fmbss=8:random_seed=2057322898:fmbsr=1.7_5 on CD_CF17_legacy_exception_peirce for (5ds)
+% TRYING [8]
+% (14686)Time limit reached! 
+% (14686)------------------------------
+% (14686)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14686)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14686)CaDiCaL version: 2.1.3
+% (14686)Termination reason: Time limit
+% (14686)Termination phase: Finite model building SAT solving
+% (14686)Time elapsed: 0.500 s
+% (14686)Peak memory usage: 27 MB
+% (14698)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14698)% WARNING: option sil not known.
+% (14698)% WARNING: option i not known.
+% (14698)dis-4_1_drc=ordering:sp=const_frequency:sac=on:newcnf=on:random_seed=2930117088_26 on CD_CF17_legacy_exception_peirce for (26ds)
+% (14698)Time limit reached! 
+% (14698)------------------------------
+% (14698)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14698)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14698)CaDiCaL version: 2.1.3
+% (14698)Termination reason: Time limit
+% (14698)Termination phase: Saturation
+% (14698)Time elapsed: 2.600 s
+% (14698)Peak memory usage: 81 MB
+% (14702)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14702)% WARNING: option sil not known.
+% (14702)% WARNING: option i not known.
+% (14702)ott+11_16_fde=unused:bsd=on:sas=cadical:sp=arity:spb=units:lsd=10:nwc=3:random_seed=412761839:ins=7:fdi=8:gsp=on_8 on CD_CF17_legacy_exception_peirce for (8ds)
+% (14702)Time limit reached! 
+% (14702)------------------------------
+% (14702)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14702)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14702)CaDiCaL version: 2.1.3
+% (14702)Termination reason: Time limit
+% (14702)Termination phase: Saturation
+% (14702)Time elapsed: 0.800 s
+% (14702)Peak memory usage: 77 MB
+% (14714)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14714)% WARNING: option sil not known.
+% (14714)% WARNING: option i not known.
+% (14714)fmb+10_1_sas=cadical:bce=on:fmbss=77:random_seed=3735467006_32 on CD_CF17_legacy_exception_peirce for (32ds)
+% TRYING [77]
+% (14714)Time limit reached! 
+% (14714)------------------------------
+% (14714)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14714)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14714)CaDiCaL version: 2.1.3
+% (14714)Termination reason: Time limit
+% (14714)Termination phase: Finite model building constraint generation
+% (14714)Time elapsed: 3.201 s
+% (14714)Peak memory usage: 6128 MB
+% (14725)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14725)% WARNING: option sil not known.
+% (14725)% WARNING: option i not known.
+% (14725)fmb+10_1_fmbas=function:sas=cadical:fmbss=16:random_seed=3554458058:fmbsr=2.30978_11 on CD_CF17_legacy_exception_peirce for (11ds)
+% TRYING [16]
+% (14725)Time limit reached! 
+% (14725)------------------------------
+% (14725)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14725)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14725)CaDiCaL version: 2.1.3
+% (14725)Termination reason: Time limit
+% (14725)Termination phase: Finite model building SAT solving
+% (14725)Time elapsed: 1.101 s
+% (14725)Peak memory usage: 215 MB
+% (14730)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14730)% WARNING: option sil not known.
+% (14730)% WARNING: option i not known.
+% (14730)ott-2_1_newcnf=on:random_seed=3430274004:avsq=on:avsqr=1,16:kws=inv_arity_squared_5 on CD_CF17_legacy_exception_peirce for (5ds)
+% (14730)Time limit reached! 
+% (14730)------------------------------
+% (14730)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14730)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14730)CaDiCaL version: 2.1.3
+% (14730)Termination reason: Time limit
+% (14730)Termination phase: Saturation
+% (14730)Time elapsed: 0.501 s
+% (14730)Peak memory usage: 18 MB
+% (14735)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14735)% WARNING: option sil not known.
+% (14735)% WARNING: option i not known.
+% (14735)ott+10_1_tgt=ground:random_seed=3710834383:av=off_9 on CD_CF17_legacy_exception_peirce for (9ds)
+% (14735)Time limit reached! 
+% (14735)------------------------------
+% (14735)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14735)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14735)CaDiCaL version: 2.1.3
+% (14735)Termination reason: Time limit
+% (14735)Termination phase: Saturation
+% (14735)Time elapsed: 0.900 s
+% (14735)Peak memory usage: 27 MB
+% (14565)Proof not found in time 29.931 s
+% (14565)SZS status Timeout for CD_CF17_legacy_exception_peirce

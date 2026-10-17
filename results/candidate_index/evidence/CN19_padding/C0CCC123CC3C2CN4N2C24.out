@@ -1,0 +1,69 @@
+% ott+10_128_av=off:bs=on:gsp=input_only:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_4 on C0CCC123CC3C2CN4N2C24
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 19317
+% Time elapsed: 0.800 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:nm=6_1461 on C0CCC123CC3C2CN4N2C24
+TRYING [5]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 49125
+% Time elapsed: 190.100 s
+% ------------------------------
+% ------------------------------
+% dis+10_3_add=large:afp=10000:afq=2.0:amm=sco:anc=none:cond=on:fsr=off:gsp=input_only:lma=on:nm=16:nwc=1:sac=on:updr=off_197 on C0CCC123CC3C2CN4N2C24
+% SZS status CounterSatisfiable for C0CCC123CC3C2CN4N2C24
+% # SZS output start Saturation.
+tff(u41,axiom,
+    (![X1, X0] : ((~t(i(X0,X1)) | t(X1) | ~t(X0))))).
+
+tff(u40,negated_conjecture,
+    ~t(i(i(i(i(i(sK0,sK1),i(n(sK2),n(sK3))),sK2),sK4),i(i(sK4,sK0),i(sK3,sK0))))).
+
+tff(u39,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X3, X5, X4, X6] : ((~t(i(i(i(X3,i(X5,i(n(X6),n(X5)))),i(X5,X6)),i(X3,i(n(X4),n(X3))))) | t(i(X3,X4))))))).
+
+tff(u38,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X3, X5, X7, X8, X4, X6] : ((~t(i(i(i(i(X5,X6),X7),i(i(X7,i(X6,i(n(X8),n(X6)))),i(X6,X8))),i(X3,i(n(X4),n(X3))))) | t(i(X3,X4))))))).
+
+tff(u37,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X5, X4, X6] : ((~t(i(i(X4,X5),i(i(X4,i(n(X5),n(X4))),i(n(X6),n(i(X4,i(n(X5),n(X4)))))))) | t(i(i(X4,i(n(X5),n(X4))),X6))))))).
+
+tff(u36,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X1, X3, X0, X2] : ((~t(i(i(X3,X1),X0)) | t(i(i(X0,i(X1,i(n(X2),n(X1)))),i(X1,X2)))))))).
+
+tff(u35,axiom,
+    (![X1, X3, X0, X2, X4] : (t(i(X0,i(i(i(X1,X2),X3),i(i(X3,i(X2,i(n(X4),n(X2)))),i(X2,X4)))))))).
+
+tff(u34,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3)))))))).
+
+tff(u33,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X1, X0, X2] : (t(i(i(i(X0,X1),i(i(X0,i(n(X1),n(X0))),i(n(X2),n(i(X0,i(n(X1),n(X0))))))),i(i(X0,i(n(X1),n(X0))),X2))))))).
+
+tff(u32,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X1, X3, X0, X2] : (t(i(i(i(i(X0,i(X1,i(n(X2),n(X1)))),i(X1,X2)),i(X0,i(n(X3),n(X0)))),i(X0,X3))))))).
+
+tff(u31,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),X2),i(i(X2,i(X1,i(n(X3),n(X1)))),i(X1,X3))))))) | (![X9, X5, X7, X8, X4, X6] : (t(i(i(i(i(i(X4,X5),X6),i(i(X6,i(X5,i(n(X7),n(X5)))),i(X5,X7))),i(X8,i(n(X9),n(X8)))),i(X8,X9))))))).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 5373
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% Success in time 197.694 s

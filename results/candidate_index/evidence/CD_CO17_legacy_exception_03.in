@@ -1,0 +1,4 @@
+% Individual elimination replay for CD_CO17_legacy_exception_03; Polish CCpqCCCqrCoCspCsq.
+fof(mp,axiom,![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).
+fof(candidate,axiom,![A,B,C,D]: t(i(i(A,B),i(i(i(B,C),i(o,i(D,A))),i(D,B))))).
+fof(classical_target,conjecture,![U,V,W,X,Y,Z]: t(i(i(i(X,Y),i(o,Z)),i(U,i(i(Z,X),i(V,i(W,X))))))).

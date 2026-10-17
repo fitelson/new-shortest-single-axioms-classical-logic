@@ -1,0 +1,25 @@
+{
+  "proper_tautological_generalizations": 0,
+  "distinct_generalizations_checked": {
+    "CCCpqrCCrpCsp": 34,
+    "CCpqCCqrCpr": 21,
+    "CpCqp": 4,
+    "CCCpqpp": 9,
+    "CFp": 3,
+    "CCNppp": 9,
+    "CpCNpq": 5,
+    "Cpp": 3,
+    "o": 2
+  },
+  "c1915_countervaluation_pqrst": [
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "O4_prime_is_t_to_s_instance": true,
+  "O5_prime_is_t_to_r_instance": true,
+  "O5_prime_designated_valuations": 2401,
+  "L4_countervalue": 7
+}

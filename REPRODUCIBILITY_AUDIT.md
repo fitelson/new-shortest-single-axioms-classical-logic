@@ -5,7 +5,25 @@ equational snapshot are assembled and checked. The long legacy
 condensed-detachment enumerations were audited from their archived results and
 were not rerun for this release.
 
-## Reference environment
+**October 17 revision:** the CD C/f lower bound is unresolved. The original
+weight-17 countermodel list has one blank entry, `CCCCCpqFrsCCspCtp` (F17),
+and no definitive elimination certificate has been recovered. The 19-symbol
+CD C/f axioms remain verified single axioms and shortest known, but are no
+longer claimed to be proved shortest. This correction does not affect the
+separate equational C/f result below. The candidate is being investigated by
+Branden; no further automated search is to be launched as part of this revision.
+
+## Reference environment and historical provenance
+
+The reference environment below applies to the newer implementation and
+archived reference replays, not retroactively to every legacy output.
+`legacy/walsh_search/` preserves the earlier source snapshot. Its C/N
+generator excludes adjacent negations and retains most-general tautological
+representatives with no fixed five-variable cap. The exact 2021 dependency
+environment has not been reconstructed. Matrix assignments are recorded
+historical evidence and individually checkable, not newly bulk re-verified.
+The four CN20 exception outputs and the CN19 padding exception map explicitly
+record Vampire 4.5.1 banners; only the newer 5.0.1 source release is vendored.
 
 - Search code: this repository, based on upstream commit `3bc483d`.
 - Reference prover: Vampire 5.0.1, release commit `1b13eaf`.
@@ -127,9 +145,11 @@ equations have lengths 17, 20, 20, and 17 when equality counts once.  The
 17-symbol $C/f$ equation has been verified as a shortest single axiom.  The
 17-symbol $C/N$ equation is the shortest currently known in that signature;
 the completed screens leave 7 unresolved candidates at weight 15 and 16 at
-weight 16, so its shortestness remains conjectural. The $A/N$ screens leave
-12, 44, and 294 unresolved candidates at weights 17, 18, and 19; the $O/N$
-screens leave 12, 44, and 295. All other smaller lengths in the archived
+weight 16, so its shortestness remains conjectural. The historical independent
+$A/N$ screens used the four-equation target and leave 12, 44, and 294 at
+weights 17, 18, and 19; the $O/N$ screens leave 12, 44, and 295. The paper
+uses the latter counts and their Boolean duals for its A/N claim, not the
+older independent A/N classification. All other smaller lengths in the archived
 search ranges have no survivors.
 
 The exact per-shard statistics, survivor ledgers, aggregate manifest, and
@@ -171,9 +191,36 @@ absence of unresolved `C/f` survivors at every admissible smaller length gives
 the complete lower bound in that signature. The nonempty survivor sets in the
 other three signatures prevent stronger shortestness claims.
 
-The condensed-detachment CN, CF, and CT lower-bound claims rely on the
-previously completed archived searches and their verified model stocks. Those
-very long enumerations were not rerun during the publication-archive audit.
+For condensed detachment, the reported C/N weight-19 elimination and
+weight-21 shortestness/search claims concern DN-free formulas with at most
+six distinct variables. The lower bound combines the legacy eliminations
+with the Appendix A argument; it is not an unrestricted shortestness claim.
+The legacy enumerations allowed all variable identifications, so fresh
+variables in their padding reduction are not restricted to six. A direct
+six-variable frontier rerun alone would not justify that reduction.
+The weight-19 evidence is now preserved in
+`results/candidate_index/legacy/CD_CN19_from_CN21.tsv.gz`: 7,741,045
+fresh-variable-padded CN21 rows, of which 7,740,968 have matrix assignments.
+Its 77 exceptional rows link to 59 successful saved outputs and 18 named
+tautological CN19 cases. The raw source contains 82,301,488 rows; its digest,
+the extracted dataset's digest, counts, and mapping are in the legacy
+manifest. This is static extraction, not a new enumeration or prover run.
+The named working-file entry c1915 is not a tautology as transcribed and
+is not counted among these 18 cases.
+
+The completed C/o instance-level screen has four survivors: O4, O4[t:=s],
+O5, and O5[t:=r]. Its reports and survivor ledgers are copied into the
+candidate evidence directory. The Appendix B matrix eliminates both O5
+cases; CD lifting reduces the other pair to O4. This is a representative
+reduction, not uniqueness up to renaming. No saved O4-to-o derivation is claimed.
+The C/f and C/o lower-bound
+questions remain open because of F17 and O4, respectively. The original
+C/f list has 723,664 countermodel assignments and one unresolved row;
+its former blanket elimination claim is not retained. The very long legacy
+enumerations were not rerun during the publication-archive audit.
+The independent C weight-19 run authorized on October 17 was optional
+replication. It was stopped at the authors' request after recovery of the
+complete legacy evidence chain; its partial output is not used as a certificate.
 
 The full matrix is machine-readable in
 `runs/headline_reproduction_manifest.json`; `tools/run_headline_shards.py`

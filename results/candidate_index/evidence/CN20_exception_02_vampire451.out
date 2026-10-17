@@ -1,0 +1,60 @@
+% ott+10_128_av=off:bs=on:gsp=input_only:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_4 on CCC012CC2CN3NCN14C13
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+
+% Memory used [KB]: 13304
+% Time elapsed: 0.839 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:nm=6_1461 on CCC012CC2CN3NCN14C13
+TRYING [4]
+TRYING [5]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 46694
+% Time elapsed: 190.100 s
+% ------------------------------
+% ------------------------------
+% dis+10_3_add=large:afp=10000:afq=2.0:amm=sco:anc=none:cond=on:fsr=off:gsp=input_only:lma=on:nm=16:nwc=1:sac=on:updr=off_197 on CCC012CC2CN3NCN14C13
+% SZS status CounterSatisfiable for CCC012CC2CN3NCN14C13
+% # SZS output start Saturation.
+tff(u27,axiom,
+    (![X1, X0] : ((~t(i(X0,X1)) | t(X1) | ~t(X0))))).
+
+tff(u26,axiom,
+    (![X1, X3, X0, X2, X4] : ((~t(i(i(X4,X2),X0)) | t(i(i(X0,i(n(X1),n(i(n(X2),X3)))),i(X2,X1))))))).
+
+tff(u25,negated_conjecture,
+    ~t(i(i(i(i(i(sK0,sK1),i(n(sK2),n(sK3))),sK2),sK4),i(i(sK4,sK0),i(sK3,sK0))))).
+
+tff(u24,axiom,
+    (![X9, X5, X7, X8, X10, X6] : ((~t(i(i(i(X5,i(n(X7),n(i(n(X8),X9)))),i(X8,X7)),i(n(X6),n(i(n(X5),X10))))) | t(i(X5,X6)))))).
+
+tff(u23,axiom,
+    (![X9, X11, X7, X8, X10] : ((~t(i(i(X8,X7),i(n(X10),n(i(n(i(n(X7),n(i(n(X8),X9)))),X11))))) | t(i(i(n(X7),n(i(n(X8),X9))),X10)))))).
+
+tff(u22,axiom,
+    (![X1, X3, X0, X2, X4] : (t(i(i(i(X0,X1),X2),i(i(X2,i(n(X3),n(i(n(X1),X4)))),i(X1,X3))))))).
+
+tff(u21,axiom,
+    (![X1, X3, X0, X2, X4] : (t(i(i(i(X0,X1),i(n(X2),n(i(n(i(n(X1),n(i(n(X0),X3)))),X4)))),i(i(n(X1),n(i(n(X0),X3))),X2)))))).
+
+tff(u20,axiom,
+    (![X1, X3, X5, X0, X2, X4] : (t(i(i(i(i(X0,i(n(X1),n(i(n(X2),X3)))),i(X2,X1)),i(n(X4),n(i(n(X0),X5)))),i(X0,X4)))))).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 5373
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% Success in time 198.385 s

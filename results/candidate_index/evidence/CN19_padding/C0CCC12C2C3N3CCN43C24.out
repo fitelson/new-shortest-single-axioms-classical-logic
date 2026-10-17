@@ -1,0 +1,51 @@
+% ott+10_128_av=off:bs=on:gsp=input_only:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_4 on C0CCC12C2C3N3CCN43C24
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 24434
+% Time elapsed: 0.800 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:nm=6_1461 on C0CCC12C2C3N3CCN43C24
+TRYING [5]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 47845
+% Time elapsed: 190.100 s
+% ------------------------------
+% ------------------------------
+% dis+10_3_add=large:afp=10000:afq=2.0:amm=sco:anc=none:cond=on:fsr=off:gsp=input_only:lma=on:nm=16:nwc=1:sac=on:updr=off_197 on C0CCC12C2C3N3CCN43C24
+% SZS status CounterSatisfiable for C0CCC12C2C3N3CCN43C24
+% # SZS output start Saturation.
+tff(u27,axiom,
+    (![X1, X0] : ((~t(i(X0,X1)) | t(X1) | ~t(X0))))).
+
+tff(u26,negated_conjecture,
+    ~t(i(i(i(i(i(sK0,sK1),i(n(sK2),n(sK3))),sK2),sK4),i(i(sK4,sK0),i(sK3,sK0))))).
+
+tff(u25,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),i(X1,i(X2,n(X2)))),i(i(n(X3),X2),i(X1,X3))))))) | (![X1, X3, X0, X2] : ((~t(i(i(X3,X2),i(X2,i(X1,n(X1))))) | t(i(i(n(X0),X1),i(X2,X0)))))))).
+
+tff(u24,axiom,
+    (![X1, X3, X0, X2, X4] : (t(i(X0,i(i(i(X1,X2),i(X2,i(X3,n(X3)))),i(i(n(X4),X3),i(X2,X4)))))))).
+
+tff(u23,axiom,
+    ((~(![X1, X3, X0, X2] : (t(i(i(i(X0,X1),i(X1,i(X2,n(X2)))),i(i(n(X3),X2),i(X1,X3))))))) | (![X1, X3, X0, X2] : (t(i(i(i(X0,X1),i(X1,i(X2,n(X2)))),i(i(n(X3),X2),i(X1,X3)))))))).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 5373
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+% Success in time 204.102 s

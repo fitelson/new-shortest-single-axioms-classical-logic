@@ -1,0 +1,89 @@
+fof(mp,axiom, ![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).
+
+% three luka axioms
+%fof(all,conjecture, ![X,Y,Z]: (t(i(i(X,Y),i(i(Y,Z),i(X,Z)))) &  t(i(i(n(X),X),X)) & t(i(X,i(n(X),Y))))).
+%fof(luka1,conjecture, ![X,Y,Z]: t(i(i(X,Y),i(i(Y,Z),i(X,Z))))). 
+%fof(luka2,conjecture, ![P]: t(i(i(n(P),P),P))).
+fof(luka3,conjecture, ![P,Q]: t(i(P,i(n(P),Q)))).
+
+%fof(perm,conjecture,![X,Y,Z]: t(i(i(X,i(Y,Z)),i(Y,i(X,Z))))).
+%fof(lx,conjecture, ![X,Y,Z]: t(i(i(i(X,Y),Z),i(Y,Z)))).
+
+%fof(contra1,conjecture,![X,Y]: t(i(i(n(X),n(Y)),i(Y,X)))).
+
+%fof(f,conjecture, ![P,Q]: t(i(n(i(P,P)),Q))).
+
+%fof(f,conjecture, ![P,Q]: t(i(n(i(P,Q)),P))).
+
+%fof(dn,conjecture, ![P]: t(i(n(n(P)),P))).
+%fof(dn,conjecture, ![P]: t(i(P,n(n(P))))).
+
+%fof(id,conjecture, ![P]: t(i(P,P))).
+%fof(eq1,axiom,![X,Y]: i(X,X) = i(Y,Y)).  % nOTE: if we add this constraint, then Vampire finds a 6-element model of c1914 & ~luka2 
+%fof(eq2,axiom,![X]: n(X) = i(X,n(i(X,X)))).  % nOTE: if we add this constraint, then Vampire finds a model of c1914 & ~luka2 in less than 30s
+%fof(eq3,axiom,![X,Y,Z]: i(X,i(Y,Z)) = i(Y,i(X,Z))).
+
+%fof(eq3,axiom,![A,B,C,D]: i(A,i(B,i(C,B))) = i(D,D)).
+%
+%fof(eq3,axiom,![A,B,C,D]: i(i(A,B),i(C,i(D,A)))=i(C,i(D,A))).
+%
+%fof(eq3,axiom,![A,B,C]: i(i(A,B),i(B,C))=i(B,C)).
+
+% Meredith's 2-axiom equational basis for Boolean algebra in i/n
+% CnpCqr = CCrpCqp
+% CCpqp = p
+%fof(ba1,axiom, ![P,Q,R]: i(n(P),i(Q,R)) = i(i(R,P),i(Q,P))).
+%fof(ba2,axiom, ![P,Q]: i(i(P,Q),P) = P).
+
+%fof(ba3,axiom,![X,Y]: o(X,Y) = i(n(X),Y)).
+%fof(ba3,axiom,![X,Y]: a(X,Y) = n(i(X,n(Y)))).
+
+%fof(ba3,axiom,![X,Y]: o(X,Y) = o(Y,X)).
+%fof(ba3,axiom,![X,Y]: a(X,Y) = a(Y,X)).
+
+%fof(ba3,axiom,![X,Y]: o(X,o(Y,Z)) = o(o(X,Y),Z)).
+%fof(ba3,axiom,![X,Y]: a(X,a(Y,Z)) = a(a(X,Y),Z)).
+
+%fof(ba3,axiom,![X,Y,Z]: a(X,o(Y,Z)) = o(a(X,Y),a(X,Z))).
+%fof(ba3,axiom,![X,Y,Z]: o(X,a(Y,Z)) = a(o(X,Y),o(X,Z))).
+
+%fof(ba3,axiom,![X]: n(n(X)) = X).
+%fof(ba3,axiom,![X,Y]: i(n(X),n(Y)) = i(Y,X)).
+%fof(dm,axiom,![X,Y]: n(a(X,Y)) = o(n(X),n(Y))).
+%fof(dm,axiom,![X,Y]: n(o(X,Y)) = a(n(X),n(Y))).
+
+%fof(luka1,conjecture,![X,Y,Z,U]: t(i(i(i(X,Y),Z),i(i(Z,X),i(U,X))))).
+%fof(meredith, conjecture, ![X,Y,Z,U,V]: t(i(i(i(i(i(X,Y),i(n(Z),n(U))),Z),V),i(i(V,X),i(U,X))))).
+
+% 19-symbol possibilities (there are 19 of them) --- drawn from all 21-symbol cands (via Lukasiewicz's argument about 2-symbol longer axiom existence)
+% they can all be ruled out!
+
+% these are ruled out directly via SAT with relatively small models (using any of the luka axioms -- e.g., luka3)
+%fof(c191, axiom, ![B,C,D,E]: t(i(i(n(B),i(i(n(C),D),i(E,B))),i(i(C,E),i(C,B))))). % no (sat)
+%fof(c192, axiom, ![B,C,D,E,F]: t(i(i(i(B,i(n(C),D)),i(E,F)),i(i(n(F),E),i(C,F))))). % no (sat)
+%fof(c193, axiom, ![B,C,D,E]: t(i(i(B,C),i(i(i(D,E),i(n(D),i(C,n(B)))),i(B,D))))). % no (sat)
+%fof(c194, axiom, ![B,C,D,E,F]: t(i(i(i(n(B),C),i(D,E)),i(i(n(E),D),i(F,i(B,E)))))). % no (sat)
+%fof(c195, axiom, ![B,C,D,E]: t(i(i(B,C),i(i(n(D),i(C,i(i(n(B),E),D))),i(B,D))))). % no (sat) 
+%fof(c196, axiom, ![B,C,D,E]: t(i(i(n(B),C),i(i(C,i(i(n(D),E),i(C,B))),i(D,B))))). % no (sat)
+%fof(c199, axiom, ![B,C,D,E]: t(i(i(n(B),i(C,D)),i(i(D,i(i(n(C),E),B)),i(C,B))))). % no (sat)
+%fof(c1910, axiom, ![B,C,D,E]: t(i(i(B,i(i(C,D),E)),i(i(E,i(n(C),n(B))),i(B,C))))). % no (sat)
+%fof(c1915, axiom, ![B,C,D,E]: t(i(i(B,i(i(C,D),i(A,n(D)))),i(i(n(E),B),i(D,E))))). % no (sat)
+%fof(c1916, axiom, ![B,C,D,E]: t(i(i(n(B),C),i(i(i(B,D),i(C,i(E,n(E)))),i(E,B))))). % no (sat) 
+%fof(c1917, axiom, ![B,C,D,E,F]: t(i(i(n(B),C),i(D,i(i(i(n(E),F),i(C,B)),i(E,B)))))).  % no (sat)
+%fof(c1918, axiom, ![B,C,D,E,F]: t(i(i(i(n(B),C),i(D,E)),i(F,i(i(n(E),D),i(B,E)))))).  % no (sat)
+%fof(c198, axiom, ![B,C,D,E]: t(i(i(B,C),i(i(C,i(i(D,E),i(n(D),n(B)))),i(B,D))))). % no (sat)
+%fof(c1912, axiom, ![B,C,D,E]: t(i(i(B,C),i(i(C,i(i(D,E),i(n(D),n(C)))),i(B,D))))). % no (sat) 
+
+% these are deemed counter-satisfiable when trying to prove luka3 with Vampire -- relatively quickly (less than 30s or so)
+%fof(c197, axiom, ![B,C,D,E,F]: t(i(i(i(i(i(B,n(C)),n(D)),E),F),i(i(F,C),i(D,C))))). % no (countersat)
+%fof(c1911, axiom, ![B,C,D,E,F]: t(i(B,i(i(n(C),D),i(i(i(n(E),F),i(D,C)),i(E,C)))))). % no (countersat)
+%fof(c1918, axiom, ![B,C,D,E,F]: t(i(i(B,C),i(i(i(i(i(D,n(C)),n(E)),F),B),i(E,C))))).  % no (countersat) 
+
+% this one requires more effort to eliminate
+fof(c1914, axiom, ![B,C,D,E,F]: t(i(i(i(B,C),D),i(E,i(i(D,i(n(B),n(F))),i(F,B)))))). % no (countersatisfiable with Paradox --- 6-element model of failure of luka2)
+%fof(c1914, conjecture, ![B,C,D,E,F]: t(i(i(i(B,C),D),i(E,i(i(D,i(n(B),n(F))),i(F,B)))))). % no (countersatisfiable with Paradox --- 6-element model of failure of luka2)
+
+
+% there is OnE formula remaining for the 19-symbol case -- and it's the same one Matthew found in his 19-symbol run!
+%fof(c1913, axiom, ![B,C,D,E]: t(i(i(B,i(i(C,D),i(n(E),n(D)))),i(i(D,B),i(D,E))))). % this one is clearly not an axiom, but finding a model is HARD!
+

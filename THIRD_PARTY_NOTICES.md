@@ -15,3 +15,8 @@ software:
   reference executable are in `vendor/vampire-5.0.1/`.
 
 Neither vendored prover is covered by the repository's MIT license.
+
+The archive also preserves historical Vampire output transcripts whose
+version banners identify earlier releases, notably 4.5.1. Those transcripts
+are evidence from earlier runs, not claims that those older executables or
+their source releases are included, or that 5.0.1 reproduces them byte for byte.

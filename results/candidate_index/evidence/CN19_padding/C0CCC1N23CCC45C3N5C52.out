@@ -1,0 +1,96 @@
+% ott+10_128_av=off:bs=on:gsp=input_only:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_4 on C0CCC1N23CCC45C3N5C52
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 22771
+% Time elapsed: 0.800 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:nm=6_1461 on C0CCC1N23CCC45C3N5C52
+TRYING [5]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 47589
+% Time elapsed: 190.100 s
+% ------------------------------
+% ------------------------------
+% dis+10_3_add=large:afp=10000:afq=2.0:amm=sco:anc=none:cond=on:fsr=off:gsp=input_only:lma=on:nm=16:nwc=1:sac=on:updr=off_197 on C0CCC1N23CCC45C3N5C52
+% SZS status CounterSatisfiable for C0CCC1N23CCC45C3N5C52
+% # SZS output start Saturation.
+tff(u82,axiom,
+    (![X1, X0] : ((~t(i(X0,X1)) | t(X1) | ~t(X0))))).
+
+tff(u81,negated_conjecture,
+    ~t(i(i(i(i(i(sK0,sK1),i(n(sK2),n(sK3))),sK2),sK4),i(i(sK4,sK0),i(sK3,sK0))))).
+
+tff(u80,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X5, X0, X2, X4] : ((~t(i(i(X2,X0),i(i(i(i(X3,X4),i(n(X1),n(X4))),i(X4,X5)),n(X0)))) | t(i(X0,X1))))))).
+
+tff(u79,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X16, X9, X11, X13, X15, X10, X12, X14] : ((~t(i(i(X11,X9),i(i(i(i(X12,n(X13)),X14),i(i(i(X15,X16),i(X14,n(X16))),i(X16,X13))),n(X9)))) | t(i(X9,X10))))))).
+
+tff(u78,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X5, X0, X2, X4] : ((~t(i(i(X5,X0),i(X3,n(X0)))) | t(i(X0,i(i(i(X1,X2),i(n(X3),n(X2))),i(X2,X4))))))))).
+
+tff(u77,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X0, X2, X4] : ((~t(i(i(X4,n(X3)),X2)) | t(i(i(i(X0,X1),i(X2,n(X1))),i(X1,X3)))))))).
+
+tff(u76,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X9, X11, X13, X7, X8, X10, X12, X14, X6] : ((~t(i(i(i(i(X7,n(X8)),X9),i(i(i(X10,X11),i(X9,n(X11))),i(X11,X8))),n(i(i(i(X12,X13),i(n(X6),n(X13))),i(X13,X14))))) | t(X6)))))).
+
+tff(u75,axiom,
+    ((~(![X32, X34, X36, X38, X31, X33, X35, X37, X39, X30] : (~t(i(i(i(i(X30,n(X31)),X32),i(i(i(X33,X34),i(X32,n(X34))),i(X34,X31))),n(i(i(i(X35,n(X36)),X37),i(i(i(X38,X39),i(X37,n(X39))),i(X39,X36))))))))) | (![X32, X34, X36, X38, X31, X33, X35, X37, X39, X30] : (~t(i(i(i(i(X30,n(X31)),X32),i(i(i(X33,X34),i(X32,n(X34))),i(X34,X31))),n(i(i(i(X35,n(X36)),X37),i(i(i(X38,X39),i(X37,n(X39))),i(X39,X36)))))))))).
+
+tff(u74,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X9, X11, X13, X7, X8, X10, X12, X14, X6] : ((~t(i(i(i(i(X10,n(X11)),X12),i(i(i(X13,X14),i(X12,n(X14))),i(X14,X11))),n(X8))) | t(i(i(i(X6,X7),i(n(X8),n(X7))),i(X7,X9)))))))).
+
+tff(u73,axiom,
+    ((~(![X1, X3, X5, X2, X4] : (~t(n(i(i(i(X1,n(X2)),X3),i(i(i(X4,X5),i(X3,n(X5))),i(X5,X2)))))))) | (![X1, X3, X5, X2, X4] : (~t(n(i(i(i(X1,n(X2)),X3),i(i(i(X4,X5),i(X3,n(X5))),i(X5,X2))))))))).
+
+tff(u72,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X5, X0, X2, X4] : (t(i(n(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1)))),X5)))))).
+
+tff(u71,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X5, X7, X8, X0, X2, X4, X6] : (t(i(i(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))),n(i(i(i(X5,X6),i(n(X7),n(X6))),i(X6,X8)))),X7)))))).
+
+tff(u70,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X9, X1, X3, X5, X7, X8, X10, X0, X2, X4, X6] : (t(i(i(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))),n(i(i(i(X5,n(X6)),X7),i(i(i(X8,X9),i(X7,n(X9))),i(X9,X6))))),X10)))))).
+
+tff(u69,axiom,
+    (![X1, X3, X5, X0, X2, X4] : (t(i(X0,i(i(i(X1,n(X2)),X3),i(i(i(X4,X5),i(X3,n(X5))),i(X5,X2)))))))).
+
+tff(u68,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1)))))))).
+
+tff(u67,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X5, X7, X8, X0, X2, X4, X6] : (t(i(i(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))),n(X5)),i(i(i(X6,X7),i(n(X5),n(X7))),i(X7,X8)))))))).
+
+tff(u66,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X5, X0, X2, X4] : (t(i(i(i(X0,X1),i(i(i(i(X2,X3),i(n(X4),n(X3))),i(X3,X5)),n(X1))),i(X1,X4))))))).
+
+tff(u65,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X9, X11, X13, X7, X8, X10, X12, X6] : (t(i(i(i(X6,X7),i(i(i(i(X8,n(X9)),X10),i(i(i(X11,X12),i(X10,n(X12))),i(X12,X9))),n(X7))),i(X7,X13))))))).
+
+tff(u64,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X1, X3, X5, X0, X2, X4] : (t(i(i(i(X0,X1),i(X2,n(X1))),i(X1,i(i(i(X3,X4),i(n(X2),n(X4))),i(X4,X5))))))))).
+
+tff(u63,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(i(X0,n(X1)),X2),i(i(i(X3,X4),i(X2,n(X4))),i(X4,X1))))))) | (![X22, X25, X27, X21, X23, X24, X26, X28] : (t(i(i(i(X21,X22),i(X23,n(X22))),i(X22,i(i(i(X24,n(X25)),X26),i(i(i(X27,X28),i(X26,n(X28))),i(X28,X25)))))))))).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 5500
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% Success in time 201.975 s

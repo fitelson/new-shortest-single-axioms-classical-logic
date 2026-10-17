@@ -3,3 +3,6 @@
 *.gz binary
 *.zip binary
 vendor/*/bin/*/* binary
+# Preserve historical source/results byte for byte, including CRLF where present.
+legacy/** -text
+results/candidate_index/** -text

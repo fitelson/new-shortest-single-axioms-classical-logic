@@ -27,3 +27,5 @@ testingTracker.py
 /tools/reharvest_prover9_replays.py
 /tools/run_cd_until_joint_proof.py
 /tools/screen_*.py
+# The published gzip preserves this oversized raw log, which remains local.
+/results/candidate_index/evidence/CD_CF17_legacy_exception_satsuma_ae_kissat_mab/domain_8.cnf.satsuma_ae_proof.1792274584009567000.out

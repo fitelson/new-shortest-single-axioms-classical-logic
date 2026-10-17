@@ -1,0 +1,6 @@
+% Individual elimination replay for CD_CN19_c1914_constrained; Polish CCCpqrCsCCrCNpNtCtp.
+fof(mp,axiom,![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).
+fof(candidate,axiom,![A,B,C,D,E]: t(i(i(i(A,B),C),i(D,i(i(C,i(n(A),n(E))),i(E,A)))))).
+fof(diagonal,axiom,![X,Y]: i(X,X)=i(Y,Y)).
+fof(negation_constraint,axiom,![X]: n(X)=i(X,n(i(X,X)))).
+fof(classical_target,conjecture,![P]: t(i(i(n(P),P),P))).

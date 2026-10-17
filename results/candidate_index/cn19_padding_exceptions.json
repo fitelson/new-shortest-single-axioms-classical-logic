@@ -1,0 +1,872 @@
+[
+  {
+    "id": "CN19_padding_0592",
+    "legacy_survivor_line": 592,
+    "padded": "C0CCN1CCN23C24CC41C21",
+    "stripped_legacy_polish": "CCN0CCN12C13CC30C10",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1CCN23C24CC41C21.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "b66a0f14025b73b666c05ac19df6e7cfd35d5863ef59d9d0f555a03339c67409"
+  },
+  {
+    "id": "CN19_padding_0593",
+    "legacy_survivor_line": 593,
+    "padded": "C0CCN1CCN23C41CC24C21",
+    "stripped_legacy_polish": "CCN0CCN12C30CC13C10",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c191",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c191_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0595",
+    "legacy_survivor_line": 595,
+    "padded": "C0CCN1CCN234CC2C41C21",
+    "stripped_legacy_polish": "CCN0CCN123CC1C30C10",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1CCN234CC2C41C21.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "ab57f54a4df9fd18ff0fd4977a603d23705672b1018ca7cf4c1c428ab2b83f01"
+  },
+  {
+    "id": "CN19_padding_0597",
+    "legacy_survivor_line": 597,
+    "padded": "C0CCN1CCN234CC4C41C21",
+    "stripped_legacy_polish": "CCN0CCN123CC3C30C10",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1CCN234CC4C41C21.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "da5369cb91abb6baf390d3101bcd1cb85cfc082d5db3c4b0c39ea36621a9a424"
+  },
+  {
+    "id": "CN19_padding_0600",
+    "legacy_survivor_line": 600,
+    "padded": "C0CCN1CC123CC3C3N4C41",
+    "stripped_legacy_polish": "CCN0CC012CC2C2N3C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1CC123CC3C3N4C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "898b21915dcc4c55c2e000db680cc04d6bea1088cad81e4de2f986702a02539c"
+  },
+  {
+    "id": "CN19_padding_0602",
+    "legacy_survivor_line": 602,
+    "padded": "C0CCN1CC123CC3C4N4C41",
+    "stripped_legacy_polish": "CCN0CC012CC2C3N3C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1CC123CC3C4N4C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "cb28e750f4477a6c82d7f674fff672cd8b6572e575fd502938b29cb55b1a4315"
+  },
+  {
+    "id": "CN19_padding_0607",
+    "legacy_survivor_line": 607,
+    "padded": "C0CCN1CC234CC4C3N3C31",
+    "stripped_legacy_polish": "CCN0CC123CC3C2N2C20",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1CC234CC4C3N3C31.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "ad6a12e2f3494952c4baf928e1227d377a7bd503a79235a8cc07dd8c1b35c72f"
+  },
+  {
+    "id": "CN19_padding_0608",
+    "legacy_survivor_line": 608,
+    "padded": "C0CCN1CC234CC4C3N4C31",
+    "stripped_legacy_polish": "CCN0CC123CC3C2N3C20",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1CC234CC4C3N4C31.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "8f6ebb287ea7fdaab5d194ae77fa573645c68cbb9a652de7cf66a78de22db723"
+  },
+  {
+    "id": "CN19_padding_0610",
+    "legacy_survivor_line": 610,
+    "padded": "C0CCN1C2CCN234CC41C21",
+    "stripped_legacy_polish": "CCN0C1CCN123CC30C10",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN1C2CCN234CC41C21.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "e7093c1f2a42a5ac8d39a6130e63e5238ff3c0d04c7d2a90c15165b92b319701"
+  },
+  {
+    "id": "CN19_padding_0613",
+    "legacy_survivor_line": 613,
+    "padded": "C0CCN1C23CC3CCN241C21",
+    "stripped_legacy_polish": "CCN0C12CC2CCN130C10",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c199",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c199_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0615",
+    "legacy_survivor_line": 615,
+    "padded": "C0CCN12CCCN3C45C21C31",
+    "stripped_legacy_polish": "CCN01CCCN2C34C10C20",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCCN3C45C21C31.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "594a954d53edaec370c07e0de6dc8cb1cf6c034ed796911e6a8df259df14ec0a"
+  },
+  {
+    "id": "CN19_padding_0619",
+    "legacy_survivor_line": 619,
+    "padded": "C0CCN12CCCN34C2C21C31",
+    "stripped_legacy_polish": "CCN01CCCN23C1C10C20",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCCN34C2C21C31.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "03b6781e475f93e50e19fea458a7ca24d8b69e62cacfa754dc248f480b385216"
+  },
+  {
+    "id": "CN19_padding_0620",
+    "legacy_survivor_line": 620,
+    "padded": "C0CCN12CCC3CN45C21C41",
+    "stripped_legacy_polish": "CCN01CCC2CN34C10C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCC3CN45C21C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "e6ff7a11c0a7adb3d1e09ac5de2b3399b120886a0c6316341a656b92339377f0"
+  },
+  {
+    "id": "CN19_padding_0628",
+    "legacy_survivor_line": 628,
+    "padded": "C0CCN12CCC13C2C2N4C41",
+    "stripped_legacy_polish": "CCN01CCC02C1C1N3C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCC13C2C2N4C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "fdf51359736280a7998213c3953135795c7a5ce42ebd042fd01375d8f58c5a39"
+  },
+  {
+    "id": "CN19_padding_0630",
+    "legacy_survivor_line": 630,
+    "padded": "C0CCN12CCC13C2C4N4C41",
+    "stripped_legacy_polish": "CCN01CCC02C1C3N3C30",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1916",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1916_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0631",
+    "legacy_survivor_line": 631,
+    "padded": "C0CCN12CCC13C4C2N4C41",
+    "stripped_legacy_polish": "CCN01CCC02C3C1N3C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCC13C4C2N4C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "9e99baa79314e8a11506aa5f3a41139a8c485af192e91c624c4c81a51ed46a1a"
+  },
+  {
+    "id": "CN19_padding_0639",
+    "legacy_survivor_line": 639,
+    "padded": "C0CCN12CCC34C2C2N4C41",
+    "stripped_legacy_polish": "CCN01CCC23C1C1N3C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C2C2N4C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "3c7a45fac735dce7c4d0df1e17dc74969c3511596134860f387b615df1302a3c"
+  },
+  {
+    "id": "CN19_padding_0641",
+    "legacy_survivor_line": 641,
+    "padded": "C0CCN12CCC34C2C4N2C41",
+    "stripped_legacy_polish": "CCN01CCC23C1C3N1C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C2C4N2C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "a499227d24f74e824124210ce85625aeaaf87fabffa37896e36e4d44bb050ad8"
+  },
+  {
+    "id": "CN19_padding_0642",
+    "legacy_survivor_line": 642,
+    "padded": "C0CCN12CCC34C2C4N4C41",
+    "stripped_legacy_polish": "CCN01CCC23C1C3N3C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C2C4N4C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "5bca5d548876e7e42fe53a4622fa2dad086616e3c80f7d0baedba36fc44a4e22"
+  },
+  {
+    "id": "CN19_padding_0643",
+    "legacy_survivor_line": 643,
+    "padded": "C0CCN12CCC34C4C2N4C41",
+    "stripped_legacy_polish": "CCN01CCC23C3C1N3C30",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CCC34C4C2N4C41.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "bce0d6bb887dd253823b6370353fd4d245cb18fe937ec3645fc8a5a870090558"
+  },
+  {
+    "id": "CN19_padding_0646",
+    "legacy_survivor_line": 646,
+    "padded": "C0CCN12CC2CCN34C21C31",
+    "stripped_legacy_polish": "CCN01CC1CCN23C10C20",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c196",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c196_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0647",
+    "legacy_survivor_line": 647,
+    "padded": "C0CCN12CC3CCN34C21C31",
+    "stripped_legacy_polish": "CCN01CC2CCN23C10C20",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12CC3CCN34C21C31.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "4b72b70bb7f4249ccc5ec27c20bef45e03b72e84766e604098117bbf41e9517a"
+  },
+  {
+    "id": "CN19_padding_0650",
+    "legacy_survivor_line": 650,
+    "padded": "C0CCN12C3CCCN45C21C41",
+    "stripped_legacy_polish": "CCN01C2CCCN34C10C30",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1917",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1917_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0651",
+    "legacy_survivor_line": 651,
+    "padded": "C0CCN12C3CCC14C2N5C51",
+    "stripped_legacy_polish": "CCN01C2CCC03C1N4C40",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCN12C3CCC14C2N5C51.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "c0a78bc035184de5dfa37639f2b7056de38f98778a9b3406de841601f03aedee"
+  },
+  {
+    "id": "CN19_padding_0654",
+    "legacy_survivor_line": 654,
+    "padded": "C0CCCN12C34CCN4C13C14",
+    "stripped_legacy_polish": "CCCN01C23CCN3C02C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCCN12C34CCN4C13C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "34b8af4bc4f1977068e321ba267cfd12215ce1a61b9587eed0e2c88c0259726a"
+  },
+  {
+    "id": "CN19_padding_0655",
+    "legacy_survivor_line": 655,
+    "padded": "C0CCCN12C34CCN43C5C14",
+    "stripped_legacy_polish": "CCCN01C23CCN32C4C03",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c194",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c194_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0656",
+    "legacy_survivor_line": 656,
+    "padded": "C0CCCN12C34C5CCN43C14",
+    "stripped_legacy_polish": "CCCN01C23C4CCN32C03",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1918",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1918_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0658",
+    "legacy_survivor_line": 658,
+    "padded": "C0CCCN123CCN4C1C34C14",
+    "stripped_legacy_polish": "CCCN012CCN3C0C23C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCCN123CCN4C1C34C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "f99004ecfb66ee17ec371f635aed8f4423df13f27773f346663c6a35dd9bae96"
+  },
+  {
+    "id": "CN19_padding_0660",
+    "legacy_survivor_line": 660,
+    "padded": "C0CCCCC1N2N345CC52C32",
+    "stripped_legacy_polish": "CCCCC0N1N234CC41C21",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c197",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c197_vampire501.out"
+  },
+  {
+    "id": "CN19_padding_0661",
+    "legacy_survivor_line": 661,
+    "padded": "C0CCC1N23CCCC3N452C42",
+    "stripped_legacy_polish": "CCC0N12CCCC2N341C31",
+    "method": "finite model",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC1N23CCCC3N452C42.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "9b15f62e19e48443806fac5366dfb543fb6070c8bdf5287410c74f5c283e04ba"
+  },
+  {
+    "id": "CN19_padding_0662",
+    "legacy_survivor_line": 662,
+    "padded": "C0CCC1N23CCC45C3N5C52",
+    "stripped_legacy_polish": "CCC0N12CCC34C2N4C41",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC1N23CCC45C3N5C52.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "e2d53144f916c549e6f575252ac24fe51a3fdf88cbb2e4a29eb3570ac74ec539"
+  },
+  {
+    "id": "CN19_padding_0663",
+    "legacy_survivor_line": 663,
+    "padded": "C0CCC1CN23C45CCN54C25",
+    "stripped_legacy_polish": "CCC0CN12C34CCN43C14",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c192",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c192_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0664",
+    "legacy_survivor_line": 664,
+    "padded": "C0CCC1C2N34CC4C4N5C53",
+    "stripped_legacy_polish": "CCC0C1N23CC3C3N4C42",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC1C2N34CC4C4N5C53.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "bb19d7d546a05de028f34b5f9492398e924fd4b9debddaba20424d334bd98298"
+  },
+  {
+    "id": "CN19_padding_0679",
+    "legacy_survivor_line": 679,
+    "padded": "C0CCC12C2C3N2CCN43C24",
+    "stripped_legacy_polish": "CCC01C1C2N1CCN32C13",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC12C2C3N2CCN43C24.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "2e3fd466dc247b2ea8eaeaa1407735f47033514130d562f16ab77a82e96dc739"
+  },
+  {
+    "id": "CN19_padding_0680",
+    "legacy_survivor_line": 680,
+    "padded": "C0CCC12C2C3N3CCN43C24",
+    "stripped_legacy_polish": "CCC01C1C2N2CCN32C13",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC12C2C3N3CCN43C24.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "735130aca1b8dac0a63488fae62d81d26035fd497cb52ae6deb051ad857c9793"
+  },
+  {
+    "id": "CN19_padding_0685",
+    "legacy_survivor_line": 685,
+    "padded": "C0CCC12C3C3N2CCN43C24",
+    "stripped_legacy_polish": "CCC01C2C2N1CCN32C13",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC12C3C3N2CCN43C24.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "407c38ba4cb1e2210e600800099bb24c3a120025b02cb1b391ba09e3a36438e2"
+  },
+  {
+    "id": "CN19_padding_0687",
+    "legacy_survivor_line": 687,
+    "padded": "C0CCC12C3C4N3CCN14C31",
+    "stripped_legacy_polish": "CCC01C2C3N2CCN03C20",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC12C3C4N3CCN14C31.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "a2f942e141bb5545906b5f584c1edd5b809252de577acaf77ee15d2928001d18"
+  },
+  {
+    "id": "CN19_padding_0698",
+    "legacy_survivor_line": 698,
+    "padded": "C0CCC123CC3CN4C2N2C24",
+    "stripped_legacy_polish": "CCC012CC2CN3C1N1C13",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC123CC3CN4C2N2C24.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "7c3e779ba2fae3c57808dde9f041e64b2a13f33a1c0457112375403b9b0a6a98"
+  },
+  {
+    "id": "CN19_padding_0699",
+    "legacy_survivor_line": 699,
+    "padded": "C0CCC123CC3CC4N1N5C51",
+    "stripped_legacy_polish": "CCC012CC2CC3N0N4C40",
+    "method": "finite model",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC123CC3CC4N1N5C51.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "3861037a71a94245fcb33b276755d0c8dbe191bcadf166c873a89378b33e389d"
+  },
+  {
+    "id": "CN19_padding_0700",
+    "legacy_survivor_line": 700,
+    "padded": "C0CCC123CC3CC4N5N2C25",
+    "stripped_legacy_polish": "CCC012CC2CC3N4N1C14",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC123CC3CC4N5N2C25.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "2f855dafb340a510bf54d7049d87e0baf96347139353a97ee1137a5c461d8bde"
+  },
+  {
+    "id": "CN19_padding_0709",
+    "legacy_survivor_line": 709,
+    "padded": "C0CCC123CC3C2CN4N2C24",
+    "stripped_legacy_polish": "CCC012CC2C1CN3N1C13",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC123CC3C2CN4N2C24.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "974856e15ab83a0e7be1320f72aaddaacda3e1259828afd2bc6a3980fccd62fd"
+  },
+  {
+    "id": "CN19_padding_0712",
+    "legacy_survivor_line": 712,
+    "padded": "C0CCC123C4CC3CN1N5C51",
+    "stripped_legacy_polish": "CCC012C3CC2CN0N4C40",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1914",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1914_constrained_vampire501.out"
+  },
+  {
+    "id": "CN19_padding_0713",
+    "legacy_survivor_line": 713,
+    "padded": "C0CCC123C4CC3CN5N2C25",
+    "stripped_legacy_polish": "CCC012C3CC2CN4N1C14",
+    "method": "finite model",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CCC123C4CC3CN5N2C25.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "e3fc1f281f5c0396c8843c1639c412c7405169d215ec11d64717f9af5f7b331c"
+  },
+  {
+    "id": "CN19_padding_0715",
+    "legacy_survivor_line": 715,
+    "padded": "C0CC1CCN23C14CCN41C24",
+    "stripped_legacy_polish": "CC0CCN12C03CCN30C13",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CCN23C14CCN41C24.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "648c65f89103773785f19a5e382ec0c06a8d458438c5aa8c62033c30943e754f"
+  },
+  {
+    "id": "CN19_padding_0716",
+    "legacy_survivor_line": 716,
+    "padded": "C0CC1CCN123CCN4C34C14",
+    "stripped_legacy_polish": "CC0CCN012CCN3C23C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CCN123CCN4C34C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "4ad450320fc78802429a541cc4addf7fec5b8fb919f86515739ca8731be46cc5"
+  },
+  {
+    "id": "CN19_padding_0717",
+    "legacy_survivor_line": 717,
+    "padded": "C0CC1CCN123CC3CN44C14",
+    "stripped_legacy_polish": "CC0CCN012CC2CN33C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CCN123CC3CN44C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "9d50ce575b1907b692b45177d869d122099872aecbd03a9f91f61856dede8565"
+  },
+  {
+    "id": "CN19_padding_0720",
+    "legacy_survivor_line": 720,
+    "padded": "C0CC1CC23CN2N1CC41C42",
+    "stripped_legacy_polish": "CC0CC12CN1N0CC30C31",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC23CN2N1CC41C42.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "13aa45e63b123c2be41b2fe3be2081d39ae22146f969adee93e715e8c30a9b94"
+  },
+  {
+    "id": "CN19_padding_0721",
+    "legacy_survivor_line": 721,
+    "padded": "C0CC1CC23CN2N4CC41C42",
+    "stripped_legacy_polish": "CC0CC12CN1N3CC30C31",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC23CN2N4CC41C42.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "7f10345948acece89145a770b2aaeb14f2518725256e9b26ce1637271b459647"
+  },
+  {
+    "id": "CN19_padding_0722",
+    "legacy_survivor_line": 722,
+    "padded": "C0CC1CC23CN4N1CC31C34",
+    "stripped_legacy_polish": "CC0CC12CN3N0CC20C23",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC23CN4N1CC31C34.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "a2de200296407d9ae721dbc58c8fa1556b48408215962c63a4e184c36b7c3334"
+  },
+  {
+    "id": "CN19_padding_0723",
+    "legacy_survivor_line": 723,
+    "padded": "C0CC1CC23CN4N3CC31C34",
+    "stripped_legacy_polish": "CC0CC12CN3N2CC20C23",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1913",
+    "evidence": "results/candidate_index/evidence/CN19_chain_verification.py"
+  },
+  {
+    "id": "CN19_padding_0728",
+    "legacy_survivor_line": 728,
+    "padded": "C0CC1CC23C1N3CCN41C34",
+    "stripped_legacy_polish": "CC0CC12C0N2CCN30C23",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC23C1N3CCN41C34.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "3b30dba4fef57c245c483d83253695dee123b94266d835ea5fc70aac0600d9af"
+  },
+  {
+    "id": "CN19_padding_0729",
+    "legacy_survivor_line": 729,
+    "padded": "C0CC1CC23C3N1CCN41C34",
+    "stripped_legacy_polish": "CC0CC12C2N0CCN30C23",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC23C3N1CCN41C34.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "74f16e17c16304f70e164b3e92b5d789d7351d8b0dbb6d1540cffcb03db516e6"
+  },
+  {
+    "id": "CN19_padding_0730",
+    "legacy_survivor_line": 730,
+    "padded": "C0CC1CC23C3N3CCN41C34",
+    "stripped_legacy_polish": "CC0CC12C2N2CCN30C23",
+    "method": "finite model",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC23C3N3CCN41C34.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "740adb1e97d06e71d9a11e4747457c261f1bc81ae4a3e2b37044c4cc81e0ef95"
+  },
+  {
+    "id": "CN19_padding_0731",
+    "legacy_survivor_line": 731,
+    "padded": "C0CC1CC23C4N4CCN21C42",
+    "stripped_legacy_polish": "CC0CC12C3N3CCN10C31",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC23C4N4CCN21C42.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "dcf1664500f65aa1a428353e3533c8f977c7e4d2fc7ac1a882876e76c1de8416"
+  },
+  {
+    "id": "CN19_padding_0738",
+    "legacy_survivor_line": 738,
+    "padded": "C0CC1CC213CC3CN4N1C14",
+    "stripped_legacy_polish": "CC0CC102CC2CN3N0C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1CC213CC3CN4N1C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "5242dc808beab8dfe8d08886a70492e60016568aa52573cfd5ae21558e8bad06"
+  },
+  {
+    "id": "CN19_padding_0740",
+    "legacy_survivor_line": 740,
+    "padded": "C0CC1CC234CC4CN2N1C12",
+    "stripped_legacy_polish": "CC0CC123CC3CN1N0C01",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1910",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1910_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0743",
+    "legacy_survivor_line": 743,
+    "padded": "C0CC1C1CN2N3CCC431C32",
+    "stripped_legacy_polish": "CC0C0CN1N2CCC320C21",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1C1CN2N3CCC431C32.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "0594fc978f4fde5d47596a3d88d094e6c507540b96da0a4df3051ef501783129"
+  },
+  {
+    "id": "CN19_padding_0745",
+    "legacy_survivor_line": 745,
+    "padded": "C0CC1C2CN3N1CCC412C13",
+    "stripped_legacy_polish": "CC0C1CN2N0CCC301C02",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1C2CN3N1CCC412C13.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "678c44dae59eaf8adfc2d0ada32ab9665955cadacd43cfd69468b6c87706a94b"
+  },
+  {
+    "id": "CN19_padding_0746",
+    "legacy_survivor_line": 746,
+    "padded": "C0CC1C2CN3N2CCC421C23",
+    "stripped_legacy_polish": "CC0C1CN2N1CCC310C12",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1C2CN3N2CCC421C23.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "d4a2dbbb9af9673d20da35a0d7c4327f128d991b9f94d2525390e07dcc250b05"
+  },
+  {
+    "id": "CN19_padding_0749",
+    "legacy_survivor_line": 749,
+    "padded": "C0CC1C23CCN3CCN142C13",
+    "stripped_legacy_polish": "CC0C12CCN2CCN031C02",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC1C23CCN3CCN142C13.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "e29ef023021cd1a950e06856363237928a0e6971352f8ac7a624c85319a7490b"
+  },
+  {
+    "id": "CN19_padding_0751",
+    "legacy_survivor_line": 751,
+    "padded": "C0CC12CCN3CCN14C23C13",
+    "stripped_legacy_polish": "CC01CCN2CCN03C12C02",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CCN3CCN14C23C13.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "babf18263795b393ecc2c1025087018c4d7eb6cabfbd3fea7b79122f650d0046"
+  },
+  {
+    "id": "CN19_padding_0752",
+    "legacy_survivor_line": 752,
+    "padded": "C0CC12CCN3C2CCN143C13",
+    "stripped_legacy_polish": "CC01CCN2C1CCN032C02",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c195",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c195_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0753",
+    "legacy_survivor_line": 753,
+    "padded": "C0CC12CCCCC3N2N451C42",
+    "stripped_legacy_polish": "CC01CCCCC2N1N340C31",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1918b",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1918b_vampire501.out"
+  },
+  {
+    "id": "CN19_padding_0754",
+    "legacy_survivor_line": 754,
+    "padded": "C0CC12CCC3C4N5C2N1C15",
+    "stripped_legacy_polish": "CC01CCC2C3N4C1N0C04",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CCC3C4N5C2N1C15.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "dde950f9ac347a77fb67cbd753bf79a5138fe95fba0621b27edaa1fdc82e2d44"
+  },
+  {
+    "id": "CN19_padding_0756",
+    "legacy_survivor_line": 756,
+    "padded": "C0CC12CCC34CN3C2N1C13",
+    "stripped_legacy_polish": "CC01CCC23CN2C1N0C02",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c193",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c193_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0765",
+    "legacy_survivor_line": 765,
+    "padded": "C0CC12CCC31C2CN4N1C14",
+    "stripped_legacy_polish": "CC01CCC20C1CN3N0C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CCC31C2CN4N1C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "e23711c43785600794bf37336074d8e6b5206a44c2c7f575899eae99a95f704d"
+  },
+  {
+    "id": "CN19_padding_0766",
+    "legacy_survivor_line": 766,
+    "padded": "C0CC12CCC31C2CN4N2C14",
+    "stripped_legacy_polish": "CC01CCC20C1CN3N1C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CCC31C2CN4N2C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "842526b7e2d6ca905cceb8648017cffdc192060861a0b965f0b201e342862b8a"
+  },
+  {
+    "id": "CN19_padding_0768",
+    "legacy_survivor_line": 768,
+    "padded": "C0CC12CCC34C2CN3N1C13",
+    "stripped_legacy_polish": "CC01CCC23C1CN2N0C02",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CCC34C2CN3N1C13.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "c27e124c255d1280400fbdc28004ed073f33c08b9ac9740a0bcbfa01d7741d73"
+  },
+  {
+    "id": "CN19_padding_0769",
+    "legacy_survivor_line": 769,
+    "padded": "C0CC12CCC34C2CN3N2C13",
+    "stripped_legacy_polish": "CC01CCC23C1CN2N1C02",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CCC34C2CN3N2C13.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "67b53d9be845abc4fdadf3aa39235f5e0c548518431d835c2e4c12a85ee7c038"
+  },
+  {
+    "id": "CN19_padding_0771",
+    "legacy_survivor_line": 771,
+    "padded": "C0CC12CC2CCN13CN44C14",
+    "stripped_legacy_polish": "CC01CC1CCN02CN33C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CC2CCN13CN44C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "6eb2b79144f87b20a37fa2de56948000e883936c7b57e1b2f7616e843fb5252f"
+  },
+  {
+    "id": "CN19_padding_0775",
+    "legacy_survivor_line": 775,
+    "padded": "C0CC12CC2CC31CN4N1C14",
+    "stripped_legacy_polish": "CC01CC1CC20CN3N0C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CC2CC31CN4N1C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "defb5fe50abe0482ef4e091922a0c89ed4e35de0d218846e95130f3a54d9fe33"
+  },
+  {
+    "id": "CN19_padding_0776",
+    "legacy_survivor_line": 776,
+    "padded": "C0CC12CC2CC31CN4N2C14",
+    "stripped_legacy_polish": "CC01CC1CC20CN3N1C03",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0CC12CC2CC31CN4N2C14.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "a8882c4f93ac9647768033200147f712d053d77f5fe66435d9926ad9645ddc48"
+  },
+  {
+    "id": "CN19_padding_0778",
+    "legacy_survivor_line": 778,
+    "padded": "C0CC12CC2CC34CN3N1C13",
+    "stripped_legacy_polish": "CC01CC1CC23CN2N0C02",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c198",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c198_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0779",
+    "legacy_survivor_line": 779,
+    "padded": "C0CC12CC2CC34CN3N2C13",
+    "stripped_legacy_polish": "CC01CC1CC23CN2N1C02",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1912",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1912_countermodel.out"
+  },
+  {
+    "id": "CN19_padding_0780",
+    "legacy_survivor_line": 780,
+    "padded": "C0C1CCN23CCCN45C32C42",
+    "stripped_legacy_polish": "C0CCN12CCCN34C21C31",
+    "method": "see named candidate",
+    "named_candidate": "CD_CN19_c1911",
+    "evidence": "results/candidate_index/evidence/CD_CN19_c1911_vampire501.out"
+  },
+  {
+    "id": "CN19_padding_0781",
+    "legacy_survivor_line": 781,
+    "padded": "C0C1CCN23CCC24C3N5C52",
+    "stripped_legacy_polish": "C0CCN12CCC13C2N4C41",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0C1CCN23CCC24C3N5C52.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "976e5707821bbd7508da65a7879c3082393b2c5b2d1854e89b8fee6ad8521b4b"
+  },
+  {
+    "id": "CN19_padding_0782",
+    "legacy_survivor_line": 782,
+    "padded": "C0C1CCC234CC4CN5N3C35",
+    "stripped_legacy_polish": "C0CCC123CC3CN4N2C24",
+    "method": "completed saturation",
+    "evidence": "results/candidate_index/evidence/CN19_padding/C0C1CCC234CC4CN5N3C35.out",
+    "vampire_versions": [
+      "Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)"
+    ],
+    "output_sha256": "5b07f930dc0d28d5ca32151dda1bed21915ca287ce62a695fc2206ccf11d75ad"
+  }
+]

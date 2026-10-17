@@ -1,0 +1,257 @@
+[
+  {
+    "id": "CD_CN19_c191",
+    "order": 2,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 0,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c192",
+    "order": 3,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1,
+        "U": 1,
+        "V": 0
+      },
+      "value": 0
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c193",
+    "order": 3,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 2,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c194",
+    "order": 2,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 0,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c195",
+    "order": 3,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 1,
+        "V": 0
+      },
+      "value": 0
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c196",
+    "order": 2,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 0,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c199",
+    "order": 2,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 0,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c1910",
+    "order": 3,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 1,
+        "V": 0
+      },
+      "value": 2
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c1915",
+    "order": 3,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 1,
+        "V": 0
+      },
+      "value": 0
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c1916",
+    "order": 2,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 0,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c1917",
+    "order": 2,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 0,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c1918",
+    "order": 2,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 0,
+        "V": 0
+      },
+      "value": 1
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c198",
+    "order": 3,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 1,
+        "V": 0
+      },
+      "value": 2
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c1912",
+    "order": 3,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 1,
+        "V": 0
+      },
+      "value": 2
+    },
+    "domain_numbering": "zero-based"
+  },
+  {
+    "id": "CD_CN19_c1914",
+    "order": 8,
+    "candidate_valid": true,
+    "modus_ponens_valid": true,
+    "target_counterexample": {
+      "assignment": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "U": 4,
+        "V": 1
+      },
+      "value": 3
+    },
+    "domain_numbering": "zero-based"
+  }
+]

@@ -6,15 +6,44 @@ Matthew J. Walsh, and OpenAI Codex. This repository extends Walsh's original
 
 See `AUTHORS.md` for authorship information.
 
-Used to prove that Meredith's 21-symbol single axiom of classical sentential logic is the shortest possible, in addition to finding other axioms of length 21.
+The current root-level implementation and the preserved historical generator
+are distinct. [legacy/README.md](legacy/README.md) documents the source
+snapshot, its DN-free C/N restriction, and the limits of reconstructing its
+original runtime. The recorded legacy matrices are available for individual
+verification; they have not all been newly rechecked in one bulk run.
 
-Used to prove that Meredith's 19-symbol single axioms of classical sentential logic with the falsum constant are the shortest possible, in addition to finding other axioms of length 19.
+For the status and elimination method of a particular candidate, start with
+[the candidate index](CANDIDATE_INDEX.md). It includes the old O5/O6 label
+crosswalk, linked individual certificates, searchable formulas in Polish and
+TPTP notation, and compressed formula-to-countermodel tables for the complete
+preserved legacy lower-bound lists.
+
+The paper's C/N weight-19 elimination and weight-21 shortestness/search
+claims are restricted to double-negation-free formulas with at most six
+distinct variables. Meredith's axiom and the six new 21-symbol axioms are
+shortest within that class; unrestricted shortestness is not claimed.
+Their complete-basis sufficiency proofs remain unconditional. The legacy
+enumerator had no fixed five-variable cap, and its preserved weight-21
+survivor list includes six-variable formulas.
+
+The archive verifies Meredith's 19-symbol condensed-detachment single axioms
+with the falsum constant and six further axioms of that length. They are
+shortest known, not proved shortest: the 17-symbol candidate
+`F17 = CCCCCpqFrsCCspCtp` remains unresolved. See
+[its candidate entry](results/candidate_index/named_candidates.md#CD_CF17_legacy_exception).
+This qualification concerns condensed detachment; the separate shortestness
+result for the 17-symbol **equational** C/f axiom is unchanged.
+
+[BASIS_SOURCES.md](BASIS_SOURCES.md) gives the exact page and section for
+each equational target basis, including Prior's 1969 correction of the
+C/N misprint and the notation changes for O/N and A/N.
 
 The repository has four release-critical components:
 
 1. the single-axiom search code and reproducibility tools;
-2. 29 canonical Prover9 input/output pairs: 22 complete-basis verifications
-   for the axioms reported in the paper and seven Wos-pure C/N circle legs; and
+2. 29 canonical Prover9 input/output pairs: 21 complete-basis verifications
+   for displayed axioms, one additional independently discovered A/N axiom,
+   and seven Wos-pure C/N circle legs; and
 3. William McCune's last official Prover9 release, LADR-2009-11A, preserved as
    the unmodified source archive together with the reference executable; and
 4. Vampire 5.0.1, preserved as the official tagged source archive together
@@ -88,7 +117,7 @@ file creation; a model learned by one already-running shard is guaranteed to
 be available to later runs, although sibling processes do not reload it while
 they are already running.
 
-The complete lower-bound reference matrix is recorded in
+The lower-bound reference command matrix is recorded in
 `runs/headline_reproduction_manifest.json`.  To inspect its fourteen exact
 commands, or run them with bounded process-level parallelism and merge each
 completed pair, use:
@@ -101,6 +130,10 @@ python3 tools/run_headline_shards.py --max_workers 14
 The launcher appends each worker's output to `run_logs/headline_v501/` and
 resumes from the worker's transactional structural-form checkpoint if invoked
 again.
+These are commands, not assertions that every corresponding run completed.
+The newer CD C/N and C/f replication shards were stopped incomplete; the
+paper uses the documented legacy evidence for those eliminations. The root
+Python generator also differs from the legacy DN-free generator.
 
 After the initial shard pair has been merged, run the survivor-only second
 pass with:
@@ -125,12 +158,23 @@ formulas and the current run definitions.
 
 The archive also preserves the completed all-smaller-length equational screens
 under `results/equational_lower_bounds/`. Their 45 reconciled shard pairs show
-no unresolved `C/f` candidate at any admissible smaller length. They leave 7
-and 16 unresolved `C/N` candidates at lengths 15 and 16; 12, 44, and 294
-unresolved `A/N` candidates at lengths 17, 18, and 19; and 12, 44, and 295
-unresolved `O/N` candidates at those lengths. Thus the `C/f` lower bound is
-complete, while the other three reported equations remain shortest known.
+no unresolved **equational** `C/f` candidate at any admissible smaller length. They leave 7
+and 16 unresolved `C/N` candidates at lengths 15 and 16, and 12, 44, and 295
+unresolved `O/N` candidates at lengths 17, 18, and 19. The paper's A/N
+claims use the Boolean duals of these O/N results. A separate historical A/N
+screen, with a different four-equation target basis, left 12, 44, and 294;
+those data are preserved but are not substituted for the paper's duality claim.
+Thus the equational `C/f` lower bound is complete, while the other
+unrestricted equational shortestness questions remain open.
 An unresolved survivor has not been proved to be a single axiom.
+
+For the CD C/N weight-19 provenance, the archive additionally preserves
+7,741,045 padded weight-21 rows, including 7,740,968 recorded matrix
+assignments and a closed 77-row exception map. See
+`results/candidate_index/cn19_padding_exceptions.tsv`. The 59 historical
+successful outputs in that map and the four CN20 exception transcripts
+identify their own Vampire versions, including 4.5.1; they are not claimed
+as outputs regenerated with the vendored 5.0.1 binary.
 
 ## Standard equational verification
 
@@ -189,6 +233,11 @@ and checks every archived equational lower-bound shard, reconciliation flag,
 and survivor count.
 
 ## Principal lower-bound runs
+
+The following are reference frontier commands. Completed-run evidence is
+identified separately in `REPRODUCIBILITY_AUDIT.md`; an invocation listed
+here is not itself a completion certificate. In particular, the paper's
+C/N claims remain scoped to DN-free formulas with at most six variables.
 
 ```python3 run.py CN_LOWER1 19 runs/cn_definition.json```
 

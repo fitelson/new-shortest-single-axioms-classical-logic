@@ -1,0 +1,64 @@
+% (14244)Running in auto input_syntax mode. Trying TPTP
+% (14244)Will run a generic schedule for satisfiability detection.
+% (14248)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14248)fmb+10_1_sas=cadical:bce=on:rp=on:random_seed=540730713_300 on CD_CO17_legacy_exception_03 for (300ds)
+% (14249)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14249)% WARNING: option sil not known.
+% (14249)% WARNING: option i not known.
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% (14249)dis+10_1_sp=arity:random_seed=3807359697:fgj=on_1 on CD_CO17_legacy_exception_03 for (1ds)
+% (14249)First to succeed.
+% (14249)Solution written to "/var/folders/h1/jv_lt9bj42dgghwf8b3khjpw0000gn/T/vampire-proof-14244"
+% SZS status CounterSatisfiable for CD_CO17_legacy_exception_03
+% SZS output start Saturation.
+cnf(u25,axiom,
+    t(i(i(i(X0,o),X1),i(i(i(i(X0,o),X1),i(o,i(X0,o))),i(X0,i(X0,o)))))).
+
+cnf(u30,axiom,
+    ~t(i(i(i(X0,o),X1),i(o,i(X0,o)))) | ~t(i(i(X0,o),X1)) | t(i(X0,i(X0,o)))).
+
+cnf(u13,axiom,
+    t(i(i(i(X1,X2),i(o,i(X3,X0))),i(X3,X1))) | ~t(i(X0,X1))).
+
+cnf(u12,negated_conjecture,
+    ~t(i(i(i(sK3,sK4),i(o,sK5)),i(sK0,i(i(sK5,sK3),i(sK1,i(sK2,sK3))))))).
+
+cnf(u15,axiom,
+    ~t(i(X0,i(i(X1,X0),X2))) | t(i(X1,i(i(X1,X0),X2))) | ~t(i(X3,i(X1,X0)))).
+
+cnf(u17,axiom,
+    ~t(i(X2,i(o,i(X0,o)))) | t(i(i(i(X0,o),X1),i(i(i(i(X0,o),X1),i(o,i(X0,o))),i(X0,i(X0,o)))))).
+
+cnf(u27,axiom,
+    t(i(i(i(i(X0,o),X1),i(o,i(X0,o))),i(X0,i(X0,o)))) | ~t(i(i(X0,o),X1))).
+
+cnf(u14,axiom,
+    ~t(i(i(X1,X2),i(o,i(X3,X0)))) | ~t(i(X0,X1)) | t(i(X3,X1))).
+
+cnf(u16,axiom,
+    ~t(i(X2,i(i(i(X0,o),X1),i(o,i(X0,o))))) | t(i(i(i(X0,o),X1),i(i(i(i(X0,o),X1),i(o,i(X0,o))),i(X0,i(X0,o)))))).
+
+cnf(u18,axiom,
+    ~t(i(X2,i(X0,o))) | t(i(i(i(X0,o),X1),i(i(i(i(X0,o),X1),i(o,i(X0,o))),i(X0,i(X0,o)))))).
+
+cnf(u11,axiom,
+    t(i(i(X0,X1),i(i(i(X1,X2),i(o,i(X3,X0))),i(X3,X1))))).
+
+cnf(u10,axiom,
+    ~t(i(X0,X1)) | ~t(X0) | t(X1)).
+
+% SZS output end Saturation.
+% SZS output start Definitions and Model Updates.
+% SZS output end Definitions and Model Updates.
+% (14249)------------------------------
+% (14249)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14249)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14249)CaDiCaL version: 2.1.3
+% (14249)Termination reason: Satisfiable
+% (14249)Time elapsed: 0.0000 s
+% (14249)Peak memory usage: 6 MB
+% (14249)------------------------------
+% (14249)------------------------------
+% (14244)Success in time 0.003 s

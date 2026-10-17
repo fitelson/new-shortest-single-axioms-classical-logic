@@ -1,7 +1,11 @@
 # Canonical Prover9 replays
 
 This directory contains the paper-facing Prover9 inputs and their complete
-outputs.  Filenames follow the labels in the paper.  Every output was produced
+outputs. Filenames follow the paper/archive labels. `E_AN` is additional
+verified material from the earlier draft: it is a separately discovered
+A/N axiom, not the dual of the O/N axiom used in the simplified paper.
+The paper's A/N claim instead follows by Boolean duality of its O/N proof.
+Every output was produced
 by the vendored, unmodified LADR-2009-11A release at
 `vendor/prover9-2009-11A/bin/macos-arm64/prover9`.
 
@@ -23,7 +27,12 @@ unit deletion, restricted denials, SOS-first input, breadth-first hints,
 
 ## Replay inventory
 
-| Paper label | Signature | Proof length | Level | Maximum weight | Input/output |
+The proof-length column gives Prover9's reported length. It includes
+bookkeeping and closing inferences, and is not a count of condensed-detachment
+or paramodulation inferences alone. The separate CD Machine circle lengths
+below count derived CD steps and should not be conflated with these values.
+
+| Paper/archive label | Signature | Proof length | Level | Maximum weight | Input/output |
 |---|---:|---:|---:|---:|---|
 | A1 | C/N | 45 | 23 | 26 | `condensed_detachment/CN/A01.in`, `.out` |
 | A2 | C/N | 191 | 90 | 26 | `condensed_detachment/CN/A02.in`, `.out` |
@@ -68,6 +77,6 @@ formula stocks.
 | 6 | cand8 to cand121 | 191 | 99 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_6.in`, `.out` |
 | 7 | cand121 to Meredith | 70 | 37 | 22 | `condensed_detachment/CN/wos_pure_circle_CN_7.in`, `.out` |
 
-The `E_Cf` output is a 77-step, level-48 conjunctive proof from the displayed
+The `E_Cf` output is a conjunctive proof of reported length 77 and level 48 from the displayed
 C/f identity as its sole non-denial assumption.  It reports zero new
 demodulators and zero demodulation rewrites.

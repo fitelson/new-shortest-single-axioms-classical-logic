@@ -1,0 +1,355 @@
+% (14743)Running in auto input_syntax mode. Trying TPTP
+% (14743)Will run a generic schedule for satisfiability detection.
+% (14745)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14746)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14745)fmb+10_1_sas=cadical:bce=on:rp=on:random_seed=3949116756_300 on CD_CN19_c1914_constrained for (300ds)
+% (14746)% WARNING: option sil not known.
+% (14746)% WARNING: option i not known.
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% (14746)dis+10_1_sp=arity:random_seed=1846280411:fgj=on_1 on CD_CN19_c1914_constrained for (1ds)
+% TRYING [4]
+% TRYING [5]
+% TRYING [6]
+% (14746)Time limit reached! 
+% (14746)------------------------------
+% (14746)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14746)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14746)CaDiCaL version: 2.1.3
+% (14746)Termination reason: Time limit
+% (14746)Termination phase: Saturation
+% (14746)Time elapsed: 0.100 s
+% (14746)Peak memory usage: 18 MB
+% (14748)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14748)% WARNING: option sil not known.
+% (14748)% WARNING: option i not known.
+% (14748)ott+31_1_lcm=predicate:bce=on:newcnf=on:random_seed=444895410_1 on CD_CN19_c1914_constrained for (1ds)
+% (14748)Time limit reached! 
+% (14748)------------------------------
+% (14748)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14748)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14748)CaDiCaL version: 2.1.3
+% (14748)Termination reason: Time limit
+% (14748)Termination phase: Saturation
+% (14748)Time elapsed: 0.101 s
+% (14748)Peak memory usage: 18 MB
+% (14749)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14749)% WARNING: option sil not known.
+% (14749)% WARNING: option i not known.
+% (14749)ott+1_1_to=lpo:sp=reverse_arity:erd=off:random_seed=2055076100_1 on CD_CN19_c1914_constrained for (1ds)
+% TRYING [7]
+% (14749)Time limit reached! 
+% (14749)------------------------------
+% (14749)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14749)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14749)CaDiCaL version: 2.1.3
+% (14749)Termination reason: Time limit
+% (14749)Termination phase: Saturation
+% (14749)Time elapsed: 0.100 s
+% (14749)Peak memory usage: 27 MB
+% (14750)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14750)% WARNING: option sil not known.
+% (14750)% WARNING: option i not known.
+% (14750)ott-3_16_to=lpo:sp=arity:fd=off:rp=on:random_seed=2161077392:nicw=on:bs=unit_only:fsr=off:amm=off_1 on CD_CN19_c1914_constrained for (1ds)
+% (14750)Time limit reached! 
+% (14750)------------------------------
+% (14750)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14750)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14750)CaDiCaL version: 2.1.3
+% (14750)Termination reason: Time limit
+% (14750)Termination phase: Saturation
+% (14750)Time elapsed: 0.100 s
+% (14750)Peak memory usage: 17 MB
+% (14751)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14751)% WARNING: option sil not known.
+% (14751)% WARNING: option i not known.
+% (14751)fmb+10_1_fmbas=predicate:sas=cadical:random_seed=3898900079:nm=2_4 on CD_CN19_c1914_constrained for (4ds)
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% TRYING [4]
+% TRYING [5]
+% TRYING [6]
+% TRYING [7]
+% (14751)Time limit reached! 
+% (14751)------------------------------
+% (14751)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14751)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14751)CaDiCaL version: 2.1.3
+% (14751)Termination reason: Time limit
+% (14751)Termination phase: Finite model building SAT solving
+% (14751)Time elapsed: 0.400 s
+% (14751)Peak memory usage: 40 MB
+% (14752)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14752)% WARNING: option sil not known.
+% (14752)% WARNING: option i not known.
+% (14752)ott+32_1_bsd=on:sp=const_max:bce=on:random_seed=1075547932:bd=preordered:fsd=on_1 on CD_CN19_c1914_constrained for (1ds)
+% (14752)Time limit reached! 
+% (14752)------------------------------
+% (14752)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14752)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14752)CaDiCaL version: 2.1.3
+% (14752)Termination reason: Time limit
+% (14752)Termination phase: Saturation
+% (14752)Time elapsed: 0.100 s
+% (14752)Peak memory usage: 19 MB
+% (14753)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14753)% WARNING: option sil not known.
+% (14753)% WARNING: option i not known.
+% (14753)dis+11_32_anc=none:slsqr=2,1:sas=cadical:lma=off:lsd=50:s2agt=8:slsqc=1:kmz=on:newcnf=on:slsq=on:random_seed=2446256082:slsql=off:nicw=on:bs=unit_only:rawr=on_4 on CD_CN19_c1914_constrained for (4ds)
+% (14753)Time limit reached! 
+% (14753)------------------------------
+% (14753)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14753)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14753)CaDiCaL version: 2.1.3
+% (14753)Termination reason: Time limit
+% (14753)Termination phase: Saturation
+% (14753)Time elapsed: 0.400 s
+% (14753)Peak memory usage: 46 MB
+% (14754)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14754)% WARNING: option sil not known.
+% (14754)% WARNING: option i not known.
+% (14754)ott-21_1_fs=off:random_seed=3681774365:av=off:fsr=off_1 on CD_CN19_c1914_constrained for (1ds)
+% (14754)Time limit reached! 
+% (14754)------------------------------
+% (14754)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14754)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14754)CaDiCaL version: 2.1.3
+% (14754)Termination reason: Time limit
+% (14754)Termination phase: Saturation
+% (14754)Time elapsed: 0.100 s
+% (14754)Peak memory usage: 17 MB
+% (14755)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14755)% WARNING: option sil not known.
+% (14755)% WARNING: option i not known.
+% (14755)dis+10_4_sp=reverse_arity:bsr=on:sac=on:cn=on:random_seed=1448759008:bd=all_3 on CD_CN19_c1914_constrained for (3ds)
+% (14755)Time limit reached! 
+% (14755)------------------------------
+% (14755)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14755)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14755)CaDiCaL version: 2.1.3
+% (14755)Termination reason: Time limit
+% (14755)Termination phase: Saturation
+% (14755)Time elapsed: 0.300 s
+% (14755)Peak memory usage: 32 MB
+% (14756)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14756)% WARNING: option sil not known.
+% (14756)% WARNING: option i not known.
+% (14756)fmb+10_1_erd=off:updr=off:random_seed=683635058:fmbsr=1.3:ins=25_5 on CD_CN19_c1914_constrained for (5ds)
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% TRYING [4]
+% TRYING [5]
+% TRYING [6]
+% TRYING [7]
+% (14756)Time limit reached! 
+% (14756)------------------------------
+% (14756)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14756)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14756)CaDiCaL version: 2.1.3
+% (14756)Termination reason: Time limit
+% (14756)Termination phase: Finite model building SAT solving
+% (14756)Time elapsed: 0.500 s
+% (14756)Peak memory usage: 23 MB
+% (14757)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14757)% WARNING: option sil not known.
+% (14757)% WARNING: option i not known.
+% (14757)ott+10_1_to=lpo:tgt=full:sp=arity:spb=goal_then_units:random_seed=1572555572_6 on CD_CN19_c1914_constrained for (6ds)
+% (14757)Time limit reached! 
+% (14757)------------------------------
+% (14757)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14757)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14757)CaDiCaL version: 2.1.3
+% (14757)Termination reason: Time limit
+% (14757)Termination phase: Saturation
+% (14757)Time elapsed: 0.601 s
+% (14757)Peak memory usage: 86 MB
+% (14759)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14759)% WARNING: option sil not known.
+% (14759)% WARNING: option i not known.
+% (14759)fmb+10_1_erd=off:fmbss=14:random_seed=905778828:ins=1_5 on CD_CN19_c1914_constrained for (5ds)
+% TRYING [14]
+% (14759)Time limit reached! 
+% (14759)------------------------------
+% (14759)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14759)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14759)CaDiCaL version: 2.1.3
+% (14759)Termination reason: Time limit
+% (14759)Termination phase: Finite model building SAT solving
+% (14759)Time elapsed: 0.501 s
+% (14759)Peak memory usage: 219 MB
+% (14767)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14767)% WARNING: option sil not known.
+% (14767)% WARNING: option i not known.
+% (14767)ott+1_16_plsq=on:plsqc=2:sas=cadical:avsql=on:plsqr=128,1:sp=reverse_frequency:bsr=unit_only:rp=on:newcnf=on:random_seed=242086238:avsq=on:s2a=on:avsqr=8,1:kws=arity_squared:bs=unit_only:nm=2:rawr=on_4 on CD_CN19_c1914_constrained for (4ds)
+% (14767)Time limit reached! 
+% (14767)------------------------------
+% (14767)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14767)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14767)CaDiCaL version: 2.1.3
+% (14767)Termination reason: Time limit
+% (14767)Termination phase: Saturation
+% (14767)Time elapsed: 0.401 s
+% (14767)Peak memory usage: 41 MB
+% (14768)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14768)% WARNING: option sil not known.
+% (14768)% WARNING: option i not known.
+% (14768)dis-10_1_anc=none:spb=goal:newcnf=on:cn=on:random_seed=2456199606:kws=inv_precedence:fsr=off_5 on CD_CN19_c1914_constrained for (5ds)
+% TRYING [8]
+% (14768)Time limit reached! 
+% (14768)------------------------------
+% (14768)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14768)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14768)CaDiCaL version: 2.1.3
+% (14768)Termination reason: Time limit
+% (14768)Termination phase: Saturation
+% (14768)Time elapsed: 0.500 s
+% (14768)Peak memory usage: 57 MB
+% (14769)WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% (14769)% WARNING: option sil not known.
+% (14769)% WARNING: option i not known.
+% (14769)fmb+10_1_random_seed=4261496831:nm=2:gsp=on_111 on CD_CN19_c1914_constrained for (111ds)
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% TRYING [4]
+% TRYING [5]
+% TRYING [6]
+% TRYING [7]
+% TRYING [8]
+% Finite Model Found!
+% SZS status CounterSatisfiable for CD_CN19_c1914_constrained
+% (14769)First to succeed.
+% (14769)Solution written to "/var/folders/h1/jv_lt9bj42dgghwf8b3khjpw0000gn/T/vampire-proof-14743"
+% SZS output start FiniteModel for CD_CN19_c1914_constrained
+tff('declare_$i1',type,'fmb_$i_1':$i).
+tff('declare_$i2',type,'fmb_$i_2':$i).
+tff('declare_$i3',type,'fmb_$i_3':$i).
+tff('declare_$i4',type,'fmb_$i_4':$i).
+tff('declare_$i5',type,'fmb_$i_5':$i).
+tff('declare_$i6',type,'fmb_$i_6':$i).
+tff('declare_$i7',type,'fmb_$i_7':$i).
+tff('declare_$i8',type,'fmb_$i_8':$i).
+tff('finite_domain_$i',axiom,
+      ! [X:$i] : (
+         X = 'fmb_$i_1' | X = 'fmb_$i_2' | X = 'fmb_$i_3' | X = 'fmb_$i_4' | X = 'fmb_$i_5' | 
+         X = 'fmb_$i_6' | X = 'fmb_$i_7' | X = 'fmb_$i_8'
+      ) ).
+
+tff('distinct_domain_$i',axiom,
+         'fmb_$i_1' != 'fmb_$i_2' & 'fmb_$i_1' != 'fmb_$i_3' & 'fmb_$i_1' != 'fmb_$i_4' & 'fmb_$i_1' != 'fmb_$i_5' & 'fmb_$i_1' != 'fmb_$i_6' & 
+         'fmb_$i_1' != 'fmb_$i_7' & 'fmb_$i_1' != 'fmb_$i_8' & 'fmb_$i_2' != 'fmb_$i_3' & 'fmb_$i_2' != 'fmb_$i_4' & 'fmb_$i_2' != 'fmb_$i_5' & 
+         'fmb_$i_2' != 'fmb_$i_6' & 'fmb_$i_2' != 'fmb_$i_7' & 'fmb_$i_2' != 'fmb_$i_8' & 'fmb_$i_3' != 'fmb_$i_4' & 'fmb_$i_3' != 'fmb_$i_5' & 
+         'fmb_$i_3' != 'fmb_$i_6' & 'fmb_$i_3' != 'fmb_$i_7' & 'fmb_$i_3' != 'fmb_$i_8' & 'fmb_$i_4' != 'fmb_$i_5' & 'fmb_$i_4' != 'fmb_$i_6' & 
+         'fmb_$i_4' != 'fmb_$i_7' & 'fmb_$i_4' != 'fmb_$i_8' & 'fmb_$i_5' != 'fmb_$i_6' & 'fmb_$i_5' != 'fmb_$i_7' & 'fmb_$i_5' != 'fmb_$i_8' & 
+         'fmb_$i_6' != 'fmb_$i_7' & 'fmb_$i_6' != 'fmb_$i_8' & 'fmb_$i_7' != 'fmb_$i_8'
+).
+
+tff(declare_i,type,i: ($i * $i) > $i).
+tff(function_i,axiom,
+           i('fmb_$i_1','fmb_$i_1') = 'fmb_$i_5'
+         & i('fmb_$i_1','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_1','fmb_$i_3') = 'fmb_$i_5'
+         & i('fmb_$i_1','fmb_$i_4') = 'fmb_$i_2'
+         & i('fmb_$i_1','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_1','fmb_$i_6') = 'fmb_$i_2'
+         & i('fmb_$i_1','fmb_$i_7') = 'fmb_$i_2'
+         & i('fmb_$i_1','fmb_$i_8') = 'fmb_$i_5'
+         & i('fmb_$i_2','fmb_$i_1') = 'fmb_$i_3'
+         & i('fmb_$i_2','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_2','fmb_$i_3') = 'fmb_$i_3'
+         & i('fmb_$i_2','fmb_$i_4') = 'fmb_$i_4'
+         & i('fmb_$i_2','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_2','fmb_$i_6') = 'fmb_$i_6'
+         & i('fmb_$i_2','fmb_$i_7') = 'fmb_$i_4'
+         & i('fmb_$i_2','fmb_$i_8') = 'fmb_$i_8'
+         & i('fmb_$i_3','fmb_$i_1') = 'fmb_$i_4'
+         & i('fmb_$i_3','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_3','fmb_$i_3') = 'fmb_$i_5'
+         & i('fmb_$i_3','fmb_$i_4') = 'fmb_$i_2'
+         & i('fmb_$i_3','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_3','fmb_$i_6') = 'fmb_$i_7'
+         & i('fmb_$i_3','fmb_$i_7') = 'fmb_$i_7'
+         & i('fmb_$i_3','fmb_$i_8') = 'fmb_$i_2'
+         & i('fmb_$i_4','fmb_$i_1') = 'fmb_$i_8'
+         & i('fmb_$i_4','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_4','fmb_$i_3') = 'fmb_$i_8'
+         & i('fmb_$i_4','fmb_$i_4') = 'fmb_$i_5'
+         & i('fmb_$i_4','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_4','fmb_$i_6') = 'fmb_$i_8'
+         & i('fmb_$i_4','fmb_$i_7') = 'fmb_$i_5'
+         & i('fmb_$i_4','fmb_$i_8') = 'fmb_$i_8'
+         & i('fmb_$i_5','fmb_$i_1') = 'fmb_$i_1'
+         & i('fmb_$i_5','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_5','fmb_$i_3') = 'fmb_$i_3'
+         & i('fmb_$i_5','fmb_$i_4') = 'fmb_$i_4'
+         & i('fmb_$i_5','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_5','fmb_$i_6') = 'fmb_$i_6'
+         & i('fmb_$i_5','fmb_$i_7') = 'fmb_$i_4'
+         & i('fmb_$i_5','fmb_$i_8') = 'fmb_$i_8'
+         & i('fmb_$i_6','fmb_$i_1') = 'fmb_$i_5'
+         & i('fmb_$i_6','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_6','fmb_$i_3') = 'fmb_$i_5'
+         & i('fmb_$i_6','fmb_$i_4') = 'fmb_$i_5'
+         & i('fmb_$i_6','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_6','fmb_$i_6') = 'fmb_$i_5'
+         & i('fmb_$i_6','fmb_$i_7') = 'fmb_$i_5'
+         & i('fmb_$i_6','fmb_$i_8') = 'fmb_$i_5'
+         & i('fmb_$i_7','fmb_$i_1') = 'fmb_$i_8'
+         & i('fmb_$i_7','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_7','fmb_$i_3') = 'fmb_$i_8'
+         & i('fmb_$i_7','fmb_$i_4') = 'fmb_$i_5'
+         & i('fmb_$i_7','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_7','fmb_$i_6') = 'fmb_$i_8'
+         & i('fmb_$i_7','fmb_$i_7') = 'fmb_$i_5'
+         & i('fmb_$i_7','fmb_$i_8') = 'fmb_$i_8'
+         & i('fmb_$i_8','fmb_$i_1') = 'fmb_$i_7'
+         & i('fmb_$i_8','fmb_$i_2') = 'fmb_$i_5'
+         & i('fmb_$i_8','fmb_$i_3') = 'fmb_$i_5'
+         & i('fmb_$i_8','fmb_$i_4') = 'fmb_$i_4'
+         & i('fmb_$i_8','fmb_$i_5') = 'fmb_$i_5'
+         & i('fmb_$i_8','fmb_$i_6') = 'fmb_$i_7'
+         & i('fmb_$i_8','fmb_$i_7') = 'fmb_$i_7'
+         & i('fmb_$i_8','fmb_$i_8') = 'fmb_$i_5'
+
+).
+
+tff(declare_n,type,n: ($i) > $i).
+tff(function_n,axiom,
+           n('fmb_$i_1') = 'fmb_$i_2'
+         & n('fmb_$i_2') = 'fmb_$i_6'
+         & n('fmb_$i_3') = 'fmb_$i_7'
+         & n('fmb_$i_4') = 'fmb_$i_8'
+         & n('fmb_$i_5') = 'fmb_$i_6'
+         & n('fmb_$i_6') = 'fmb_$i_5'
+         & n('fmb_$i_7') = 'fmb_$i_8'
+         & n('fmb_$i_8') = 'fmb_$i_7'
+
+).
+
+tff(declare_t,type,t: ($i) > $o).
+tff(predicate_t,axiom,
+           ~t('fmb_$i_1')
+         & t('fmb_$i_2')
+         & ~t('fmb_$i_3')
+         & ~t('fmb_$i_4')
+         & t('fmb_$i_5')
+         & ~t('fmb_$i_6')
+         & ~t('fmb_$i_7')
+         & ~t('fmb_$i_8')
+
+).
+
+% SZS output end FiniteModel for CD_CN19_c1914_constrained
+% (14769)------------------------------
+% (14769)Version: Vampire 5.0.1 (Release build, commit 1b13eaf on 2026-01-18 12:14:50 +0000)
+% (14769)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 NOTFOUND
+% (14769)CaDiCaL version: 2.1.3
+% (14769)Termination reason: Satisfiable
+% (14769)Time elapsed: 4.924 s
+% (14769)Peak memory usage: 66 MB
+% (14769)------------------------------
+% (14769)------------------------------
+% (14743)Success in time 9.177 s

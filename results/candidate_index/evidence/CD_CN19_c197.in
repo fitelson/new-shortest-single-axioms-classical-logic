@@ -1,0 +1,4 @@
+% Individual elimination replay for CD_CN19_c197; Polish CCCCCpNqNrstCCtqCrq.
+fof(mp,axiom,![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).
+fof(candidate,axiom,![A,B,C,D,E]: t(i(i(i(i(i(A,n(B)),n(C)),D),E),i(i(E,B),i(C,B))))).
+fof(classical_target,conjecture,![P,Q]: t(i(P,i(n(P),Q)))).

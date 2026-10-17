@@ -1,0 +1,6 @@
+% Legacy O5 in the 2021 manuscript; not the AJL manuscript's O5 (legacy O6).
+% Polish: CCCpqrCCrCoCrpCsp
+% The conjecture is Meredith's classical C/o single axiom M2.
+fof(condensed_detachment, axiom, ![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).
+fof(legacy_o5, axiom, ![P,Q,R,S]: t(i(i(i(P,Q),R),i(i(R,i(o,i(R,P))),i(S,P))))).
+fof(meredith_m2, conjecture, ![P,Q,R,S,T]: t(i(i(i(P,Q),i(R,i(o,S))),i(i(S,P),i(R,i(T,P)))))).

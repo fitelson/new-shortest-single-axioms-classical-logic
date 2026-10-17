@@ -1,0 +1,242 @@
+% ott+10_128_av=off:bs=on:gsp=input_only:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_4 on C0CCC1N23CCCC3N452C42
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 27760
+% Time elapsed: 0.800 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:nm=6_1461 on C0CCC1N23CCCC3N452C42
+TRYING [7]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 183067
+% Time elapsed: 190.100 s
+% ------------------------------
+% ------------------------------
+% dis+10_3_add=large:afp=10000:afq=2.0:amm=sco:anc=none:cond=on:fsr=off:gsp=input_only:lma=on:nm=16:nwc=1:sac=on:updr=off_197 on C0CCC1N23CCCC3N452C42
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 1102114
+% Time elapsed: 25.800 s
+% ------------------------------
+% ------------------------------
+% dis+1_3_av=off:cond=on:nm=64:newcnf=on:nwc=1_87 on C0CCC1N23CCCC3N452C42
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 299483
+% Time elapsed: 11.500 s
+% ------------------------------
+% ------------------------------
+% ott-3_5_awrs=decay:awrsf=128:afr=on:afp=40000:afq=1.0:amm=off:anc=none:bce=on:cond=fast:lma=on:nm=64:newcnf=on:nwc=1.1:sas=z3:sp=frequency:updr=off_146 on C0CCC1N23CCCC3N452C42
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 88015
+% Time elapsed: 19.100 s
+% ------------------------------
+% ------------------------------
+% ott+2_5_afp=4000:afq=2.0:anc=none:bce=on:fsr=off:gsp=input_only:lma=on:nm=32:nwc=1:sp=reverse_arity_315 on C0CCC1N23CCCC3N452C42
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 435984
+% Time elapsed: 41.100 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:fmbes=smt:fmbsr=1.4:fde=none:ile=on:updr=off_600 on C0CCC1N23CCCC3N452C42
+TRYING [7]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 115008
+% Time elapsed: 78.200 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:fmbsr=1.3:nm=2:newcnf=on_1200 on C0CCC1N23CCCC3N452C42
+TRYING [7]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 175647
+% Time elapsed: 156.200 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:fmbsr=1.1:updr=off_300 on C0CCC1N23CCCC3N452C42
+TRYING [7]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 106437
+% Time elapsed: 39.200 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:fmbsr=1.6_1200 on C0CCC1N23CCCC3N452C42
+TRYING [7]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 175903
+% Time elapsed: 156.200 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:fde=unused:ile=on:irw=on:lcm=predicate:lma=on:nm=16:nwc=1.7:sos=all:sp=reverse_arity_300 on C0CCC1N23CCCC3N452C42
+TRYING [7]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 106437
+% Time elapsed: 39.200 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:fmbsr=1.5:updr=off_300 on C0CCC1N23CCCC3N452C42
+TRYING [7]
+Finite Model Found!
+% SZS status CounterSatisfiable for C0CCC1N23CCCC3N452C42
+% SZS output start FiniteModel for C0CCC1N23CCCC3N452C42
+tff(declare_$i,type,$i:$tType).
+tff(declare_$i1,type,fmb_$i_1:$i).
+tff(declare_$i2,type,fmb_$i_2:$i).
+tff(declare_$i3,type,fmb_$i_3:$i).
+tff(declare_$i4,type,fmb_$i_4:$i).
+tff(declare_$i5,type,fmb_$i_5:$i).
+tff(declare_$i6,type,fmb_$i_6:$i).
+tff(declare_$i7,type,fmb_$i_7:$i).
+tff(finite_domain,axiom,
+      ! [X:$i] : (
+         X = fmb_$i_1 | X = fmb_$i_2 | X = fmb_$i_3 | X = fmb_$i_4 | X = fmb_$i_5 | 
+         X = fmb_$i_6 | X = fmb_$i_7
+      ) ).
+
+tff(distinct_domain,axiom,
+         fmb_$i_1 != fmb_$i_2 & fmb_$i_1 != fmb_$i_3 & fmb_$i_1 != fmb_$i_4 & fmb_$i_1 != fmb_$i_5 & fmb_$i_1 != fmb_$i_6 & 
+         fmb_$i_1 != fmb_$i_7 & fmb_$i_2 != fmb_$i_3 & fmb_$i_2 != fmb_$i_4 & fmb_$i_2 != fmb_$i_5 & fmb_$i_2 != fmb_$i_6 & 
+         fmb_$i_2 != fmb_$i_7 & fmb_$i_3 != fmb_$i_4 & fmb_$i_3 != fmb_$i_5 & fmb_$i_3 != fmb_$i_6 & fmb_$i_3 != fmb_$i_7 & 
+         fmb_$i_4 != fmb_$i_5 & fmb_$i_4 != fmb_$i_6 & fmb_$i_4 != fmb_$i_7 & fmb_$i_5 != fmb_$i_6 & fmb_$i_5 != fmb_$i_7 & 
+         fmb_$i_6 != fmb_$i_7
+).
+
+tff(declare_i,type,i: $i * $i > $i).
+tff(function_i,axiom,
+           i(fmb_$i_1,fmb_$i_1) = fmb_$i_3
+         & i(fmb_$i_1,fmb_$i_2) = fmb_$i_4
+         & i(fmb_$i_1,fmb_$i_3) = fmb_$i_3
+         & i(fmb_$i_1,fmb_$i_4) = fmb_$i_4
+         & i(fmb_$i_1,fmb_$i_5) = fmb_$i_4
+         & i(fmb_$i_1,fmb_$i_6) = fmb_$i_3
+         & i(fmb_$i_1,fmb_$i_7) = fmb_$i_3
+         & i(fmb_$i_2,fmb_$i_1) = fmb_$i_7
+         & i(fmb_$i_2,fmb_$i_2) = fmb_$i_3
+         & i(fmb_$i_2,fmb_$i_3) = fmb_$i_3
+         & i(fmb_$i_2,fmb_$i_4) = fmb_$i_3
+         & i(fmb_$i_2,fmb_$i_5) = fmb_$i_1
+         & i(fmb_$i_2,fmb_$i_6) = fmb_$i_1
+         & i(fmb_$i_2,fmb_$i_7) = fmb_$i_3
+         & i(fmb_$i_3,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_3,fmb_$i_2) = fmb_$i_4
+         & i(fmb_$i_3,fmb_$i_3) = fmb_$i_3
+         & i(fmb_$i_3,fmb_$i_4) = fmb_$i_4
+         & i(fmb_$i_3,fmb_$i_5) = fmb_$i_5
+         & i(fmb_$i_3,fmb_$i_6) = fmb_$i_1
+         & i(fmb_$i_3,fmb_$i_7) = fmb_$i_3
+         & i(fmb_$i_4,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_4,fmb_$i_2) = fmb_$i_3
+         & i(fmb_$i_4,fmb_$i_3) = fmb_$i_3
+         & i(fmb_$i_4,fmb_$i_4) = fmb_$i_3
+         & i(fmb_$i_4,fmb_$i_5) = fmb_$i_1
+         & i(fmb_$i_4,fmb_$i_6) = fmb_$i_1
+         & i(fmb_$i_4,fmb_$i_7) = fmb_$i_3
+         & i(fmb_$i_5,fmb_$i_1) = fmb_$i_3
+         & i(fmb_$i_5,fmb_$i_2) = fmb_$i_3
+         & i(fmb_$i_5,fmb_$i_3) = fmb_$i_3
+         & i(fmb_$i_5,fmb_$i_4) = fmb_$i_3
+         & i(fmb_$i_5,fmb_$i_5) = fmb_$i_3
+         & i(fmb_$i_5,fmb_$i_6) = fmb_$i_3
+         & i(fmb_$i_5,fmb_$i_7) = fmb_$i_3
+         & i(fmb_$i_6,fmb_$i_1) = fmb_$i_3
+         & i(fmb_$i_6,fmb_$i_2) = fmb_$i_4
+         & i(fmb_$i_6,fmb_$i_3) = fmb_$i_3
+         & i(fmb_$i_6,fmb_$i_4) = fmb_$i_4
+         & i(fmb_$i_6,fmb_$i_5) = fmb_$i_4
+         & i(fmb_$i_6,fmb_$i_6) = fmb_$i_3
+         & i(fmb_$i_6,fmb_$i_7) = fmb_$i_3
+         & i(fmb_$i_7,fmb_$i_1) = fmb_$i_1
+         & i(fmb_$i_7,fmb_$i_2) = fmb_$i_4
+         & i(fmb_$i_7,fmb_$i_3) = fmb_$i_3
+         & i(fmb_$i_7,fmb_$i_4) = fmb_$i_4
+         & i(fmb_$i_7,fmb_$i_5) = fmb_$i_5
+         & i(fmb_$i_7,fmb_$i_6) = fmb_$i_1
+         & i(fmb_$i_7,fmb_$i_7) = fmb_$i_3
+
+).
+
+tff(declare_n,type,n: $i > $i).
+tff(function_n,axiom,
+           n(fmb_$i_1) = fmb_$i_4
+         & n(fmb_$i_2) = fmb_$i_6
+         & n(fmb_$i_3) = fmb_$i_5
+         & n(fmb_$i_4) = fmb_$i_6
+         & n(fmb_$i_5) = fmb_$i_3
+         & n(fmb_$i_6) = fmb_$i_2
+         & n(fmb_$i_7) = fmb_$i_5
+
+).
+
+tff(declare_t,type,t: $i > $o ).
+tff(predicate_t,axiom,
+           ~t(fmb_$i_1)
+         & ~t(fmb_$i_2)
+         & t(fmb_$i_3)
+         & ~t(fmb_$i_4)
+         & ~t(fmb_$i_5)
+         & ~t(fmb_$i_6)
+         & t(fmb_$i_7)
+
+).
+
+% SZS output end FiniteModel for C0CCC1N23CCCC3N452C42
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 103111
+% Time elapsed: 27.703 s
+% ------------------------------
+% ------------------------------
+% Success in time 810.769 s

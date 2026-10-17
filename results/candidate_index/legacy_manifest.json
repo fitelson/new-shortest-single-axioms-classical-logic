@@ -1,0 +1,499 @@
+[
+  {
+    "dataset": "CD_CN20",
+    "system": "CD_CN",
+    "weight": 20,
+    "file": "results/candidate_index/legacy/CD_CN20.tsv.gz",
+    "source": "code/legacy_walsh_search/Results/CN20Results/CN_20_CounterModels.txt",
+    "source_sha256": "4f39b3d72be3b25c1695c21efa5f6f1dcc086a013aaa53e144078cde80cbe7b3",
+    "rows": 24616789,
+    "finite_model_rows": 24616785,
+    "exceptions": [
+      {
+        "line": 16059684,
+        "formula": "CCC012CC2CNCN33N1C13",
+        "id": "CD_CN20_exception_01"
+      },
+      {
+        "line": 16060302,
+        "formula": "CCC012CC2CN3NCN14C13",
+        "id": "CD_CN20_exception_02"
+      },
+      {
+        "line": 16060303,
+        "formula": "CCC012CC2CN3NCN24C13",
+        "id": "CD_CN20_exception_03"
+      },
+      {
+        "line": 16060932,
+        "formula": "CCC012CC2CN3CN3N1C13",
+        "id": "CD_CN20_exception_04"
+      }
+    ]
+  },
+  {
+    "dataset": "CD_CF17",
+    "system": "CD_CF",
+    "weight": 17,
+    "status": "one unresolved candidate; CD C/f shortestness not established",
+    "unresolved_candidate_ids": [
+      "CD_CF17_legacy_exception"
+    ],
+    "file": "results/candidate_index/legacy/CD_CF17.tsv.gz",
+    "source": "code/legacy_walsh_search/Results/C017Results/C0_17_CounterModels.txt",
+    "source_sha256": "c02bbd91fb3f6d96573e000b9d43044d923fdf7884b0b2e66bdfd33a7c36e0f0",
+    "rows": 723665,
+    "finite_model_rows": 723664,
+    "exceptions": [
+      {
+        "line": 658050,
+        "formula": "CCCCC01O23CC30C40",
+        "id": "CD_CF17_legacy_exception",
+        "paper_label": "F17",
+        "status": "open"
+      }
+    ]
+  },
+  {
+    "dataset": "CD_CO17",
+    "system": "CD_CO",
+    "weight": 17,
+    "file": "results/candidate_index/legacy/CD_CO17.tsv.gz",
+    "source": "code/legacy_walsh_search/Results/C117Results/C1_17_CounterModels.txt",
+    "source_sha256": "879d99e1c94de5e54b16ead7c324b8713e21065885c3c74b68de88d6754bca15",
+    "rows": 926821,
+    "finite_model_rows": 926816,
+    "exceptions": [
+      {
+        "line": 867752,
+        "formula": "CCC01CO2C3CC20C40",
+        "id": "O4"
+      },
+      {
+        "line": 870386,
+        "formula": "CCC012CC2COC20C30",
+        "id": "legacy_O5"
+      },
+      {
+        "line": 887016,
+        "formula": "CC01CCC12COC30C31",
+        "id": "CD_CO17_legacy_exception_03"
+      },
+      {
+        "line": 890542,
+        "formula": "CC01C2CCC13CO0C41",
+        "id": "O5"
+      },
+      {
+        "line": 907495,
+        "formula": "C0CCOC12CCC231C42",
+        "id": "CD_CO17_legacy_exception_05"
+      }
+    ]
+  },
+  {
+    "dataset": "CD_CN19_from_CN21",
+    "system": "CD_CN",
+    "weight": 19,
+    "padding_weight": 21,
+    "scope": "DN-free; legacy variable identifications unrestricted",
+    "file": "results/candidate_index/legacy/CD_CN19_from_CN21.tsv.gz",
+    "file_sha256": "49de8ab5f494f417544b51cb51382b350533712088a1fc938c85ef2d356c73de",
+    "source": "code/legacy_walsh_search/Results/CN21Results/CN_21_CounterModels.txt",
+    "source_sha256": "82ace94586eeddcc48a9181a03fdcad3125404690e4b75e55a947ee1a9e8fb98",
+    "source_rows": 82301488,
+    "rows": 7741045,
+    "finite_model_rows": 7740968,
+    "exceptions": [
+      {
+        "line": 75657298,
+        "formula": "C0CCN1CCN23C24CC41C21",
+        "id": "CN19_padding_0592"
+      },
+      {
+        "line": 75657309,
+        "formula": "C0CCN1CCN23C41CC24C21",
+        "id": "CN19_padding_0593"
+      },
+      {
+        "line": 75657770,
+        "formula": "C0CCN1CCN234CC2C41C21",
+        "id": "CN19_padding_0595"
+      },
+      {
+        "line": 75657777,
+        "formula": "C0CCN1CCN234CC4C41C21",
+        "id": "CN19_padding_0597"
+      },
+      {
+        "line": 75701577,
+        "formula": "C0CCN1CC123CC3C3N4C41",
+        "id": "CN19_padding_0600"
+      },
+      {
+        "line": 75701580,
+        "formula": "C0CCN1CC123CC3C4N4C41",
+        "id": "CN19_padding_0602"
+      },
+      {
+        "line": 75701840,
+        "formula": "C0CCN1CC234CC4C3N3C31",
+        "id": "CN19_padding_0607"
+      },
+      {
+        "line": 75701841,
+        "formula": "C0CCN1CC234CC4C3N4C31",
+        "id": "CN19_padding_0608"
+      },
+      {
+        "line": 75714144,
+        "formula": "C0CCN1C2CCN234CC41C21",
+        "id": "CN19_padding_0610"
+      },
+      {
+        "line": 75750338,
+        "formula": "C0CCN1C23CC3CCN241C21",
+        "id": "CN19_padding_0613"
+      },
+      {
+        "line": 75779523,
+        "formula": "C0CCN12CCCN3C45C21C31",
+        "id": "CN19_padding_0615"
+      },
+      {
+        "line": 75780235,
+        "formula": "C0CCN12CCCN34C2C21C31",
+        "id": "CN19_padding_0619"
+      },
+      {
+        "line": 75792325,
+        "formula": "C0CCN12CCC3CN45C21C41",
+        "id": "CN19_padding_0620"
+      },
+      {
+        "line": 75801100,
+        "formula": "C0CCN12CCC13C2C2N4C41",
+        "id": "CN19_padding_0628"
+      },
+      {
+        "line": 75801103,
+        "formula": "C0CCN12CCC13C2C4N4C41",
+        "id": "CN19_padding_0630"
+      },
+      {
+        "line": 75801107,
+        "formula": "C0CCN12CCC13C4C2N4C41",
+        "id": "CN19_padding_0631"
+      },
+      {
+        "line": 75801306,
+        "formula": "C0CCN12CCC34C2C2N4C41",
+        "id": "CN19_padding_0639"
+      },
+      {
+        "line": 75801308,
+        "formula": "C0CCN12CCC34C2C4N2C41",
+        "id": "CN19_padding_0641"
+      },
+      {
+        "line": 75801309,
+        "formula": "C0CCN12CCC34C2C4N4C41",
+        "id": "CN19_padding_0642"
+      },
+      {
+        "line": 75801319,
+        "formula": "C0CCN12CCC34C4C2N4C41",
+        "id": "CN19_padding_0643"
+      },
+      {
+        "line": 75812012,
+        "formula": "C0CCN12CC2CCN34C21C31",
+        "id": "CN19_padding_0646"
+      },
+      {
+        "line": 75812032,
+        "formula": "C0CCN12CC3CCN34C21C31",
+        "id": "CN19_padding_0647"
+      },
+      {
+        "line": 75845081,
+        "formula": "C0CCN12C3CCCN45C21C41",
+        "id": "CN19_padding_0650"
+      },
+      {
+        "line": 75848789,
+        "formula": "C0CCN12C3CCC14C2N5C51",
+        "id": "CN19_padding_0651"
+      },
+      {
+        "line": 76090861,
+        "formula": "C0CCCN12C34CCN4C13C14",
+        "id": "CN19_padding_0654"
+      },
+      {
+        "line": 76091069,
+        "formula": "C0CCCN12C34CCN43C5C14",
+        "id": "CN19_padding_0655"
+      },
+      {
+        "line": 76094594,
+        "formula": "C0CCCN12C34C5CCN43C14",
+        "id": "CN19_padding_0656"
+      },
+      {
+        "line": 76099547,
+        "formula": "C0CCCN123CCN4C1C34C14",
+        "id": "CN19_padding_0658"
+      },
+      {
+        "line": 76327418,
+        "formula": "C0CCCCC1N2N345CC52C32",
+        "id": "CN19_padding_0660"
+      },
+      {
+        "line": 76928197,
+        "formula": "C0CCC1N23CCCC3N452C42",
+        "id": "CN19_padding_0661"
+      },
+      {
+        "line": 76931772,
+        "formula": "C0CCC1N23CCC45C3N5C52",
+        "id": "CN19_padding_0662"
+      },
+      {
+        "line": 76996906,
+        "formula": "C0CCC1CN23C45CCN54C25",
+        "id": "CN19_padding_0663"
+      },
+      {
+        "line": 77162061,
+        "formula": "C0CCC1C2N34CC4C4N5C53",
+        "id": "CN19_padding_0664"
+      },
+      {
+        "line": 77592931,
+        "formula": "C0CCC12C2C3N2CCN43C24",
+        "id": "CN19_padding_0679"
+      },
+      {
+        "line": 77592937,
+        "formula": "C0CCC12C2C3N3CCN43C24",
+        "id": "CN19_padding_0680"
+      },
+      {
+        "line": 77593003,
+        "formula": "C0CCC12C3C3N2CCN43C24",
+        "id": "CN19_padding_0685"
+      },
+      {
+        "line": 77593027,
+        "formula": "C0CCC12C3C4N3CCN14C31",
+        "id": "CN19_padding_0687"
+      },
+      {
+        "line": 77736692,
+        "formula": "C0CCC123CC3CN4C2N2C24",
+        "id": "CN19_padding_0698"
+      },
+      {
+        "line": 77740285,
+        "formula": "C0CCC123CC3CC4N1N5C51",
+        "id": "CN19_padding_0699"
+      },
+      {
+        "line": 77740289,
+        "formula": "C0CCC123CC3CC4N5N2C25",
+        "id": "CN19_padding_0700"
+      },
+      {
+        "line": 77748493,
+        "formula": "C0CCC123CC3C2CN4N2C24",
+        "id": "CN19_padding_0709"
+      },
+      {
+        "line": 77783095,
+        "formula": "C0CCC123C4CC3CN1N5C51",
+        "id": "CN19_padding_0712"
+      },
+      {
+        "line": 77783097,
+        "formula": "C0CCC123C4CC3CN5N2C25",
+        "id": "CN19_padding_0713"
+      },
+      {
+        "line": 78356368,
+        "formula": "C0CC1CCN23C14CCN41C24",
+        "id": "CN19_padding_0715"
+      },
+      {
+        "line": 78358924,
+        "formula": "C0CC1CCN123CCN4C34C14",
+        "id": "CN19_padding_0716"
+      },
+      {
+        "line": 78361148,
+        "formula": "C0CC1CCN123CC3CN44C14",
+        "id": "CN19_padding_0717"
+      },
+      {
+        "line": 78594129,
+        "formula": "C0CC1CC23CN2N1CC41C42",
+        "id": "CN19_padding_0720"
+      },
+      {
+        "line": 78594134,
+        "formula": "C0CC1CC23CN2N4CC41C42",
+        "id": "CN19_padding_0721"
+      },
+      {
+        "line": 78594147,
+        "formula": "C0CC1CC23CN4N1CC31C34",
+        "id": "CN19_padding_0722"
+      },
+      {
+        "line": 78594152,
+        "formula": "C0CC1CC23CN4N3CC31C34",
+        "id": "CN19_padding_0723"
+      },
+      {
+        "line": 78616282,
+        "formula": "C0CC1CC23C1N3CCN41C34",
+        "id": "CN19_padding_0728"
+      },
+      {
+        "line": 78616300,
+        "formula": "C0CC1CC23C3N1CCN41C34",
+        "id": "CN19_padding_0729"
+      },
+      {
+        "line": 78616306,
+        "formula": "C0CC1CC23C3N3CCN41C34",
+        "id": "CN19_padding_0730"
+      },
+      {
+        "line": 78616322,
+        "formula": "C0CC1CC23C4N4CCN21C42",
+        "id": "CN19_padding_0731"
+      },
+      {
+        "line": 78659807,
+        "formula": "C0CC1CC213CC3CN4N1C14",
+        "id": "CN19_padding_0738"
+      },
+      {
+        "line": 78659855,
+        "formula": "C0CC1CC234CC4CN2N1C12",
+        "id": "CN19_padding_0740"
+      },
+      {
+        "line": 78840183,
+        "formula": "C0CC1C1CN2N3CCC431C32",
+        "id": "CN19_padding_0743"
+      },
+      {
+        "line": 78840210,
+        "formula": "C0CC1C2CN3N1CCC412C13",
+        "id": "CN19_padding_0745"
+      },
+      {
+        "line": 78840225,
+        "formula": "C0CC1C2CN3N2CCC421C23",
+        "id": "CN19_padding_0746"
+      },
+      {
+        "line": 79150865,
+        "formula": "C0CC1C23CCN3CCN142C13",
+        "id": "CN19_padding_0749"
+      },
+      {
+        "line": 79413215,
+        "formula": "C0CC12CCN3CCN14C23C13",
+        "id": "CN19_padding_0751"
+      },
+      {
+        "line": 79419265,
+        "formula": "C0CC12CCN3C2CCN143C13",
+        "id": "CN19_padding_0752"
+      },
+      {
+        "line": 79464338,
+        "formula": "C0CC12CCCCC3N2N451C42",
+        "id": "CN19_padding_0753"
+      },
+      {
+        "line": 79511722,
+        "formula": "C0CC12CCC3C4N5C2N1C15",
+        "id": "CN19_padding_0754"
+      },
+      {
+        "line": 79530546,
+        "formula": "C0CC12CCC34CN3C2N1C13",
+        "id": "CN19_padding_0756"
+      },
+      {
+        "line": 79539487,
+        "formula": "C0CC12CCC31C2CN4N1C14",
+        "id": "CN19_padding_0765"
+      },
+      {
+        "line": 79539488,
+        "formula": "C0CC12CCC31C2CN4N2C14",
+        "id": "CN19_padding_0766"
+      },
+      {
+        "line": 79539520,
+        "formula": "C0CC12CCC34C2CN3N1C13",
+        "id": "CN19_padding_0768"
+      },
+      {
+        "line": 79539521,
+        "formula": "C0CC12CCC34C2CN3N2C13",
+        "id": "CN19_padding_0769"
+      },
+      {
+        "line": 79603685,
+        "formula": "C0CC12CC2CCN13CN44C14",
+        "id": "CN19_padding_0771"
+      },
+      {
+        "line": 79618989,
+        "formula": "C0CC12CC2CC31CN4N1C14",
+        "id": "CN19_padding_0775"
+      },
+      {
+        "line": 79618990,
+        "formula": "C0CC12CC2CC31CN4N2C14",
+        "id": "CN19_padding_0776"
+      },
+      {
+        "line": 79618998,
+        "formula": "C0CC12CC2CC34CN3N1C13",
+        "id": "CN19_padding_0778"
+      },
+      {
+        "line": 79618999,
+        "formula": "C0CC12CC2CC34CN3N2C13",
+        "id": "CN19_padding_0779"
+      },
+      {
+        "line": 80408874,
+        "formula": "C0C1CCN23CCCN45C32C42",
+        "id": "CN19_padding_0780"
+      },
+      {
+        "line": 80412581,
+        "formula": "C0C1CCN23CCC24C3N5C52",
+        "id": "CN19_padding_0781"
+      },
+      {
+        "line": 80934071,
+        "formula": "C0C1CCC234CC4CN5N3C35",
+        "id": "CN19_padding_0782"
+      }
+    ],
+    "exception_map": "results/candidate_index/cn19_padding_exceptions.json",
+    "saved_successful_outputs": 59,
+    "named_candidate_links": 18,
+    "verification_scope": "Static extraction of recorded matrix assignments and successful outputs, not bulk matrix re-verification or a new search."
+  }
+]

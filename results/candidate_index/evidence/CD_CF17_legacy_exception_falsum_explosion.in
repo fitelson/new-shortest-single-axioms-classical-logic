@@ -1,0 +1,5 @@
+% Individual elimination replay for CD_CF17_legacy_exception_falsum_explosion; Polish CCCCCpqFrsCCspCtp.
+fof(mp,axiom,![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).
+fof(candidate,axiom,![A,B,C,D,E]: t(i(i(i(i(i(A,B),f),C),D),i(i(D,A),i(E,A))))).
+fof(falsum_undesignated,axiom,~t(f)).
+fof(classical_target,conjecture,![P]: t(i(f,P))).

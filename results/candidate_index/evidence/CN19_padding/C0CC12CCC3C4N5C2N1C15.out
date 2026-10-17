@@ -1,0 +1,53 @@
+% ott+10_128_av=off:bs=on:gsp=input_only:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_4 on C0CC12CCC3C4N5C2N1C15
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+
+% Memory used [KB]: 11129
+% Time elapsed: 0.820 s
+% ------------------------------
+% ------------------------------
+% fmb+10_1_av=off:bce=on:nm=6_1461 on C0CC12CCC3C4N5C2N1C15
+TRYING [5]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 48997
+% Time elapsed: 190.100 s
+% ------------------------------
+% ------------------------------
+% dis+10_3_add=large:afp=10000:afq=2.0:amm=sco:anc=none:cond=on:fsr=off:gsp=input_only:lma=on:nm=16:nwc=1:sac=on:updr=off_197 on C0CC12CCC3C4N5C2N1C15
+% SZS status CounterSatisfiable for C0CC12CCC3C4N5C2N1C15
+% # SZS output start Saturation.
+tff(u30,axiom,
+    (![X1, X0] : ((~t(i(X0,X1)) | t(X1) | ~t(X0))))).
+
+tff(u29,negated_conjecture,
+    ~t(i(i(i(i(i(sK0,sK1),i(n(sK2),n(sK3))),sK2),sK4),i(i(sK4,sK0),i(sK3,sK0))))).
+
+tff(u28,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(X0,X1),i(i(i(X2,i(X3,n(X4))),i(X1,n(X0))),i(X0,X4))))))) | (![X1, X3, X0, X2, X4] : ((~t(i(i(X3,i(X4,n(X2))),i(X1,n(X0)))) | t(i(X0,X2)) | ~t(i(X0,X1))))))).
+
+tff(u27,axiom,
+    (![X1, X3, X5, X0, X2, X4] : (t(i(X0,i(i(X1,X2),i(i(i(X3,i(X4,n(X5))),i(X2,n(X1))),i(X1,X5)))))))).
+
+tff(u26,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(X0,X1),i(i(i(X2,i(X3,n(X4))),i(X1,n(X0))),i(X0,X4))))))) | (![X1, X3, X0, X2, X4] : (t(i(i(X0,X1),i(i(i(X2,i(X3,n(X4))),i(X1,n(X0))),i(X0,X4)))))))).
+
+tff(u25,axiom,
+    ((~(![X1, X3, X0, X2, X4] : (t(i(i(X0,X1),i(i(i(X2,i(X3,n(X4))),i(X1,n(X0))),i(X0,X4))))))) | (![X1, X3, X0, X2, X4] : ((t(i(i(i(X0,i(X1,n(X2))),i(X3,n(X4))),i(X4,X2))) | ~t(i(X4,X3))))))).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.5.1 (commit 57a6f78c on 2020-07-15 11:59:04 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 5373
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% Success in time 211.97 s

@@ -1,6 +1,7 @@
 {
   "title": "New Short(est) Single Axioms for Classical Logic: search code and proof archive",
-  "description": "Search code, exact equational lower-bound results, reproducibility tools, and machine-checkable Prover9 certificates accompanying the paper New Short(est) Single Axioms for Classical Logic. The archive includes the official LADR-2009-11A Prover9 and Vampire 5.0.1 source releases together with the reference executables used for the archived computations. Licensing varies by component and is documented in THIRD_PARTY_NOTICES.md.",
+  "version": "1.1.0",
+  "description": "Search code, candidate-to-evidence tables, equational lower-bound records, and machine-checkable Prover9 certificates accompanying New Short(est) Single Axioms for Classical Logic. The CD C/N weight-19 elimination and weight-21 shortestness/search claims are restricted to DN-free formulas with at most six distinct variables. CD C/f shortestness remains open because of F17; the separate equational C/f shortestness result is unchanged. The archive preserves legacy generator source and historical transcripts, identifies older Vampire versions, and includes the official LADR-2009-11A Prover9 and Vampire 5.0.1 sources and reference executables. Licensing and provenance are documented in THIRD_PARTY_NOTICES.md, REPRODUCIBILITY_AUDIT.md, and CANDIDATE_INDEX.md.",
   "creators": [
     {
       "name": "Fitelson, Branden",

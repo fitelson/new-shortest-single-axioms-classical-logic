@@ -1,0 +1,6 @@
+% Reconstruction test for the legacy weight-17 C/f candidate.
+% Polish: CCCCCpqFrsCCspCtp
+% Target: the full Tarski--Bernays basis; no auxiliary equations.
+fof(condensed_detachment, axiom, ![X,Y]: ((t(X) & t(i(X,Y))) => t(Y))).
+fof(candidate, axiom, ![A,B,C,D,E]: t(i(i(i(i(i(A,B),f),C),D),i(i(D,A),i(E,A))))).
+fof(tarski_bernays_basis, conjecture, ((![P,Q,R]: t(i(i(P,Q),i(i(Q,R),i(P,R))))) & (![P,Q]: t(i(P,i(Q,P)))) & (![P,Q]: t(i(i(i(P,Q),P),P))) & (![P]: t(i(f,P))))).

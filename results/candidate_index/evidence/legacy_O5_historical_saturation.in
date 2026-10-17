@@ -1,0 +1,29 @@
+% Finite saturation certificate eliminating O5.
+% Input: C_o_17_symbol_candidate_O5.in
+% Result: CD + O5 + negated Meredith M2 saturates without the empty clause.
+
+% SZS output start Saturation.
+cnf(u34,axiom,
+    t(i(i(X2,i(o,i(X2,X0))),i(X3,X0)))).
+
+cnf(u42,axiom,
+    ~t(i(X0,i(o,i(X0,X1))))).
+
+cnf(u12,negated_conjecture,
+    ~t(i(i(i(sK0,sK1),i(sK2,i(o,sK3))),
+         i(i(sK3,sK0),i(sK2,i(sK4,sK0)))))).
+
+cnf(u11,axiom,
+    t(i(i(i(X0,X1),X2),
+        i(i(X2,i(o,i(X2,X0))),i(X3,X0))))).
+
+cnf(u39,axiom,
+    ~t(i(X0,i(o,i(X0,X1)))) | t(i(X2,X1))).
+
+cnf(u10,axiom,
+    ~t(i(X0,X1)) | ~t(X0) | t(X1)).
+
+cnf(u28,axiom,
+    ~t(i(i(X0,X1),X2)) |
+     t(i(i(X2,i(o,i(X2,X0))),i(X3,X0)))).
+% SZS output end Saturation.

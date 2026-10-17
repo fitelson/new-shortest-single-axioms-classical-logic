@@ -1,0 +1,25 @@
+tff('declare_$i1',type,'fmb_$i_1':$i).
+tff('declare_$i2',type,'fmb_$i_2':$i).
+tff('declare_$i3',type,'fmb_$i_3':$i).
+tff(declare_t,type,t: $i > $o).
+t('fmb_$i_1').
+~t('fmb_$i_2').
+t('fmb_$i_3').
+tff(declare_i,type,i: ($i * $i) > $i).
+tff(function_i,axiom,
+  i('fmb_$i_1','fmb_$i_1') = 'fmb_$i_1'
+& i('fmb_$i_1','fmb_$i_2') = 'fmb_$i_2'
+& i('fmb_$i_1','fmb_$i_3') = 'fmb_$i_1'
+& i('fmb_$i_2','fmb_$i_1') = 'fmb_$i_1'
+& i('fmb_$i_2','fmb_$i_2') = 'fmb_$i_1'
+& i('fmb_$i_2','fmb_$i_3') = 'fmb_$i_1'
+& i('fmb_$i_3','fmb_$i_1') = 'fmb_$i_2'
+& i('fmb_$i_3','fmb_$i_2') = 'fmb_$i_2'
+& i('fmb_$i_3','fmb_$i_3') = 'fmb_$i_2'
+).
+tff(declare_n,type,n: ($i) > $i).
+tff(function_n,axiom,
+  n('fmb_$i_1') = 'fmb_$i_2'
+& n('fmb_$i_2') = 'fmb_$i_1'
+& n('fmb_$i_3') = 'fmb_$i_2'
+).

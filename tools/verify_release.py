@@ -21,6 +21,7 @@ PROVER9 = VENDOR_ROOT / "bin" / "macos-arm64" / "prover9"
 VAMPIRE_ROOT = REPO / "vendor" / "vampire-5.0.1"
 VAMPIRE = VAMPIRE_ROOT / "bin" / "macos-arm64" / "vampire"
 LOWER_ROOT = REPO / "results" / "equational_lower_bounds"
+INDEX_ROOT = REPO / "results" / "candidate_index"
 
 
 def fail(message: str) -> None:
@@ -266,6 +267,8 @@ def main() -> None:
     vampire_banner = verify_vampire()
     verify_vampire_archives()
     stats_count, survivor_count = verify_equational_lower_bounds()
+    index_count = verify_checksum_file(INDEX_ROOT, INDEX_ROOT / "SHA256SUMS")
+    subprocess.run([sys.executable, str(REPO / "tools/candidate_index.py"), "check"], cwd=REPO, check=True)
     pairs = proof_pairs()
     for pair in pairs:
         verify_saved_output(*pair)
@@ -275,6 +278,7 @@ def main() -> None:
     print(f"OK: {vampire_banner}")
     print("OK: official Vampire source and binary archives are structurally complete")
     print(f"OK: {lower_count} equational lower-bound checksums")
+    print(f"OK: {index_count} candidate-index checksums and individual evidence checks")
     print(
         f"OK: {stats_count} shard statistics files and "
         f"{survivor_count} unresolved survivor rows"
